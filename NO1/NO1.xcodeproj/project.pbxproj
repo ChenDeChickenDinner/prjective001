@@ -67,20 +67,15 @@
 		55097A151FCBE286008048E4 /* libaray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libaray.m; sourceTree = "<group>"; };
 		55097A161FCBE286008048E4 /* libaray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libaray.h; sourceTree = "<group>"; };
 		55097A1C1FCBE47C008048E4 /* Build.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Build.m; sourceTree = "<group>"; };
-		55097A1D1FCBE47C008048E4 /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
 		55097A201FCBE4A0008048E4 /* git.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = git.m; sourceTree = "<group>"; };
 		55097A211FCBE4A0008048E4 /* git.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = git.h; sourceTree = "<group>"; };
-		55097A231FCBE521008048E4 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		55097A241FCBE521008048E4 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
-		55097A261FCBE53B008048E4 /* project_pbxproj02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project_pbxproj02.h; sourceTree = "<group>"; };
 		55097A271FCBE53B008048E4 /* project_pbxproj03.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = project_pbxproj03.m; sourceTree = "<group>"; };
 		55097A281FCBE53B008048E4 /* project_pbxproj01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project_pbxproj01.h; sourceTree = "<group>"; };
-		55097A291FCBE53B008048E4 /* project_pbxproj03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project_pbxproj03.h; sourceTree = "<group>"; };
 		55097A2A1FCBE53B008048E4 /* project_pbxproj01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = project_pbxproj01.m; sourceTree = "<group>"; };
 		55097A2B1FCBE53B008048E4 /* project_pbxproj02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = project_pbxproj02.m; sourceTree = "<group>"; };
 		55A81D311FCBE60200037761 /* Xcode_Study1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xcode_Study1.h; sourceTree = "<group>"; };
 		55A81D321FCBE60200037761 /* Xcode_Study1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Xcode_Study1.m; sourceTree = "<group>"; };
-		55A81D341FCBE63C00037761 /* Study_Day1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Study_Day1.h; sourceTree = "<group>"; };
 		55A81D351FCBE63C00037761 /* Study_Day1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Study_Day1.m; sourceTree = "<group>"; };
 		55A81D391FCBE73600037761 /* C 数据类型（常量 变量).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "C 数据类型（常量 变量).m"; sourceTree = "<group>"; };
 		55A81D3A1FCBE73600037761 /* COC 关键字.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "COC 关键字.m"; sourceTree = "<group>"; };
@@ -156,10 +151,9 @@
 		55097A041FCBAA3D008048E4 /* NO.1IDE */ = {
 			isa = PBXGroup;
 			children = (
+				5512A5F21FCBF0A400E21F73 /* builde */,
 				55097A1B1FCBE46F008048E4 /* 编译配置 */,
-				55097A141FCBE270008048E4 /* 资源文件 */,
-				55097A051FCBAA95008048E4 /* NO1工程文件.h */,
-				55097A061FCBAA95008048E4 /* NO1工程文件.m */,
+				55097A141FCBE270008048E4 /* 01资源文件 */,
 				55097A081FCBAAD6008048E4 /* NO2IDE结构.h */,
 				55097A091FCBAAD6008048E4 /* NO2IDE结构.m */,
 				55097A111FCBABC9008048E4 /* NO3Product生成.h */,
@@ -170,31 +164,28 @@
 			path = NO.1IDE;
 			sourceTree = "<group>";
 		};
-		55097A141FCBE270008048E4 /* 资源文件 */ = {
+		55097A141FCBE270008048E4 /* 01资源文件 */ = {
 			isa = PBXGroup;
 			children = (
+				55097A051FCBAA95008048E4 /* NO1工程文件.h */,
+				55097A061FCBAA95008048E4 /* NO1工程文件.m */,
 				55097A161FCBE286008048E4 /* libaray.h */,
 				55097A151FCBE286008048E4 /* libaray.m */,
 			);
-			path = "资源文件";
+			path = "01资源文件";
 			sourceTree = "<group>";
 		};
 		55097A1B1FCBE46F008048E4 /* 编译配置 */ = {
 			isa = PBXGroup;
 			children = (
-				55A81D341FCBE63C00037761 /* Study_Day1.h */,
 				55A81D351FCBE63C00037761 /* Study_Day1.m */,
 				55A81D311FCBE60200037761 /* Xcode_Study1.h */,
 				55A81D321FCBE60200037761 /* Xcode_Study1.m */,
-				55097A231FCBE521008048E4 /* Info.h */,
 				55097A241FCBE521008048E4 /* Info.m */,
-				55097A1D1FCBE47C008048E4 /* Build.h */,
 				55097A1C1FCBE47C008048E4 /* Build.m */,
 				55097A281FCBE53B008048E4 /* project_pbxproj01.h */,
 				55097A2A1FCBE53B008048E4 /* project_pbxproj01.m */,
-				55097A261FCBE53B008048E4 /* project_pbxproj02.h */,
 				55097A2B1FCBE53B008048E4 /* project_pbxproj02.m */,
-				55097A291FCBE53B008048E4 /* project_pbxproj03.h */,
 				55097A271FCBE53B008048E4 /* project_pbxproj03.m */,
 			);
 			path = "编译配置";
@@ -207,6 +198,13 @@
 				55097A201FCBE4A0008048E4 /* git.m */,
 			);
 			path = Git;
+			sourceTree = "<group>";
+		};
+		5512A5F21FCBF0A400E21F73 /* builde */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = builde;
 			sourceTree = "<group>";
 		};
 		55A81D371FCBE72500037761 /* language */ = {

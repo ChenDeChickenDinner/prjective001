@@ -6,9 +6,7 @@
 //  Copyright © 2017年 Touker. All rights reserved.
 //
 
-#import "Study_Day1.h"
 
-@implementation Study_Day1
 /**
  Xcode 项目文件结构解析
      A:项目内容文件
@@ -170,4 +168,4 @@ Xcode 所有操作演练 工作界面 设置---都是干什么的 (大概）
  
  
  */
-@end
+

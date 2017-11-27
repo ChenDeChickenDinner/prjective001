@@ -6,11 +6,6 @@
 //  Copyright © 2017年 Touker. All rights reserved.
 //
 
-#import "Build.h"
-
-@implementation Build
-
-@end
 /**
 
 编译过程 编译、链 、code signing 、packaging

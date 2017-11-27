@@ -6,9 +6,7 @@
 //  Copyright © 2017年 Touker. All rights reserved.
 //
 
-#import "Info.h"
 
-@implementation Info
 /**
  
  Application can be killed immediately after launch
@@ -676,4 +674,4 @@
  CFBundleURLSchemes	Array	该关键字包含了一组可被这种类型处理的URL协议。例如：http,ftp等。
 
  */
-@end
+

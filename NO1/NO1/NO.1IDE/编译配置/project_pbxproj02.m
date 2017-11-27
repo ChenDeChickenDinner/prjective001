@@ -6,11 +6,7 @@
 //  Copyright © 2017年 Touker. All rights reserved.
 //
 
-#import "project_pbxproj02.h"
 
-@implementation project_pbxproj02
-
-@end
 /**
  
  
