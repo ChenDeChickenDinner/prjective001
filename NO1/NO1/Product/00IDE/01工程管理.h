@@ -8,44 +8,29 @@
 
 /**
 IED 功能
- 1:工程概念
- 2:文件管理
- 3:基本功能介绍
+
 
  A:Xcode工程概念    分为workspace -》project -》target -》File 四级
 
 
 
- workspac（工作空间）
+ (A)workspac（工作空间）
  0:一个工作空间 可以管理多个 工程，每个工程 可以管理多个target生成各种形式的product，
  1:当一个Project需要用到另一个Project的文件的时候，默认情况下 需要将用到的其它Project的相关文件拷贝一份到自身Project中
  2:workspace,即可以单独管理多个项目，又可以通过配置，让各个项目相互依赖
- 3:解析-生成-运用
- A:文件夹分析,显示包内容.xcworkspace
- 1-contents.xcworkspacedata
- 2-xcshareddata（WorkspaceSettings.xcsettings）
- 3-xcuserdata- xs.xcuserdatad
- IDEFindNavigatorScopes.plist
- UserInterfaceState.xcuserstate
- xcdebugger(Breakpoints_v2.xcbkptlist)
 
 
- Project(一个工程，管理所以的资源文件，与基本设置)
+
+
+
+ (B)Project(一个工程，管理所有的资源文件，与基本设置)
  1:所有的资源文件【源代码，.h/.m,内部和外部的静态库和动态库,资源文件,图片文件,界面构建文件(nib)】
  2:工程层级编译配置(info,Build Setting)
- 3:生成-解析-运用
-
- 初始化创建一个Project： 选择一种product模板 + 名字 = Project(创建的名字即为本Project 与默认的 target的名字)
- 1文件结构:
- No0:可选的template(模板)【Application/Framework&Library】
- No1:name ---->所有资源文件
- No2:name.xcodeproj ---->本工程配置文件
 
 
 
 
-
- target（决定产出什么产品）
+ (C)target（决定产出什么产品）
  0:(定义了构造一个product所需的文件和编译指令。一个target对应于一个product。）
  1:存在形式,各种平台IOS watchOS tvOS下的各种产品Application/Application Extension/Test/Framework & Library/）
  2:独特的各种配置
@@ -53,20 +38,17 @@ IED 功能
 
 
 
- Scheme(决定产品的运行配置)
+ (D)Scheme(决定产品的运行配置)
  1:系统会自动创建出一个编译方案，默认和项目名称相同，使用的是默认创建的 target,(一个Scheme 必须 绑定一个target才能创建)
  2:管理:创建新的 ，复制，导入，导出，删除，排序，是否显示到操作栏，所属容器，是否分享，编辑
  2:各种操作==>Build(编译) - Run(运行) - Test(测试) - Profile(剖析) - Analyze(分析) - Archive(打包)，每步执行前后 可定制操作（发邮件，运行脚本插件）
 
 
 
-
-
-
-
-
-
  (一)project.pbxproj.workspace文件
+
+
+
 
 
  （二）project.pbxproj 工程文件
