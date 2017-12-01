@@ -11,39 +11,7 @@
 @implementation project_pbxproj01
 /**
  
- (一)project.pbxproj.workspace文件
- 
 
-（二）project.pbxproj 工程文件
- 简介:它本质上是一种旧风格的 Property List 文件，历史可追溯到 NeXT 的 OpenStep。由于有Xcode工具的存在，我们一般不需要与pbxproj直接打交道，通过General、Build Settungs或者Info等面板，就可以完成项目工程配置信息的修改/采用 utf8编码 每个文件 有一个 唯一标识码
-     示例：!$*UTF8*$!
-     {
-     archiveVersion = 1;
-     classes = {
-     };
-     objectVersion = 45;
-     objects = {
-     ...
-     };
-     rootObject = 0867D690FE84028FC02AAC07  Project object ;
-     }
- PBXProject: 该对象记录着targets、mainGroup等重要信息,甚至每个target在创建时候的Xcode版本都会记录在其中
- PBXSourcesBuildPhase 来源 用于构建阶段中编译源文件
- PBXResourcesBuildPhase 资源 用于构建阶段需要复制的资源文件
- PBXNativeTarget  工程中的target,如果工程中有多个target,都会在这个section中有所体现
- PBXGroup  用于组文件，或者嵌套组
-
- PBXFrameworksBuildPhase  用于framewrok构建的链接阶段
- PBXFileReference  跟踪项目引用的每一个外部文件
- PBXBuildFile是文件类，被PBXBuildPhase等作为文件包含或被引用的资源。
-
- PBXTargetDependency 目标的外部依赖管理。
- PBXVariantGroup 对不同地区资源文件的引用管理。
- XCBuildConfiguration  构建配置元素
- XCConfigurationList构建配置相关元素的列表
- http://www.jianshu.com/p/e82ec6a56fc2
- http://www.jianshu.com/p/bd4e3c1a7276#
- http://gcblog.github.io/2016/02/23/GitHub+Hexo/
  
 (三.1)Build(编译) - Run(运行) - Test(测试) - Profile(剖析) - Analyze(分析) - Archive(打包)=======>参数设置含义
      Build===>

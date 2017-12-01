@@ -6,12 +6,7 @@
 //  Copyright © 2017年 Touker. All rights reserved.
 //
 
-#import "libaray.h"
 
-@implementation libaray
-
-
-@end
 /**
 库(Library)
 说白了就是一段编译好的二进制代码，加上头文件就可以供别人使用。好处（可以不暴露实现，用的时候只需要链接，不会浪费编译时间)
