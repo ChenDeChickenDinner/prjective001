@@ -68,6 +68,35 @@
 		55A81D581FCBE7A800037761 /* Grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grammar.h; sourceTree = "<group>"; };
 		55A81D591FCBE7A800037761 /* Grammar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grammar.m; sourceTree = "<group>"; };
 		55A81D5A1FCBE7A800037761 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C64800B1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64800E1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480101FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480121FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480141FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480161FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480181FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64801A1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64801C1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64801E1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64801F1FD42E970097D87B /* De的副本.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "De的副本.h"; sourceTree = "<group>"; };
+		6C6480211FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480231FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480261FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480281FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64802A1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64802C1FD42E970097D87B /* 01Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 01Project.h; sourceTree = "<group>"; };
+		6C64802D1FD42E970097D87B /* 02targets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 02targets.h; sourceTree = "<group>"; };
+		6C64802F1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480311FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480341FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480361FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480381FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64803A1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64803C1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C64803E1FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480401FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480421FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		6C6480441FD42E970097D87B /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +129,7 @@
 		550979ED1FCBA93D008048E4 /* NO1 */ = {
 			isa = PBXGroup;
 			children = (
+				6C6480091FD42E970097D87B /* IDE基本使用 */,
 				5512A6151FD0EBDB00E21F73 /* Product */,
 				55A81D371FCBE72500037761 /* language */,
 				55097A1F1FCBE496008048E4 /* Git */,
@@ -226,6 +256,282 @@
 				55A81D5A1FCBE7A800037761 /* main.m */,
 			);
 			path = ComputerTheory;
+			sourceTree = "<group>";
+		};
+		6C6480091FD42E970097D87B /* IDE基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64800A1FD42E970097D87B /* 05调试控制区 */,
+				6C64800C1FD42E970097D87B /* 01顶部菜单区 */,
+				6C6480291FD42E970097D87B /* 03资源文件展示编辑区 */,
+				6C64802E1FD42E970097D87B /* 04检查器控制区 */,
+				6C6480301FD42E970097D87B /* 06工具控制区 */,
+				6C6480321FD42E970097D87B /* 02导航器区 */,
+				6C6480431FD42E970097D87B /* 00初始化界面 */,
+			);
+			path = "IDE基本使用";
+			sourceTree = "<group>";
+		};
+		6C64800A1FD42E970097D87B /* 05调试控制区 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64800B1FD42E970097D87B /* De.h */,
+			);
+			path = "05调试控制区";
+			sourceTree = "<group>";
+		};
+		6C64800C1FD42E970097D87B /* 01顶部菜单区 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64800D1FD42E970097D87B /* 09Debug_调试 */,
+				6C64800F1FD42E970097D87B /* 04View_界面 */,
+				6C6480111FD42E970097D87B /* 03Edit_编辑 */,
+				6C6480131FD42E970097D87B /* 06Navigate_导航 */,
+				6C6480151FD42E970097D87B /* 11Window_窗口 */,
+				6C6480171FD42E970097D87B /* 07Editor_编辑器 */,
+				6C6480191FD42E970097D87B /* 10SourceControl_版本管理 */,
+				6C64801B1FD42E970097D87B /* 08Product_产品 */,
+				6C64801D1FD42E970097D87B /* 02File_文件 */,
+				6C6480201FD42E970097D87B /* 05Find_操作 */,
+				6C6480221FD42E970097D87B /* 12Help */,
+				6C6480241FD42E970097D87B /* 01Xcode */,
+			);
+			path = "01顶部菜单区";
+			sourceTree = "<group>";
+		};
+		6C64800D1FD42E970097D87B /* 09Debug_调试 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64800E1FD42E970097D87B /* De.h */,
+			);
+			path = "09Debug_调试";
+			sourceTree = "<group>";
+		};
+		6C64800F1FD42E970097D87B /* 04View_界面 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480101FD42E970097D87B /* De.h */,
+			);
+			path = "04View_界面";
+			sourceTree = "<group>";
+		};
+		6C6480111FD42E970097D87B /* 03Edit_编辑 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480121FD42E970097D87B /* De.h */,
+			);
+			path = "03Edit_编辑";
+			sourceTree = "<group>";
+		};
+		6C6480131FD42E970097D87B /* 06Navigate_导航 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480141FD42E970097D87B /* De.h */,
+			);
+			path = "06Navigate_导航";
+			sourceTree = "<group>";
+		};
+		6C6480151FD42E970097D87B /* 11Window_窗口 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480161FD42E970097D87B /* De.h */,
+			);
+			path = "11Window_窗口";
+			sourceTree = "<group>";
+		};
+		6C6480171FD42E970097D87B /* 07Editor_编辑器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480181FD42E970097D87B /* De.h */,
+			);
+			path = "07Editor_编辑器";
+			sourceTree = "<group>";
+		};
+		6C6480191FD42E970097D87B /* 10SourceControl_版本管理 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64801A1FD42E970097D87B /* De.h */,
+			);
+			path = "10SourceControl_版本管理";
+			sourceTree = "<group>";
+		};
+		6C64801B1FD42E970097D87B /* 08Product_产品 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64801C1FD42E970097D87B /* De.h */,
+			);
+			path = "08Product_产品";
+			sourceTree = "<group>";
+		};
+		6C64801D1FD42E970097D87B /* 02File_文件 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64801E1FD42E970097D87B /* De.h */,
+				6C64801F1FD42E970097D87B /* De的副本.h */,
+			);
+			path = "02File_文件";
+			sourceTree = "<group>";
+		};
+		6C6480201FD42E970097D87B /* 05Find_操作 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480211FD42E970097D87B /* De.h */,
+			);
+			path = "05Find_操作";
+			sourceTree = "<group>";
+		};
+		6C6480221FD42E970097D87B /* 12Help */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480231FD42E970097D87B /* De.h */,
+			);
+			path = 12Help;
+			sourceTree = "<group>";
+		};
+		6C6480241FD42E970097D87B /* 01Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480251FD42E970097D87B /* 02DeveloprtTool(辅助工具) */,
+				6C6480271FD42E970097D87B /* 01Preferences(偏好设置) */,
+			);
+			path = 01Xcode;
+			sourceTree = "<group>";
+		};
+		6C6480251FD42E970097D87B /* 02DeveloprtTool(辅助工具) */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480261FD42E970097D87B /* De.h */,
+			);
+			path = "02DeveloprtTool(辅助工具)";
+			sourceTree = "<group>";
+		};
+		6C6480271FD42E970097D87B /* 01Preferences(偏好设置) */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480281FD42E970097D87B /* De.h */,
+			);
+			path = "01Preferences(偏好设置)";
+			sourceTree = "<group>";
+		};
+		6C6480291FD42E970097D87B /* 03资源文件展示编辑区 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64802A1FD42E970097D87B /* De.h */,
+				6C64802B1FD42E970097D87B /* 01Project */,
+			);
+			path = "03资源文件展示编辑区";
+			sourceTree = "<group>";
+		};
+		6C64802B1FD42E970097D87B /* 01Project */ = {
+			isa = PBXGroup;
+			children = (
+				6C64802C1FD42E970097D87B /* 01Project.h */,
+				6C64802D1FD42E970097D87B /* 02targets.h */,
+			);
+			path = 01Project;
+			sourceTree = "<group>";
+		};
+		6C64802E1FD42E970097D87B /* 04检查器控制区 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64802F1FD42E970097D87B /* De.h */,
+			);
+			path = "04检查器控制区";
+			sourceTree = "<group>";
+		};
+		6C6480301FD42E970097D87B /* 06工具控制区 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480311FD42E970097D87B /* De.h */,
+			);
+			path = "06工具控制区";
+			sourceTree = "<group>";
+		};
+		6C6480321FD42E970097D87B /* 02导航器区 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480331FD42E970097D87B /* 03搜索导航器 */,
+				6C6480351FD42E970097D87B /* 01项目导航器 */,
+				6C6480371FD42E970097D87B /* 04事件导航器 */,
+				6C6480391FD42E970097D87B /* 02符号导航器 */,
+				6C64803B1FD42E970097D87B /* 06调试导航器 */,
+				6C64803D1FD42E970097D87B /* 05测试导航器 */,
+				6C64803F1FD42E970097D87B /* 07断点导航器 */,
+				6C6480411FD42E970097D87B /* 08日志导航器 */,
+			);
+			path = "02导航器区";
+			sourceTree = "<group>";
+		};
+		6C6480331FD42E970097D87B /* 03搜索导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480341FD42E970097D87B /* De.h */,
+			);
+			path = "03搜索导航器";
+			sourceTree = "<group>";
+		};
+		6C6480351FD42E970097D87B /* 01项目导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480361FD42E970097D87B /* De.h */,
+			);
+			path = "01项目导航器";
+			sourceTree = "<group>";
+		};
+		6C6480371FD42E970097D87B /* 04事件导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480381FD42E970097D87B /* De.h */,
+			);
+			path = "04事件导航器";
+			sourceTree = "<group>";
+		};
+		6C6480391FD42E970097D87B /* 02符号导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64803A1FD42E970097D87B /* De.h */,
+			);
+			path = "02符号导航器";
+			sourceTree = "<group>";
+		};
+		6C64803B1FD42E970097D87B /* 06调试导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64803C1FD42E970097D87B /* De.h */,
+			);
+			path = "06调试导航器";
+			sourceTree = "<group>";
+		};
+		6C64803D1FD42E970097D87B /* 05测试导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C64803E1FD42E970097D87B /* De.h */,
+			);
+			path = "05测试导航器";
+			sourceTree = "<group>";
+		};
+		6C64803F1FD42E970097D87B /* 07断点导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480401FD42E970097D87B /* De.h */,
+			);
+			path = "07断点导航器";
+			sourceTree = "<group>";
+		};
+		6C6480411FD42E970097D87B /* 08日志导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480421FD42E970097D87B /* De.h */,
+			);
+			path = "08日志导航器";
+			sourceTree = "<group>";
+		};
+		6C6480431FD42E970097D87B /* 00初始化界面 */ = {
+			isa = PBXGroup;
+			children = (
+				6C6480441FD42E970097D87B /* De.h */,
+			);
+			path = "00初始化界面";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
