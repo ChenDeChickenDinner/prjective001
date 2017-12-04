@@ -32,31 +32,44 @@
  Version Editor： 版本控制显示器
  A: show Version Editor 显示辅助编辑器 command + option + shift +enter
  B: 对版本控制显示器的操作
- show comparison view 对比显示（做服务器，右本地）
- show blame view 显示所有人的更改记录信息
- show log view 显示本文件提交记录
+     show comparison view 对比显示（做服务器，右本地）
+     show blame view 显示所有人的更改记录信息
+     show log view 显示本文件提交记录
+
  
- 
- Navigators：里面包含了xcode左边8个导航模块的切换。
- 
- 
- Debug Area：中下部的调试框和打印输出框。
+ Navigators：里面包含了xcode左边8个导航模块的切换
+ show  Navigators        (显示导航)command 0
+ show project Navigators        (工程导航)command 1
+ show source control Navigators (版本控制导航)command 2
+ show symbol Navigators         (工程导航)command 3
+ show find Navigators           (搜索导航)command 4
+ show lssue Navigators          (提示导航)command 5
+ show test Navigators           (测试导航)command 6
+ show debug Navigators           (调式导航)command 7
+ show breakpoint Navigators      (断点导航)command 8
+ show report Navigators         (报告导航)command 9
+
+
+
+ Debug Area：调式区域
+     hide debug area  显隐藏 调式区域
+     activate console  激活控制台  command + shift + c
+
+
  
  Untilities: xcode右边的上面两个选项和下面的四个选项。
- 
- Show File Inspector：显示文件检查
- 
- Show Quick Help Inspector：显示快速帮助
- 
- File Template Library  文件模板库
- 
- Code Snippet Library  代码片段库
- 
- Object Library  对象库
- 
- Media Library  媒体库
- 
- Hide Utilities  隐藏实体工具
+     show Untilities  显隐藏 属于编辑解释区域 command + option + 0
+
+    show file inspector 显示文件检查 command + option + 1
+    show quick help inspector 显示文件帮助说明 command + option + 2
+
+    command + option + ctrl + 1/2/3/4
+    show file template library 显示文件模块库
+    show code snippet library 显示代码片段库
+    show object librery 显示对象库
+    show media librery  显示表情库
+
+
  
  Hide Toolbar  隐藏工具栏（XCode顶部）
  
