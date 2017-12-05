@@ -27,7 +27,111 @@
 
 
  
- No1:工程中文件的管理
- 新建、加入、删除、引用
+type  文件类型
+ C/C++/CO/Swift
+X header 头文件
+X preprocessed source 预处理实现文件
+X source 实现文件
+
+
+
+
+property list/xml
+info plist xml
+property list binary
+property list text
+property list xml
+xml
+
+
+text
+cascading style sheets
+html
+json
+markdown
+plain text
+rich text format
+
+
+image
+bmp image
+gif image
+icon image
+jpeg image
+pict image
+png image
+tiff image
+microsoft image
+
+
+xcode
+build configuration properties
+entitlements pilst
+localizable strings
+localizable strings dictionary
+man page source
+project build specification plist
+xcode build rules specification plist
+xcode languages specification plist
+xcode plug-in data
+xcode project data
+xcode specification plist
+xcode syntax specification plist
+xcode text macro plist
+
+archive
+applescript dictionary archive
+archive
+binhex archive
+j2ee enteerprise archive
+java archive
+macbinary archive
+ppob archive
+resource archive
+stuffit archive
+web application archive
+zip archive
+gzip archive
+tar archive
+
+ mach-o
+ mach-o core dump
+ mach-o dynamic library
+ mach-o fvm library
+ mach-o object code
+ mach-o preload data
+ mach-o bundle
+
+
+
+ audio
+ aiff audio
+ midi audio
+ mps audio
+ wav audio
+ au audio
+
+
+
+video
+avi video
+mpeg video
+quciktime video
+
+
+sourcecode assembly
+assembly
+llvm assembly
+nasm assembly
+ppc assembly
+
+sourcecode script languages 脚本文件
+
+sourcecode various
+
+shell script
+bash shell script
+shell script
+csh shell script
 
  */
