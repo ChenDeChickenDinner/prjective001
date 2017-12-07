@@ -9,6 +9,21 @@
 
 /**
 
+
+ （二）Build Setting=====>编译设置 过滤栏设置：
+ A->Basic:显示最常用的设置/ Customized:自定义的设置 / All:显示全部设置
+ B->Combined:当个对象的编译设置/Levels:所有对象的编译设置
+
+
+
+
+
+
+
+
+
+
+ 
  TARGET_NAME-->目标工程名（随工程创建的时候生产）Target 层级才有，不能修改 除非删除此Target
  PRODUCT_NAME--> 每个Target提供的一个 宏(可修改）， 默认=当前Target的TARGET_NAME
  Bundle name-->  安装到机子里的App文件夹名 info.plist里 （可修改）默认 = 当前Target的PRODUCT_NAME  ，英文的
@@ -51,23 +66,6 @@
 
  10:Require Only App_Extension-Safe API APP 扩展API 的使用
  因为app extension限制了某些API的使用， ( App Extensions不能使用的一些API ) ，因此在自定义自己的framework后，这个framework可能包含了某些在App Extensions里不能使用的API，因此为了安全起见才会给出这个警告。http://www.th7.cn/system/mac/201409/68944.shtml
-
-
-
- 
-
-
-
-
-
-
- target 编辑的体现
-
-
-
-
-
-
 
 
 

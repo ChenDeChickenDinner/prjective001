@@ -10,6 +10,68 @@
 /**
 
 
+
+
+
+ 原始操作
+ 1:源文件 xx.c || 2:cc- c xx.c ===编译===>xx.o || 3:cc xx.o ===链接==>a.out || 4:./ 或者 直接双击 a.out ===运行可执行文件==>
+ 2:每次编译，链接所产生的新文件都会覆盖之前的文件
+ 3:若 直接  有 源文件 一步到 可执行文件。目标文件则不会产生出来
+ 4:可执行文件 的文件名 可随便起，切可以不要文件后缀 .out
+
+
+
+ Xcode
+ Commdent B :--->直接编译，链接====>生成 .app 文件
+ Archives:  --->直接编译，链接====>生成 .xcarchive 文件
+ export: --->导出 ====>生成 .ipa 文件
+
+ 1：前提条件是什么/ 2：生成过程中做了什么，验证了什么/ 3：包，包含什么，适用于什么场景
+
+
+
+
+ (三.1)Build(编译) - Run(运行) - Test(测试) - Profile(剖析) - Analyze(分析) - Archive(打包)=======>参数设置含义
+ Build===>
+ 1:当前方案所要编译的全部对象 ，每个对象右侧 有多个复选框，控制对应操作运行之前，是否要编译该目标，如果发现Xcode不能确定依赖关系，这时需要开发者自己通过“+”添加选择一个对象
+ 2:Parallelize Build:并行编译，允许Xcode并行编译多个独立的对象，即不依赖于其它对象可单独运行的对象,若对象编译顺序十分重要的话，需要取消并行编译选项
+ 3:Find Implicit Dependencies:允许Xcode自动寻找依赖
+ Run===>
+ 1:Info:Build Configuration:选择当前的编译配置、
+ Executable:可执行文件，选择运行的可执行文件，也可以选择在运行时手动指定
+ Debug executable:调试可执行文件，指定是否对当前选定的可执行文件执行调试操作，如不执行，调试操作无作用
+ Debug Process as:允许开发者以自身账号或者根用户的身份运行，如果开发者要调试某些需要权限才能运行的应用，则必须使用根用户。该选项只有MAC程序可以勾选
+ Launch：启动，表示发起运行操作是自动执行可执行文件还是需要开发者自行启动
+ 2:Arguments
+ Arguments Passed on Launch:启动时传递的参数，可以使用“+”添加启动时所需要传递的特定参数，这些参数一般情况下可以用在命令行程序上。
+ Environment Variables：环境变量，可以添加或覆盖当前应用环境中存在的环境变量。
+ Expand Variables Based ON:指定扩展Xcode所提供的变量时，要使用哪个可以行文件的特定环境变量。
+ 3:Options选项
+ Background Fetch:后台获取，允许开发者启用后台获取功能
+ Localization Debugging:本地化调试，在调试过程中，选择是否输出未经本地化操作的字符串
+ Application Language:应用程序语言，选择应用程序运行时所在的平台或者所在的环境的语言，
+ Application Region:应用程序区域
+ Core Location:定位模拟相关设置。allow location simulation:允许模拟器运行时模拟设备的地理位置。default location:定义模拟器启动时，首选的地理模拟位置，
+ Routing App Coverage File:设置用于导航、交通相关的应用，开发者可以在项目中指定一个GeoJSON文件，详细说明应用所覆盖的地理区域
+ Application Data:允许开发者从项目中事先将数据放置到应用程序中，需要application data package（应用程序数据包）的支持，如果当前工作区中不存在该数据包，则不可以进行数据预加载操作
+ GPU Frame Capture:为OpenGL之类的使用GPU的应用程序提供调试支持，Xcode可以捕获CPU绘制出来的每个帧画面，供开发者调试
+ 4:Diagnostics诊断选项卡
+ Runtime Sanitization:运行时处理 Address Sanitizer:检测一些内存方面的错误 Thread Sanitizer:检测多线程方面的错误 Pause on Issues:依次查看运行时的问题
+ Memory Management:开启一些内存管理相关的服务，这些工具会在控制台调试区域输出
+ 1 :Malloc Scribble:内存涂抹，向分配的内存中填充0xAA，向已经销毁的内存中填入0x55。
+ 2 :Malloc Guard Edges:边缘保护，分配大容量的内存前后添加保护。
+ 3 :Guard Malloc:动态内存分配保护，使用libgmalloc来捕获常见的内存问题，比如缓冲区溢出。
+ 4 :Zombie Objects:僵尸对象，僵尸对象表示已经被销毁的对象，开启后，如果向该对象发送消息，运行时便会输出错误，并可追踪到调用语句。
+ Logging:设置调试过程中，输出的日志包含的内容
+ 1 :Malloc Stack:动态内存分配栈，记录分配内存和释放内存时相关栈的信息。
+ 2 :Dynamic Linker API Usage:记录动态链接相关API的调用信息。
+ 3 :Dynamic Library Loads:库加载信息，记录动态链接相关API的调用信息
+
+
+
+
+
+ 
  在 Edit Scheme 设置中 程序 运行的各个阶段 (Build - Run - Test - Profile - Analyze - Archive)选择不同的编译配置
  产品细节（包含什么，名字，签名，证书，版本，图片，id）
 
