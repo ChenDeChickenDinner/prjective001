@@ -56,6 +56,8 @@
 		557BB6091FD96812003539FA /* 01General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 01General.m; sourceTree = "<group>"; };
 		557BB60A1FD96812003539FA /* 03ResourceTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 03ResourceTags.m; sourceTree = "<group>"; };
 		557BB60B1FD96812003539FA /* 07BuildRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 07BuildRules.m; sourceTree = "<group>"; };
+		557BB6131FD96A76003539FA /* ReadMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMe.h; sourceTree = "<group>"; };
+		557BB6381FDA1E6F003539FA /* pbxproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pbxproj.h; sourceTree = "<group>"; };
 		55A81D391FCBE73600037761 /* C 数据类型（常量 变量).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "C 数据类型（常量 变量).m"; sourceTree = "<group>"; };
 		55A81D3A1FCBE73600037761 /* COC 关键字.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "COC 关键字.m"; sourceTree = "<group>"; };
 		55A81D3B1FCBE73600037761 /* COC 基本函数.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "COC 基本函数.m"; sourceTree = "<group>"; };
@@ -157,9 +159,9 @@
 		5512A6151FD0EBDB00E21F73 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				557BB5F61FD9662B003539FA /* 03BuildSetting */,
 				5512A61A1FD0EBDB00E21F73 /* 00IDE */,
 				5512A6161FD0EBDB00E21F73 /* 01SourceFile */,
+				557BB5F61FD9662B003539FA /* 03BuildSetting */,
 				5512A6191FD0EBDB00E21F73 /* 04Product */,
 				5512A61B1FD0EBDB00E21F73 /* 05Toolchain */,
 			);
@@ -186,6 +188,7 @@
 		5512A61A1FD0EBDB00E21F73 /* 00IDE */ = {
 			isa = PBXGroup;
 			children = (
+				557BB6381FDA1E6F003539FA /* pbxproj.h */,
 				5512A61C1FD11E3900E21F73 /* 01工程管理.h */,
 				5512A61F1FD11EB500E21F73 /* 02工程文件管理.h */,
 				6C6480091FD42E970097D87B /* IDE基本使用 */,
@@ -229,6 +232,7 @@
 		557BB5FB1FD9662B003539FA /* 02BuildSetting */ = {
 			isa = PBXGroup;
 			children = (
+				557BB6131FD96A76003539FA /* ReadMe.h */,
 				557BB5F91FD9662B003539FA /* 01AppID体系 */,
 				557BB5FE1FD9662B003539FA /* 1Project级别 */,
 				557BB5FF1FD9662B003539FA /* 2Target级别 */,

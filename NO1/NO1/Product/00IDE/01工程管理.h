@@ -64,20 +64,7 @@ IED 功能
  };
  rootObject = 0867D690FE84028FC02AAC07  Project object ;
  }
- PBXProject: 该对象记录着targets、mainGroup等重要信息,甚至每个target在创建时候的Xcode版本都会记录在其中
- PBXSourcesBuildPhase 来源 用于构建阶段中编译源文件
- PBXResourcesBuildPhase 资源 用于构建阶段需要复制的资源文件
- PBXNativeTarget  工程中的target,如果工程中有多个target,都会在这个section中有所体现
- PBXGroup  用于组文件，或者嵌套组
 
- PBXFrameworksBuildPhase  用于framewrok构建的链接阶段
- PBXFileReference  跟踪项目引用的每一个外部文件
- PBXBuildFile是文件类，被PBXBuildPhase等作为文件包含或被引用的资源。
-
- PBXTargetDependency 目标的外部依赖管理。
- PBXVariantGroup 对不同地区资源文件的引用管理。
- XCBuildConfiguration  构建配置元素
- XCConfigurationList构建配置相关元素的列表
  http://www.jianshu.com/p/e82ec6a56fc2
  http://www.jianshu.com/p/bd4e3c1a7276#
  http://gcblog.github.io/2016/02/23/GitHub+Hexo/
