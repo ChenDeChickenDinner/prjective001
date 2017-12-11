@@ -11,7 +11,7 @@
 
 
  （二）Build Setting=====>编译设置 过滤栏设置：
- A->Basic:显示最常用的设置/ Customized:自定义的设置 / All:显示全部设置
+ A->Basic:显示最常用的设置/ Customized:只显示已定制的构建设置 / All:显示全部设置
  B->Combined:当个对象的编译设置/Levels:所有对象的编译设置
 
 

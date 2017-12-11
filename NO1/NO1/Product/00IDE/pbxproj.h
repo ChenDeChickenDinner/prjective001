@@ -89,7 +89,7 @@ PBXVariantGroup
 
 //(4)
 PBXBuildFile ///文件类型  PBXBuildFile
-1.是什么:参与编译的 所有 资源
+1.是什么:参与编译构建的 所有资源
 2.怎么才算:只要一个文件拉入到此工程就算
 3.什么结构:
 1.被编译的文件类型 /// (in Sources) + (in Frameworks)  + (in Resources)
