@@ -41,7 +41,7 @@
 		55097A201FCBE4A0008048E4 /* git.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = git.m; sourceTree = "<group>"; };
 		55097A211FCBE4A0008048E4 /* git.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = git.h; sourceTree = "<group>"; };
 		5512A61C1FD11E3900E21F73 /* 01工程管理.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01工程管理.h"; sourceTree = "<group>"; };
-		5512A61F1FD11EB500E21F73 /* 02工程文件管理.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02工程文件管理.h"; sourceTree = "<group>"; };
+		5512A61F1FD11EB500E21F73 /* IDE 的文件系统.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDE 的文件系统.h"; sourceTree = "<group>"; };
 		5512A6251FD1213B00E21F73 /* 01SourceFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01SourceFile.h; sourceTree = "<group>"; };
 		5512A62E1FD1221300E21F73 /* 01Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Product.h; sourceTree = "<group>"; };
 		5512A6311FD1223300E21F73 /* 01Toolchain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Toolchain.h; sourceTree = "<group>"; };
@@ -58,6 +58,11 @@
 		557BB60B1FD96812003539FA /* 07BuildRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 07BuildRules.m; sourceTree = "<group>"; };
 		557BB6131FD96A76003539FA /* ReadMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMe.h; sourceTree = "<group>"; };
 		557BB6381FDA1E6F003539FA /* pbxproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pbxproj.h; sourceTree = "<group>"; };
+		559415492049205300B4C651 /* IDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDE.h; sourceTree = "<group>"; };
+		5594156D2049227400B4C651 /* 1.IDE 的界面分布.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "1.IDE 的界面分布.h"; sourceTree = "<group>"; };
+		5594156E204923FC00B4C651 /* 2.IDE 的系列功能.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "2.IDE 的系列功能.h"; sourceTree = "<group>"; };
+		5594157020493BAE00B4C651 /* 1.项目开发管理.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "1.项目开发管理.h"; sourceTree = "<group>"; };
+		5594157120493CE200B4C651 /* 2.多团队协作开发.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "2.多团队协作开发.h"; sourceTree = "<group>"; };
 		55A81D391FCBE73600037761 /* C 数据类型（常量 变量).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "C 数据类型（常量 变量).m"; sourceTree = "<group>"; };
 		55A81D3A1FCBE73600037761 /* COC 关键字.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "COC 关键字.m"; sourceTree = "<group>"; };
 		55A81D3B1FCBE73600037761 /* COC 基本函数.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "COC 基本函数.m"; sourceTree = "<group>"; };
@@ -140,6 +145,9 @@
 		550979ED1FCBA93D008048E4 /* NO1 */ = {
 			isa = PBXGroup;
 			children = (
+				559415492049205300B4C651 /* IDE.h */,
+				5594156C2049225000B4C651 /* IDE 的结构与功能分布 */,
+				5594156F20493BAE00B4C651 /* 项目管理辅助 */,
 				5512A6151FD0EBDB00E21F73 /* Product */,
 				55A81D371FCBE72500037761 /* language */,
 				55097A1F1FCBE496008048E4 /* Git */,
@@ -190,7 +198,7 @@
 			children = (
 				557BB6381FDA1E6F003539FA /* pbxproj.h */,
 				5512A61C1FD11E3900E21F73 /* 01工程管理.h */,
-				5512A61F1FD11EB500E21F73 /* 02工程文件管理.h */,
+				5512A61F1FD11EB500E21F73 /* IDE 的文件系统.h */,
 				6C6480091FD42E970097D87B /* IDE基本使用 */,
 			);
 			path = 00IDE;
@@ -269,6 +277,24 @@
 			children = (
 			);
 			path = "3workspace级别";
+			sourceTree = "<group>";
+		};
+		5594156C2049225000B4C651 /* IDE 的结构与功能分布 */ = {
+			isa = PBXGroup;
+			children = (
+				5594156D2049227400B4C651 /* 1.IDE 的界面分布.h */,
+				5594156E204923FC00B4C651 /* 2.IDE 的系列功能.h */,
+			);
+			path = "IDE 的结构与功能分布";
+			sourceTree = "<group>";
+		};
+		5594156F20493BAE00B4C651 /* 项目管理辅助 */ = {
+			isa = PBXGroup;
+			children = (
+				5594157020493BAE00B4C651 /* 1.项目开发管理.h */,
+				5594157120493CE200B4C651 /* 2.多团队协作开发.h */,
+			);
+			path = "项目管理辅助";
 			sourceTree = "<group>";
 		};
 		55A81D371FCBE72500037761 /* language */ = {
@@ -499,12 +525,12 @@
 		6C6480321FD42E970097D87B /* 02导航器区 */ = {
 			isa = PBXGroup;
 			children = (
-				6C6480331FD42E970097D87B /* 03搜索导航器 */,
 				6C6480351FD42E970097D87B /* 01项目导航器 */,
-				6C6480371FD42E970097D87B /* 04事件导航器 */,
 				6C6480391FD42E970097D87B /* 02符号导航器 */,
-				6C64803B1FD42E970097D87B /* 06调试导航器 */,
+				6C6480331FD42E970097D87B /* 03搜索导航器 */,
+				6C6480371FD42E970097D87B /* 04事件导航器 */,
 				6C64803D1FD42E970097D87B /* 05测试导航器 */,
+				6C64803B1FD42E970097D87B /* 06调试导航器 */,
 				6C64803F1FD42E970097D87B /* 07断点导航器 */,
 				6C6480411FD42E970097D87B /* 08日志导航器 */,
 			);

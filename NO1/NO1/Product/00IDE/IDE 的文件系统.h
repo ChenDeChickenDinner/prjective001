@@ -25,7 +25,7 @@ Xcode显示包内容
 CoreSimulator
 PrivateFrameworks
 
- Xcode 用户资源库/Developer
+ Xcode 用户/资源库/Developer
 A:CoreSimulator（各种模拟器，模拟器中的所以APP的沙盒都在各自目录下）
 B:Shared（插件所在位置）
 C:Xcode（）
