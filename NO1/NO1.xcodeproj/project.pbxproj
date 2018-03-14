@@ -45,6 +45,8 @@
 		5512A6251FD1213B00E21F73 /* 01SourceFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01SourceFile.h; sourceTree = "<group>"; };
 		5512A62E1FD1221300E21F73 /* 01Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Product.h; sourceTree = "<group>"; };
 		5512A6311FD1223300E21F73 /* 01Toolchain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Toolchain.h; sourceTree = "<group>"; };
+		55282F0A20592516003750A8 /* project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project.h; sourceTree = "<group>"; };
+		55282F0B20592565003750A8 /* 资源文件以及其组织形式.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "资源文件以及其组织形式.h"; sourceTree = "<group>"; };
 		557BB5F81FD9662B003539FA /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
 		557BB5FA1FD9662B003539FA /* 00AppleID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00AppleID.h; sourceTree = "<group>"; };
 		557BB5FC1FD9662B003539FA /* 02BuildSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 02BuildSetting.h; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		550979E21FCBA93D008048E4 = {
 			isa = PBXGroup;
 			children = (
+				55282F09205924D9003750A8 /* project */,
 				550979ED1FCBA93D008048E4 /* NO1 */,
 				550979EC1FCBA93D008048E4 /* Products */,
 			);
@@ -204,6 +207,15 @@
 				5512A6311FD1223300E21F73 /* 01Toolchain.h */,
 			);
 			path = 05Toolchain;
+			sourceTree = "<group>";
+		};
+		55282F09205924D9003750A8 /* project */ = {
+			isa = PBXGroup;
+			children = (
+				55282F0A20592516003750A8 /* project.h */,
+				55282F0B20592565003750A8 /* 资源文件以及其组织形式.h */,
+			);
+			path = project;
 			sourceTree = "<group>";
 		};
 		557BB5F61FD9662B003539FA /* 03BuildSetting */ = {
