@@ -47,6 +47,11 @@
 		5512A6311FD1223300E21F73 /* 01Toolchain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Toolchain.h; sourceTree = "<group>"; };
 		55282F0A20592516003750A8 /* project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project.h; sourceTree = "<group>"; };
 		55282F0B20592565003750A8 /* 资源文件以及其组织形式.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "资源文件以及其组织形式.h"; sourceTree = "<group>"; };
+		55282F1E205AA502003750A8 /* Base.lproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.lproj.h; sourceTree = "<group>"; };
+		55282F1F205AA556003750A8 /* nib、xib及storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "nib、xib及storyboard.h"; sourceTree = "<group>"; };
+		55282F22205AA8CA003750A8 /* Assets.xcassets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assets.xcassets.h; sourceTree = "<group>"; };
+		55282F25205AAC56003750A8 /* 项目文件夹.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "项目文件夹.h"; sourceTree = "<group>"; };
+		55282F29205AAF38003750A8 /* 001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 001.h; sourceTree = "<group>"; };
 		557BB5F81FD9662B003539FA /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
 		557BB5FA1FD9662B003539FA /* 00AppleID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00AppleID.h; sourceTree = "<group>"; };
 		557BB5FC1FD9662B003539FA /* 02BuildSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 02BuildSetting.h; sourceTree = "<group>"; };
@@ -127,7 +132,7 @@
 		550979E21FCBA93D008048E4 = {
 			isa = PBXGroup;
 			children = (
-				55282F09205924D9003750A8 /* project */,
+				55282F09205924D9003750A8 /* 项目 */,
 				550979ED1FCBA93D008048E4 /* NO1 */,
 				550979EC1FCBA93D008048E4 /* Products */,
 			);
@@ -209,13 +214,66 @@
 			path = 05Toolchain;
 			sourceTree = "<group>";
 		};
-		55282F09205924D9003750A8 /* project */ = {
+		55282F09205924D9003750A8 /* 项目 */ = {
+			isa = PBXGroup;
+			children = (
+				55282F25205AAC56003750A8 /* 项目文件夹.h */,
+				55282F10205A9BDE003750A8 /* 资源文件 */,
+				55282F23205AABEE003750A8 /* 项目管理(xcodeproj) */,
+				55282F24205AAC21003750A8 /* 工作空间(xcworkspace) */,
+			);
+			path = "项目";
+			sourceTree = "<group>";
+		};
+		55282F10205A9BDE003750A8 /* 资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+				55282F1F205AA556003750A8 /* nib、xib及storyboard.h */,
+				55282F1E205AA502003750A8 /* Base.lproj.h */,
+				55282F22205AA8CA003750A8 /* Assets.xcassets.h */,
+			);
+			path = "资源文件";
+			sourceTree = "<group>";
+		};
+		55282F23205AABEE003750A8 /* 项目管理(xcodeproj) */ = {
+			isa = PBXGroup;
+			children = (
+				55282F29205AAF38003750A8 /* 001.h */,
+				55282F28205AAE12003750A8 /* pbxproj(工程描述文件) */,
+				55282F27205AAE10003750A8 /* xcworkspace（平台） */,
+				55282F26205AAE0D003750A8 /* xcuserdata(用户配置) */,
+			);
+			path = "项目管理(xcodeproj)";
+			sourceTree = "<group>";
+		};
+		55282F24205AAC21003750A8 /* 工作空间(xcworkspace) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "工作空间(xcworkspace)";
+			sourceTree = "<group>";
+		};
+		55282F26205AAE0D003750A8 /* xcuserdata(用户配置) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "xcuserdata(用户配置)";
+			sourceTree = "<group>";
+		};
+		55282F27205AAE10003750A8 /* xcworkspace（平台） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "xcworkspace（平台）";
+			sourceTree = "<group>";
+		};
+		55282F28205AAE12003750A8 /* pbxproj(工程描述文件) */ = {
 			isa = PBXGroup;
 			children = (
 				55282F0A20592516003750A8 /* project.h */,
 				55282F0B20592565003750A8 /* 资源文件以及其组织形式.h */,
 			);
-			path = project;
+			path = "pbxproj(工程描述文件)";
 			sourceTree = "<group>";
 		};
 		557BB5F61FD9662B003539FA /* 03BuildSetting */ = {
