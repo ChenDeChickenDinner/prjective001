@@ -2,17 +2,17 @@
 
 
 工程名.xcodeproj <是个package目录> 显示包内容
-    A:project.pbxproj （工程描述文件）
-        是所有文件、资源、信息/配置的存储库。
-            1.包含管理 所有的资源文件 + 其组织形式
-            2.项目级别的 Build Setting
-            3.targets 到 products 以及其编译设置
-            4.schemes 配置
-            5.products 体现
+A:project.pbxproj （工程描述文件）
+    是所有文件、资源、信息/配置的存储库。
+        1.包含管理 所有的资源文件 + 其组织形式
+        2.项目级别的 Build Setting
+        3.targets 到 products 以及其编译设置
+        4.schemes 配置
+        5.products 体现
 
-    B:project.xcworkspace （跟workspace相关的文件）
+B:project.xcworkspace （跟workspace相关的文件）
 
-    C:xcuserdata （单个用户的文件）
+C:xcuserdata （单个用户的文件）
 
 
 
@@ -20,9 +20,7 @@
 
 2.文件类型，属性列表文件，全名是Property List，它是一种用来存储串行化后的对象的文件，整个的project.pbxproj文件就是一个字典
 
-
-4.文件结构
-// !$*UTF8*$! ===> 文件采用 utf8编码
+3.文件结构
 {
     archiveVersion = 1; 默认值
     classes = {
@@ -31,28 +29,17 @@
     objects = {
         /* ... */
     };
-    rootObject = 29B97313FDCFA39411CA2CEA /* Project object */; 一个元素的引用每个 object 对应一个 PBXProject 元素的引用
+    rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
-
-1.具体的配置实现是在 objects这个域里面的，里面每一项的又是一个字典，key是UUID，Value 依然是个字典.
-2.objects 中的键值对被分成了若干个 section
-/* Begin PBXBuildFile section */
-/* End PBXBuildFile section */
-
-3.对象解析
-
-rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
-从注释上就可以看出指向一个UUID为  29B97313FDCFA39411CA2CEA 的Project object字典
-
-
-objects = {UUID /* 解释 */ = {};};它本身是一个大哈希，里面包含了一个个的键值对。
-1.UUID:objects中根据uuid和对象的关联，就可以唯一标识这个对象，方便对象的相互引用
-2.{}：对象。
-3.对象类型，每种类型的基本结构
+0. !$*UTF8*$! ===> 文件采用 utf8编码
+1.rootObject 根对象，代表一个项目对象，引用 有且只有一个PBXProject类型对象 。
+2.具体的配置实现是在 objects这个域里面的，里面每一项的又是一个字典，key是UUID，Value 依然是个字典.
+3.objects 中的键值对被分成了若干个 section
+4.UUID:objects中根据uuid和对象的关联，就可以唯一标识这个对象，方便对象的相互引用
 
 
 
-//objects
+4.objects 元素类型
 
 //(1)文件
 PBXFileReference
@@ -62,6 +49,34 @@ PBXGroup
 
 //(3)本地化文件夹
 PBXVariantGroup
+
+
+PBXBuildFile
+
+buildPhases
+
+PBXSourcesBuildPhase
+
+PBXFrameworksBuildPhase
+
+PBXResourcesBuildPhase
+
+PBXShellScriptBuildPhase
+
+
+XCBuildConfiguration
+
+XCConfigurationList
+
+PBXNativeTarget
+
+PBXProject
+
+
+
+
+
+
 
 
 

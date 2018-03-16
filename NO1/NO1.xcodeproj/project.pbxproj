@@ -46,12 +46,14 @@
 		5512A62E1FD1221300E21F73 /* 01Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Product.h; sourceTree = "<group>"; };
 		5512A6311FD1223300E21F73 /* 01Toolchain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Toolchain.h; sourceTree = "<group>"; };
 		55282F0A20592516003750A8 /* project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project.h; sourceTree = "<group>"; };
-		55282F0B20592565003750A8 /* 资源文件以及其组织形式.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "资源文件以及其组织形式.h"; sourceTree = "<group>"; };
 		55282F1E205AA502003750A8 /* Base.lproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.lproj.h; sourceTree = "<group>"; };
 		55282F1F205AA556003750A8 /* nib、xib及storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "nib、xib及storyboard.h"; sourceTree = "<group>"; };
 		55282F22205AA8CA003750A8 /* Assets.xcassets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assets.xcassets.h; sourceTree = "<group>"; };
 		55282F25205AAC56003750A8 /* 项目文件夹.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "项目文件夹.h"; sourceTree = "<group>"; };
 		55282F29205AAF38003750A8 /* 001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 001.h; sourceTree = "<group>"; };
+		557A4F41205B55410085D973 /* project_ Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "project_ Resources.h"; sourceTree = "<group>"; };
+		557A4F42205B55410085D973 /* project_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = project_Configuration.h; sourceTree = "<group>"; };
+		557A4F4B205BA13A0085D973 /* Architectures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Architectures.h; sourceTree = "<group>"; };
 		557BB5F81FD9662B003539FA /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
 		557BB5FA1FD9662B003539FA /* 00AppleID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00AppleID.h; sourceTree = "<group>"; };
 		557BB5FC1FD9662B003539FA /* 02BuildSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 02BuildSetting.h; sourceTree = "<group>"; };
@@ -271,7 +273,9 @@
 			isa = PBXGroup;
 			children = (
 				55282F0A20592516003750A8 /* project.h */,
-				55282F0B20592565003750A8 /* 资源文件以及其组织形式.h */,
+				557A4F41205B55410085D973 /* project_ Resources.h */,
+				557A4F42205B55410085D973 /* project_Configuration.h */,
+				557A4F4B205BA13A0085D973 /* Architectures.h */,
 			);
 			path = "pbxproj(工程描述文件)";
 			sourceTree = "<group>";
