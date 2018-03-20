@@ -1,4 +1,9 @@
 
+/Users/xs/Library/Developer（电脑本地开发记录）
+
+/Applications/Xcode.app/Contents/Developer（Xcode 显示包内容）
+
+/Users/xs/Desktop/one/one.xcodeproj（本地项目文件）
 
 
 工程名.xcodeproj <是个package目录> 显示包内容
@@ -51,9 +56,12 @@ PBXGroup
 PBXVariantGroup
 
 
+
+
+
 PBXBuildFile
 
-buildPhases
+
 
 PBXSourcesBuildPhase
 

@@ -1,25 +1,14 @@
 
+编译环境
+
+Debug 与Release 编译配置
+1:Debug通常称为调试版本，通过一系列编译选项的配合，编译的结果通常包含调试信息，而且不做任何优化，以为开发人员提供强大的应用程序调试能力,只有Debug版的程序才能设置断点、单步执行、使用TRACE/ASSERT等调试输出语句
+2:Release通常称为发布版本，是为用户使用的。所以不保存调试信息，同时，它往往进行了各种优化，以期达到代码最小和速度最优
+3. _DEBUG与NDEBUG 这两个是编译器的预处理器定义，默认情况下_DEBUG用于Debug版本，而NDEBUG用于Release版本。
+区别具体体现在哪？（固定的区别 跟软区别）
 
 
-
-project-buildConfigurationList
-.一个项目，有 project 级别的 buildConfigurationList，其 配置套数 根据 configurations 设置 决定（默认有 Debug/Release 各一套）
-55282EEB205923F5003750A8 /* Build configuration list for PBXProject "one" */ = {
-    isa = XCConfigurationList;
-    buildConfigurations = (
-                           55282F04205923F6003750A8 /* Debug */,
-                           55282F05205923F6003750A8 /* Release */,
-                           557A4F43205B588D0085D973 /* Release copy */,
-                           );
-    defaultConfigurationIsVisible = 0;
-    defaultConfigurationName = Release;
-};
-EEB205923F5003750A8：此套配置 属于谁， 在此 是属于 PBXProject "one"（项目one）
-buildConfigurations：此套配置包括哪些配置
-defaultConfigurationIsVisible：
-defaultConfigurationName：默认使用哪套配置编译《user "XXX" for command-line builds》
-
-
+用户自定义的 编译配置 与 系统的 （Debug 与Release）有什么关系
 
 
 
@@ -133,20 +122,16 @@ Build Setting=====>编译设置 过滤栏设置：
 
 
         };
-    name = Debug;
-};
-CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED //本地化相关 ues base internationalization
+        name = Debug;
+    };
+    CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED //本地化相关 ues base internationalization
 
 
 
-Debug 与Release 编译配置
-1:Debug通常称为调试版本，通过一系列编译选项的配合，编译的结果通常包含调试信息，而且不做任何优化，以为开发人员提供强大的应用程序调试能力,只有Debug版的程序才能设置断点、单步执行、使用TRACE/ASSERT等调试输出语句
-2:Release通常称为发布版本，是为用户使用的。所以不保存调试信息，同时，它往往进行了各种优化，以期达到代码最小和速度最优
-3. _DEBUG与NDEBUG 这两个是编译器的预处理器定义，默认情况下_DEBUG用于Debug版本，而NDEBUG用于Release版本。
-区别具体体现在哪？（固定的区别 跟软区别）
 
 
-用户自定义的 编译配置 与 系统的 （Debug 与Release）有什么关系
+    */
 
-一套编译配置 到底有那些构成，哪些是 继承系统的 不能更改的 哪些是可以更改的
-*/
+
+
+
