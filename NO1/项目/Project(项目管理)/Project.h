@@ -23,6 +23,14 @@ C:xcuserdata （单个用户的文件）
 
 
 
+(A)workspac（工作空间）
+0:一个工作空间 可以管理多个 工程，每个工程 可以管理多个target生成各种形式的product，
+1:当一个Project需要用到另一个Project的文件的时候，默认情况下 需要将用到的其它Project的相关文件拷贝一份到自身Project中
+2:workspace,即可以单独管理多个项目，又可以通过配置，让各个项目相互依赖
+
+
+
+
 1.简介:它本质上是一种旧风格的 Property List 文件，历史可追溯到 NeXT 的 OpenStep。由于有Xcode工具的存在，我们一般不需要与pbxproj直接打交道，通过General、Build Settungs或者Info等面板，就可以完成项目工程配置信息的修改
 
 2.文件类型，属性列表文件，全名是Property List，它是一种用来存储串行化后的对象的文件，整个的project.pbxproj文件就是一个字典

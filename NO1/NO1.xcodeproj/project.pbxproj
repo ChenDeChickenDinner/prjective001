@@ -10,7 +10,7 @@
 		55097A171FCBE287008048E4 /* libaray.m in Sources */ = {isa = PBXBuildFile; fileRef = 55097A151FCBE286008048E4 /* libaray.m */; };
 		55097A221FCBE4A0008048E4 /* git.m in Sources */ = {isa = PBXBuildFile; fileRef = 55097A201FCBE4A0008048E4 /* git.m */; };
 		557BB60C1FD96813003539FA /* 06BuildPhases.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6051FD96812003539FA /* 06BuildPhases.m */; };
-		557BB60D1FD96813003539FA /* 04Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6061FD96812003539FA /* 04Info.m */; };
+		557BB60D1FD96813003539FA /* 04InfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6061FD96812003539FA /* 04InfoPlist.m */; };
 		557BB60E1FD96813003539FA /* 02Capabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6071FD96812003539FA /* 02Capabilities.m */; };
 		557BB6101FD96813003539FA /* 01General.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6091FD96812003539FA /* 01General.m */; };
 		557BB6111FD96813003539FA /* 03ResourceTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB60A1FD96812003539FA /* 03ResourceTags.m */; };
@@ -39,9 +39,6 @@
 		55097A151FCBE286008048E4 /* libaray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libaray.m; sourceTree = "<group>"; };
 		55097A201FCBE4A0008048E4 /* git.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = git.m; sourceTree = "<group>"; };
 		55097A211FCBE4A0008048E4 /* git.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = git.h; sourceTree = "<group>"; };
-		5512A61C1FD11E3900E21F73 /* 01工程管理.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01工程管理.h"; sourceTree = "<group>"; };
-		5512A61F1FD11EB500E21F73 /* IDE 的文件系统.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDE 的文件系统.h"; sourceTree = "<group>"; };
-		5512A6251FD1213B00E21F73 /* 01SourceFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01SourceFile.h; sourceTree = "<group>"; };
 		5512A62E1FD1221300E21F73 /* 01Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Product.h; sourceTree = "<group>"; };
 		5512A6311FD1223300E21F73 /* 01Toolchain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01Toolchain.h; sourceTree = "<group>"; };
 		55282F1E205AA502003750A8 /* Base.lproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.lproj.h; sourceTree = "<group>"; };
@@ -61,16 +58,17 @@
 		557B1A2C20622D650083BA90 /* Developer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Developer.h; sourceTree = "<group>"; };
 		557B1A2D20622D730083BA90 /* Xcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
 		557B1A2E20622D940083BA90 /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
-		557B1A33206230020083BA90 /* BuildConfigurationFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildConfigurationFile.h; sourceTree = "<group>"; };
+		557B1A5B206234F80083BA90 /* Target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
+		557B1A5C2062363A0083BA90 /* Scheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
+		557B1A5D206238240083BA90 /* 总结.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "总结.h"; sourceTree = "<group>"; };
 		557BB5F81FD9662B003539FA /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
 		557BB5FA1FD9662B003539FA /* 00AppleID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00AppleID.h; sourceTree = "<group>"; };
 		557BB6051FD96812003539FA /* 06BuildPhases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 06BuildPhases.m; sourceTree = "<group>"; };
-		557BB6061FD96812003539FA /* 04Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 04Info.m; sourceTree = "<group>"; };
+		557BB6061FD96812003539FA /* 04InfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 04InfoPlist.m; sourceTree = "<group>"; };
 		557BB6071FD96812003539FA /* 02Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 02Capabilities.m; sourceTree = "<group>"; };
 		557BB6091FD96812003539FA /* 01General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 01General.m; sourceTree = "<group>"; };
 		557BB60A1FD96812003539FA /* 03ResourceTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 03ResourceTags.m; sourceTree = "<group>"; };
 		557BB60B1FD96812003539FA /* 07BuildRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 07BuildRules.m; sourceTree = "<group>"; };
-		557BB6131FD96A76003539FA /* ReadMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMe.h; sourceTree = "<group>"; };
 		557BB6381FDA1E6F003539FA /* pbxproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pbxproj.h; sourceTree = "<group>"; };
 		559415492049205300B4C651 /* IDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDE.h; sourceTree = "<group>"; };
 		55A81D391FCBE73600037761 /* C 数据类型（常量 变量).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "C 数据类型（常量 变量).m"; sourceTree = "<group>"; };
@@ -187,8 +185,6 @@
 		5512A6161FD0EBDB00E21F73 /* 01SourceFile */ = {
 			isa = PBXGroup;
 			children = (
-				5512A6251FD1213B00E21F73 /* 01SourceFile.h */,
-				55097A151FCBE286008048E4 /* libaray.m */,
 			);
 			path = 01SourceFile;
 			sourceTree = "<group>";
@@ -205,8 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				557BB6381FDA1E6F003539FA /* pbxproj.h */,
-				5512A61C1FD11E3900E21F73 /* 01工程管理.h */,
-				5512A61F1FD11EB500E21F73 /* IDE 的文件系统.h */,
 				6C6480091FD42E970097D87B /* IDE基本使用 */,
 			);
 			path = 00IDE;
@@ -231,23 +225,23 @@
 			path = "项目";
 			sourceTree = "<group>";
 		};
-		55282F10205A9BDE003750A8 /* 资源文件 */ = {
+		55282F10205A9BDE003750A8 /* 0资源文件 */ = {
 			isa = PBXGroup;
 			children = (
 				557B1A26206228A90083BA90 /* Resources.h */,
 				557B1A37206232640083BA90 /* 各种资源文件类型 */,
 			);
-			path = "资源文件";
+			path = "0资源文件";
 			sourceTree = "<group>";
 		};
-		557B1A2A20622B820083BA90 /* 编译配置 */ = {
+		557B1A2A20622B820083BA90 /* 1编译配置 */ = {
 			isa = PBXGroup;
 			children = (
 				557B1A142060F9210083BA90 /* Debug 与Release.h */,
 				557B1A3220622F2E0083BA90 /* Build Settings */,
-				557B1A33206230020083BA90 /* BuildConfigurationFile.h */,
+				557B1A5F20623A690083BA90 /* 其它 */,
 			);
-			path = "编译配置";
+			path = "1编译配置";
 			sourceTree = "<group>";
 		};
 		557B1A2F20622E230083BA90 /* Xcode(开发工具) */ = {
@@ -262,8 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				557B1A2E20622D940083BA90 /* Project.h */,
-				55282F10205A9BDE003750A8 /* 资源文件 */,
-				557B1A2A20622B820083BA90 /* 编译配置 */,
+				55282F10205A9BDE003750A8 /* 0资源文件 */,
+				557B1A2A20622B820083BA90 /* 1编译配置 */,
+				557B1A6320624A860083BA90 /* 2编译规则 */,
+				557B1A6420624A8D0083BA90 /* 3编译过程 */,
 				557B1A35206231ED0083BA90 /* Target */,
 				557B1A36206232120083BA90 /* Scheme */,
 			);
@@ -281,15 +277,9 @@
 		557B1A3220622F2E0083BA90 /* Build Settings */ = {
 			isa = PBXGroup;
 			children = (
-				557B1A29206229770083BA90 /* 01Architectures.h */,
-				557B1A21206228260083BA90 /* 02Asset.h */,
-				557B1A25206228260083BA90 /* 03Build Locations.h */,
-				557B1A24206228260083BA90 /* 04Build Options.h */,
-				557B1A1F206228260083BA90 /* 05Deployment.h */,
-				557B1A22206228260083BA90 /* 06Linking.h */,
-				557B1A20206228260083BA90 /* 07Packaging.h */,
-				557B1A27206229410083BA90 /* 08Signing.h */,
-				557B1A28206229410083BA90 /* 09Other.h */,
+				557B1A5D206238240083BA90 /* 总结.h */,
+				557B1A68206251260083BA90 /* target */,
+				557B1A672062511D0083BA90 /* project */,
 			);
 			path = "Build Settings";
 			sourceTree = "<group>";
@@ -297,6 +287,7 @@
 		557B1A35206231ED0083BA90 /* Target */ = {
 			isa = PBXGroup;
 			children = (
+				557B1A5B206234F80083BA90 /* Target.h */,
 			);
 			path = Target;
 			sourceTree = "<group>";
@@ -304,6 +295,7 @@
 		557B1A36206232120083BA90 /* Scheme */ = {
 			isa = PBXGroup;
 			children = (
+				557B1A5C2062363A0083BA90 /* Scheme.h */,
 			);
 			path = Scheme;
 			sourceTree = "<group>";
@@ -314,8 +306,60 @@
 				55282F1F205AA556003750A8 /* nib、xib及storyboard.h */,
 				55282F1E205AA502003750A8 /* Base.lproj.h */,
 				55282F22205AA8CA003750A8 /* Assets.xcassets.h */,
+				55097A151FCBE286008048E4 /* libaray.m */,
 			);
 			path = "各种资源文件类型";
+			sourceTree = "<group>";
+		};
+		557B1A5F20623A690083BA90 /* 其它 */ = {
+			isa = PBXGroup;
+			children = (
+				557BB5FA1FD9662B003539FA /* 00AppleID.h */,
+			);
+			path = "其它";
+			sourceTree = "<group>";
+		};
+		557B1A6320624A860083BA90 /* 2编译规则 */ = {
+			isa = PBXGroup;
+			children = (
+				557BB60B1FD96812003539FA /* 07BuildRules.m */,
+			);
+			path = "2编译规则";
+			sourceTree = "<group>";
+		};
+		557B1A6420624A8D0083BA90 /* 3编译过程 */ = {
+			isa = PBXGroup;
+			children = (
+				557BB6051FD96812003539FA /* 06BuildPhases.m */,
+			);
+			path = "3编译过程";
+			sourceTree = "<group>";
+		};
+		557B1A672062511D0083BA90 /* project */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A29206229770083BA90 /* 01Architectures.h */,
+				557B1A21206228260083BA90 /* 02Asset.h */,
+				557B1A25206228260083BA90 /* 03Build Locations.h */,
+				557B1A24206228260083BA90 /* 04Build Options.h */,
+				557B1A1F206228260083BA90 /* 05Deployment.h */,
+				557B1A22206228260083BA90 /* 06Linking.h */,
+				557B1A20206228260083BA90 /* 07Packaging.h */,
+				557B1A27206229410083BA90 /* 08Signing.h */,
+				557B1A28206229410083BA90 /* 09Other.h */,
+			);
+			path = project;
+			sourceTree = "<group>";
+		};
+		557B1A68206251260083BA90 /* target */ = {
+			isa = PBXGroup;
+			children = (
+				557BB6091FD96812003539FA /* 01General.m */,
+				557BB6071FD96812003539FA /* 02Capabilities.m */,
+				557BB60A1FD96812003539FA /* 03ResourceTags.m */,
+				557BB6061FD96812003539FA /* 04InfoPlist.m */,
+			);
+			path = target;
 			sourceTree = "<group>";
 		};
 		557BB5F61FD9662B003539FA /* 03BuildSetting */ = {
@@ -338,7 +382,6 @@
 		557BB5F91FD9662B003539FA /* 01AppID体系 */ = {
 			isa = PBXGroup;
 			children = (
-				557BB5FA1FD9662B003539FA /* 00AppleID.h */,
 			);
 			path = "01AppID体系";
 			sourceTree = "<group>";
@@ -346,25 +389,10 @@
 		557BB5FB1FD9662B003539FA /* 02BuildSetting */ = {
 			isa = PBXGroup;
 			children = (
-				557BB6131FD96A76003539FA /* ReadMe.h */,
 				557BB5F91FD9662B003539FA /* 01AppID体系 */,
-				557BB5FF1FD9662B003539FA /* 2Target级别 */,
 				557BB6021FD9662B003539FA /* 3workspace级别 */,
 			);
 			path = 02BuildSetting;
-			sourceTree = "<group>";
-		};
-		557BB5FF1FD9662B003539FA /* 2Target级别 */ = {
-			isa = PBXGroup;
-			children = (
-				557BB6091FD96812003539FA /* 01General.m */,
-				557BB6071FD96812003539FA /* 02Capabilities.m */,
-				557BB60A1FD96812003539FA /* 03ResourceTags.m */,
-				557BB6061FD96812003539FA /* 04Info.m */,
-				557BB6051FD96812003539FA /* 06BuildPhases.m */,
-				557BB60B1FD96812003539FA /* 07BuildRules.m */,
-			);
-			path = "2Target级别";
 			sourceTree = "<group>";
 		};
 		557BB6021FD9662B003539FA /* 3workspace级别 */ = {
@@ -765,7 +793,7 @@
 				557BB6101FD96813003539FA /* 01General.m in Sources */,
 				55A81D441FCBE73600037761 /* COC 关键字.m in Sources */,
 				557BB6111FD96813003539FA /* 03ResourceTags.m in Sources */,
-				557BB60D1FD96813003539FA /* 04Info.m in Sources */,
+				557BB60D1FD96813003539FA /* 04InfoPlist.m in Sources */,
 				55A81D601FCBE7A800037761 /* Grammar.m in Sources */,
 				55A81D5F1FCBE7A800037761 /* DataType.m in Sources */,
 				55A81D5D1FCBE7A800037761 /* ConstVariable.m in Sources */,

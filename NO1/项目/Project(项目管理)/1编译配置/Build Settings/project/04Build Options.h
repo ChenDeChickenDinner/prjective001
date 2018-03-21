@@ -1,4 +1,4 @@
- (3)--> Build Options  -- 编译选项（编译器选择，debug文件类型，Bitcode，生成的文件类型，私有API验证
+ (3)--> Build Options  -- 编译选项（编译器选择，debug文件类型，Bitcode，生成的文件类型，私有API验证）
 
 
 1:Always Embed swift standard libraries ( ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;)

@@ -24,5 +24,5 @@ rez search paths
 use header maps
 user header search paths:设置头文件搜索路径，这个只有当Always Search User Path开启后才有效。
 
---> versioning  (版本控制)
---> Kernel Module (内核模块)
+--> versioning  (版本控制数据库)
+

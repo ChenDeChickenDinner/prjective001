@@ -8,20 +8,17 @@ Debug 与Release 编译配置
 区别具体体现在哪？（固定的区别 跟软区别）
 
 
+
+
+
 用户自定义的 编译配置 与 系统的 （Debug 与Release）有什么关系
 
 
 
 
 
-project-buildConfiguration 的体现
-.其具体配置由project- info/build settings 中的 设置 来体现
-
-Build Setting=====>编译设置 过滤栏设置：
-操作栏：A->Basic:显示最常用的设置/ Customized:只显示已定制的构建设置 / All:显示全部设置 + B->Combined:当个对象的编译设置/Levels:所有对象的编译设置
 
 
-配置元素: (指令集,编译目录,编译选项,部署,链接,签名,内核模块,Headers,Packaging,versioning)
 
 
 
