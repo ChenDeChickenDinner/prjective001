@@ -10,24 +10,7 @@
 /**
 
 
- (四)Info======>通用选项 (info.plist，支持的文件类型，导入导出UTIs,APP跳转)
-     (1)  :Information Property List ：
-             0:Bundle display name 显示的名称  = build setting - packaging - Product Name (PRODUCT_NAME)
-             1:Bundle identifier 包标识符
-             2:Bundle versions string, short 对外版本
-             3:Bundle version  编译版本
-             4:Bundle name      App文件夹名
-             5:Executable file  默认 = $(EXECUTABLE_NAME) 应用程序的可执行文件
-             6:InfoDictionary version （ Info.plist格式的版本信息,一般不动）
-             7:Main storyboard file base name 应用程序首次启动时载入的xib文件 这个基本用不到 （APP启动时候再学习）
-             8:Launch screen interface file base name 同上
-             9:Application requires iPhone environment 应用程序是否需要iPhone 环境
-             10:Supported interface orientations 设定应用程序的显示模式。
-             11:Localization native development region 定位本地开发地区。本地化相关，如要设置拍照下面按钮显示中文
-             12:Required device capabilities 指定程序适用于哪些设备
-     （2）:URL Types:让应用程序之间理解和交互数据用的。最多是用在APP之间的跳转的时候。
-     （3）:Document Types:定义了程序能够识别的文档类型，不需要识别文档的应用无需设置
-     （4）:Exported UTLs:导出UTI，定义UTI让应用能够识别对应的文件类型 imported UTLs:和上面对应，用来导入UTI
+
 
 
 

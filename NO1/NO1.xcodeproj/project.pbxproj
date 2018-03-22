@@ -11,9 +11,7 @@
 		55097A221FCBE4A0008048E4 /* git.m in Sources */ = {isa = PBXBuildFile; fileRef = 55097A201FCBE4A0008048E4 /* git.m */; };
 		557BB60C1FD96813003539FA /* 06BuildPhases.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6051FD96812003539FA /* 06BuildPhases.m */; };
 		557BB60D1FD96813003539FA /* 04InfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6061FD96812003539FA /* 04InfoPlist.m */; };
-		557BB60E1FD96813003539FA /* 02Capabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6071FD96812003539FA /* 02Capabilities.m */; };
 		557BB6101FD96813003539FA /* 01General.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB6091FD96812003539FA /* 01General.m */; };
-		557BB6111FD96813003539FA /* 03ResourceTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB60A1FD96812003539FA /* 03ResourceTags.m */; };
 		557BB6121FD96813003539FA /* 07BuildRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BB60B1FD96812003539FA /* 07BuildRules.m */; };
 		55A81D431FCBE73600037761 /* C 数据类型（常量 变量).m in Sources */ = {isa = PBXBuildFile; fileRef = 55A81D391FCBE73600037761 /* C 数据类型（常量 变量).m */; };
 		55A81D441FCBE73600037761 /* COC 关键字.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A81D3A1FCBE73600037761 /* COC 关键字.m */; };
@@ -65,9 +63,7 @@
 		557BB5FA1FD9662B003539FA /* 00AppleID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00AppleID.h; sourceTree = "<group>"; };
 		557BB6051FD96812003539FA /* 06BuildPhases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 06BuildPhases.m; sourceTree = "<group>"; };
 		557BB6061FD96812003539FA /* 04InfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 04InfoPlist.m; sourceTree = "<group>"; };
-		557BB6071FD96812003539FA /* 02Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 02Capabilities.m; sourceTree = "<group>"; };
 		557BB6091FD96812003539FA /* 01General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 01General.m; sourceTree = "<group>"; };
-		557BB60A1FD96812003539FA /* 03ResourceTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 03ResourceTags.m; sourceTree = "<group>"; };
 		557BB60B1FD96812003539FA /* 07BuildRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 07BuildRules.m; sourceTree = "<group>"; };
 		557BB6381FDA1E6F003539FA /* pbxproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pbxproj.h; sourceTree = "<group>"; };
 		559415492049205300B4C651 /* IDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDE.h; sourceTree = "<group>"; };
@@ -355,8 +351,6 @@
 			isa = PBXGroup;
 			children = (
 				557BB6091FD96812003539FA /* 01General.m */,
-				557BB6071FD96812003539FA /* 02Capabilities.m */,
-				557BB60A1FD96812003539FA /* 03ResourceTags.m */,
 				557BB6061FD96812003539FA /* 04InfoPlist.m */,
 			);
 			path = target;
@@ -792,12 +786,10 @@
 				55A81D481FCBE73600037761 /* OC Foundation.m in Sources */,
 				557BB6101FD96813003539FA /* 01General.m in Sources */,
 				55A81D441FCBE73600037761 /* COC 关键字.m in Sources */,
-				557BB6111FD96813003539FA /* 03ResourceTags.m in Sources */,
 				557BB60D1FD96813003539FA /* 04InfoPlist.m in Sources */,
 				55A81D601FCBE7A800037761 /* Grammar.m in Sources */,
 				55A81D5F1FCBE7A800037761 /* DataType.m in Sources */,
 				55A81D5D1FCBE7A800037761 /* ConstVariable.m in Sources */,
-				557BB60E1FD96813003539FA /* 02Capabilities.m in Sources */,
 				55A81D461FCBE73600037761 /* COC 预编译指令.m in Sources */,
 				55A81D431FCBE73600037761 /* C 数据类型（常量 变量).m in Sources */,
 				55A81D5C1FCBE7A800037761 /* CompileCommand.m in Sources */,
