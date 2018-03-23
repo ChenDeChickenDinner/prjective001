@@ -1,5 +1,35 @@
+路径：相对 路径 、绝对路径
 
-/Users/xs/Desktop/one/one.xcodeproj（本地项目文件）
+
+路径介绍三合一：
+与路径有关的相关设置：
+变量代替路径:
+
+（1）/Applications/Xcode.app/Contents/Developer（开发记录工具）
+
+
+（2）/Users/xs/Library/Developer（开发记录）
+Xcode 用户/资源库/Developer
+A:CoreSimulator（各种模拟器，模拟器中的所以APP的沙盒都在各自目录下）
+B:Shared（插件所在位置）
+C:Xcode（）
+UserData（）
+iOS DeviceSupport（真机设备的支持系统版本）
+iOS Device Logs（）
+
+DerivedData（编译后.app文件存储路径）
+Archives（Archive之后的 .xcarchive 文件）
+Products（生成的各种产品）
+DocumentationCache（）
+Snapshots（版本控制，快照存放文件夹）
+watchOS DeviceSupport（）
+D:XCPGDevices（playground 的项目缓存）
+
+
+真机测试和打包上传用的描述文件安装路径
+~/Library/MobileDevice/Provisioning Profiles
+
+（3）/Users/xs/Desktop/one/one.xcodeproj（本地项目文件）
 
 工程名.xcodeproj <是个package目录> 显示包内容
 A:project.pbxproj （工程描述文件）

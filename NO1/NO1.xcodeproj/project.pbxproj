@@ -53,20 +53,37 @@
 		557B1A27206229410083BA90 /* 08Signing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 08Signing.h; sourceTree = "<group>"; };
 		557B1A28206229410083BA90 /* 09Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 09Other.h; sourceTree = "<group>"; };
 		557B1A29206229770083BA90 /* 01Architectures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 01Architectures.h; sourceTree = "<group>"; };
-		557B1A2C20622D650083BA90 /* Developer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Developer.h; sourceTree = "<group>"; };
-		557B1A2D20622D730083BA90 /* Xcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
 		557B1A2E20622D940083BA90 /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
 		557B1A5B206234F80083BA90 /* Target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
-		557B1A5C2062363A0083BA90 /* Scheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scheme.h; sourceTree = "<group>"; };
 		557B1A5D206238240083BA90 /* 总结.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "总结.h"; sourceTree = "<group>"; };
+		557B1A712064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A732064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A762064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A782064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A7A2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A7C2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A7E2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A802064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A822064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A842064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A862064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A892064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A8A2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A8C2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A8E2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A922064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A942064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A962064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A972064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A992064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A9A2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557B1A9C2064EF2F0083BA90 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		557BB5F81FD9662B003539FA /* Build.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Build.h; sourceTree = "<group>"; };
 		557BB5FA1FD9662B003539FA /* 00AppleID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00AppleID.h; sourceTree = "<group>"; };
 		557BB6051FD96812003539FA /* 06BuildPhases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 06BuildPhases.m; sourceTree = "<group>"; };
 		557BB6061FD96812003539FA /* 04InfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 04InfoPlist.m; sourceTree = "<group>"; };
 		557BB6091FD96812003539FA /* 01General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 01General.m; sourceTree = "<group>"; };
 		557BB60B1FD96812003539FA /* 07BuildRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 07BuildRules.m; sourceTree = "<group>"; };
-		557BB6381FDA1E6F003539FA /* pbxproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pbxproj.h; sourceTree = "<group>"; };
-		559415492049205300B4C651 /* IDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDE.h; sourceTree = "<group>"; };
 		55A81D391FCBE73600037761 /* C 数据类型（常量 变量).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "C 数据类型（常量 变量).m"; sourceTree = "<group>"; };
 		55A81D3A1FCBE73600037761 /* COC 关键字.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "COC 关键字.m"; sourceTree = "<group>"; };
 		55A81D3B1FCBE73600037761 /* COC 基本函数.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "COC 基本函数.m"; sourceTree = "<group>"; };
@@ -133,6 +150,7 @@
 		550979E21FCBA93D008048E4 = {
 			isa = PBXGroup;
 			children = (
+				557B1A6D2064EF2F0083BA90 /* chen */,
 				55282F09205924D9003750A8 /* 项目 */,
 				550979ED1FCBA93D008048E4 /* NO1 */,
 				550979EC1FCBA93D008048E4 /* Products */,
@@ -196,7 +214,6 @@
 		5512A61A1FD0EBDB00E21F73 /* 00IDE */ = {
 			isa = PBXGroup;
 			children = (
-				557BB6381FDA1E6F003539FA /* pbxproj.h */,
 				6C6480091FD42E970097D87B /* IDE基本使用 */,
 			);
 			path = 00IDE;
@@ -213,9 +230,6 @@
 		55282F09205924D9003750A8 /* 项目 */ = {
 			isa = PBXGroup;
 			children = (
-				559415492049205300B4C651 /* IDE.h */,
-				557B1A2F20622E230083BA90 /* Xcode(开发工具) */,
-				557B1A3120622E570083BA90 /* Developer(开发记录) */,
 				557B1A3020622E3B0083BA90 /* Project(项目管理) */,
 			);
 			path = "项目";
@@ -240,14 +254,6 @@
 			path = "1编译配置";
 			sourceTree = "<group>";
 		};
-		557B1A2F20622E230083BA90 /* Xcode(开发工具) */ = {
-			isa = PBXGroup;
-			children = (
-				557B1A2D20622D730083BA90 /* Xcode.h */,
-			);
-			path = "Xcode(开发工具)";
-			sourceTree = "<group>";
-		};
 		557B1A3020622E3B0083BA90 /* Project(项目管理) */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,17 +263,8 @@
 				557B1A6320624A860083BA90 /* 2编译规则 */,
 				557B1A6420624A8D0083BA90 /* 3编译过程 */,
 				557B1A35206231ED0083BA90 /* Target */,
-				557B1A36206232120083BA90 /* Scheme */,
 			);
 			path = "Project(项目管理)";
-			sourceTree = "<group>";
-		};
-		557B1A3120622E570083BA90 /* Developer(开发记录) */ = {
-			isa = PBXGroup;
-			children = (
-				557B1A2C20622D650083BA90 /* Developer.h */,
-			);
-			path = "Developer(开发记录)";
 			sourceTree = "<group>";
 		};
 		557B1A3220622F2E0083BA90 /* Build Settings */ = {
@@ -286,14 +283,6 @@
 				557B1A5B206234F80083BA90 /* Target.h */,
 			);
 			path = Target;
-			sourceTree = "<group>";
-		};
-		557B1A36206232120083BA90 /* Scheme */ = {
-			isa = PBXGroup;
-			children = (
-				557B1A5C2062363A0083BA90 /* Scheme.h */,
-			);
-			path = Scheme;
 			sourceTree = "<group>";
 		};
 		557B1A37206232640083BA90 /* 各种资源文件类型 */ = {
@@ -354,6 +343,235 @@
 				557BB6061FD96812003539FA /* 04InfoPlist.m */,
 			);
 			path = target;
+			sourceTree = "<group>";
+		};
+		557B1A6D2064EF2F0083BA90 /* chen */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A6E2064EF2F0083BA90 /* 01开发基础 */,
+				557B1A8F2064EF2F0083BA90 /* 02CS基础 */,
+				557B1A9B2064EF2F0083BA90 /* 03其它平台 */,
+			);
+			path = chen;
+			sourceTree = "<group>";
+		};
+		557B1A6E2064EF2F0083BA90 /* 01开发基础 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A6F2064EF2F0083BA90 /* 01IDE辅助功能使用 */,
+				557B1A742064EF2F0083BA90 /* 02IDE开发功能使用 */,
+				557B1A852064EF2F0083BA90 /* 03APP功能点 */,
+				557B1A872064EF2F0083BA90 /* 04开发技术点 */,
+				557B1A8B2064EF2F0083BA90 /* 05版本管理 */,
+				557B1A8D2064EF2F0083BA90 /* 06平台业务 */,
+			);
+			path = "01开发基础";
+			sourceTree = "<group>";
+		};
+		557B1A6F2064EF2F0083BA90 /* 01IDE辅助功能使用 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A702064EF2F0083BA90 /* 01信息帮助文档 */,
+				557B1A722064EF2F0083BA90 /* 02具体设置 */,
+			);
+			path = "01IDE辅助功能使用";
+			sourceTree = "<group>";
+		};
+		557B1A702064EF2F0083BA90 /* 01信息帮助文档 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A712064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "01信息帮助文档";
+			sourceTree = "<group>";
+		};
+		557B1A722064EF2F0083BA90 /* 02具体设置 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A732064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "02具体设置";
+			sourceTree = "<group>";
+		};
+		557B1A742064EF2F0083BA90 /* 02IDE开发功能使用 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A752064EF2F0083BA90 /* 00工具项目记录三合一 */,
+				557B1A772064EF2F0083BA90 /* 01Project(项目管理) */,
+				557B1A792064EF2F0083BA90 /* 02Schemes(构建计划) */,
+				557B1A7B2064EF2F0083BA90 /* 03Prouct(编译) */,
+				557B1A7D2064EF2F0083BA90 /* 04Prouct(运行) */,
+				557B1A7F2064EF2F0083BA90 /* 05Prouct(打包) */,
+				557B1A812064EF2F0083BA90 /* 06Prouct(装载) */,
+				557B1A832064EF2F0083BA90 /* 07Prouct(发布) */,
+			);
+			path = "02IDE开发功能使用";
+			sourceTree = "<group>";
+		};
+		557B1A752064EF2F0083BA90 /* 00工具项目记录三合一 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A762064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "00工具项目记录三合一";
+			sourceTree = "<group>";
+		};
+		557B1A772064EF2F0083BA90 /* 01Project(项目管理) */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A782064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "01Project(项目管理)";
+			sourceTree = "<group>";
+		};
+		557B1A792064EF2F0083BA90 /* 02Schemes(构建计划) */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A7A2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "02Schemes(构建计划)";
+			sourceTree = "<group>";
+		};
+		557B1A7B2064EF2F0083BA90 /* 03Prouct(编译) */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A7C2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "03Prouct(编译)";
+			sourceTree = "<group>";
+		};
+		557B1A7D2064EF2F0083BA90 /* 04Prouct(运行) */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A7E2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "04Prouct(运行)";
+			sourceTree = "<group>";
+		};
+		557B1A7F2064EF2F0083BA90 /* 05Prouct(打包) */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A802064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "05Prouct(打包)";
+			sourceTree = "<group>";
+		};
+		557B1A812064EF2F0083BA90 /* 06Prouct(装载) */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A822064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "06Prouct(装载)";
+			sourceTree = "<group>";
+		};
+		557B1A832064EF2F0083BA90 /* 07Prouct(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A842064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "07Prouct(发布)";
+			sourceTree = "<group>";
+		};
+		557B1A852064EF2F0083BA90 /* 03APP功能点 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A862064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "03APP功能点";
+			sourceTree = "<group>";
+		};
+		557B1A872064EF2F0083BA90 /* 04开发技术点 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A882064EF2F0083BA90 /* 01优先技术 */,
+				557B1A8A2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "04开发技术点";
+			sourceTree = "<group>";
+		};
+		557B1A882064EF2F0083BA90 /* 01优先技术 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A892064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "01优先技术";
+			sourceTree = "<group>";
+		};
+		557B1A8B2064EF2F0083BA90 /* 05版本管理 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A8C2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "05版本管理";
+			sourceTree = "<group>";
+		};
+		557B1A8D2064EF2F0083BA90 /* 06平台业务 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A8E2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "06平台业务";
+			sourceTree = "<group>";
+		};
+		557B1A8F2064EF2F0083BA90 /* 02CS基础 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A902064EF2F0083BA90 /* 01基础扫盲 */,
+				557B1A982064EF2F0083BA90 /* 02编译过程 */,
+				557B1A9A2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "02CS基础";
+			sourceTree = "<group>";
+		};
+		557B1A902064EF2F0083BA90 /* 01基础扫盲 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A912064EF2F0083BA90 /* 01网络工程 */,
+				557B1A932064EF2F0083BA90 /* 02加密解密 */,
+				557B1A952064EF2F0083BA90 /* 03签名证书 */,
+				557B1A972064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "01基础扫盲";
+			sourceTree = "<group>";
+		};
+		557B1A912064EF2F0083BA90 /* 01网络工程 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A922064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "01网络工程";
+			sourceTree = "<group>";
+		};
+		557B1A932064EF2F0083BA90 /* 02加密解密 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A942064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "02加密解密";
+			sourceTree = "<group>";
+		};
+		557B1A952064EF2F0083BA90 /* 03签名证书 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A962064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "03签名证书";
+			sourceTree = "<group>";
+		};
+		557B1A982064EF2F0083BA90 /* 02编译过程 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A992064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "02编译过程";
+			sourceTree = "<group>";
+		};
+		557B1A9B2064EF2F0083BA90 /* 03其它平台 */ = {
+			isa = PBXGroup;
+			children = (
+				557B1A9C2064EF2F0083BA90 /* AppDelegate.h */,
+			);
+			path = "03其它平台";
 			sourceTree = "<group>";
 		};
 		557BB5F61FD9662B003539FA /* 03BuildSetting */ = {

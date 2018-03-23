@@ -19,3 +19,9 @@
 6:Targeted Device Family
 6:Use Separate Strip
 
+Installation Directory:安装目录
+静态库编译时，会被安装到默认路径 = $(LOCAL_APPS_DIR)
+
+Skip Install:是否跳过安装
+1.如果是NO,可能会被安装到默认路径/usr/local/lib
+2.
