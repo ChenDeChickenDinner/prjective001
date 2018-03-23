@@ -1,10 +1,22 @@
 
---> Headers(头部)
-1:Run unifdef on product headers
-2:Unifdef Flags for product headers
+
+Apple LLVM - Language
+
+1.Prefix Header:预编头文件
+
+2.Precompile Prefix Header:
+设为YES时，pch文件会被预编译，预编译后的pch会被缓存起来，从而提高编译速度。需要编译的pch文件在Prefix Header中注册即可。
+设为NO时，头文件pch不会被预编译，而是在每个用到它导入的框架类库中编译一次。每个引用了pch内容的.m文件都要编译一次pch，这会降低项目的编译速度。
+
+3.Public Headers Folder Path:对外公开头文件路径
 
 
+Apple LLVM - Code Generation
+1.Generate Debug Symbols:YES时，每个源文件在编译成.o文件时，编译参数多了-g和-gmodules两项，编译产生的.o文件会大一些，当然最终生成的可执行文件也大一些。
+当Generate Debug Symbols设置为NO的时候，在Xcode中设置的断点不会中断。但是在程序中打印[NSThread callStackSymbols]，依然可以看到类名和方法名
 
+2.Debug Information Level
+的默认值为Compiler default，还有一个选项是Line tables only；为Line tables only的时候，然后构建app，每个源文件在编译时，都多了一个编译参数：-gline-tables-only
 
 
 --> User-Defined(自定义变量)
@@ -12,21 +24,14 @@
 
 
 
+Apple LLVM -Preprocessing:
+1.Preprocessor Macros(定义全局宏):GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1",..)
 
 
 --> Search Paths (搜索路径)
-
+https://www.jianshu.com/p/9f9c1fd2e8b5
 always search user paths:是否搜索用户指定的路径，默认是NO；
 优先搜索User Header Search Paths路径下的文件，这种情况下如果有同名的头文件，那么User Header Search Paths就会覆盖Header Search Paths里的文件。
-
-
-
-framework search paths:工程引用的framework搜索路径
-header search paths:工程中引用的头文件搜索路径
-linrary search paths:library搜索路径，比如静态.a库
-rez search paths
-use header maps
-user header search paths:设置头文件搜索路径，这个只有当Always Search User Path开启后才有效。
 
 
 这里有两个很类似的选项，User Header Search Paths和Header Search Path，
@@ -54,7 +59,11 @@ recursive或non-recursive
 
 
 
+
+
+
+--> Headers(头部)
+1:Run unifdef on product headers
+2:Unifdef Flags for product headers
+
 --> versioning  (版本控制数据库)
-
-
-

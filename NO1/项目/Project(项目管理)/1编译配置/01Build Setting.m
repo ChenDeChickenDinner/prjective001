@@ -1,153 +1,137 @@
 /**
 target(Build Setting)
 
-()
+
+ 配置元素: (指令集,编译目录,编译选项,部署,链接,签名,内核模块,Headers,Packaging,versioning)
 
 
 
+Architectures -->《硬件平台SKD》
+     1:Valid Architectures               (:限制可能被支持的指令集的范围
+     2:Architectures                     (:指明选定Target要求被编译生成的二进制包所支持的指令集
+     3.Build Active Architecture Only    (:指明是否只编译当前连接设备所支持的指令集
+     4.:Supported Platforms              (:运行的平台)
+     5:Base SDK                          (:当前编译用的SDK版本
+     6:Additional SDKs                   (:在编译的时候需要附加的SDK
 
 
-Architectures（硬件平台SKD）
-1:Valid Architectures(限制可能被支持的指令集的范围)
-2:Architectures (指明选定Target要求被编译生成的二进制包所支持的指令集，)
-3.Build Active Architecture Only(指明是否只编译当前连接设备所支持的指令集)
+Build Options  --> 《编译选项》
+     1:Compiler for C/C++/Objective-C                    (:选择使用的编译器)
+     2:Scan All Source Files for Include                 (:是否扫描include文件所包含的所有源文件)
+     2:Precompiled Header Uses Files From Build Directory(:是否预编译build路径中的头文件)
+     2:Validate Built Product                            (:是否在编译的时候进行验证)
 
-4.:Supported Platforms(运行的平台)
+     3:Debug Information Format                          (:决定记录debug信息的文件格式)
+     3.Build Variants                                    (:产生二进制文件的类型，普通的/配置信息/debug型)
+     3:Enable Bitcode                                    (:是否产生中间代码形式)
+     3:Generate Profiling Code                           (:激活这个设置会导致编译器和链接器生成分析代码)
 
-5:Base SDK  （当前编译用的SDK版本）
-6:Additional SDKs (在编译的时候需要附加的SDK)
+Build Locations --> 《编译文件路径》
+     1:Build Products Path                     (:产品文件和编译中间文件的根目录
+     1:Intermediate Build Files Pat            (:编译时临时文件的存放位置
+     2:Per-configuration Build Product Path    (:当前编译设置下的产品存放位置
+     2:Per-configuration Intermediate File Path(:当前编译设置下编译时临时文件的存放位置
+     3:Precompiled Headers Cache Path          (:存放预编译头文件的位置
 
-
-Build Options  -- 编译选项
-
-0:excluded source file names ?
-0:included source file name  ?
-
-1:Compiler for C/C++/Objective-C (选择使用的编译器)
-
-2:Scan All Source Files for Include(是否扫描include文件所包含的所有源文件)
-2:Precompiled Header Uses Files From Build Directory(是否预编译build路径中的头文件)
-2: Validate Built Product(是否在编译的时候进行验证)
-
-3:Debug Information Format(决定记录debug信息的文件格式)
-3.Build Variants(产生二进制文件的类型，普通的/配置信息/debug型)
-3:Enable Bitcode(是否产生中间代码形式)
-3:Generate Profiling Code(激活这个设置会导致编译器和链接器生成分析代码)
-
->Build Locations(编译产生的文件路径)
- 1:Build Products Path :产品文件和编译中间文件的根目录
- 1:Intermediate Build Files Pat:编译时临时文件的存放位置
- 2:Per-configuration Build Product Path:当前编译设置下的产品存放位置
- 2:Per-configuration Intermediate File Path:当前编译设置下编译时临时文件的存放位置
- 3:Precompiled Headers Cache Path :存放预编译头文件的位置
-
-
- Deployment(部署)
- 1.Deployment Target:支持的最低部署版本（IPHONEOS_DEPLOYMENT_TARGET = 11.1）
+Deployment -->《部署信息》
+ 1.Deployment Target:       (:支持的最低部署版本（IPHONEOS_DEPLOYMENT_TARGET = 11.1）
  2.Deployment Postprocessing:
- 3.Strip Linked Product：受到Deployment Postprocessing设置选项的影响，其开启 Strip Linked Product的设置才有效
+
+
+ 3.Strip Linked Product：受到Deployment Postprocessing设置选项的影响，其开启才有效
  设为YES的时候，app的构建过程多了这样两步，在app构建的开始，会生成一些.hmap辅助文件，在app构建的末尾，会执行Strip操作
-当Strip Linked Product设为YES的时候，运行app，断点不会中断，在程序中打印[NSThread callStackSymbols]也无法看到类名和方法名
- 4.Strip Style：选择不同的Strip Style时，app构建末尾的Strip操作会被带上对应的参数
- 如果选择debugging symbols的话，函数调用栈中，类名和方法名还是可以看到的。
+ 当Strip Linked Product设为YES的时候，运行app，断点不会中断，在程序中打印[NSThread callStackSymbols]也无法看到类名和方法名
+
+
+ 4.Strip Style：选择不同的Strip Style时，app构建末尾的Strip操作会被带上对应的参数 如果选择debugging symbols的话，函数调用栈中，类名和方法名还是可以看到的。
+
  5.Strip Debug Symbols During Copy:
 
-Linking(链接)
-Other Linker Flags：例如fobjc-arc(可在Build Rules中针对单个文件配置ARC开关）、-force_load。
-Dead Code Stripping：一般对Debug关闭，对Release版本开启以去除无效路径僵尸代码，压缩安装包体积。
-Display Mangled Names(LINKER_DISPLAYS_MANGLED_NAMES)：针对C++ symbols，ld --no-demangle链接开关，一般选择NO。
-Mach－O type：Static Library、Dynamic Library、Executable、Bundle、Relocatable Object File（Position-Dependent ）。
+Linking -->《链接》
+Other Linker Flags(:例如fobjc-arc(可在Build Rules中针对单个文件配置ARC开关）、-force_load。
+Dead Code Stripping(:一般对Debug关闭，对Release版本开启以去除无效路径僵尸代码，压缩安装包体积。
+Display Mangled Names(:针对C++ symbols，ld --no-demangle链接开关，一般选择NO。
+Mach－O type(:Static Library、Dynamic Library、Executable、Bundle、Relocatable Object File（Position-Dependent ）。
 
 
-Packaging(包)
- Expand Build Setting in Info.plist File:告诉编译器是否处理info.plist。默认是YES。
- Info.plist File:  使用的Info.plist文件(INFOPLIST_FILE = 123/Info.plist)
- bundle identifier:Bundle 唯一标识符(PRODUCT_BUNDLE_IDENTIFIER = @"123.com")
- Product Name: 文件系统中的bundle名（PRODUCT_NAME = "$(TARGET_NAME)"）
- Defines Module:是否定义模块。默认app类的工程为NO，framwork工程默认为YES。
- Private Headers Folder Path:私有头文件的存放位置。
- Product Module Name:产品模块名称
- Public Headers Folder Path:公共头文件路径
- Wrapper Extension:打包的扩展名，默认app。
+Packaging -->《包》
+ Expand Build Setting in Info.plist File(:告诉编译器是否处理info.plist。默认是YES。
+ Info.plist File(:使用的Info.plist文件(INFOPLIST_FILE = 123/Info.plist)
+ bundle identifier(:Bundle 唯一标识符(PRODUCT_BUNDLE_IDENTIFIER = @"123.com")
+ Product Name(:文件系统中的bundle名（PRODUCT_NAME = "$(TARGET_NAME)"）
+ Defines Module(:是否定义模块。默认app类的工程为NO，framwork工程默认为YES。
+ Private Headers Folder Path(:私有头文件的存放位置。
+ Product Module Name(:产品模块名称
+ Public Headers Folder Path(:公共头文件路径
+ Wrapper Extension(:打包的扩展名，默认app。
 
-Signing(签名)
 
- (1)Development Team:  开发者所在的群组
+
+Signing-->《签名》
+
+ (1)Development Team:(:开发者所在的群组
  DEVELOPMENT_TEAM = QG479838Q3;
 
- (2)Code Signing Style:管理签名方式
+ (2)Code Signing Style(:管理签名方式
  CODE_SIGN_STYLE = Automatic/Manual
 
- (3)Code Signing Identity:配置证书
+ (3)Code Signing Identity(:配置证书
 （General中设置）       Signing Certificate:   CODE_SIGN_IDENTITY = "iPhone Distribution"/ "iPhone Developer"/..
 （Build Setting中设置） Code Signing Identity: CODE_SIGN_IDENTITY = "iPhone Distribution"/ "iPhone Developer"/..
 
- (4)Code Signing Entitlements (capabilities 工程中的功能实体文件)
+ (4)Code Signing Entitlements (:capabilities 工程中的功能实体文件)
  CODE_SIGN_ENTITLEMENTS = xxxxx
  (5)：Provisioning profile + Provisioning profile (Deprecated) 配置描述文件 自动
 
  
+ Asset Catalog Compiler-Options-->《资产目录编译选项》
+ Asset Catalog App Icon Set Name:App 图标
+ Asset Catalog Launch Image Set Name: App 启动图
 
 
  
 
 
---> Headers(头部)
+--> Headers-->《头部》
  1:Run unifdef on product headers
  2:Unifdef Flags for product header
  
---> User-Defined(自定义变量)
+--> User-Defined-->《自定义变量》
 
 
---> Search Paths (搜索路径)
- always search user paths:是否搜索用户指定的路径，默认是NO；
- framework search paths:工程引用的framework搜索路径
- linrary search paths:library搜索路径，比如静态.a库
- rez search paths
- use header maps
+--> Search Paths -->《搜索路径》
+1.always search user paths:是否搜索用户指定的路径，默认是NO；
+2.System Framework Search Paths :管理导入的*.framework的路径
+2.System Library Search Paths :管理导入的*.a的路径
+
+3.Framework Search Paths :管理导入的*.framework的路径
+3.Library Search Paths :管理导入的*.a的路径
+
+4.Header Search Paths :管理导入的头文件的路径
+4.user header search paths:
 
 
- user header search paths:设置头文件搜索路径，这个只有当Always Search User Path开启后才有效。
- header search paths:工程中引用的头文件搜索路径
 
 
 
---> versioning  (版本控制数据库)
---> Kernel Module(内核模块)
---> Testing(测试)
-
- --> Asset Catalog Compiler-Options(资产目录编译选项)
- Asset Catalog App Icon Set Name:ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
- Asset Catalog Launch Image Set Name:ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 
 
-Apple LLVM(系列)
-
- Preprocessing(预处理)
- 1.Preprocessor Macros(定义全局宏):GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1",..)
-
-Language(语言系列)
-Prefix Header(预编头文件):GCC_PREFIX_HEADER = @"123.pch"
-Precompile Prefix Header：设为“Yes”，表示允许加入预编译头??
-Public Headers Folder Path：对外公开头文件路径
-
- Address Sanitizer
- Undefined Behavior Sanitizer
-
- Code Generation：代码生成
- 1.Generate Debug Symbols:YES时，每个源文件在编译成.o文件时，编译参数多了-g和-gmodules两项，编译产生的.o文件会大一些，当然最终生成的可执行文件也大一些。
- 当Generate Debug Symbols设置为NO的时候，在Xcode中设置的断点不会中断。但是在程序中打印[NSThread callStackSymbols]，依然可以看到类名和方法名
-
-2.Debug Information Level
-的默认值为Compiler default，还有一个选项是Line tables only；为Line tables only的时候，然后构建app，每个源文件在编译时，都多了一个编译参数：-gline-tables-only
-3.
+Apple LLVM -Language   -->《语言》
+1.Prefix Header:预编头文件
+2.Precompile Prefix Header:是否预编译头文件
+3.Public Headers Folder Path:对外公开头文件路径
 
 
- Custom Compiler Flags
+Apple LLVM -Preprocessing -->《预编译》
+1.Preprocessor Macros(定义全局宏)
 
- Warning
+Apple LLVM -Code Generation-->《》
+1.Generate Debug Symbols:是否在编译阶段增加 -g和-gmodules两项参数
+2.Debug Information Level:文件编译时候 参数配置
 
-Static Analyzer(系列)
+
+
+
 
 Other
  Devices:(支持运行设备)
