@@ -131,48 +131,12 @@ Other
 
 
 
-info文件中
-
-Info.plist格式的版本信息:InfoDictionary version  : CFBundleInfoDictionaryVersion = 6.0
-
-
-表A-1 控制应用的名称
-     1.该bundle的可执行文件名    (:Executable file:     CFBundleExecutable = $(EXECUTABLE_NAME)
-     2.文件系统中的bundle名     (:Bundle name:         CFBundleName = $(PRODUCT_NAME)
-     3.app名称                (:Bundle display name: CFBundleDisplayName = @"热血传奇"
-
-表A-2应用标识+应用版本
-    1.app IDs (:Bundle identifier：              CFBundleIdentifier = $(PRODUCT_BUNDLE_IDENTIFIER)
-    2.构建版本 (:Bundle version:                  CFBundleShortVersionString = @"1.1"
-    3.app版本 (:Bundle versions string, short :  CFBundleShortVersionString = @"1.1.2"
-
-
-A-3 应用图标
-
-
-A-4 控制应用初始化启动:
-    1.启动图 (:Launch Screen File: UILaunchStoryboardName = LaunchScreen
-
-
-A-5  用户界面
-    1.屏幕方向的支持      (:Device Orientation: UISupportedInterfaceOrientations: （数组：UIInterfaceOrientationPortraitUpsideDown..）
-    2.状态栏信息         (:UIStatusBarStyle = UIStatusBarStyleLightContent/UIStatusBarStyleDefault/UIStatusBarHidden = true/UIRequiresFullScreen = false
-    3.启动时加载的主界面  (:Main Interface:                UIMainStoryboardFile: Main/LaunchScreen/空
-
-表A-6 获取用户权限信息
-    NSCalendarsUsageDescription:日历
-    NSContactsUsageDescription:通讯录
-    NSPhotoLibraryUsageDescription:照片
-    NSRemindersUsageDescription:备忘录
-    NSLocationUsageDescription:位置信息
 
 
 
- (二)Capabilities  ----功能选项，设置项目支持的功能
-在Xcode的capabilities选项卡下选择一些选项后，Xcode就会生成这样一段XML，Xcode会自动生成一个entitlements文件，然后再需要的时候往里面添加条目。当构建整个应用时，这个文件也会提及给codesign作为应用所需要拥有哪些授权的参考。这些授权信息必须都在开发者中心的AppID中启用，并且包含在配置文件中。
 
  
- (三)Resource Tags ----该功能是将资源放到appstore
+
 
 
 
