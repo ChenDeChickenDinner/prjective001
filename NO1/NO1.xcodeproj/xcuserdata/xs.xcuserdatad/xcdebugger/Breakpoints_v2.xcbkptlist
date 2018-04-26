@@ -2,4 +2,20 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "chen/01&#x5f00;&#x53d1;&#x57fa;&#x7840;/02IDE&#x5f00;&#x53d1;&#x529f;&#x80fd;&#x4f7f;&#x7528;/00&#x5de5;&#x5177;&#x9879;&#x76ee;&#x8bb0;&#x5f55;&#x4e09;&#x5408;&#x4e00;/AppDelegate.h"
+            timestampString = "546420159.954808"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

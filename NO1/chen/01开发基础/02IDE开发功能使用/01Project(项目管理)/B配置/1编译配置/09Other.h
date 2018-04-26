@@ -56,14 +56,3 @@ recursive或non-recursive
 
 但是如果我们在User Header Search Paths下输入${PODS_ROOT}并设置为recursive，那编译器就会帮你找到所有Pods目录下的头文件，包括framework里的所有头文件。这样你在#import的时候就会有自动补全提示了，而且引入framework的头文件也只需要这样引入#import "public.h"。但是这样带来的问题就是会浪费编译器的时间。
 
-
-
-
-
-
-
---> Headers(头部)
-1:Run unifdef on product headers
-2:Unifdef Flags for product headers
-
---> versioning  (版本控制数据库)
