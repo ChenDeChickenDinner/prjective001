@@ -1,7 +1,11 @@
 /*
 target(Build Setting)
-
-
+左至右的顺序分别是：Resolved列、带Target图标列、带Project图标列、iOS Default列，每一列所代表的意义如下。
+ A:Resolved列：最终确定的编译方式，无法自己设定，其结果是根据其右边三栏的选择结果以及优先级顺序来确定最后编译时采用的编译方式。
+ B:带Target图标列：target的build setting配置的编译选项，可自定义。其优先级最高，一旦进行设置，则最后的编译方式以该栏的结果为准。
+ C:带Project图标列：project的build setting配置的编译选项，可自定义，这一栏的结果与project中build setting选项卡中的结果是一致的，修改其中一个地方，另一处也会自动修改。
+ D:iOS Default列：在创建项目时系统自带的默认编译选项，无法修改。优先级最低，只有当其他两栏都没有设置选项时，最后的编译方式才会以该栏为准。
+优先级顺序：带Target图标列 >> 带Project图标列 >> iOS Default列。
 
 Architectures -->《硬件平台SKD》
      1:Valid Architectures               (:限制可能被支持的指令集的范围
@@ -12,7 +16,7 @@ Architectures -->《硬件平台SKD》
      6:Additional SDKs                   (:在编译的时候需要附加的SDK
 
 
-Asset---->《资源》
+Asset---->《按需加载资源》
  1.Asset Pack Manifest URL Prefix( 资源包清单的下载路径URL前缀)
  2.Embed Asset Packs In Product Bundle( 是否将资源包嵌入产品的bundle中)
  3.Enable On Demand Resources( 是否开启按需获取资源功能)
@@ -124,9 +128,9 @@ Versioning-->《数据库版本》
 
 
  
-Other
- Devices:(支持运行设备)
- （General中设置） Devices:TARGETED_DEVICE_FAMILY = 1/2
+Info.plist-->《程序元信息》
+
+capabilities-->《功能选项》
 
 
 
