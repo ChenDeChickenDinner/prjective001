@@ -5,42 +5,32 @@
 1.是什么:用于跟踪项目引用的每一个外部文件(对应到磁盘),比如源代码文件、资源文件、库文件、生成目标文件等。可能此文件不在 项目文件目录下
 2.怎么才算:只要一个文件拉入到此工程，被项目“管理”才算。如果某文件在项目目录下 但未添加进来 就不算。
 3.元素介绍
-path:文件路径
+
+文件来源路径（path）
+0.HTML绝对路径(absolute path)指带域名的文件的完整路径。
+0.相对路径就是指由这个文件所在的路径引起的跟其它文件（或文件夹）的路径关系。使用相对路径可以为我们带来非常多的便利。
 1.项目下的绝对路径:
 2.SDK下的资源路径：iPhoneOS.sdk/System/Library/Frameworks/Accelerate.framework
 
-sourceTree:文件来源
-1.SDKROOT :SDK
-2. "<group>":项目资源
 
-lastKnownFileType : // 文件真实类型 {文件格式 + 本质（干什么的） + 怎么用（被别人用） + 最后变成什么}？？？？？？？？？？？
+对应项目 引用的.a 或者Frameworks
+1.需要对其添加搜索路径，
+    Framework Search Paths 管理导入的*.framework的路径
+    Library Search Paths 管理导入的*.a的路径
+    Header Search Paths 管理导入的头文件的路径
+2.若被添加的 文件 在 项目所管理的文件夹下，被添加时候，Xcode 能自动 添加上搜索路径
+3.若被添加的 文件 不在 项目所管理的文件夹下，被添加时候，不会自动添加上搜索路径 需要手动添加
+4.手动添加路径时候 注意  我们需需要添加 的是 被引用的文件夹（而不是文件的）的路径 ，可在添加到工程后 ，直接在Xcode中拖拽生成
 
 
-.h sourcecode.c.h
-.m sourcecode.c.objc
-.mm sourcecode.cpp.objcpp
-.pch sourcecode.c.h
-.tbd  sourcecode.text-based-dylib-definition
 
-.der/.p12    file
-.xib         file.xib
-.storyboard  file.storyboard
 
-.dylib   (compiled.mach-o.dylib)
-.framework ==> (rapper.framework)
-.bundle (wrapper.plug-in)
+ 资源文件类型(lastKnownFileType)
+A:头文件 B:实现文件 C:二进制文件 D:资源文件 E:配置文件用
 
-.a (archive.ar)
-
-.plist    text.plist.xml
-.xcconfig text.xcconfig
-.json     text.json
-.css      text.css
-
-.png/.jpg  image.png
-.app       wrapper.application
-.xcassets  folder.assetcatalog
-.lproj
+文件引用
+1.本项目下的资源 可 直接 #import "文件名";
+2.其他项目下的资源 ？？
 
 （文件夹）PBXGroup:
 0.项目管理的文件结构，只有被添加 引用到项目中 由项目管理的才算

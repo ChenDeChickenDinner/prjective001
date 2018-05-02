@@ -24,12 +24,18 @@ PBXBuildFile:一个被加入到某个targets 参加 编译、链接、资源拷�
 
 // 2:配置====》有哪些使用方案
 
-B1 = Build Setting（编译设置）:项目定义的多种编译环境（configurations），目前项目默认自带二个 Debug 与Release
+B1 = Build Setting（编译设置）:
     XCBuildConfiguration
     1.是什么：一种编译方案
     2.包含什么：键值对，都是对（硬件平台SKD/安需加载资源/资产目录编译选项/编译文件路径/编译选项/部署信息/链接/包/搜索路径/签名/语言/预编译/...）的设置
-    3.怎么算进去的：由项目创建生成的
+    3.怎么算进去的：有且只由项目创建生成的
     4.各种 类型 Target 的Build Setting区别
+
+    buildConfigurationList:
+    1.是什么：一套编译方案,项目定义的多种编译环境（configurations），目前项目默认自带二个 Debug 与Release
+    2.包含什么：XCBuildConfiguration
+    3.怎么算进去的：project 有一套,每个target各继承一套
+
 
 B2 = Dependencies（依赖关系）：在编译本产品之前 需要编译的 依赖产品
     PBXTargetDependency
@@ -73,12 +79,38 @@ B4 = BuildRules()：指定了不同的文件类型该如何编译。一般来说
 
 // 3:产品
 PBXNativeTarget
-
+1.是什么：一个 对应可以生成可执行二进制程序或库文件的本地构建目标对象
+2.包含什么：各个环境下的编译配置、编译依赖、编译任务、编译规则
+3.怎么算进去的：由项目生成的
 
 // 4:项目
 PBXProject
 
+mainGroup  // 项目引用的的主要文件组织，引用  PBXGroup 类型 对象
+productRefGroup // 产品引用的文件组织 PBXGroup 类型
+projectDirPath = "" // 项目路径 目前为空
+projectRoot = "" // 项目的根目录  目前为空
 
-// 5:项目管理维护
-// 6:工作平台管理维护
+knownRegions // 不同区域的本地资源文件列表
+developmentRegion = English // 语言版本，English英语
 
+
+buildConfigurationList = () // 引用的是哪一套编译配置 引用的是 XCConfigurationList
+targets = ()   // 此项目 包含的所以 target, 引用 PBXNativeTarget类型 对象
+attributes = { // 属性
+   类名前缀： CLASSPREFIX = HB
+    组织名称: ORGANIZATIONNAME = Touker
+    targets信息:TargetAttributes = {
+        PBXNativeTargetA:target属性
+            创建项目的Xcode 版本: CreatedOnToolsVersion = 6.1.1;
+            开发组：            DevelopmentTeam = QG479838Q3;
+            签名方式:           ProvisioningStyle = Automatic;
+            系统所包含的功能：   SystemCapabilities = { }
+    }
+}
+
+// 5:本项目中的 各种 依赖管理 原理
+
+// 6:跨项目中的 各种 依赖管理 原理
+
+// 7:工具处理依赖关系 cocopoads
