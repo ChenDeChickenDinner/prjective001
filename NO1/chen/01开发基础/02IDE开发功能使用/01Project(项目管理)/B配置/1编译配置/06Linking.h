@@ -23,3 +23,6 @@ Other Linker Flags
 其实我们把除$(inherited)外的都删了也不会有错，删了之后我们把鼠标悬浮在Other Linker Flags的参数上面，还是能看到跟之前一样的配置，只是双击点进去就没了。应该就是$(inherited)继承了上一层的配置，但是这个上一层在哪呢？
 
 
+Mach-O Type:
+1.此设置确定产生二进制的格式以及如何构建其他二进制文件时联系
+2.Xcode 默认设置的是动态库，当在制作静态库时候 需要选择为 StaticLibrary (静态库)

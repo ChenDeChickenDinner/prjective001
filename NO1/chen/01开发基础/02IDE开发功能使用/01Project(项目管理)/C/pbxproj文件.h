@@ -109,8 +109,100 @@ attributes = { // 属性
     }
 }
 
-// 5:本项目中的 各种 依赖管理 原理
 
-// 6:跨项目中的 各种 依赖管理 原理
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 5:本项目中的 各种 依赖管理 原理(pbxproj)
+A.资源引用管理（读取到）怎么才能找到  依据是什么
+
+.h 头文件
+1.被工程引用 形成 PBXFileReference 不需要提供搜索路径, 就能 被 #import  到；#import <> 用于包含系统文件 #import""用于包含本项目中的文件
+2.未被引用  需要 在 Header Search Paths 添加路径后才可被  #import""/<>;
+3.最后不会被打进包中
+
+.m 实现文件:
+1.被工程引用 ,被添加到  Build Phases 形成PBXFileReference-->PBXBuildFile-->PBXSourcesBuildPhase，参与编译
+2.并不用指明路径
+3.最后会被一起打进包中
+
+.a/.Framework 库文件
+1.被工程引用 ,被添加到  Build Phases 形成PBXFileReference-->PBXBuildFile-->PBXFrameworksBuildPhase，参与链接
+2.并在 Library/Framework Search Paths 中添加路径 链接的时候 才能被找到 才能（在本项目中的自身生成路径，不在本项目中 需要手动指明路径）
+3.最后会被一起打进包中
+
+资源文件
+1.被工程引用 ,被添加到   Build Phases，形成PBXFileReference-->PBXBuildFile-->PBXResourcesBuildPhase，参与资源拷贝
+2.在项目中的资源文件 都会 打进 mainBundle 中，并不用指明路径
+3.最后会被一起打进包中
+
+
+1.project中 引用 静态库:将 打包 制作好的 .a / .Framework 静态库 拖入工程中 使用
+    1.需要导入 链接库，配置搜索路径
+    2.在自身的 Frameworks 文件夹下 会生产 实体的 garter
+
+2.xcworkspace + project （各种 跨 project 的引用）
+    0.好处，模块隔离、同一工作环境、自动编译依赖
+    1.自己手a动 管理 多个 project 的使用处理===>引出 xcworkspace 真正作用 做了哪些处理
+        a.被引用的 只能是 被引用project 下的target(.a/.Framework)，不能是 其他project 资源文件中的 东西
+
+        b.引用步骤:
+            1.被添加库 要做好自身的设置---->一个target的生产设置
+                a:选择 实现方式（1：灵活的.m 暴露形式 2：稳定的 静态库形式）有2吗
+                b:编译配置（Build Setting +BuildPhases ）BuildPhases 问题？
+                    b.被引用的 target 中 引用的（三方私有的，开源的 ）库 最后跑哪去哪，会不会被打进 主工程中，要不要告知 主工程添加
+                    0.在单项目中 是把 三方库单独提供出来，让主项目一起链接进去
+                    1.在多项目中，因为 只能 将 其它 项目的target 的（.a/.Framework）链接到主项目中，那被链接的库的 依赖库 怎么处理
+                    2.针对 此问题，pod 是怎么解决的
+            3.添加头文件搜索路径 ；添加链接依赖库，不用添加库搜索路径（暂不知道为什么)
+            4.当被引用的 库 的原文件发布变化 会重新编译 再通过给主工程使用（对应稳定的模块，可以经过处理后）
+            5.在自身的 Frameworks 文件夹下 不会生产 实体的 garter，其实体在被引用的项目Products中
+
+
+    2.利用 pod 自动管理 多个 project 的使用处理==>引出pod 是干嘛的
+
+    3. xcworkspace  + pod + 私有库 更新===>利用多种工具特效 达到 一些 目的
+
+
+
+
+
 
 // 7:工具处理依赖关系 cocopoads

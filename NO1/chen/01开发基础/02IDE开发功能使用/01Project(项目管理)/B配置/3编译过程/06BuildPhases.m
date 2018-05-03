@@ -59,7 +59,9 @@ PBXShellScriptBuildPhase
     files = (); //
     runOnlyForDeploymentPostprocessing = 0;
 };
-
+ a:public
+ b:private
+ c:project
 
 
 

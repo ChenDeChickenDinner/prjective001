@@ -30,23 +30,24 @@ Apple LLVM -Preprocessing:
 
 --> Search Paths (搜索路径)
 https://www.jianshu.com/p/9f9c1fd2e8b5
-always search user paths:是否搜索用户指定的路径，默认是NO；
-优先搜索User Header Search Paths路径下的文件，这种情况下如果有同名的头文件，那么User Header Search Paths就会覆盖Header Search Paths里的文件。
+always search user paths:是否搜索用户指定的路径，默认是NO；已经被废弃
 
 
 这里有两个很类似的选项，User Header Search Paths和Header Search Path，
-一般带Users的是表示用户自定义的头文件的搜索路径。
-Header Search Paths 顾名思义就是用来存放 Project 中头文件的搜索根源，没有被add到项目里的头文件，可以通过配置Header Search Paths 来引入头文件，这样的好处可以不让project 包含的文件太多，便于管理。
+1.没有被add到项目里的头文件，可以通过配置这二项来引入头文件.
+2.Header Search Paths:是从系统目录空间中搜索文件；
+3.User Header Search Paths:是从用户目录空间中搜索文件；
+4.<> 是只从 Header Search Paths 中搜索
+5."" 则能从 Header Search Paths 和 User Header Search Paths 中
 
-浅显一点的区别是，编码时候通过 #include 引入头文件的方式有两种 <> 和 ""。<> 是只从 Header Search Paths 中搜索， 而 "" 则能从 Header Search Paths 和 User Header Search Paths 中搜索。换言之 ，假如你把 路径加到 User Header Search Paths 中，那么 你用 #include <file.h> 的方式去引入对应的头文件，就会报错。 如果加到 Header Search Paths, 就没有问题了。
-
-具体一点的区别是，<> 是从系统目录空间 （对应 Header Search Paths）中搜索文件， "" 是从用户目录空间（对应 User Header Search Paths）中搜索文件。如果你把路径加到 User Header Search Paths 中，而 <> 无法从系统目录空间中找到新加的路径，从而报错。
-
-所以如cocoapods这样安装第三方库的话，cocoapods会在Header Search Path写入对应库的路径，比如："${PODS_ROOT}/Headers/Public/AFNetworking"，而User Header Search Paths会是空的。
-
-
+设置路径
+1.$(SRCROOT) / $(PROJECT_DIR) 基本没啥区别，都是指向本 *.xcodeproj所在的路径
+2.通过../来调到上一层路径,返回上上层文件夹用../../
+3.在若在本项目下的 库 被 添加尽量 会自动生成 路径
+4.若不是在本项目下的 库 被添加进来 则需要手动设置 路径(提供方法1 方法2 正确设置 相对路径，只有在跟一个目录下，即使工程位置变得 也无影响)
 
 recursive或non-recursive
+recursive：遍历该目录，non-recursive：默认路径设置；不遍历该目录。如果路径的属性为recursive，那么编译的时候在找库的路径的时候，会遍历该目录下的所有子目录的库文件。PS：在搭建项目的时候，可以创建一个专门放库文件的文件夹并且设置其属性为recursive。$(PROJECT_DIR)/相当于遍历项目文件同级下的所有路径(不推荐使用，项目大的话，影响编译的速度)。
 
 在(User) Header Search Path这个里面的每一个路径后面都会有一个选项recursive或non-recursive。这个表示是否递归搜索头文件。
 
