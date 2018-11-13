@@ -1,8 +1,8 @@
 //
 //  main.m
-//  特殊关键字以及作用域
+//  修饰符
 //
-//  Created by xs on 2018/11/9.
+//  Created by xs on 2018/11/13.
 //  Copyright © 2018 Touker. All rights reserved.
 //
 
