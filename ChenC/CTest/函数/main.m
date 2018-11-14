@@ -110,8 +110,11 @@ void test_array_P(int (*array)[]){
     printf("a = %d\n",a);
 }
 
-
-
+// 指向函数的指针 作为参数
+void test_function(void (*p)(int)){
+    (*p)(3);
+    p(4);
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
