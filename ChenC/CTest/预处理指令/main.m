@@ -155,16 +155,15 @@ void test7(){
 //    int B = numberC2(1);
 }
 
+
 /** 系统宏
-
+1.__LINE__
+2.__FILE__
+3.__COUNTER__
+4.__func__
  */
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
 
-        test5();
-    }
-    return 0;
-}
+
 
 void test9(){
 #if COUNT == 5
@@ -196,3 +195,14 @@ void test9(){
 #endif
 
 }
+
+
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        
+    }
+    return 0;
+}
+
+

@@ -47,4 +47,16 @@ void test11(){
         man_i =0,
         woman_i
     };
+
+//    定义类型的同时定义变量
+    struct chen{
+        int age;
+    }value;
+    value.age = 10;
+
+//    匿名结构体变量，不能重复复用
+    struct {
+        int age;
+    }value2;
+    value2.age = 20;
 }
