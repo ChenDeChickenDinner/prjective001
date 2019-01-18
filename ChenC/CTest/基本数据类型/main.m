@@ -14,8 +14,11 @@ int main(int argc, const char * argv[]) {
         int value_int = 10;
 
         /*一般字符
-         1.占用一个字节（8位）
-         2.使用ASCII编码 以整数的形式存储
+         1.字节，符号位，存储: 占8个字节，分为有符号性（signed）和无符号型（unsigned）两种，以整数的形式存储
+         2.范围：若是signed型[-128,127]；unsigned型[0,255]；
+         3.编译器层:C语言中我们通常直接用类型char，但是它究竟是被当做signed型还是unsigned型，由编译器决定。
+         4.运用层:C语言允许我们在char前面加上关键字signed或者unsigned，这样，无论在编译器中被当做signed还是unsigned，都会按照前面加的这个关键字来决定
+         5.通常运用:通常指用来存储ASCII中的字符
          */
         char value_char1 = 'a';
         char value_char2 = ' ';
@@ -24,10 +27,10 @@ int main(int argc, const char * argv[]) {
          1.控制非显示字符: \n 换行
          2.二义性字符: \' ; \" ; \? ; \\
          b:进制转义字符
-         1.八进制转义字符:它是由反斜杠'\'和随后的1～3个八进制数字构成的字符序列，可以在八进制数字前面加上一个0来表示八进制转移字符
+         0.空字符 :\0 = 0 ,ASCII中 0 代表 空字符
+         1.八进制转义字符:它是由反斜杠'\'和随后的1～3个八进制数字构成的字符序列，表示八进制的0可以省略
          2.十六进制转义字符:是由反斜杠'\'和字母x(或X)及随后的1～2个十六进制数字构成的字符序列
          */
-        char value_char3 = '\0'; // 空字符
         char value_char4 = '\'';// '是 字符的表示符号，表示的时候必须转义，不然会造成语法歧义
         char value_char5 = '\\';
         char value_char61 = '\"';
@@ -35,8 +38,9 @@ int main(int argc, const char * argv[]) {
         char value_char71 = '\?';
         char value_char72 = '?';
 
+        char value_char3 = '\0'; // 空字符
+        char char_82 = '\012';//八进制
         char char_81 = '\12'; //八进制
-        char char_82 = '\012';
 
         char char_16 = '\x12';//十六进制
 

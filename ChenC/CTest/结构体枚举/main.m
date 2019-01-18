@@ -25,6 +25,19 @@ void test11(){
         char *name;
         double height;
     };
+
+    //    定义类型的同时定义变量
+    struct chen{
+        int age;
+    }value;
+    value.age = 10;
+
+    //    匿名结构体变量，不能重复复用
+    struct {
+        int age;
+    }value2;
+    value2.age = 20;
+    
     // 2.初始化
     struct person man = {18,"chen",55.0};
     struct person woman = {18,"chen",55.0};
@@ -48,15 +61,5 @@ void test11(){
         woman_i
     };
 
-//    定义类型的同时定义变量
-    struct chen{
-        int age;
-    }value;
-    value.age = 10;
 
-//    匿名结构体变量，不能重复复用
-    struct {
-        int age;
-    }value2;
-    value2.age = 20;
 }
