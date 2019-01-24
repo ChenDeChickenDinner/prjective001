@@ -32,10 +32,30 @@ static void test0(){
 
  */
 static void test1(){
-    bool value1  = true;
-    bool value2  = false;
-    size_t bit = sizeof(bool);
-    printf("bit= %lu\n",bit);
+    /* bool
+     1.C++ 布尔型变量，真正的逻辑型变量
+     2.占1个字节,取值范围:false(0)/true(1)
+     3.赋值: 转换后0为false，非0为true
+     3.结果真假判断:true 为 真，false为假;
+     */
+
+    bool value1  = -9;
+    size_t bit1 = sizeof(value1);
+    printf("bit1= %lu\n",bit1);
+
+    /* _Bool
+     0.C99之前无布尔类型
+     1.C99标准定义了一个新的关键字_Bool(其实是一个宏定义)，提供了布尔类型
+     2.占1个字节
+     3.结果值：0为false，非0为true
+     #define bool _Bool
+     #define true 1
+     #define false 0
+     */
+    _Bool value2 = -9;
+    size_t bit2 = sizeof(value2);
+    printf("bit2= %lu\n",bit2);
+
 }
 /**
  整形

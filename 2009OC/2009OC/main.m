@@ -1,33 +1,19 @@
 //
 //  main.m
-//  Foundation
+//  2009OC
 //
-//  Created by xs on 2018/11/27.
-//  Copyright © 2018 Touker. All rights reserved.
+//  Created by xs on 2019/1/23.
+//  Copyright © 2019 Touker. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-void loginChen(NSString *str,id value){
-    NSLog(@"%@ = %@",str,value);
-}
-
-void chen_null(){
-    NSNull *null = [NSNull null];
-    loginChen(@"null", null);
-}
-void chen_value(){
-
-    NSValue *value1 = [NSValue valueWithPoint:NSMakePoint(0, 0)];
-    NSValue *value2 = [NSValue valueWithSize:NSMakeSize(10, 10)];
-    NSValue *value3 = [NSValue valueWithRect:NSMakeRect(0, 0, 10, 10)];
-    NSValue *value4 = [NSValue valueWithRange:NSMakeRange(0, 1)];
-
-}
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
+    }
+    return 0;
+}
 //        chen_null();
 //        NSNull
 //
@@ -143,8 +129,3 @@ int main(int argc, const char * argv[]) {
 //FoundationErrors
 //NSException 异常
 //NSStream
-//
-//        NSUserDefaults
-    }
-    return 0;
-}

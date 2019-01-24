@@ -1,12 +1,16 @@
 //
-//  main.m
-//  protocol
+//  03Protocol.m
+//  2009OC
 //
-//  Created by xs on 2018/11/27.
-//  Copyright © 2018 Touker. All rights reserved.
+//  Created by xs on 2019/1/23.
+//  Copyright © 2019 Touker. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "03Protocol.h"
+
+@implementation _3Protocol
+
+@end
 /*
  Protocol
  1.就一个用途，用来声明一大堆的方法（不能声明成员变量），不能写实现
@@ -17,7 +21,6 @@
  5.基协议：<NSObject>是基协议，是最根本最根本的协议，其中声明了很多最基本的方法，比如description，retain，release
 
  */
-
 //声明协议
 @protocol chenProtocol <NSObject> //1.基协议可以选择遵守或者不遵守2.遵守其它的1个或者多个协议
 @optional //不强制要求实现的方法
@@ -27,11 +30,10 @@
 - (void)test2;
 @end
 
-//遵守实现协议
-@interface ChenObje : NSObject<chenProtocol>//遵守协议
 
-//要求某个成员变量遵守某个协议
-@property(nonatomic,weak)id<chenProtocol> delegate;
+
+@interface ChenObje : NSObject<chenProtocol>//遵守协议
+@property(nonatomic,weak)id<chenProtocol> delegate;// 成员变量遵守某个协议
 @end
 
 @implementation ChenObje
@@ -39,18 +41,4 @@
 - (void)test2{
 
 }
-/** 协议包装成数据对象 */
-- (void)test3{
-
-    Protocol *protocol = @protocol(chenProtocol);
-    
-}
 @end
-
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
-    return 0;
-}

@@ -51,8 +51,9 @@
  */
 
 #include "01Rules/01ValueType.c"
+#include "01ValueType.h"
 
 int main(int argc, const char * argv[]) {
-
+    runFunc();
     return 0;
 }
