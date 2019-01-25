@@ -11,6 +11,25 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
+//        0.内存管理
+//        a.引用计数式
+//        b.MRC ARC
+//        c.成员修饰符
+//        d.各种应用场景 block 自动释放池 代理
+//
+//        0 kvc kvo 通知
+//        1.线程 进程 runloop runtime
+//
+//        2.网络请求，数据加密 ，认证 数据解析
+//
+//        3.数据库，数据存储， plist 偏好设置 归档
+//
+//        4.事件传递 响应 手势
+//        静态库 cocopos git hub   git gitlab
+//        硬件信息  推送 通知  应用跳转
+//        项目设置 真机 打包 部署   上架
+//        颜色 图片常识 web技术 webview 调试
+
     }
     return 0;
 }
