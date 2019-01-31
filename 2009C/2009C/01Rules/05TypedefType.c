@@ -76,6 +76,8 @@ static void test4(){
     //    二级指针
     int*  *p5;
 
+
+
 }
 
 /**
@@ -103,4 +105,11 @@ static void test6(){
     enum man*      (*p72)[3];  // enum man* 型指针
     struct person* (*p82)[3];  // struct person* 型指针
     void          (*(*p92)[3])(void); // void(*func)(void)型指针
+}
+
+/**
+ 各种数据类型作为 函数的 参数 返回值
+ */
+static void test61(){
+
 }

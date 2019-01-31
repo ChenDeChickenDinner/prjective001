@@ -12,13 +12,16 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
 //        0.内存管理
-//        a.引用计数式
+        //         野指针 错误:僵尸对象访问 错误提示语句
+//         空指针
+//        a.引用计数式  野指针 空指针
 //        b.MRC ARC
 //        c.成员修饰符
-//        d.各种应用场景 block 自动释放池 代理
+//        d.各种应用场景 block 自动释放池 代理 copy   内存泄露  僵尸对象检测
+
 //
 //        0 kvc kvo 通知
-//        1.线程 进程 runloop runtime
+//        1.线程 进程 runloop runtime APP的启动 循环 后台前台
 //
 //        2.网络请求，数据加密 ，认证 数据解析
 //
@@ -30,6 +33,7 @@ int main(int argc, const char * argv[]) {
 //        项目设置 真机 打包 部署   上架
 //        颜色 图片常识 web技术 webview 调试
 
+//        xcode 高级功能
     }
     return 0;
 }

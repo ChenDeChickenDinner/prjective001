@@ -21,7 +21,7 @@
 
  */
 + (void)test1{
-NSString
+
     NSInteger value_integer = 10;
     NSUInteger value_uinteger = 10;
 
