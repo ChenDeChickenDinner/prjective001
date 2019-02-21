@@ -24,12 +24,15 @@ static void test1(){
     /* OC中的基本数据类型  NSInteger NSUInteger  CGFloat
      1. NSInteger = int/long
      2. NSUInteger = unsigned int/ unsigned long
-     3. static const NSInteger NSNotFound = NSIntegerMax;
      3. CGFloat = float/double;也就是说在64位系统下,CGFLOAT是double类型,32位系统下是float类型.
      */
     /*
      #define NSIntegerMax    LONG_MAX
      #define NSIntegerMin    LONG_MIN
+     #define NSUIntegerMax   ULONG_MAX
+
+     static const NSInteger NSNotFound = NSIntegerMax;
+
      */
 }
 

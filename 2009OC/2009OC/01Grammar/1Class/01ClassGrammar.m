@@ -48,11 +48,7 @@
  4.@property可以同时生成setter和getter的声明和实现
  d1.setter和getter方法中的实现，会去访问下划线 _ 开头的成员变量(若没有就会自动生成)
  d2.如果同时 手动实现了 set get 的实现，则不会生成_ 开头的成员变量（so，若property了，则不同同时重写 set get 方法）
-5.@property 的参数 内心
- 1.
- 2.
- 3.
- 4.
+
  */
 
 /** 方法
