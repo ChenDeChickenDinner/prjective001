@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		552D1A91221E788C00022B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A90221E788C00022B63 /* main.m */; };
+		552D1A9A221F913900022B63 /* ClassStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A99221F913900022B63 /* ClassStruct.m */; };
+		552D1AA0221F995000022B63 /* method_t.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A9F221F995000022B63 /* method_t.m */; };
+		552D1AA3221F996500022B63 /* isa.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1AA2221F996500022B63 /* isa.m */; };
+		552D1AAA221FA01F00022B63 /* classLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1AA9221FA01F00022B63 /* classLoad.m */; };
+		552D1AAD221FA15500022B63 /* msgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1AAC221FA15500022B63 /* msgSend.m */; };
+		552D1AB0221FCBF200022B63 /* runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1AAF221FCBF200022B63 /* runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +32,18 @@
 		552D1A8D221E788C00022B63 /* test1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test1; sourceTree = BUILT_PRODUCTS_DIR; };
 		552D1A90221E788C00022B63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		552D1A97221E820B00022B63 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		552D1A98221F913900022B63 /* ClassStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassStruct.h; sourceTree = "<group>"; };
+		552D1A99221F913900022B63 /* ClassStruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassStruct.m; sourceTree = "<group>"; };
+		552D1A9E221F995000022B63 /* method_t.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = method_t.h; sourceTree = "<group>"; };
+		552D1A9F221F995000022B63 /* method_t.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = method_t.m; sourceTree = "<group>"; };
+		552D1AA1221F996500022B63 /* isa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isa.h; sourceTree = "<group>"; };
+		552D1AA2221F996500022B63 /* isa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = isa.m; sourceTree = "<group>"; };
+		552D1AA8221FA01F00022B63 /* classLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = classLoad.h; sourceTree = "<group>"; };
+		552D1AA9221FA01F00022B63 /* classLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = classLoad.m; sourceTree = "<group>"; };
+		552D1AAB221FA15500022B63 /* msgSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = msgSend.h; sourceTree = "<group>"; };
+		552D1AAC221FA15500022B63 /* msgSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = msgSend.m; sourceTree = "<group>"; };
+		552D1AAE221FCBF200022B63 /* runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = runtime.h; sourceTree = "<group>"; };
+		552D1AAF221FCBF200022B63 /* runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +76,54 @@
 		552D1A8F221E788C00022B63 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				552D1AA7221F9F9F00022B63 /* 类的结构 */,
+				552D1AA4221F9F7400022B63 /* 类的加载 */,
+				552D1AA6221F9F9100022B63 /* 运行时 */,
+				552D1AA5221F9F7A00022B63 /* 运行时运用技术 */,
 				552D1A97221E820B00022B63 /* main.cpp */,
 				552D1A90221E788C00022B63 /* main.m */,
 			);
 			path = test1;
+			sourceTree = "<group>";
+		};
+		552D1AA4221F9F7400022B63 /* 类的加载 */ = {
+			isa = PBXGroup;
+			children = (
+				552D1AA8221FA01F00022B63 /* classLoad.h */,
+				552D1AA9221FA01F00022B63 /* classLoad.m */,
+			);
+			path = "类的加载";
+			sourceTree = "<group>";
+		};
+		552D1AA5221F9F7A00022B63 /* 运行时运用技术 */ = {
+			isa = PBXGroup;
+			children = (
+				552D1AAB221FA15500022B63 /* msgSend.h */,
+				552D1AAC221FA15500022B63 /* msgSend.m */,
+			);
+			path = "运行时运用技术";
+			sourceTree = "<group>";
+		};
+		552D1AA6221F9F9100022B63 /* 运行时 */ = {
+			isa = PBXGroup;
+			children = (
+				552D1AAE221FCBF200022B63 /* runtime.h */,
+				552D1AAF221FCBF200022B63 /* runtime.m */,
+			);
+			path = "运行时";
+			sourceTree = "<group>";
+		};
+		552D1AA7221F9F9F00022B63 /* 类的结构 */ = {
+			isa = PBXGroup;
+			children = (
+				552D1A98221F913900022B63 /* ClassStruct.h */,
+				552D1A99221F913900022B63 /* ClassStruct.m */,
+				552D1AA1221F996500022B63 /* isa.h */,
+				552D1AA2221F996500022B63 /* isa.m */,
+				552D1A9E221F995000022B63 /* method_t.h */,
+				552D1A9F221F995000022B63 /* method_t.m */,
+			);
+			path = "类的结构";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				552D1A91221E788C00022B63 /* main.m in Sources */,
+				552D1AAA221FA01F00022B63 /* classLoad.m in Sources */,
+				552D1AA0221F995000022B63 /* method_t.m in Sources */,
+				552D1AA3221F996500022B63 /* isa.m in Sources */,
+				552D1A9A221F913900022B63 /* ClassStruct.m in Sources */,
+				552D1AAD221FA15500022B63 /* msgSend.m in Sources */,
+				552D1AB0221FCBF200022B63 /* runtime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

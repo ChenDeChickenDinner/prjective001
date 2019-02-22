@@ -15,6 +15,10 @@
 struct objc_object {
     isa_t isa;
 }
+
+/**
+ Class的底层结构
+ */
 struct objc_class:objc_object {
     //Class ISA;
     Class superclass;
@@ -48,4 +52,26 @@ struct class_ro_t { //只读表
  baseMethodList、baseProtocols、ivars、baseProperties是一维数组，是只读的，包含了类的初始内容
  (method_list_t *):[method_t,method_t,method_t]
  */
+};
+
+
+/**
+ 分类底层结构体，每一个分类就是一个结构体指针
+ */
+struct category_t {
+    const char *name;
+    classref_t cls;
+    struct method_list_t *instanceMethods;
+    struct method_list_t *classMethods;
+    struct protocol_list_t *protocols;
+    struct property_list_t *instanceProperties;
+    // Fields below this point are not always present on disk.
+    struct property_list_t *_classProperties;
+
+    method_list_t *methodsForMeta(bool isMeta) {
+        if (isMeta) return classMethods;
+        else return instanceMethods;
+    }
+
+    property_list_t *propertiesForMeta(bool isMeta, struct header_info *hi);
 };

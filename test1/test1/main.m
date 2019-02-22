@@ -86,30 +86,83 @@ void test1(){
 }
 void test3(){
     { // class
+        Class class1 = Nil;
 
+        /* Class 类型
+         1.类对象 以及元类对象的类型 都是 Class
+         2.Class 是 struct objc_class * 结构体 指针
+         */
+        /* struct objc_class 结构体 组成解析
+         */
+
+
+        {1.Class isa;
+            a.instance实例对象的isa指向class类对象
+            b.class类对象的isa指向meta-class元类对象
+            c.所有meta-class元类对象的isa指向基类的meta-class
+            d.基类的meta-class元类对象的isa指向基类的class类对象（类方法最后成了对象方法）
+        }
+        {2.superclass
+        1.实例对象的superclass--->父类————>基类(到顶)
+        2.类对象的superclass--->父类的类对象————>基类的类对象
+        3.元类对象的superclass--->父类的元类对象————>基类的元类对象
+        4.基类的类对象的superclass = nil;
+        5.基类的元类对象的superclass = 基类的类对象的
+        }
     }
     { // meta-class对象（元类对象）
+        /*
+         每个类在内存中有且只有一个meta-class对象
+
+         */
+        NSObject *object1 = [[NSObject alloc] init];
+        // 传递实例对象 获取类对象
+        Class objectClass1 = object_getClass(object1);
+         // 传递类对象 获取元类对象
+        Class objectClass2 = object_getClass(objectClass1);
+        // 判断是否是元类对象
+        BOOL resule = class_isMetaClass(objectClass2);
+    }
+    { // class对象（类对象）
+        /*
+         1.每个类在内存中有且只有一个class对象
+         */
+        NSObject *object1 = [[NSObject alloc] init];
+        Class objectClass0 = [NSObject class];
+        Class objectClass1 = [object1 class];
+        Class objectClass3 = object_getClass(object1);
 
 
     }
-    { // class对象（类对象）
+    {
+        /* 1.Class objc_getClass(const char *aClassName)
+         1> 传入字符串类名
+         2> 返回对应的类对象
+         */
+        /*  2.object_getClass(id _Nullable obj) 的底层实现（根据参数对象的isa）
+         1.如果是 实例对象 返回实例对象 isa 所指向的对象(类对象)
+         2.如果是class对象，返回meta-class对象
+         3.如果是meta-class对象，返回NSObject（基类）的meta-class对象
+         */
 
-
-
+        /* - (Class)class、+ (Class)class 的底层实现
+         1> 返回的就是类对象
+         - (Class) {
+         return self->isa;
+         }
+         + (Class) {
+         return self;
+         }
+         */
     }
     { // instance对象（实例对象）
 
-
-
-    }
-    { // NSobject 底层结构
-
+        // NSobject 底层结构
 
     }
 
-    {
-    // 元类对象 类对象 实例对象 的链接关系
-    }
+
+
     
 }
 
