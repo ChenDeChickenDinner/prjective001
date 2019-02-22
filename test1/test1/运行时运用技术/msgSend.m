@@ -35,11 +35,8 @@
  4.从superClass的cache中查找方法(将方法缓存到reveiverClass的cache中)
  5.从superClass的class_rw_t中查找方法(将方法缓存到reveiverClass的cache中)
  6.层是否还有superClass
- 动态方法解析
  */
 - (void)test1{
-
-
 
 }
 /**
@@ -110,6 +107,8 @@
  */
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
 {
+    /* NSMethodSignature API
+     */
     if (aSelector == @selector(test)) {
         return [NSMethodSignature signatureWithObjCTypes:"v16@0:8"];
     }
@@ -130,8 +129,26 @@
      [anInvocation getArgument:NULL atIndex:0]
      */
     /*自由发挥，利用这个原理做一些 功能业务性的东西
-     
+
      */
 }
 @end
+
+/**
+ [super message]的底层实现
+ 1.消息接收者仍然是子类对象
+ 2.从父类开始查找方法的实现
+ struct objc_super arg = {self, [MJPerson class]};
+ objc_msgSendSuper(arg, @selector(message));
+ */
+struct objc_super {
+    __unsafe_unretained _Nonnull id receiver; // 消息接收者
+    __unsafe_unretained _Nonnull Class super_class; // 消息接收者的父类
+};
+static void test6(){
+
+}
+
+
+
 
