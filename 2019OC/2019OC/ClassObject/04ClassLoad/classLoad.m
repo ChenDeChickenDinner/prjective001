@@ -1,17 +1,16 @@
 //
-//  classLoad.h
-//  test1
+//  classLoad.m
+//  2019OC
 //
-//  Created by xs on 2019/2/22.
+//  Created by xs on 2019/2/25.
 //  Copyright © 2019 Touker. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "classLoad.h"
 
-@interface classLoad : NSObject
+@implementation classLoad
 
 @end
-
 /**
  编译阶段
  类 类扩展

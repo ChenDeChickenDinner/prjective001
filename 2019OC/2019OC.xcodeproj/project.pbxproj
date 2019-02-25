@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552D1A5B221E3F5200022B63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A5A221E3F5200022B63 /* AppDelegate.m */; };
-		552D1A5E221E3F5200022B63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A5D221E3F5200022B63 /* ViewController.m */; };
 		552D1A61221E3F5200022B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552D1A5F221E3F5200022B63 /* Main.storyboard */; };
 		552D1A63221E3F5200022B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552D1A62221E3F5200022B63 /* Assets.xcassets */; };
 		552D1A66221E3F5200022B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552D1A64221E3F5200022B63 /* LaunchScreen.storyboard */; };
 		552D1A69221E3F5200022B63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A68221E3F5200022B63 /* main.m */; };
-		552D1A72221E3F6F00022B63 /* BasicType.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A71221E3F6F00022B63 /* BasicType.m */; };
-		552D1A7C221E447D00022B63 /* 01ClassGrammar.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A7B221E447D00022B63 /* 01ClassGrammar.m */; };
-		552D1A82221E4C6100022B63 /* 02Thekeyword.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A81221E4C6100022B63 /* 02Thekeyword.m */; };
+		55B2B7F12223DCEC00900956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A5A221E3F5200022B63 /* AppDelegate.m */; };
+		55B2B7F22223DCEC00900956 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A5D221E3F5200022B63 /* ViewController.m */; };
+		55B2B7F32223DD1C00900956 /* blockType.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B7D72223D72200900956 /* blockType.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +33,20 @@
 		552D1A7B221E447D00022B63 /* 01ClassGrammar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01ClassGrammar.m; sourceTree = "<group>"; };
 		552D1A80221E4C6100022B63 /* 02Thekeyword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02Thekeyword.h; sourceTree = "<group>"; };
 		552D1A81221E4C6100022B63 /* 02Thekeyword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 02Thekeyword.m; sourceTree = "<group>"; };
+		55B2B7D62223D72200900956 /* blockType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockType.h; sourceTree = "<group>"; };
+		55B2B7D72223D72200900956 /* blockType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockType.m; sourceTree = "<group>"; };
+		55B2B7DB2223D85300900956 /* classStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = classStruct.h; sourceTree = "<group>"; };
+		55B2B7DC2223D85300900956 /* classStruct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = classStruct.m; sourceTree = "<group>"; };
+		55B2B7DE2223D9CC00900956 /* classLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = classLoad.h; sourceTree = "<group>"; };
+		55B2B7DF2223D9CC00900956 /* classLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = classLoad.m; sourceTree = "<group>"; };
+		55B2B7E52223DA9800900956 /* 00runtimeApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 00runtimeApi.m; sourceTree = "<group>"; };
+		55B2B7E62223DA9800900956 /* 02NSObject+associated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "02NSObject+associated.m"; sourceTree = "<group>"; };
+		55B2B7E72223DA9800900956 /* 03KvcKvo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 03KvcKvo.h; sourceTree = "<group>"; };
+		55B2B7E82223DA9800900956 /* 02NSObject+associated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "02NSObject+associated.h"; sourceTree = "<group>"; };
+		55B2B7E92223DA9800900956 /* 01msgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 01msgSend.m; sourceTree = "<group>"; };
+		55B2B7EA2223DA9800900956 /* 03KvcKvo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 03KvcKvo.m; sourceTree = "<group>"; };
+		55B2B7EB2223DA9800900956 /* 01msgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 01msgSend.h; sourceTree = "<group>"; };
+		55B2B7EC2223DA9800900956 /* 00runtimeApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00runtimeApi.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 			children = (
 				552D1A75221E43B900022B63 /* ClassObject */,
 				552D1A6F221E3F6100022B63 /* BaseType */,
+				55B2B7E12223D9F800900956 /* runtime */,
 				552D1A59221E3F5200022B63 /* AppDelegate.h */,
 				552D1A5A221E3F5200022B63 /* AppDelegate.m */,
 				552D1A5C221E3F5200022B63 /* ViewController.h */,
@@ -87,6 +100,8 @@
 			children = (
 				552D1A70221E3F6F00022B63 /* BasicType.h */,
 				552D1A71221E3F6F00022B63 /* BasicType.m */,
+				55B2B7D62223D72200900956 /* blockType.h */,
+				55B2B7D72223D72200900956 /* blockType.m */,
 			);
 			path = BaseType;
 			sourceTree = "<group>";
@@ -96,8 +111,9 @@
 			children = (
 				552D1A77221E43D300022B63 /* 01Grammar */,
 				552D1A78221E43F800022B63 /* 02Thekeyword */,
-				552D1A79221E442000022B63 /* 03Implementation */,
-				552D1A83221E717B00022B63 /* 04Api */,
+				55B2B7D92223D77A00900956 /* 03Class结构 */,
+				55B2B7DA2223D7A400900956 /* 04ClassLoad */,
+				552D1A83221E717B00022B63 /* 05Api */,
 			);
 			path = ClassObject;
 			sourceTree = "<group>";
@@ -120,18 +136,44 @@
 			path = 02Thekeyword;
 			sourceTree = "<group>";
 		};
-		552D1A79221E442000022B63 /* 03Implementation */ = {
+		552D1A83221E717B00022B63 /* 05Api */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = 03Implementation;
+			path = 05Api;
 			sourceTree = "<group>";
 		};
-		552D1A83221E717B00022B63 /* 04Api */ = {
+		55B2B7D92223D77A00900956 /* 03Class结构 */ = {
 			isa = PBXGroup;
 			children = (
+				55B2B7DB2223D85300900956 /* classStruct.h */,
+				55B2B7DC2223D85300900956 /* classStruct.m */,
 			);
-			path = 04Api;
+			path = "03Class结构";
+			sourceTree = "<group>";
+		};
+		55B2B7DA2223D7A400900956 /* 04ClassLoad */ = {
+			isa = PBXGroup;
+			children = (
+				55B2B7DE2223D9CC00900956 /* classLoad.h */,
+				55B2B7DF2223D9CC00900956 /* classLoad.m */,
+			);
+			path = 04ClassLoad;
+			sourceTree = "<group>";
+		};
+		55B2B7E12223D9F800900956 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				55B2B7EC2223DA9800900956 /* 00runtimeApi.h */,
+				55B2B7E52223DA9800900956 /* 00runtimeApi.m */,
+				55B2B7EB2223DA9800900956 /* 01msgSend.h */,
+				55B2B7E92223DA9800900956 /* 01msgSend.m */,
+				55B2B7E82223DA9800900956 /* 02NSObject+associated.h */,
+				55B2B7E62223DA9800900956 /* 02NSObject+associated.m */,
+				55B2B7E72223DA9800900956 /* 03KvcKvo.h */,
+				55B2B7EA2223DA9800900956 /* 03KvcKvo.m */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,12 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552D1A5E221E3F5200022B63 /* ViewController.m in Sources */,
+				55B2B7F32223DD1C00900956 /* blockType.m in Sources */,
+				55B2B7F12223DCEC00900956 /* AppDelegate.m in Sources */,
+				55B2B7F22223DCEC00900956 /* ViewController.m in Sources */,
 				552D1A69221E3F5200022B63 /* main.m in Sources */,
-				552D1A7C221E447D00022B63 /* 01ClassGrammar.m in Sources */,
-				552D1A82221E4C6100022B63 /* 02Thekeyword.m in Sources */,
-				552D1A72221E3F6F00022B63 /* BasicType.m in Sources */,
-				552D1A5B221E3F5200022B63 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

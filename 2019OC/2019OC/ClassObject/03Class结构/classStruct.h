@@ -1,37 +1,58 @@
 //
-//  method_t.h
-//  test1
+//  classStruct.h
+//  2019OC
 //
-//  Created by xs on 2019/2/22.
+//  Created by xs on 2019/2/25.
 //  Copyright © 2019 Touker. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface method_t : NSObject
+@interface classStruct : NSObject
 
 @end
+/**  isa指针
+ 1.在arm64架构之前，isa就是一个普通的指针，存储着Class、Meta-Class对象的内存地址
+ 2.从arm64架构开始，对isa进行了优化，变成了一个共用体（union）结构，还使用位域来存储更多的信息
+ union isa_t{
+ Class cls;
+ uintptr_t bits;
+ #   define ISA_MASK        0x00007ffffffffff8ULL
+ #   define ISA_MAGIC_MASK  0x001f800000000001ULL
+ #   define ISA_MAGIC_VALUE 0x001d800000000001ULL
+ struct {
+ uintptr_t nonpointer        : 1;
+ uintptr_t has_assoc         : 1;
+ uintptr_t has_cxx_dtor      : 1;
+ uintptr_t shiftcls          : 44; // MACH_VM_MAX_ADDRESS 0x7fffffe00000
+ uintptr_t magic             : 6;
+ uintptr_t weakly_referenced : 1;
+ uintptr_t deallocating      : 1;
+ uintptr_t has_sidetable_rc  : 1;
+ uintptr_t extra_rc          : 8;
+ };
+ }
+ */
 
-struct objc_class {
-    cache_t cache;             //方法缓存
+/**
+ //类对象 元类对象的 可读可写 表
+ struct class_rw_t {
+ /*
+ methods:[[method_list_t],[method_list_t],[method_list_t]]
+ method_list_t:一个类或者分类的方法列表
+ */
+method_array_t methods; //方法列表
 }
-struct class_rw_t { // 可读可写 表
-    /*
-     methods:[[method_list_t],[method_list_t],[method_list_t]]
-     method_list_t:一个类或者分类的方法列表
-     */
-    method_array_t methods; //方法列表
-}
-struct class_ro_t { //只读表
+//类对象 元类对象的 只读表
+struct class_ro_t {
     /*
      (method_list_t *):[method_t,method_t,method_t]
      */
     method_list_t * baseMethodList; //方法列表
 };
 
-/**
- 一个方法信息
- */
+
+//一个方法信息
 struct method_t {
     /*
      1. SEL
@@ -49,9 +70,8 @@ struct method_t {
 };
 
 
-/**
- 一个类/元类对象的方法缓存对象
- */
+
+//一个类/元类对象的方法缓存对象
 struct cache_t {
     /* 散列表的实现过程（空间换时间)（参数&value=index）
      1.存入的时候 以 SEL做为key 通过算法 得出一个index,直接存入对应的位置
@@ -70,3 +90,5 @@ struct bucket_t {
     cache_key_t _key; //SEL做为key
     IMP _imp; //方法地址
 }
+
+ */
