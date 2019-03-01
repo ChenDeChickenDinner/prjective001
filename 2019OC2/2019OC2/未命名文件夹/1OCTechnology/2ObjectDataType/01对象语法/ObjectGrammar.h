@@ -38,6 +38,7 @@
  2.线程安全:nonatomic,atomic
  3.读写限制:readonly,readwrite
  4.命名自定义:setter=xxx getter=xxx
+ 5.类方法:class(之会生成setter和getter的声明)
  */
 @property(nonatomic,readonly,getter=isDay) NSString *day;
 @property(nonatomic,copy) NSString *time;

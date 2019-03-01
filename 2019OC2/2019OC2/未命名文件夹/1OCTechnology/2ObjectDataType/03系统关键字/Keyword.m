@@ -69,14 +69,10 @@ static void test0(){
         // 协议对象
         Protocol *protocol = @protocol(NSObject);
     }
-    /*
-     @property (class, readonly, strong) NSRunLoop *currentRunLoop;
-     @property (nullable, readonly, copy) NSRunLoopMode currentMode;
-     - (void)performSelector:(SEL)aSelector withObject:(nullable id)anArgument afterDelay:(NSTimeInterval)delay;
-
-     */
 
 }
+
+
 @implementation Keyword
 
 @end

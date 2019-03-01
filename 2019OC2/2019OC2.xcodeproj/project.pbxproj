@@ -36,6 +36,7 @@
 		55B2B940222920CA00900956 /* XSGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B93F222920CA00900956 /* XSGCDTimer.m */; };
 		55B2B9472229223500900956 /* XSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9462229223500900956 /* XSProxy.m */; };
 		55B2B94A2229227B00900956 /* MemoryManagePointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9492229227B00900956 /* MemoryManagePointer.m */; };
+		55B2B96322292AA700900956 /* XSNullable.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B96222292AA700900956 /* XSNullable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,8 @@
 		55B2B9462229223500900956 /* XSProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSProxy.m; sourceTree = "<group>"; };
 		55B2B9482229227B00900956 /* MemoryManagePointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManagePointer.h; sourceTree = "<group>"; };
 		55B2B9492229227B00900956 /* MemoryManagePointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManagePointer.m; sourceTree = "<group>"; };
+		55B2B96122292AA700900956 /* XSNullable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSNullable.h; sourceTree = "<group>"; };
+		55B2B96222292AA700900956 /* XSNullable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSNullable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -569,6 +572,8 @@
 			children = (
 				55B2B9072229193200900956 /* Keyword.h */,
 				55B2B9082229193200900956 /* Keyword.m */,
+				55B2B96122292AA700900956 /* XSNullable.h */,
+				55B2B96222292AA700900956 /* XSNullable.m */,
 			);
 			path = "03系统关键字";
 			sourceTree = "<group>";
@@ -756,6 +761,7 @@
 				55B2B93122291FC400900956 /* Thread.m in Sources */,
 				55B2B91C22291AC300900956 /* KvoTechnology.m in Sources */,
 				55B2B9372229206300900956 /* GDCThread.m in Sources */,
+				55B2B96322292AA700900956 /* XSNullable.m in Sources */,
 				55B2B90D222919B400900956 /* blockType.m in Sources */,
 				55B2B9032229181800900956 /* ObjectGrammar.m in Sources */,
 				55B2B8B32229171A00900956 /* ViewController.m in Sources */,
