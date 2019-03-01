@@ -32,6 +32,9 @@
 		55B2B88E2228FB1D00900956 /* memoryManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B88D2228FB1D00900956 /* memoryManage.m */; };
 		55B2B8912228FF0D00900956 /* XSNSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B8902228FF0D00900956 /* XSNSProxy.m */; };
 		55B2B895222900DB00900956 /* OCApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B894222900DB00900956 /* OCApi.m */; };
+		55B2B89B2229043B00900956 /* NSTimerX.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B89A2229043B00900956 /* NSTimerX.m */; };
+		55B2B89E2229046F00900956 /* GCDTimerX.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B89D2229046F00900956 /* GCDTimerX.m */; };
+		55B2B8A122290A6E00900956 /* 02Thekeyword.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D1A81221E4C6100022B63 /* 02Thekeyword.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +104,10 @@
 		55B2B8902228FF0D00900956 /* XSNSProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSNSProxy.m; sourceTree = "<group>"; };
 		55B2B893222900DB00900956 /* OCApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCApi.h; sourceTree = "<group>"; };
 		55B2B894222900DB00900956 /* OCApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCApi.m; sourceTree = "<group>"; };
+		55B2B8992229043B00900956 /* NSTimerX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerX.h; sourceTree = "<group>"; };
+		55B2B89A2229043B00900956 /* NSTimerX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerX.m; sourceTree = "<group>"; };
+		55B2B89C2229046F00900956 /* GCDTimerX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimerX.h; sourceTree = "<group>"; };
+		55B2B89D2229046F00900956 /* GCDTimerX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimerX.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,22 +156,23 @@
 			path = 2019OC;
 			sourceTree = "<group>";
 		};
-		552D1A6F221E3F6100022B63 /* BaseType */ = {
+		552D1A6F221E3F6100022B63 /* dataType */ = {
 			isa = PBXGroup;
 			children = (
 				552D1A70221E3F6F00022B63 /* BasicType.h */,
 				552D1A71221E3F6F00022B63 /* BasicType.m */,
+				552D1A80221E4C6100022B63 /* 02Thekeyword.h */,
+				552D1A81221E4C6100022B63 /* 02Thekeyword.m */,
 				55B2B7D62223D72200900956 /* blockType.h */,
 				55B2B7D72223D72200900956 /* blockType.m */,
 			);
-			path = BaseType;
+			path = dataType;
 			sourceTree = "<group>";
 		};
 		552D1A75221E43B900022B63 /* ClassObject */ = {
 			isa = PBXGroup;
 			children = (
 				552D1A77221E43D300022B63 /* 01Grammar */,
-				552D1A78221E43F800022B63 /* 02Thekeyword */,
 				55B2B7D92223D77A00900956 /* 03Class结构 */,
 				55B2B7DA2223D7A400900956 /* 04ClassLoad */,
 			);
@@ -178,15 +186,6 @@
 				552D1A7B221E447D00022B63 /* 01ClassGrammar.m */,
 			);
 			path = 01Grammar;
-			sourceTree = "<group>";
-		};
-		552D1A78221E43F800022B63 /* 02Thekeyword */ = {
-			isa = PBXGroup;
-			children = (
-				552D1A80221E4C6100022B63 /* 02Thekeyword.h */,
-				552D1A81221E4C6100022B63 /* 02Thekeyword.m */,
-			);
-			path = 02Thekeyword;
 			sourceTree = "<group>";
 		};
 		55B2B7D92223D77A00900956 /* 03Class结构 */ = {
@@ -345,6 +344,8 @@
 			children = (
 				55B2B893222900DB00900956 /* OCApi.h */,
 				55B2B894222900DB00900956 /* OCApi.m */,
+				55B2B8A02229050F00900956 /* PerformSelector */,
+				55B2B8982229041A00900956 /* Timer */,
 				55B2B82F2226B43600900956 /* XSTimer.h */,
 				55B2B8302226B43600900956 /* XSTimer.m */,
 				55B2B8412227D98900900956 /* XSPerformSelector.h */,
@@ -362,7 +363,7 @@
 			children = (
 				55B2B88A2228DA5700900956 /* IOOperation */,
 				552D1A75221E43B900022B63 /* ClassObject */,
-				552D1A6F221E3F6100022B63 /* BaseType */,
+				552D1A6F221E3F6100022B63 /* dataType */,
 				55B2B88B2228F82100900956 /* memoryManag */,
 				55B2B7E12223D9F800900956 /* runtime */,
 				55B2B80722251B2100900956 /* thread */,
@@ -374,8 +375,34 @@
 		55B2B8972229015C00900956 /* XSTechnology */ = {
 			isa = PBXGroup;
 			children = (
+				55B2B89F2229049900900956 /* XSTimer */,
 			);
 			path = XSTechnology;
+			sourceTree = "<group>";
+		};
+		55B2B8982229041A00900956 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				55B2B8992229043B00900956 /* NSTimerX.h */,
+				55B2B89A2229043B00900956 /* NSTimerX.m */,
+				55B2B89C2229046F00900956 /* GCDTimerX.h */,
+				55B2B89D2229046F00900956 /* GCDTimerX.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		55B2B89F2229049900900956 /* XSTimer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XSTimer;
+			sourceTree = "<group>";
+		};
+		55B2B8A02229050F00900956 /* PerformSelector */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PerformSelector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +482,8 @@
 				55B2B7F12223DCEC00900956 /* AppDelegate.m in Sources */,
 				55B2B8372226B46F00900956 /* XSNotification.m in Sources */,
 				55B2B895222900DB00900956 /* OCApi.m in Sources */,
+				55B2B8A122290A6E00900956 /* 02Thekeyword.m in Sources */,
+				55B2B89B2229043B00900956 /* NSTimerX.m in Sources */,
 				55B2B813222615B600900956 /* GDCThread.m in Sources */,
 				55B2B8312226B43600900956 /* XSTimer.m in Sources */,
 				55B2B8882228C64100900956 /* ThreadSecurity.m in Sources */,
@@ -468,6 +497,7 @@
 				55B2B8402227C47400900956 /* XSPermenantThread.m in Sources */,
 				55B2B8852228C62E00900956 /* ThreadCommunication.m in Sources */,
 				55B2B8342226B44700900956 /* XSSingleton.m in Sources */,
+				55B2B89E2229046F00900956 /* GCDTimerX.m in Sources */,
 				55B2B7F22223DCEC00900956 /* ViewController.m in Sources */,
 				552D1A69221E3F5200022B63 /* main.m in Sources */,
 			);

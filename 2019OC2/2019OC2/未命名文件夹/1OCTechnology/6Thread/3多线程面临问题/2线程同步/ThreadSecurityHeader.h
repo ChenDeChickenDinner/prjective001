@@ -1,25 +1,22 @@
 //
-//  ThreadSecurity.m
-//  2019OC
+//  ThreadSecurityHeader.h
+//  2019OC2
 //
 //  Created by xs on 2019/3/1.
 //  Copyright © 2019 Touker. All rights reserved.
 //
 
-#import "ThreadSecurity.h"
-//线程安全,
-//线程同步本质，让多个线程 不同事访问资源
-//技术1.子线程串行队列
-//技术2.加锁
-@implementation ThreadSecurity
+#ifndef ThreadSecurityHeader_h
+#define ThreadSecurityHeader_h
 
-@end
+
+#endif /* ThreadSecurityHeader_h */
 /*
  //线程安全,
  //线程同步本质，让多个线程 不同事访问资源
  //技术1.子线程串行队列
  //技术2.加锁
- 
+
  1.一个访问量，一个方法
  2.一个访问量，多个方法，
 
