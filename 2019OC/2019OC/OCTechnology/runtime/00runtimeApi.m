@@ -66,6 +66,7 @@ void run(){
     class_addMethod(person, @selector(run), (IMP)run, "v@:");
 
     objc_disposeClassPair(person);
+    
 }
 
 /**
