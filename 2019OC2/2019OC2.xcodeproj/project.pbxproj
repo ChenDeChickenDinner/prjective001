@@ -35,8 +35,17 @@
 		55B2B93D2229208A00900956 /* CXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B93B2229208A00900956 /* CXOperation.m */; };
 		55B2B940222920CA00900956 /* XSGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B93F222920CA00900956 /* XSGCDTimer.m */; };
 		55B2B9472229223500900956 /* XSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9462229223500900956 /* XSProxy.m */; };
-		55B2B94A2229227B00900956 /* MemoryManagePointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9492229227B00900956 /* MemoryManagePointer.m */; };
 		55B2B96322292AA700900956 /* XSNullable.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B96222292AA700900956 /* XSNullable.m */; };
+		55B2B966222A480400900956 /* MemoryDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B965222A480400900956 /* MemoryDistribution.m */; };
+		55B2B969222A4E7400900956 /* XSThreadSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B968222A4E7400900956 /* XSThreadSecurity.m */; };
+		55B2B96C222A565E00900956 /* MemoryMangeNature.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B96B222A565E00900956 /* MemoryMangeNature.m */; };
+		55B2B999222A6C4500900956 /* XSCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B998222A6C4500900956 /* XSCopy.m */; };
+		55B2B99C222A763400900956 /* MemoryMangeARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B99B222A763400900956 /* MemoryMangeARC.m */; };
+		55B2B99F222A764500900956 /* MemoryMangeMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B99E222A764500900956 /* MemoryMangeMRC.m */; };
+		55B2B9BF222CCDAE00900956 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9BE222CCDAE00900956 /* Person.m */; };
+		55B2B9C2222CCDBA00900956 /* car.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9C1222CCDBA00900956 /* car.m */; };
+		55B2B9F0222D28FE00900956 /* MemoryCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9EF222D28FE00900956 /* MemoryCopy.m */; };
+		55B2B9F4222D299D00900956 /* MemoryOtherDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B9F3222D299D00900956 /* MemoryOtherDataType.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,10 +107,28 @@
 		55B2B944222921BE00900956 /* ThreadSecurityHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSecurityHeader.h; sourceTree = "<group>"; };
 		55B2B9452229223500900956 /* XSProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSProxy.h; sourceTree = "<group>"; };
 		55B2B9462229223500900956 /* XSProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSProxy.m; sourceTree = "<group>"; };
-		55B2B9482229227B00900956 /* MemoryManagePointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManagePointer.h; sourceTree = "<group>"; };
-		55B2B9492229227B00900956 /* MemoryManagePointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManagePointer.m; sourceTree = "<group>"; };
 		55B2B96122292AA700900956 /* XSNullable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSNullable.h; sourceTree = "<group>"; };
 		55B2B96222292AA700900956 /* XSNullable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSNullable.m; sourceTree = "<group>"; };
+		55B2B964222A480400900956 /* MemoryDistribution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryDistribution.h; sourceTree = "<group>"; };
+		55B2B965222A480400900956 /* MemoryDistribution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryDistribution.m; sourceTree = "<group>"; };
+		55B2B967222A4E7400900956 /* XSThreadSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSThreadSecurity.h; sourceTree = "<group>"; };
+		55B2B968222A4E7400900956 /* XSThreadSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSThreadSecurity.m; sourceTree = "<group>"; };
+		55B2B96A222A565E00900956 /* MemoryMangeNature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryMangeNature.h; sourceTree = "<group>"; };
+		55B2B96B222A565E00900956 /* MemoryMangeNature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryMangeNature.m; sourceTree = "<group>"; };
+		55B2B997222A6C4500900956 /* XSCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSCopy.h; sourceTree = "<group>"; };
+		55B2B998222A6C4500900956 /* XSCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSCopy.m; sourceTree = "<group>"; };
+		55B2B99A222A763400900956 /* MemoryMangeARC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryMangeARC.h; sourceTree = "<group>"; };
+		55B2B99B222A763400900956 /* MemoryMangeARC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryMangeARC.m; sourceTree = "<group>"; };
+		55B2B99D222A764500900956 /* MemoryMangeMRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryMangeMRC.h; sourceTree = "<group>"; };
+		55B2B99E222A764500900956 /* MemoryMangeMRC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryMangeMRC.m; sourceTree = "<group>"; };
+		55B2B9BD222CCDAE00900956 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		55B2B9BE222CCDAE00900956 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		55B2B9C0222CCDBA00900956 /* car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = car.h; sourceTree = "<group>"; };
+		55B2B9C1222CCDBA00900956 /* car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = car.m; sourceTree = "<group>"; };
+		55B2B9EE222D28FD00900956 /* MemoryCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryCopy.h; sourceTree = "<group>"; };
+		55B2B9EF222D28FE00900956 /* MemoryCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryCopy.m; sourceTree = "<group>"; };
+		55B2B9F2222D299D00900956 /* MemoryOtherDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryOtherDataType.h; sourceTree = "<group>"; };
+		55B2B9F3222D299D00900956 /* MemoryOtherDataType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryOtherDataType.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,66 +365,59 @@
 		55B2B8D82229172C00900956 /* 3MemoryManag */ = {
 			isa = PBXGroup;
 			children = (
-				55B2B8D92229172C00900956 /* 01内存分布 */,
-				55B2B8DF2229172C00900956 /* 02存储技术 */,
+				55B2B8D92229172C00900956 /* 01内存分布存储 */,
 				55B2B8DA2229172C00900956 /* 03内存管理 */,
 			);
 			path = 3MemoryManag;
 			sourceTree = "<group>";
 		};
-		55B2B8D92229172C00900956 /* 01内存分布 */ = {
+		55B2B8D92229172C00900956 /* 01内存分布存储 */ = {
 			isa = PBXGroup;
 			children = (
+				55B2B964222A480400900956 /* MemoryDistribution.h */,
+				55B2B965222A480400900956 /* MemoryDistribution.m */,
 			);
-			path = "01内存分布";
+			path = "01内存分布存储";
 			sourceTree = "<group>";
 		};
 		55B2B8DA2229172C00900956 /* 03内存管理 */ = {
 			isa = PBXGroup;
 			children = (
-				55B2B9482229227B00900956 /* MemoryManagePointer.h */,
-				55B2B9492229227B00900956 /* MemoryManagePointer.m */,
+				55B2B9A0222A768B00900956 /* 0管理范围内外 */,
 				55B2B8DC2229172C00900956 /* 1内存管理本质 */,
-				55B2B8DD2229172C00900956 /* 2MRC */,
-				55B2B8DE2229172C00900956 /* 3ARC */,
-				55B2B8DB2229172C00900956 /* 4运用注意点 */,
+				55B2B8DE2229172C00900956 /* 2自动释放池 */,
+				55B2B8DB2229172C00900956 /* 3运用场景 */,
 			);
 			path = "03内存管理";
 			sourceTree = "<group>";
 		};
-		55B2B8DB2229172C00900956 /* 4运用注意点 */ = {
+		55B2B8DB2229172C00900956 /* 3运用场景 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "4运用注意点";
+			path = "3运用场景";
 			sourceTree = "<group>";
 		};
 		55B2B8DC2229172C00900956 /* 1内存管理本质 */ = {
 			isa = PBXGroup;
 			children = (
+				55B2B9F5222D2A5A00900956 /* 框架底层相关数据类型 */,
+				55B2B9F1222D290C00900956 /* 素材 */,
+				55B2B96A222A565E00900956 /* MemoryMangeNature.h */,
+				55B2B96B222A565E00900956 /* MemoryMangeNature.m */,
+				55B2B99D222A764500900956 /* MemoryMangeMRC.h */,
+				55B2B99E222A764500900956 /* MemoryMangeMRC.m */,
+				55B2B99A222A763400900956 /* MemoryMangeARC.h */,
+				55B2B99B222A763400900956 /* MemoryMangeARC.m */,
 			);
 			path = "1内存管理本质";
 			sourceTree = "<group>";
 		};
-		55B2B8DD2229172C00900956 /* 2MRC */ = {
+		55B2B8DE2229172C00900956 /* 2自动释放池 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = 2MRC;
-			sourceTree = "<group>";
-		};
-		55B2B8DE2229172C00900956 /* 3ARC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 3ARC;
-			sourceTree = "<group>";
-		};
-		55B2B8DF2229172C00900956 /* 02存储技术 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "02存储技术";
+			path = "2自动释放池";
 			sourceTree = "<group>";
 		};
 		55B2B8E02229172C00900956 /* 6Thread */ = {
@@ -414,7 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				55B2B8E92229172C00900956 /* 1多线程与内存管理 */,
-				55B2B8E42229172C00900956 /* 2线程同步 */,
+				55B2B8E42229172C00900956 /* 2线程安全 */,
 				55B2B8E22229172C00900956 /* 3线程保活 */,
 				55B2B8E52229172C00900956 /* 4多线程复杂使用场景 */,
 			);
@@ -438,12 +458,14 @@
 			path = "线程与runloop结合处理事件";
 			sourceTree = "<group>";
 		};
-		55B2B8E42229172C00900956 /* 2线程同步 */ = {
+		55B2B8E42229172C00900956 /* 2线程安全 */ = {
 			isa = PBXGroup;
 			children = (
 				55B2B944222921BE00900956 /* ThreadSecurityHeader.h */,
+				55B2B967222A4E7400900956 /* XSThreadSecurity.h */,
+				55B2B968222A4E7400900956 /* XSThreadSecurity.m */,
 			);
-			path = "2线程同步";
+			path = "2线程安全";
 			sourceTree = "<group>";
 		};
 		55B2B8E52229172C00900956 /* 4多线程复杂使用场景 */ = {
@@ -606,6 +628,7 @@
 		55B2B8F72229172C00900956 /* 2OCAPI */ = {
 			isa = PBXGroup;
 			children = (
+				55B2B996222A6C3100900956 /* Copy */,
 				55B2B9422229213500900956 /* Timer */,
 				55B2B9412229212600900956 /* PerformSelector */,
 			);
@@ -677,6 +700,44 @@
 				55B2B93F222920CA00900956 /* XSGCDTimer.m */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		55B2B996222A6C3100900956 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				55B2B997222A6C4500900956 /* XSCopy.h */,
+				55B2B998222A6C4500900956 /* XSCopy.m */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		55B2B9A0222A768B00900956 /* 0管理范围内外 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "0管理范围内外";
+			sourceTree = "<group>";
+		};
+		55B2B9F1222D290C00900956 /* 素材 */ = {
+			isa = PBXGroup;
+			children = (
+				55B2B9BD222CCDAE00900956 /* Person.h */,
+				55B2B9BE222CCDAE00900956 /* Person.m */,
+				55B2B9C0222CCDBA00900956 /* car.h */,
+				55B2B9C1222CCDBA00900956 /* car.m */,
+			);
+			path = "素材";
+			sourceTree = "<group>";
+		};
+		55B2B9F5222D2A5A00900956 /* 框架底层相关数据类型 */ = {
+			isa = PBXGroup;
+			children = (
+				55B2B9EE222D28FD00900956 /* MemoryCopy.h */,
+				55B2B9EF222D28FE00900956 /* MemoryCopy.m */,
+				55B2B9F2222D299D00900956 /* MemoryOtherDataType.h */,
+				55B2B9F3222D299D00900956 /* MemoryOtherDataType.m */,
+			);
+			path = "框架底层相关数据类型";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -751,31 +812,40 @@
 			files = (
 				55B2B92522291BDB00900956 /* FuncRelated.m in Sources */,
 				55B2B91322291A0600900956 /* MsgSend.m in Sources */,
+				55B2B99C222A763400900956 /* MemoryMangeARC.m in Sources */,
+				55B2B999222A6C4500900956 /* XSCopy.m in Sources */,
 				55B2B92B22291EF400900956 /* XSNStimer.m in Sources */,
 				55B2B92E22291F8700900956 /* XSPermenantThread.m in Sources */,
 				55B2B900222917BE00900956 /* BaseDataType.m in Sources */,
-				55B2B94A2229227B00900956 /* MemoryManagePointer.m in Sources */,
 				55B2B92822291ED200900956 /* Runloop.m in Sources */,
 				55B2B93C2229208A00900956 /* CXQueue.m in Sources */,
 				55B2B91F22291BBE00900956 /* ClassRelated.m in Sources */,
 				55B2B93122291FC400900956 /* Thread.m in Sources */,
 				55B2B91C22291AC300900956 /* KvoTechnology.m in Sources */,
+				55B2B9C2222CCDBA00900956 /* car.m in Sources */,
 				55B2B9372229206300900956 /* GDCThread.m in Sources */,
 				55B2B96322292AA700900956 /* XSNullable.m in Sources */,
 				55B2B90D222919B400900956 /* blockType.m in Sources */,
 				55B2B9032229181800900956 /* ObjectGrammar.m in Sources */,
 				55B2B8B32229171A00900956 /* ViewController.m in Sources */,
+				55B2B966222A480400900956 /* MemoryDistribution.m in Sources */,
 				55B2B92222291BCB00900956 /* IvarRelated.m in Sources */,
+				55B2B96C222A565E00900956 /* MemoryMangeNature.m in Sources */,
+				55B2B9F0222D28FE00900956 /* MemoryCopy.m in Sources */,
 				55B2B93D2229208A00900956 /* CXOperation.m in Sources */,
 				55B2B91622291A5B00900956 /* NSObject+Associated.m in Sources */,
 				55B2B940222920CA00900956 /* XSGCDTimer.m in Sources */,
 				55B2B910222919EC00900956 /* classLoad.m in Sources */,
+				55B2B9BF222CCDAE00900956 /* Person.m in Sources */,
 				55B2B9342229202500900956 /* XCNSThread.m in Sources */,
+				55B2B99F222A764500900956 /* MemoryMangeMRC.m in Sources */,
 				55B2B8BE2229171B00900956 /* main.m in Sources */,
 				55B2B8B02229171A00900956 /* AppDelegate.m in Sources */,
 				55B2B9472229223500900956 /* XSProxy.m in Sources */,
 				55B2B9092229193200900956 /* Keyword.m in Sources */,
+				55B2B969222A4E7400900956 /* XSThreadSecurity.m in Sources */,
 				55B2B91922291AB800900956 /* KvcTechnology.m in Sources */,
+				55B2B9F4222D299D00900956 /* MemoryOtherDataType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
