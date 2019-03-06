@@ -103,18 +103,6 @@
     BOOL isexecuting = self.thread.executing;
 
 }
-/**
- 线程的安全
- */
-- (void)test4{
 
-    @synchronized(self){
-
-    }
-}
-- (void)test5{
-
-
-}
 
 @end

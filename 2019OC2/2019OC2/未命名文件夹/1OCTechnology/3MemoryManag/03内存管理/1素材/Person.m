@@ -10,7 +10,6 @@
 
 @implementation Person
 - (void)dealloc{
-    [super dealloc];
     NSLog(@"%s\n",__func__);
 }
 @end
