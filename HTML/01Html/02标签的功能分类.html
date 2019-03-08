@@ -1,0 +1,208 @@
+
+<!-- 标签 + 属性 + 内容
+1.标签: 标签就是<head>、<body>、<table>等被尖括号“<”和“>”包起来的对象
+a.每一种标签代表一种展示功能 以特定的形式展示不同类型的元素
+b.一种标签都有各自的显示效果
+
+2.标签的书写格式
+1.大多数标签是以成对的形式出现的:<div>标签开始  </div>标签结束
+2.少部分无结束标识:<br>
+3.HTML 标签对大小写不敏感：<P> 等同于 <p>,在 HTML 4 中推荐使用小写，而在未来 (X)HTML 版本中强制使用小写
+
+
+3.标签的显示样式
+块级标签
+独占一行的标签;能随时设置宽度和高度（比如div、p、h1、h2、ul、li）
+
+行内标签（内联标签）
+多个行内标签能同时显示在一行;宽度和高度取决于内容的尺寸（比如span、a、label）
+
+行内-块级标签（内联-块级标签）
+多个行内-块级标签可以显示在同一行;能随时设置宽度和高度（比如input、button）
+
+
+
+元素:
+1.被具体展示到浏览器中显示的数据
+2.不同类型的元素需要不同的标签来展示
+3.大多数 HTML 元素可拥有属性以来修饰自身
+4.没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的
+    a.<br> 就是没有关闭标签的空元素（<br> 标签定义换行）。
+    b.在未来版本的 HTML 中，所有元素都必须被关闭，使用 <br /> 其实是更长远的保障
+
+属性:为HTML元素提供各种附加信息的就是HTML属性
+
+属性的书写格式
+1.属性一般描述于开始标签
+2.一个元素可以有多种属性修饰
+3.属性总是以名称/值对的形式出现，比如：name="value"。
+4.属性和属性值对大小写不敏感,新版本的 (X)HTML 要求使用小写属性
+
+-->
+<!-- 0.按照特殊功能内
+1.
+
+ -->
+<!-- 1.按显示内容分类
+a.文字
+b.图片
+c.链接
+d.多媒体
+ -->
+ <!-- 2.按显示样式分类
+
+  -->
+
+  <!-- 
+    1.  <!DOCTYPE html> :这是一个声明,不是html标签;它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令
+    2.<!DOCTYPE> 声明必须是 HTML 文档的第一行，位于 <html> 标签之前。
+    3.<!DOCTYPE> 声明没有结束标签,对大小写不敏感.
+   -->
+  <!DOCTYPE html>
+<!-- 
+1.此元素可告知浏览器其自身是一个 HTML 文档
+2.<html> 与 </html> 标签限定了文档的开始点和结束点
+3.一个简单的 HTML 文档，带有最基本的必需的元素,在它们之间是文档的头部和主体<head> 标签定义，而主体由 <body> 标签定义。
+4.
+ -->
+  <html>
+
+  <!-- 
+1.<head> 标签用于定义文档的头部，它是所有头部元素的容器
+2.文档的头部描述了文档的各种属性和信息，包括文档的标题、在 Web 中的位置以及和其他文档的关系等
+3.绝大多数文档头部包含的数据都不会真正作为内容显示给读者
+4.下面这些标签可用在 head 部分：<base>, <link>, <meta>, <script>, <style>, 以及 <title>。
+5.<title> 定义文档的标题，它是 head 部分中唯一必需的元素
+   -->
+  <head>
+<!-- 
+  1.在浏览器中显示此网页的标题，如果没有则以文件名显示
+  2.一个文档中不能有一个以上的 <title> 元素。  
+-->
+   <title>我是标题</title>
+<!-- 
+1.单个显示，非成对出现，可以出现多个,一个 <meta> 代表一个元数据
+2.<meta> 标签提供了 HTML 文档的元数据。元数据不会显示在客户端，但是会被浏览器解析。
+3.META元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者及其他元数据。
+4.元数据可以被使用浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 Web 服务调用。 
+5.元数据通常以 名称/值 对出现,如果没有提供 name 属性，那么名称/值对中的名称会采用 http-equiv 属性的值
+name:取值范围（application-name:功能名称,author:作者,description:描述,generator:,keywords:关键字）
+http-equiv:取值范围(content-type:,default-style:,refresh:刷新)
+charset:取值范围(character_set)定义文档的字符编码
+ -->
+   <!-- 实例 1 - 定义文档关键词，用于搜索引擎： -->
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+<!-- 实例 2 - 定义web页面描述： -->
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+<!-- 实例 3 - 定义页面作者： -->
+<meta name="author" content="Hege Refsnes">
+<!-- 实例 4 - 每30秒刷新页面： -->
+<meta http-equiv="refresh" content="30">
+<!-- 在 HTML5 中，有一个新的 charset 属性，它使字符集的定义更加容易 -->
+<meta charset="utf-8">
+
+
+  </head>
+<!-- 
+1.<body> 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。
+ -->
+  <body>
+        <!-- 容器 -->
+        <div></div>
+        <span></span>
+
+
+        <b>加粗标签1</b>
+        <strong>加粗标签2</strong>
+        <em>强调标签</em>
+        <i>斜体标签</i>
+        <u>下划线标签</u>
+        <s>贯穿标签</s>
+        <sub>下标</sub>
+        <sup>上标</sup>
+
+      
+        <!--标题标签  -->
+        <h1>最大标题</h1>
+
+        <!-- 段落标签 -->
+        <p>段落1</p>
+
+        <!-- 图片标签 -->
+        <img src="http://b.hiphotos.baidu.com/image/h%3D300/sign=c8a9d4e2841363270aedc433a18fa056/11385343fbf2b2114a65cd70c48065380cd78e41.jpg" >
+
+         <!-- 超链接标签 -->
+         <a href="https://www.baidu.com">这是一个连接,百度一下</a>
+        <!-- 音频标签 -->
+         <video src=""></video>
+        <!-- 视频标签 -->
+         <audio src=""></audio>
+
+
+      <br><!-- 换行元素标签 -->
+      <hr><!-- 水平线  -->
+
+      <table>表格1</table>
+      <table>表格2</table>
+
+      <tr>表格21</tr>
+      <tr>表格22</tr>
+
+      <td>表格31</td>
+      <td>表格32</td>
+
+      <ul>列表1</ul>
+      <ul>列表1</ul>
+
+      <ol>列表2</ol>
+      <ol>列表2</ol>
+
+      <!-- 进度条控件 -->
+     <progress> </progress>
+     
+     
+
+      <form action="">
+        <label for="性别">男</label>
+        <!-- 输入框 -->
+        <textarea name="DIVCSS5" cols="30" rows="2"> 
+                www.DIVCSS5.com-网页制作教程 
+            </textarea> 
+      </form>
+
+      <!-- 选择控件 -->
+      <select name="" id="">
+          <!-- 选择栏 -->
+          <option value="0">选择1</option>
+          <option value="0">选择2</option>
+      </select>
+
+         <!-- 
+        1.<input> 标签规定用户可输入数据的输入字段
+        2.根据不同的 type 属性，输入字段有多种形态。输入字段可以是文本字段、复选框、密码字段、单选按钮、按钮等等
+        3.input 元素是空的，它只包含属性
+        4.type:
+        -->
+        <input type="text">
+        <input type="file">
+
+
+      <!-- .结构性标签 -->
+      <nav>菜单导航,链接导航</nav>
+      <article><!-- 文章主体内容 -->
+        <header>标记头部区域内容</header>
+        <section>区域章节表述 </section>
+        <footer>标记脚部区域内容</footer>
+      </article>
+
+      <!-- 块级性标签 -->
+      <aside>注记,贴士,侧栏,摘要,插入的引用作为补充主体的内容</aside>
+      <figure>对多个元素组合并展示的元素</figure>
+      <code>代码块</code>
+
+      <style></style>
+      <script></script>
+     
+  </body>
+
+  </html>
