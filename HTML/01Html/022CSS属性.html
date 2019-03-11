@@ -1,0 +1,139 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        /* 单位
+        %	百分比
+
+        in	英寸
+        cm	厘米
+        mm	毫米
+
+        em	
+        1em 等于当前的字体尺寸。
+        2em 等于当前字体尺寸的两倍。
+            例如，如果某元素以 12pt 显示，那么 2em 是24pt。
+            在 CSS 中，em 是非常有用的单位，因为它可以自动适应用户所使用的字体。
+        ex	一个 ex 是一个字体的 x-height。 (x-height 通常是字体尺寸的一半。)
+
+        pt	磅 (1 pt 等于 1/72 英寸)
+        pc	12 点活字 (1 pc 等于 12 点)
+        px	像素 (计算机屏幕上的一个点)
+        */
+
+        /* 
+        1.颜色类
+        2.尺寸类
+        4.大小类
+        3.字体类型
+        4.背景类
+        5.边框，边距类
+        6.定位类
+        */
+        body{
+            background-color: aliceblue;
+            background-image: url("http://b.hiphotos.baidu.com/image/h%3D300/sign=c8a9d4e2841363270aedc433a18fa056/11385343fbf2b2114a65cd70c48065380cd78e41.jpg");
+            background-repeat: "repeat-y,repeat-x";
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        p{
+            /* 通过文本属性，您可以改变文本的颜色、字符间距，对齐文本，装饰文本，对文本进行缩进，等等
+            1.通过使用 text-indent 属性，所有元素的第一行都可以缩进一个给定的长度，甚至该长度可以是负值
+            2.text-indent 可以使用所有长度单位，包括百分比值。百分数要相对于缩进元素父元素的宽度
+            3.text-align 是一个基本的属性，它会影响一个元素中的文本行互相之间的对齐方式。
+            4.word-spacing 属性可以改变字（单词）之间的标准间隔其默认值 normal 与设置值为 0 是一样的
+            5.letter-spacing 属性与 word-spacing 的区别在于，字母间隔修改的是字符或字母之间的间隔。
+            6.text-transform 属性处理文本的大小写。这个属性有 4 个值;默认值 none 对文本不做任何改动，将使用源文档中的原有大小写。顾名思义，uppercase 和 lowercase 将文本转换为全大写和全小写字符。最后，capitalize 只对每个单词的首字母大写
+            */
+            text-indent: 2em;
+            text-indent: 5%;
+            text-align: center;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            text-transform: capitalize;
+        }
+        p{
+            /* CSS 字体属性定义文本的字体系列、大小、加粗、风格（如斜体）和变形（如小型大写字母）
+            1.font-family可以指定字体系列，也可以指定更具体的字体 
+            2.font-style 属性最常用于规定斜体文本
+            3.font-variant 属性可以设定小型大写字母。
+            4.font-weight 属性设置文本的粗细
+            5.font-size 属性设置文本的大小。
+            */
+            font-family: sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }
+        /* 链接:设置链接的样式
+        1.能够设置链接样式的 CSS 属性有很多种（例如 color, font-family, background 等等）。
+        2.链接的特殊性在于能够根据它们所处的状态来设置它们的样式。
+        3.链接的四种状态：
+        a:link - 普通的、未被访问的链接
+        a:visited - 用户已访问的链接
+        a:hover - 鼠标指针位于链接的上方
+        a:active - 链接被点击的时刻
+        */
+        /* 链接根据其状态改变颜色 */
+        a:link {color:#FF0000;}		/* 未被访问的链接 */
+        a:visited {color:#00FF00;}	/* 已被访问的链接 */
+        a:hover {color:#FF00FF;}	/* 鼠标指针移动到链接上 */
+        a:active {color:#0000FF;} /* 正在被点击的链接 */
+
+        /* text-decoration 属性大多用于去掉链接中的下划线 */
+        a:link {text-decoration:none;}
+        a:visited {text-decoration:none;}
+        a:hover {text-decoration:underline;}
+        a:active {text-decoration:underline;}
+
+        /* background-color 属性规定链接的背景色 */
+        a:link {background-color:#B2FF99;}
+        a:visited {background-color:#FFFF85;}
+        a:hover {background-color:#FF704D;}
+        a:active {background-color:#FF704D;}
+    
+        /* 如需在 CSS 中设置表格边框，请使用 border 属性 */
+        table, th, td{
+            border: 1px solid blue;
+        }
+
+
+       /* 表格的 */
+        table{
+             /* border-collapse 属性设置是否将表格边框折叠为单一边框 */
+            border-collapse:collapse;
+
+            /* 通过 width 和 height 属性定义表格的宽度和高度。 */
+            width:100%;
+            height:50px;
+        }
+
+        td{
+            /*  text-align 和 vertical-align 属性设置表格中文本的对齐方式。
+            1.text-align 属性设置水平对齐方式，比如左对齐、右对齐或者居中
+            2.vertical-align 属性设置垂直对齐方式，比如顶部对齐、底部对齐或居中对齐
+            */
+            text-align:right;
+            vertical-align:bottom;
+            height:50px;
+        }
+        /* 轮廓 */
+        p{
+            outline-color: #FF0000;
+            outline-style: groove;
+            outline-width: 1px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+            <p>CSS 文本属性可定义文本的外观,通过文本属性，您可以改变文本的颜色、字符间距，对齐文本，装饰文本，对文本进行缩进，等等</p>
+    </div>
+
+</body>
+</html>

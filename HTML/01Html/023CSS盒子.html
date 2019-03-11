@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+     <!--   网页上的每一个标签都是一个盒子,每个盒子都有四个属性
+    1.内容（content）:盒子里装的东西,网页中通常是指文字和图片
+    2.内边距（padding:内容离边框的距离
+    3.边框（border）:盒子本身
+    4.外边距（margin）:边框离父容器边缘的距离，默认是0，当二个容器的外边距重叠的时候，不累加 而是取最大值
+    
+    盒子的其它属性
+    box-shadow:块阴影
+    text-shadow:圆角阴影
+    border-radius:圆角
+    border-image:边框图片
+    transform:形变 -->
+        <style>
+            td{
+                /*内边距  */
+                padding: 10px;
+
+                /* 边框 */
+                border-style: groove;
+                border-top-style: inherit;
+                
+                border-width: 2px;
+                border-top-width: 5px;
+
+                border-color: blueviolet;
+
+                border-radius: 5px;
+                box-shadow: 10px 10px red;
+            }
+            .divClass{
+                /* 外边距 */
+                background-color: cadetblue;
+                width: 150px;
+                height: 150px;
+                margin: 20px
+            }
+    
+        </style>
+
+</head>
+<body>
+        <table border="1">
+            <tr>
+                <td>表格1</td>
+                <td>表格1</td>
+                <td>表格1</td>
+            </tr>
+        </table>
+        <br>
+
+        <div class="divClass">外边距</div>
+</body>
+</html>

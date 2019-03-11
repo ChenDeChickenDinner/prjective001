@@ -101,108 +101,161 @@ charset:取值范围(character_set)定义文档的字符编码
 <!-- 在 HTML5 中，有一个新的 charset 属性，它使字符集的定义更加容易 -->
 <meta charset="utf-8">
 
+<style>
+span{
+  color: blueviolet;
+}
+</style>
 
   </head>
 <!-- 
 1.<body> 元素包含文档的所有内容（比如文本、超链接、图像、表格和列表等等）。
  -->
   <body>
-        <!-- 容器 -->
-        <div></div>
-        <span></span>
+
+     <!-- Html的内容,各种类型的标签 以及标签的属性 -->
+    <h1>我是标题</h1> <br>
+    <p>我是段落</p> <br>
+    <!-- 文字链接 -->
+    <a href="http:baidu.com" target="">百度一下</a> <br>
+    <!-- 图片链接 -->
+    <a href="http:baidu.com"> <br>
+      <img src="http://b.hiphotos.baidu.com/image/h%3D300/sign=c8a9d4e2841363270aedc433a18fa056/11385343fbf2b2114a65cd70c48065380cd78e41.jpg" width="150px" height="150px">
+    </a>
+    <!-- 自定义跳转 -->
+    <a name="tips">tips</a> <br>
+    <a href="#tips">跳转到tips</a> <br>
+
+    <img src="http://b.hiphotos.baidu.com/image/h%3D300/sign=c8a9d4e2841363270aedc433a18fa056/11385343fbf2b2114a65cd70c48065380cd78e41.jpg" width="50px" height="150px" alt="这是一个图片"> <br>
+
+    <!-- 格式化标签 -->
+    <b>定义粗体文字</b> <br>
+    <big>定义大号文字</big> <br>
+    <em>定义着重文字</em> <br>
+    <i>定义斜体文字</i> <br>
+    <small>定义小号文字</small> <br>
+    <strong>定义加重语气</strong> <br>
+    <sub>下标文字</sub> <br>
+    <sup>上标文字</sup> <br>
+    <ins>定义插入字</ins> <br>
+    <del>定义删除文字</del> <br>
 
 
-        <b>加粗标签1</b>
-        <strong>加粗标签2</strong>
-        <em>强调标签</em>
-        <i>斜体标签</i>
-        <u>下划线标签</u>
-        <s>贯穿标签</s>
-        <sub>下标</sub>
-        <sup>上标</sup>
 
-      
-        <!--标题标签  -->
-        <h1>最大标题</h1>
-
-        <!-- 段落标签 -->
-        <p>段落1</p>
-
-        <!-- 图片标签 -->
-        <img src="http://b.hiphotos.baidu.com/image/h%3D300/sign=c8a9d4e2841363270aedc433a18fa056/11385343fbf2b2114a65cd70c48065380cd78e41.jpg" >
-
-         <!-- 超链接标签 -->
-         <a href="https://www.baidu.com">这是一个连接,百度一下</a>
-        <!-- 音频标签 -->
-         <video src=""></video>
-        <!-- 视频标签 -->
-         <audio src=""></audio>
+    <!-- 通用属性 -->
+    <p class="PCLass" id="Pid" title="Ptitle" style="color:brown">通用属性</p>
 
 
-      <br><!-- 换行元素标签 -->
-      <hr><!-- 水平线  -->
+    <!-- 表格 -->
+    <table border="1">
+      <caption>表格标题</caption>
+       <tr>
+        <th>单元</th>
+        <th>单元</th>
+        <th>单元</th>
+       </tr>
+       <tr>
+         <td>单元格1</td>
+         <td>单元格2</td>
+         <td>单元格3</td>
+       </tr>
+       <tr>
+          <td>单元格1</td>
+          <td>单元格2</td>
+          <td>单元格3</td>
+        </tr>
+    </table>
 
-      <table>表格1</table>
-      <table>表格2</table>
+    <!-- 列表 -->
+    <ol>
+        <li>苹果</li>
+        <li>橘子</li>
+        <li>香蕉</li>
+    </ol>
 
-      <tr>表格21</tr>
-      <tr>表格22</tr>
+    <ul>
+      <li>苹果</li>
+      <li>橘子</li>
+      <li>香蕉</li>
+    </ul>
 
-      <td>表格31</td>
-      <td>表格32</td>
+   
 
-      <ul>列表1</ul>
-      <ul>列表1</ul>
+    
+ 
 
-      <ol>列表2</ol>
-      <ol>列表2</ol>
+    <!-- 表单的创建
+    1.功能：用于申明表单，定义采集数据的范围，也就是<form>和</form>里面包含的数据将被提交到服务器或者电子邮件里
+    2.action=url用来指定处理提交表单的格式.它可以是一个URL地址(提交给程式)或一个电子邮件地址.
+    3.method=get或post指明提交表单的HTTP方法.
+   -->
+    <form>
+      用户名:
+      <!-- 
+      1.name属性定义多行文本框的名称，要保证数据的准确采集，必须定义一个独一无二的名称；
+      2.cols属性定义多行文本框的宽度，单位是单个字符宽度；
+      3.rows属性定义多行文本框的高度，单位是单个字符宽度；
+      -->
+      <input type="text" name="userName"> <br>
+      密码:
+      <input type="password" name="password"> <br>
 
-      <!-- 进度条控件 -->
-     <progress> </progress>
-     
-     
+      复选框你喜欢的水果:
+      苹果1<input type="checkbox">
+      苹果2<input type="checkbox">
+      苹果3<input type="checkbox"> 
+      <br>
 
-      <form action="">
-        <label for="性别">男</label>
-        <!-- 输入框 -->
-        <textarea name="DIVCSS5" cols="30" rows="2"> 
-                www.DIVCSS5.com-网页制作教程 
-            </textarea> 
-      </form>
-
-      <!-- 选择控件 -->
-      <select name="" id="">
-          <!-- 选择栏 -->
-          <option value="0">选择1</option>
-          <option value="0">选择2</option>
+      单选框你的性别:
+      男1<input type="radio" name= "sex">
+      男2<input type="radio" name= "sex">
+      <br>
+      <!-- 表选项 -->
+      你喜欢的人:
+      <select name="love" id="loveID">
+        <option value="1">刘亦菲</option>
+        <option value="2">孙曙</option>
       </select>
-
-         <!-- 
-        1.<input> 标签规定用户可输入数据的输入字段
-        2.根据不同的 type 属性，输入字段有多种形态。输入字段可以是文本字段、复选框、密码字段、单选按钮、按钮等等
-        3.input 元素是空的，它只包含属性
-        4.type:
-        -->
-        <input type="text">
-        <input type="file">
+    </form>
+    <!-- 文本域 -->
+    <textarea name="textName" id="textNameID" cols="30" rows="10">
+    输入你的卡号:
+    </textarea>
 
 
-      <!-- .结构性标签 -->
-      <nav>菜单导航,链接导航</nav>
-      <article><!-- 文章主体内容 -->
-        <header>标记头部区域内容</header>
-        <section>区域章节表述 </section>
-        <footer>标记脚部区域内容</footer>
-      </article>
 
-      <!-- 块级性标签 -->
-      <aside>注记,贴士,侧栏,摘要,插入的引用作为补充主体的内容</aside>
-      <figure>对多个元素组合并展示的元素</figure>
-      <code>代码块</code>
+    <!-- 容器元素 div:主要组合其它元素的容器-->
+    <div>
+      <!-- 容器元素 span:文本容器 -->
+      <p>div元素<span>span容器效果</span></p>
+    </div>
 
-      <style></style>
-      <script></script>
-     
+
+   
+
+
+
+    <!-- Html的结构:HTML有N多标签，根据显示的结构类型，主要可以分为3大类 -->
+    <!-- 块级标签
+    1.独占一行的标签
+    2.能随时设置宽度和高度（比如div、p、h1、h2、ul、li）
+    -->
+    <h1>标题-新的一行开始</h1>
+    <p>段落-新的一行开始</p>
+
+    <!-- 内标签（内联标签）
+    1.多个行内标签能同时显示在一行
+    2.宽度和高度取决于内容的尺寸（比如span、a、label）
+    -->
+    <b>定义粗体文字1</b>
+    <b>定义粗体文字2</b>
+    <a href="www.baidu.com">接着百度一下</a>
+
+    <!-- 行内-块级标签（内联-块级标签）
+    1.多个行内-块级标签可以显示在同一行
+    2.能随时设置宽度和高度（比如input、button）
+    -->
+
   </body>
 
   </html>
