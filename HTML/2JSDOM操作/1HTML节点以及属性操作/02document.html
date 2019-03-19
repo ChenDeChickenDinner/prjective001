@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//Document 节点
+    {
+        // 1.document节点对象代表整个文档，每张网页都有自己的document对象
+        // 2.只要浏览器开始载入 HTML 文档，该对象就存在了，可以直接使用。
+        // 3.document对象继承了EventTarget接口、Node接口、ParentNode接口
+    
+        var a = document;
+        var b = window.document;
+    
+        var win = document.defaultView;
+        console.log(win);
+    }
+
+    
+    {
+    var url = document.url;
+    var domain = document.domain;
+    var location = document.location;
+    // 返回一个字符串，表示当前文档的访问者来自哪里。
+    var referrer = document.referrer;
+    // 属性用来操作浏览器 Cookie
+    var cookie = document.cookie;
+    }
+
+    {
+    
+    // 返回当前文档的标题。默认情况下，返回<title>节点的值。但是该属性是可写的
+    var title = document.title;
+    // 属性返回当前文档的编码
+    var characterSet = document.characterSet;
+    }
+
+
+    {
+        // 主结构
+        var doctype = document.doctype;
+        var html = document.documentElement;
+        var head = document.head;
+        var body = document.body;
+    
+        // 返回文档的滚动元素。也就是说，当文档整体滚动时，到底是哪个元素在滚动
+        var scrollongElement = document.scrollingElement;
+    
+        // 返回获得当前焦点的 DOM 元素。通常，这个属性返回的是<input>、<textarea>、<select>等表单元素
+        var activeElement = document.activeElement;
+    
+        // document.links属性返回当前文档所有设定了href属性的<a>及<area>节点。
+        var links = document.links;
+        // 返回所有<form>表单节点
+        var form = document.forms;
+        // 返回页面所有<img>图片节点
+        var imgaes = document.images;
+        // 返回所有<script>节点
+        var script = document.scripts;
+    }
+    
+    {
+        // 返回文档内嵌或引入的样式表集合
+        var styleSheets = document.styleSheets;
+    
+    }
+    {
+        // document.designMode属性控制当前文档是否可编辑。
+        // 该属性只有两个值on和off，默认值为off。一旦设为on，用户就可以编辑整个文档的内
+        var designModel = document.designModel;
+    
+        
+    }
+    
+    
+    {
+
+       /*
+        document.readyState属性返回当前文档的状态，共有三种可能的值。
+    
+        loading：加载 HTML 代码阶段（尚未完成解析）
+        interactive：加载外部资源阶段
+        complete：加载完成
+        这个属性变化的过程如下:
+    
+        1.浏览器开始解析 HTML 文档，document.readyState属性等于loading。
+        2.浏览器遇到 HTML 文档中的<script>元素，并且没有async或defer属性，就暂停解析，开始执行脚本，这时document.readyState属性还是等于loading。
+        3.HTML 文档解析完成，document.readyState属性变成interactive。
+        4.浏览器等待图片、样式表、字体文件等外部资源加载完成，一旦全部加载完成，document.readyState属性变成complete
+        */
+        var readState = document.readyState;
+
+        document.open();
+        document.write('123');
+        doctype.write('<p>hello world</p>');
+        document.writeln();
+        document.close();
+
+
+        // 接受一个 CSS 选择器作为参数，返回匹配该选择器的元素节点。如果有多个节点满足匹配条件，则返回第一个匹配的节点
+        var node = document.querySelector('div');
+
+        var elements = document.getElementById('111');
+        var newElement = document.createElement('div');
+        var event = document.createEvent('Event');
+
+        document.addEventListener(event);
+        document.removeEventListener(event);
+        document.dispatchEvent(event);
+
+
+    }
+    
+    
+    
+    
+        </script>
+</body>
+</html>

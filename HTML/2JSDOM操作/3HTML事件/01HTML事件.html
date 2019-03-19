@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: red;
+            width: 200px;
+            height: 100px;
+        }
+
+
+    </style>
+    <script>
+        function divFun(){
+            console.log('123');
+        }
+        function doSomething(){
+            console.log('doSomething');
+        }
+    </script>
+</head>
+<body>
+
+<!-- 上面三种方法，第一种“HTML 的 on- 属性”，违反了 HTML 与 JavaScript 代码相分离的原则，将两者写在一起，不利于代码分工，因此不推荐使用。
+
+第二种“元素节点的事件属性”的缺点在于，同一个事件只能定义一个监听函数，也就是说，如果定义两次onclick属性，后一次定义会覆盖前一次。因此，也不推荐使用。
+
+第三种EventTarget.addEventListener是推荐的指定监听函数的方法。它有如下优点：
+
+同一个事件可以添加多个监听函数。
+能够指定在哪个阶段（捕获阶段还是冒泡阶段）触发监听函数。
+除了 DOM 节点，其他对象（比如window、XMLHttpRequest等）也有这个接口，它等于是整个 JavaScript 统一的监听函数接口 -->
+    <div id="divID"></div>
+    <br>
+    <!-- 绑定事件 -->
+
+    <!-- 属性的值是将会执行的代码，而不是一个函数 -->
+    <div id="divID3" onclick="console.log('直接执行js代码')">属性绑定js代码</div>
+    <br>
+    <div id="divID4" ">事件属性添加</div>
+    <br>
+    <script>
+        var div1 = document.getElementById('divID4');
+        div1.click = function(){
+            console.log('js代码执行后监听');
+        }
+
+        var div2 = document.getElementById('divID');
+        div2.addEventListener('click',divFun,false);
+
+        var event = new Event('click');
+        div2.dispatchEvent(event);
+
+        div2.removeEventListener('click',divFun,false);
+    </script>
+
+
+
+
+</body>
+</html>
