@@ -1,0 +1,13 @@
+//
+//  NSArrayC.h
+//  FoundationZL
+//
+//  Created by xs on 2017/6/7.
+//  Copyright © 2017年 Touker. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSArrayC : NSObject
+
+@end

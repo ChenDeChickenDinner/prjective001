@@ -11,6 +11,40 @@
 		559620F122425D37003EF84F /* 02开发组签名证书.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F022425D37003EF84F /* 02开发组签名证书.m */; };
 		559620F622425FCC003EF84F /* 01Configurations多环境.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F522425FCC003EF84F /* 01Configurations多环境.m */; };
 		559620F92242605C003EF84F /* 00Project_Target_Scheme设置.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F82242605C003EF84F /* 00Project_Target_Scheme设置.m */; };
+		559621812243727D003EF84F /* 01Xocde资源.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621802243727D003EF84F /* 01Xocde资源.m */; };
+		5596219D22438669003EF84F /* libaray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596219B22438668003EF84F /* libaray.m */; };
+		559621AF224386C5003EF84F /* 04InfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596219F224386C4003EF84F /* 04InfoPlist.m */; };
+		559621B0224386C5003EF84F /* 01General.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621A0224386C4003EF84F /* 01General.m */; };
+		559621B1224386C5003EF84F /* 02Capabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621A1224386C4003EF84F /* 02Capabilities.m */; };
+		559621B2224386C5003EF84F /* 03ResourceTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621A2224386C4003EF84F /* 03ResourceTags.m */; };
+		559621B82243870C003EF84F /* 06BuildPhases.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621B52243870C003EF84F /* 06BuildPhases.m */; };
+		559621B92243870C003EF84F /* 07BuildRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621B72243870C003EF84F /* 07BuildRules.m */; };
+		559621F422438756003EF84F /* git.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621F322438756003EF84F /* git.m */; };
+		5596221322438838003EF84F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621F822438836003EF84F /* ViewController.m */; };
+		5596221422438838003EF84F /* NSObjectXS.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621F922438836003EF84F /* NSObjectXS.m */; };
+		5596221522438838003EF84F /* NSTimerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621FB22438836003EF84F /* NSTimerC.m */; };
+		5596221622438838003EF84F /* NSFormatterC.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621FF22438837003EF84F /* NSFormatterC.m */; };
+		5596221722438838003EF84F /* NSIndexPat(Set).m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220122438837003EF84F /* NSIndexPat(Set).m */; };
+		5596221822438838003EF84F /* NSLocaleC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220222438837003EF84F /* NSLocaleC.m */; };
+		5596221922438838003EF84F /* NSValue(Number).m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220722438837003EF84F /* NSValue(Number).m */; };
+		5596221A22438838003EF84F /* NSDictionaryC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220922438838003EF84F /* NSDictionaryC.m */; };
+		5596221B22438838003EF84F /* NSArrayC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220B22438838003EF84F /* NSArrayC.m */; };
+		5596221C22438838003EF84F /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220D22438838003EF84F /* Protocol.m */; };
+		5596221D22438838003EF84F /* NSNDataC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220E22438838003EF84F /* NSNDataC.m */; };
+		5596221E22438838003EF84F /* NSObjCRuntimeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220F22438838003EF84F /* NSObjCRuntimeC.m */; };
+		5596221F22438838003EF84F /* Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596221022438838003EF84F /* Selector.m */; };
+		5596222022438838003EF84F /* NSStringC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596221122438838003EF84F /* NSStringC.m */; };
+		559623822249F0D0003EF84F /* 122121.m in Sources */ = {isa = PBXBuildFile; fileRef = 559623812249F0D0003EF84F /* 122121.m */; };
+		5596242E224A1A37003EF84F /* 01XcodeResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596242D224A1A37003EF84F /* 01XcodeResource.m */; };
+		55962432224A1A65003EF84F /* 02UserLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962431224A1A65003EF84F /* 02UserLibrary.m */; };
+		55962435224A1A8A003EF84F /* 03ProjectResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962434224A1A8A003EF84F /* 03ProjectResource.m */; };
+		55962438224A1AC8003EF84F /* 04ProjectXcodeproj.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */; };
+		5596243C224A1BBD003EF84F /* 01TargetXcodeproj.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596243B224A1BBD003EF84F /* 01TargetXcodeproj.m */; };
+		5596243F224A1BE8003EF84F /* 02TargetSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596243E224A1BE8003EF84F /* 02TargetSetting.m */; };
+		55962442224A1C17003EF84F /* 03TargetBuildPhases.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962441224A1C17003EF84F /* 03TargetBuildPhases.m */; };
+		55962445224A1C30003EF84F /* 04TargetBuildRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962444224A1C30003EF84F /* 04TargetBuildRules.m */; };
+		55962452224A201A003EF84F /* 01一个项目内.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962451224A201A003EF84F /* 01一个项目内.m */; };
+		55962455224A202B003EF84F /* 02一个工作空间内.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962454224A202B003EF84F /* 02一个工作空间内.m */; };
 		55B2B8B02229171A00900956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B8AF2229171A00900956 /* AppDelegate.m */; };
 		55B2B8B32229171A00900956 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B8B22229171A00900956 /* ViewController.m */; };
 		55B2B8B62229171A00900956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B2B8B42229171A00900956 /* Main.storyboard */; };
@@ -62,6 +96,106 @@
 		559620F522425FCC003EF84F /* 01Configurations多环境.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01Configurations多环境.m"; sourceTree = "<group>"; };
 		559620F72242605C003EF84F /* 00Project_Target_Scheme设置.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "00Project_Target_Scheme设置.h"; sourceTree = "<group>"; };
 		559620F82242605C003EF84F /* 00Project_Target_Scheme设置.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "00Project_Target_Scheme设置.m"; sourceTree = "<group>"; };
+		5596217F2243727D003EF84F /* 01Xocde资源.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01Xocde资源.h"; sourceTree = "<group>"; };
+		559621802243727D003EF84F /* 01Xocde资源.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01Xocde资源.m"; sourceTree = "<group>"; };
+		55962192224385DE003EF84F /* ProjectMange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectMange.h; sourceTree = "<group>"; };
+		55962193224385DE003EF84F /* ProjectMange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectMange.m; sourceTree = "<group>"; };
+		5596219B22438668003EF84F /* libaray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libaray.m; sourceTree = "<group>"; };
+		5596219F224386C4003EF84F /* 04InfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 04InfoPlist.m; sourceTree = "<group>"; };
+		559621A0224386C4003EF84F /* 01General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 01General.m; sourceTree = "<group>"; };
+		559621A1224386C4003EF84F /* 02Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 02Capabilities.m; sourceTree = "<group>"; };
+		559621A2224386C4003EF84F /* 03ResourceTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 03ResourceTags.m; sourceTree = "<group>"; };
+		559621A4224386C5003EF84F /* 02Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 02Asset.h; sourceTree = "<group>"; };
+		559621A5224386C5003EF84F /* 07Packaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 07Packaging.h; sourceTree = "<group>"; };
+		559621A6224386C5003EF84F /* 06Linking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 06Linking.h; sourceTree = "<group>"; };
+		559621A7224386C5003EF84F /* 09Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 09Other.h; sourceTree = "<group>"; };
+		559621A8224386C5003EF84F /* 03Build Locations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "03Build Locations.h"; sourceTree = "<group>"; };
+		559621A9224386C5003EF84F /* 01Architectures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 01Architectures.h; sourceTree = "<group>"; };
+		559621AA224386C5003EF84F /* 04Build Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "04Build Options.h"; sourceTree = "<group>"; };
+		559621AB224386C5003EF84F /* 08Signing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 08Signing.h; sourceTree = "<group>"; };
+		559621AE224386C5003EF84F /* 05Deployment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 05Deployment.h; sourceTree = "<group>"; };
+		559621B3224386E8003EF84F /* 00AppleID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 00AppleID.h; sourceTree = "<group>"; };
+		559621B52243870C003EF84F /* 06BuildPhases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 06BuildPhases.m; sourceTree = "<group>"; };
+		559621B72243870C003EF84F /* 07BuildRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 07BuildRules.m; sourceTree = "<group>"; };
+		559621BC22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621BF22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621C122438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621C322438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621C522438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621C722438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621C922438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621CB22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621CD22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621CF22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621D022438738003EF84F /* De的副本.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "De的副本.h"; sourceTree = "<group>"; };
+		559621D222438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621D422438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621D722438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621D922438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621DB22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621DD22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621DF22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621E222438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621E422438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621E622438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621E822438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621EA22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621EC22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621EE22438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621F022438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621F222438738003EF84F /* De.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = De.h; sourceTree = "<group>"; };
+		559621F322438756003EF84F /* git.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = git.m; sourceTree = "<group>"; };
+		559621F52243878D003EF84F /* 01Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 01Scheme.h; sourceTree = "<group>"; };
+		559621F722438836003EF84F /* NSValue(Number).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue(Number).h"; sourceTree = "<group>"; };
+		559621F822438836003EF84F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		559621F922438836003EF84F /* NSObjectXS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectXS.m; sourceTree = "<group>"; };
+		559621FA22438836003EF84F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		559621FB22438836003EF84F /* NSTimerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerC.m; sourceTree = "<group>"; };
+		559621FC22438836003EF84F /* NSDictionaryC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryC.h; sourceTree = "<group>"; };
+		559621FD22438836003EF84F /* NSNDataC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNDataC.h; sourceTree = "<group>"; };
+		559621FE22438836003EF84F /* NSObjCRuntimeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjCRuntimeC.h; sourceTree = "<group>"; };
+		559621FF22438837003EF84F /* NSFormatterC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFormatterC.m; sourceTree = "<group>"; };
+		5596220022438837003EF84F /* NSLocaleC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLocaleC.h; sourceTree = "<group>"; };
+		5596220122438837003EF84F /* NSIndexPat(Set).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPat(Set).m"; sourceTree = "<group>"; };
+		5596220222438837003EF84F /* NSLocaleC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLocaleC.m; sourceTree = "<group>"; };
+		5596220322438837003EF84F /* NSArrayC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayC.h; sourceTree = "<group>"; };
+		5596220422438837003EF84F /* NSStringC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringC.h; sourceTree = "<group>"; };
+		5596220522438837003EF84F /* NSObjectXS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectXS.h; sourceTree = "<group>"; };
+		5596220622438837003EF84F /* NSIndexPat(Set).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPat(Set).h"; sourceTree = "<group>"; };
+		5596220722438837003EF84F /* NSValue(Number).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue(Number).m"; sourceTree = "<group>"; };
+		5596220822438838003EF84F /* Selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selector.h; sourceTree = "<group>"; };
+		5596220922438838003EF84F /* NSDictionaryC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryC.m; sourceTree = "<group>"; };
+		5596220A22438838003EF84F /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		5596220B22438838003EF84F /* NSArrayC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayC.m; sourceTree = "<group>"; };
+		5596220C22438838003EF84F /* NSFormatterC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFormatterC.h; sourceTree = "<group>"; };
+		5596220D22438838003EF84F /* Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
+		5596220E22438838003EF84F /* NSNDataC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNDataC.m; sourceTree = "<group>"; };
+		5596220F22438838003EF84F /* NSObjCRuntimeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjCRuntimeC.m; sourceTree = "<group>"; };
+		5596221022438838003EF84F /* Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selector.m; sourceTree = "<group>"; };
+		5596221122438838003EF84F /* NSStringC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringC.m; sourceTree = "<group>"; };
+		5596221222438838003EF84F /* NSTimerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerC.h; sourceTree = "<group>"; };
+		559623802249F0D0003EF84F /* 122121.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 122121.h; sourceTree = "<group>"; };
+		559623812249F0D0003EF84F /* 122121.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 122121.m; sourceTree = "<group>"; };
+		5596242C224A1A37003EF84F /* 01XcodeResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01XcodeResource.h; sourceTree = "<group>"; };
+		5596242D224A1A37003EF84F /* 01XcodeResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01XcodeResource.m; sourceTree = "<group>"; };
+		55962430224A1A65003EF84F /* 02UserLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02UserLibrary.h; sourceTree = "<group>"; };
+		55962431224A1A65003EF84F /* 02UserLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 02UserLibrary.m; sourceTree = "<group>"; };
+		55962433224A1A8A003EF84F /* 03ProjectResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 03ProjectResource.h; sourceTree = "<group>"; };
+		55962434224A1A8A003EF84F /* 03ProjectResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 03ProjectResource.m; sourceTree = "<group>"; };
+		55962436224A1AC8003EF84F /* 04ProjectXcodeproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 04ProjectXcodeproj.h; sourceTree = "<group>"; };
+		55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 04ProjectXcodeproj.m; sourceTree = "<group>"; };
+		5596243A224A1BBC003EF84F /* 01TargetXcodeproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01TargetXcodeproj.h; sourceTree = "<group>"; };
+		5596243B224A1BBD003EF84F /* 01TargetXcodeproj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01TargetXcodeproj.m; sourceTree = "<group>"; };
+		5596243D224A1BE8003EF84F /* 02TargetSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02TargetSetting.h; sourceTree = "<group>"; };
+		5596243E224A1BE8003EF84F /* 02TargetSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 02TargetSetting.m; sourceTree = "<group>"; };
+		55962440224A1C17003EF84F /* 03TargetBuildPhases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 03TargetBuildPhases.h; sourceTree = "<group>"; };
+		55962441224A1C17003EF84F /* 03TargetBuildPhases.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 03TargetBuildPhases.m; sourceTree = "<group>"; };
+		55962443224A1C30003EF84F /* 04TargetBuildRules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 04TargetBuildRules.h; sourceTree = "<group>"; };
+		55962444224A1C30003EF84F /* 04TargetBuildRules.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 04TargetBuildRules.m; sourceTree = "<group>"; };
+		55962450224A201A003EF84F /* 01一个项目内.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01一个项目内.h"; sourceTree = "<group>"; };
+		55962451224A201A003EF84F /* 01一个项目内.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01一个项目内.m"; sourceTree = "<group>"; };
+		55962453224A202B003EF84F /* 02一个工作空间内.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02一个工作空间内.h"; sourceTree = "<group>"; };
+		55962454224A202B003EF84F /* 02一个工作空间内.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "02一个工作空间内.m"; sourceTree = "<group>"; };
 		55B2B8AB2229171A00900956 /* 2019OC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B2B8AE2229171A00900956 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55B2B8AF2229171A00900956 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -228,6 +362,736 @@
 			path = "6特殊技术";
 			sourceTree = "<group>";
 		};
+		5596215E22437222003EF84F /* 2019NewOC */ = {
+			isa = PBXGroup;
+			children = (
+				5596217122437222003EF84F /* 01项目配置 */,
+				5596216B22437222003EF84F /* 02项目管理 */,
+				5596217A22437222003EF84F /* 03OC基础语法 */,
+				5596215F22437222003EF84F /* 04OC框架API */,
+				5596216322437222003EF84F /* 05OC高级开发 */,
+				5596217022437222003EF84F /* 06框架封装学习 */,
+				5596217B22437222003EF84F /* OC项目功能 */,
+				5596217922437222003EF84F /* Xcode高级功能 */,
+			);
+			path = 2019NewOC;
+			sourceTree = "<group>";
+		};
+		5596215F22437222003EF84F /* 04OC框架API */ = {
+			isa = PBXGroup;
+			children = (
+				5596216222437222003EF84F /* 01系统级别 */,
+				5596216022437222003EF84F /* 02Foundation */,
+				5596216122437222003EF84F /* 03UIKit */,
+			);
+			path = "04OC框架API";
+			sourceTree = "<group>";
+		};
+		5596216022437222003EF84F /* 02Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 02Foundation;
+			sourceTree = "<group>";
+		};
+		5596216122437222003EF84F /* 03UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 03UIKit;
+			sourceTree = "<group>";
+		};
+		5596216222437222003EF84F /* 01系统级别 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "01系统级别";
+			sourceTree = "<group>";
+		};
+		5596216322437222003EF84F /* 05OC高级开发 */ = {
+			isa = PBXGroup;
+			children = (
+				5596216722437222003EF84F /* 01对象底层结构 */,
+				5596216822437222003EF84F /* 02内存管理 */,
+				5596216522437222003EF84F /* 03RunTime */,
+				5596216A22437222003EF84F /* 04RunLoop */,
+				5596216622437222003EF84F /* 05网络多线程 */,
+				5596216422437222003EF84F /* 06数据库持久化 */,
+				5596216922437222003EF84F /* 07H5与原生交互 */,
+			);
+			path = "05OC高级开发";
+			sourceTree = "<group>";
+		};
+		5596216422437222003EF84F /* 06数据库持久化 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "06数据库持久化";
+			sourceTree = "<group>";
+		};
+		5596216522437222003EF84F /* 03RunTime */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 03RunTime;
+			sourceTree = "<group>";
+		};
+		5596216622437222003EF84F /* 05网络多线程 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "05网络多线程";
+			sourceTree = "<group>";
+		};
+		5596216722437222003EF84F /* 01对象底层结构 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "01对象底层结构";
+			sourceTree = "<group>";
+		};
+		5596216822437222003EF84F /* 02内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "02内存管理";
+			sourceTree = "<group>";
+		};
+		5596216922437222003EF84F /* 07H5与原生交互 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "07H5与原生交互";
+			sourceTree = "<group>";
+		};
+		5596216A22437222003EF84F /* 04RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 04RunLoop;
+			sourceTree = "<group>";
+		};
+		5596216B22437222003EF84F /* 02项目管理 */ = {
+			isa = PBXGroup;
+			children = (
+				5596216D22437222003EF84F /* 01构建打包发布 */,
+				5596216F22437222003EF84F /* 02持续集成 */,
+				5596216C22437222003EF84F /* 03项目版本管理 */,
+				5596216E22437222003EF84F /* 04代码仓库托管 */,
+			);
+			path = "02项目管理";
+			sourceTree = "<group>";
+		};
+		5596216C22437222003EF84F /* 03项目版本管理 */ = {
+			isa = PBXGroup;
+			children = (
+				559621F322438756003EF84F /* git.m */,
+			);
+			path = "03项目版本管理";
+			sourceTree = "<group>";
+		};
+		5596216D22437222003EF84F /* 01构建打包发布 */ = {
+			isa = PBXGroup;
+			children = (
+				559621B3224386E8003EF84F /* 00AppleID.h */,
+				559621F52243878D003EF84F /* 01Scheme.h */,
+			);
+			path = "01构建打包发布";
+			sourceTree = "<group>";
+		};
+		5596216E22437222003EF84F /* 04代码仓库托管 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "04代码仓库托管";
+			sourceTree = "<group>";
+		};
+		5596216F22437222003EF84F /* 02持续集成 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "02持续集成";
+			sourceTree = "<group>";
+		};
+		5596217022437222003EF84F /* 06框架封装学习 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "06框架封装学习";
+			sourceTree = "<group>";
+		};
+		5596217122437222003EF84F /* 01项目配置 */ = {
+			isa = PBXGroup;
+			children = (
+				5596242F224A1A44003EF84F /* 01 */,
+				5596217822437222003EF84F /* 01Xcode资源 */,
+				5596217222437222003EF84F /* 02ProjectStting */,
+				5596217622437222003EF84F /* 05一库 */,
+				5596218C224384C9003EF84F /* 06ResourcesUse */,
+				5596218D224384E5003EF84F /* 07Cocoapods */,
+			);
+			path = "01项目配置";
+			sourceTree = "<group>";
+		};
+		5596217222437222003EF84F /* 02ProjectStting */ = {
+			isa = PBXGroup;
+			children = (
+				559621A3224386C5003EF84F /* project */,
+				5596219E224386C4003EF84F /* target */,
+				5596217522437222003EF84F /* xcodeproj */,
+			);
+			path = 02ProjectStting;
+			sourceTree = "<group>";
+		};
+		5596217522437222003EF84F /* xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				55962192224385DE003EF84F /* ProjectMange.h */,
+				55962193224385DE003EF84F /* ProjectMange.m */,
+			);
+			path = xcodeproj;
+			sourceTree = "<group>";
+		};
+		5596217622437222003EF84F /* 05一库 */ = {
+			isa = PBXGroup;
+			children = (
+				5596219B22438668003EF84F /* libaray.m */,
+			);
+			path = "05一库";
+			sourceTree = "<group>";
+		};
+		5596217822437222003EF84F /* 01Xcode资源 */ = {
+			isa = PBXGroup;
+			children = (
+				5596217F2243727D003EF84F /* 01Xocde资源.h */,
+				559621802243727D003EF84F /* 01Xocde资源.m */,
+			);
+			path = "01Xcode资源";
+			sourceTree = "<group>";
+		};
+		5596217922437222003EF84F /* Xcode高级功能 */ = {
+			isa = PBXGroup;
+			children = (
+				559621BA22438738003EF84F /* IDE基本使用 */,
+			);
+			path = "Xcode高级功能";
+			sourceTree = "<group>";
+		};
+		5596217A22437222003EF84F /* 03OC基础语法 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "03OC基础语法";
+			sourceTree = "<group>";
+		};
+		5596217B22437222003EF84F /* OC项目功能 */ = {
+			isa = PBXGroup;
+			children = (
+				5596217C22437222003EF84F /* 01AppDelegate */,
+				5596217E22437222003EF84F /* 02AppLoading */,
+				5596217D22437222003EF84F /* 03AppPushNotification */,
+				5596218E2243855B003EF84F /* 04沙盒结构 */,
+			);
+			path = "OC项目功能";
+			sourceTree = "<group>";
+		};
+		5596217C22437222003EF84F /* 01AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 01AppDelegate;
+			sourceTree = "<group>";
+		};
+		5596217D22437222003EF84F /* 03AppPushNotification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 03AppPushNotification;
+			sourceTree = "<group>";
+		};
+		5596217E22437222003EF84F /* 02AppLoading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 02AppLoading;
+			sourceTree = "<group>";
+		};
+		5596218C224384C9003EF84F /* 06ResourcesUse */ = {
+			isa = PBXGroup;
+			children = (
+				5596237F2249C838003EF84F /* 02工作空间的 */,
+				5596237E2249C820003EF84F /* 01项目中的资源展示结构 */,
+				559623802249F0D0003EF84F /* 122121.h */,
+				559623812249F0D0003EF84F /* 122121.m */,
+			);
+			path = 06ResourcesUse;
+			sourceTree = "<group>";
+		};
+		5596218D224384E5003EF84F /* 07Cocoapods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 07Cocoapods;
+			sourceTree = "<group>";
+		};
+		5596218E2243855B003EF84F /* 04沙盒结构 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "04沙盒结构";
+			sourceTree = "<group>";
+		};
+		5596219E224386C4003EF84F /* target */ = {
+			isa = PBXGroup;
+			children = (
+				559621A0224386C4003EF84F /* 01General.m */,
+				559621A1224386C4003EF84F /* 02Capabilities.m */,
+				559621A2224386C4003EF84F /* 03ResourceTags.m */,
+				5596219F224386C4003EF84F /* 04InfoPlist.m */,
+				559621B52243870C003EF84F /* 06BuildPhases.m */,
+				559621B72243870C003EF84F /* 07BuildRules.m */,
+			);
+			path = target;
+			sourceTree = "<group>";
+		};
+		559621A3224386C5003EF84F /* project */ = {
+			isa = PBXGroup;
+			children = (
+				559621A9224386C5003EF84F /* 01Architectures.h */,
+				559621A4224386C5003EF84F /* 02Asset.h */,
+				559621A8224386C5003EF84F /* 03Build Locations.h */,
+				559621AA224386C5003EF84F /* 04Build Options.h */,
+				559621AE224386C5003EF84F /* 05Deployment.h */,
+				559621A6224386C5003EF84F /* 06Linking.h */,
+				559621A5224386C5003EF84F /* 07Packaging.h */,
+				559621AB224386C5003EF84F /* 08Signing.h */,
+				559621A7224386C5003EF84F /* 09Other.h */,
+			);
+			path = project;
+			sourceTree = "<group>";
+		};
+		559621BA22438738003EF84F /* IDE基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				559621BB22438738003EF84F /* 05调试控制区 */,
+				559621BD22438738003EF84F /* 01顶部菜单区 */,
+				559621DA22438738003EF84F /* 03资源文件展示编辑区 */,
+				559621DC22438738003EF84F /* 04检查器控制区 */,
+				559621DE22438738003EF84F /* 06工具控制区 */,
+				559621E022438738003EF84F /* 02导航器区 */,
+				559621F122438738003EF84F /* 00初始化界面 */,
+			);
+			path = "IDE基本使用";
+			sourceTree = "<group>";
+		};
+		559621BB22438738003EF84F /* 05调试控制区 */ = {
+			isa = PBXGroup;
+			children = (
+				559621BC22438738003EF84F /* De.h */,
+			);
+			path = "05调试控制区";
+			sourceTree = "<group>";
+		};
+		559621BD22438738003EF84F /* 01顶部菜单区 */ = {
+			isa = PBXGroup;
+			children = (
+				559621BE22438738003EF84F /* 09Debug_调试 */,
+				559621C022438738003EF84F /* 04View_界面 */,
+				559621C222438738003EF84F /* 03Edit_编辑 */,
+				559621C422438738003EF84F /* 06Navigate_导航 */,
+				559621C622438738003EF84F /* 11Window_窗口 */,
+				559621C822438738003EF84F /* 07Editor_编辑器 */,
+				559621CA22438738003EF84F /* 10SourceControl_版本管理 */,
+				559621CC22438738003EF84F /* 08Product_产品 */,
+				559621CE22438738003EF84F /* 02File_文件 */,
+				559621D122438738003EF84F /* 05Find_操作 */,
+				559621D322438738003EF84F /* 12Help */,
+				559621D522438738003EF84F /* 01Xcode */,
+			);
+			path = "01顶部菜单区";
+			sourceTree = "<group>";
+		};
+		559621BE22438738003EF84F /* 09Debug_调试 */ = {
+			isa = PBXGroup;
+			children = (
+				559621BF22438738003EF84F /* De.h */,
+			);
+			path = "09Debug_调试";
+			sourceTree = "<group>";
+		};
+		559621C022438738003EF84F /* 04View_界面 */ = {
+			isa = PBXGroup;
+			children = (
+				559621C122438738003EF84F /* De.h */,
+			);
+			path = "04View_界面";
+			sourceTree = "<group>";
+		};
+		559621C222438738003EF84F /* 03Edit_编辑 */ = {
+			isa = PBXGroup;
+			children = (
+				559621C322438738003EF84F /* De.h */,
+			);
+			path = "03Edit_编辑";
+			sourceTree = "<group>";
+		};
+		559621C422438738003EF84F /* 06Navigate_导航 */ = {
+			isa = PBXGroup;
+			children = (
+				559621C522438738003EF84F /* De.h */,
+			);
+			path = "06Navigate_导航";
+			sourceTree = "<group>";
+		};
+		559621C622438738003EF84F /* 11Window_窗口 */ = {
+			isa = PBXGroup;
+			children = (
+				559621C722438738003EF84F /* De.h */,
+			);
+			path = "11Window_窗口";
+			sourceTree = "<group>";
+		};
+		559621C822438738003EF84F /* 07Editor_编辑器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621C922438738003EF84F /* De.h */,
+			);
+			path = "07Editor_编辑器";
+			sourceTree = "<group>";
+		};
+		559621CA22438738003EF84F /* 10SourceControl_版本管理 */ = {
+			isa = PBXGroup;
+			children = (
+				559621CB22438738003EF84F /* De.h */,
+			);
+			path = "10SourceControl_版本管理";
+			sourceTree = "<group>";
+		};
+		559621CC22438738003EF84F /* 08Product_产品 */ = {
+			isa = PBXGroup;
+			children = (
+				559621CD22438738003EF84F /* De.h */,
+			);
+			path = "08Product_产品";
+			sourceTree = "<group>";
+		};
+		559621CE22438738003EF84F /* 02File_文件 */ = {
+			isa = PBXGroup;
+			children = (
+				559621CF22438738003EF84F /* De.h */,
+				559621D022438738003EF84F /* De的副本.h */,
+			);
+			path = "02File_文件";
+			sourceTree = "<group>";
+		};
+		559621D122438738003EF84F /* 05Find_操作 */ = {
+			isa = PBXGroup;
+			children = (
+				559621D222438738003EF84F /* De.h */,
+			);
+			path = "05Find_操作";
+			sourceTree = "<group>";
+		};
+		559621D322438738003EF84F /* 12Help */ = {
+			isa = PBXGroup;
+			children = (
+				559621D422438738003EF84F /* De.h */,
+			);
+			path = 12Help;
+			sourceTree = "<group>";
+		};
+		559621D522438738003EF84F /* 01Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				559621D622438738003EF84F /* 02DeveloprtTool(辅助工具) */,
+				559621D822438738003EF84F /* 01Preferences(偏好设置) */,
+			);
+			path = 01Xcode;
+			sourceTree = "<group>";
+		};
+		559621D622438738003EF84F /* 02DeveloprtTool(辅助工具) */ = {
+			isa = PBXGroup;
+			children = (
+				559621D722438738003EF84F /* De.h */,
+			);
+			path = "02DeveloprtTool(辅助工具)";
+			sourceTree = "<group>";
+		};
+		559621D822438738003EF84F /* 01Preferences(偏好设置) */ = {
+			isa = PBXGroup;
+			children = (
+				559621D922438738003EF84F /* De.h */,
+			);
+			path = "01Preferences(偏好设置)";
+			sourceTree = "<group>";
+		};
+		559621DA22438738003EF84F /* 03资源文件展示编辑区 */ = {
+			isa = PBXGroup;
+			children = (
+				559621DB22438738003EF84F /* De.h */,
+			);
+			path = "03资源文件展示编辑区";
+			sourceTree = "<group>";
+		};
+		559621DC22438738003EF84F /* 04检查器控制区 */ = {
+			isa = PBXGroup;
+			children = (
+				559621DD22438738003EF84F /* De.h */,
+			);
+			path = "04检查器控制区";
+			sourceTree = "<group>";
+		};
+		559621DE22438738003EF84F /* 06工具控制区 */ = {
+			isa = PBXGroup;
+			children = (
+				559621DF22438738003EF84F /* De.h */,
+			);
+			path = "06工具控制区";
+			sourceTree = "<group>";
+		};
+		559621E022438738003EF84F /* 02导航器区 */ = {
+			isa = PBXGroup;
+			children = (
+				559621E122438738003EF84F /* 03搜索导航器 */,
+				559621E322438738003EF84F /* 01项目导航器 */,
+				559621E522438738003EF84F /* 04事件导航器 */,
+				559621E722438738003EF84F /* 02符号导航器 */,
+				559621E922438738003EF84F /* 06调试导航器 */,
+				559621EB22438738003EF84F /* 05测试导航器 */,
+				559621ED22438738003EF84F /* 07断点导航器 */,
+				559621EF22438738003EF84F /* 08日志导航器 */,
+			);
+			path = "02导航器区";
+			sourceTree = "<group>";
+		};
+		559621E122438738003EF84F /* 03搜索导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621E222438738003EF84F /* De.h */,
+			);
+			path = "03搜索导航器";
+			sourceTree = "<group>";
+		};
+		559621E322438738003EF84F /* 01项目导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621E422438738003EF84F /* De.h */,
+			);
+			path = "01项目导航器";
+			sourceTree = "<group>";
+		};
+		559621E522438738003EF84F /* 04事件导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621E622438738003EF84F /* De.h */,
+			);
+			path = "04事件导航器";
+			sourceTree = "<group>";
+		};
+		559621E722438738003EF84F /* 02符号导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621E822438738003EF84F /* De.h */,
+			);
+			path = "02符号导航器";
+			sourceTree = "<group>";
+		};
+		559621E922438738003EF84F /* 06调试导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621EA22438738003EF84F /* De.h */,
+			);
+			path = "06调试导航器";
+			sourceTree = "<group>";
+		};
+		559621EB22438738003EF84F /* 05测试导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621EC22438738003EF84F /* De.h */,
+			);
+			path = "05测试导航器";
+			sourceTree = "<group>";
+		};
+		559621ED22438738003EF84F /* 07断点导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621EE22438738003EF84F /* De.h */,
+			);
+			path = "07断点导航器";
+			sourceTree = "<group>";
+		};
+		559621EF22438738003EF84F /* 08日志导航器 */ = {
+			isa = PBXGroup;
+			children = (
+				559621F022438738003EF84F /* De.h */,
+			);
+			path = "08日志导航器";
+			sourceTree = "<group>";
+		};
+		559621F122438738003EF84F /* 00初始化界面 */ = {
+			isa = PBXGroup;
+			children = (
+				559621F222438738003EF84F /* De.h */,
+			);
+			path = "00初始化界面";
+			sourceTree = "<group>";
+		};
+		559621F62243881F003EF84F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5596220322438837003EF84F /* NSArrayC.h */,
+				5596220B22438838003EF84F /* NSArrayC.m */,
+				559621FC22438836003EF84F /* NSDictionaryC.h */,
+				5596220922438838003EF84F /* NSDictionaryC.m */,
+				5596220C22438838003EF84F /* NSFormatterC.h */,
+				559621FF22438837003EF84F /* NSFormatterC.m */,
+				5596220622438837003EF84F /* NSIndexPat(Set).h */,
+				5596220122438837003EF84F /* NSIndexPat(Set).m */,
+				5596220022438837003EF84F /* NSLocaleC.h */,
+				5596220222438837003EF84F /* NSLocaleC.m */,
+				559621FD22438836003EF84F /* NSNDataC.h */,
+				5596220E22438838003EF84F /* NSNDataC.m */,
+				559621FE22438836003EF84F /* NSObjCRuntimeC.h */,
+				5596220F22438838003EF84F /* NSObjCRuntimeC.m */,
+				5596220522438837003EF84F /* NSObjectXS.h */,
+				559621F922438836003EF84F /* NSObjectXS.m */,
+				5596220422438837003EF84F /* NSStringC.h */,
+				5596221122438838003EF84F /* NSStringC.m */,
+				5596221222438838003EF84F /* NSTimerC.h */,
+				559621FB22438836003EF84F /* NSTimerC.m */,
+				559621F722438836003EF84F /* NSValue(Number).h */,
+				5596220722438837003EF84F /* NSValue(Number).m */,
+				5596220A22438838003EF84F /* Protocol.h */,
+				5596220D22438838003EF84F /* Protocol.m */,
+				5596220822438838003EF84F /* Selector.h */,
+				5596221022438838003EF84F /* Selector.m */,
+				559621FA22438836003EF84F /* ViewController.h */,
+				559621F822438836003EF84F /* ViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5596237E2249C820003EF84F /* 01项目中的资源展示结构 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "01项目中的资源展示结构";
+			sourceTree = "<group>";
+		};
+		5596237F2249C838003EF84F /* 02工作空间的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "02工作空间的";
+			sourceTree = "<group>";
+		};
+		5596242F224A1A44003EF84F /* 01 */ = {
+			isa = PBXGroup;
+			children = (
+				55962449224A1D51003EF84F /* 01Xcode */,
+				5596244A224A1D5E003EF84F /* 02UserLibrary */,
+				5596244B224A1D6E003EF84F /* 03Project */,
+				5596244C224A1D78003EF84F /* 04WorkSpace */,
+				55962439224A1B8C003EF84F /* 05target */,
+				55962456224A2097003EF84F /* 06三方库制作 */,
+				55962457224A20F2003EF84F /* 07Cocoapods管理项目 */,
+			);
+			path = 01;
+			sourceTree = "<group>";
+		};
+		55962439224A1B8C003EF84F /* 05target */ = {
+			isa = PBXGroup;
+			children = (
+				5596244D224A1D95003EF84F /* 1target组成结构 */,
+				5596244E224A1DAA003EF84F /* 2target编译设置 */,
+				5596244F224A1DC1003EF84F /* 3AppTarget利用外部资源 */,
+			);
+			path = 05target;
+			sourceTree = "<group>";
+		};
+		55962449224A1D51003EF84F /* 01Xcode */ = {
+			isa = PBXGroup;
+			children = (
+				5596242C224A1A37003EF84F /* 01XcodeResource.h */,
+				5596242D224A1A37003EF84F /* 01XcodeResource.m */,
+			);
+			path = 01Xcode;
+			sourceTree = "<group>";
+		};
+		5596244A224A1D5E003EF84F /* 02UserLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				55962430224A1A65003EF84F /* 02UserLibrary.h */,
+				55962431224A1A65003EF84F /* 02UserLibrary.m */,
+			);
+			path = 02UserLibrary;
+			sourceTree = "<group>";
+		};
+		5596244B224A1D6E003EF84F /* 03Project */ = {
+			isa = PBXGroup;
+			children = (
+				55962433224A1A8A003EF84F /* 03ProjectResource.h */,
+				55962434224A1A8A003EF84F /* 03ProjectResource.m */,
+				55962436224A1AC8003EF84F /* 04ProjectXcodeproj.h */,
+				55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */,
+			);
+			path = 03Project;
+			sourceTree = "<group>";
+		};
+		5596244C224A1D78003EF84F /* 04WorkSpace */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 04WorkSpace;
+			sourceTree = "<group>";
+		};
+		5596244D224A1D95003EF84F /* 1target组成结构 */ = {
+			isa = PBXGroup;
+			children = (
+				5596243A224A1BBC003EF84F /* 01TargetXcodeproj.h */,
+				5596243B224A1BBD003EF84F /* 01TargetXcodeproj.m */,
+			);
+			path = "1target组成结构";
+			sourceTree = "<group>";
+		};
+		5596244E224A1DAA003EF84F /* 2target编译设置 */ = {
+			isa = PBXGroup;
+			children = (
+				5596243D224A1BE8003EF84F /* 02TargetSetting.h */,
+				5596243E224A1BE8003EF84F /* 02TargetSetting.m */,
+				55962440224A1C17003EF84F /* 03TargetBuildPhases.h */,
+				55962441224A1C17003EF84F /* 03TargetBuildPhases.m */,
+				55962443224A1C30003EF84F /* 04TargetBuildRules.h */,
+				55962444224A1C30003EF84F /* 04TargetBuildRules.m */,
+			);
+			path = "2target编译设置";
+			sourceTree = "<group>";
+		};
+		5596244F224A1DC1003EF84F /* 3AppTarget利用外部资源 */ = {
+			isa = PBXGroup;
+			children = (
+				55962450224A201A003EF84F /* 01一个项目内.h */,
+				55962451224A201A003EF84F /* 01一个项目内.m */,
+				55962453224A202B003EF84F /* 02一个工作空间内.h */,
+				55962454224A202B003EF84F /* 02一个工作空间内.m */,
+			);
+			path = "3AppTarget利用外部资源";
+			sourceTree = "<group>";
+		};
+		55962456224A2097003EF84F /* 06三方库制作 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "06三方库制作";
+			sourceTree = "<group>";
+		};
+		55962457224A20F2003EF84F /* 07Cocoapods管理项目 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "07Cocoapods管理项目";
+			sourceTree = "<group>";
+		};
 		55B2B8A22229171A00900956 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +1111,7 @@
 		55B2B8AD2229171A00900956 /* 2019OC2 */ = {
 			isa = PBXGroup;
 			children = (
+				5596215E22437222003EF84F /* 2019NewOC */,
 				55B2B8C42229172C00900956 /* 未命名文件夹 */,
 				55B2B8AE2229171A00900956 /* AppDelegate.h */,
 				55B2B8AF2229171A00900956 /* AppDelegate.m */,
@@ -670,6 +1535,7 @@
 		55B2B8F72229172C00900956 /* 2OCAPI */ = {
 			isa = PBXGroup;
 			children = (
+				559621F62243881F003EF84F /* Other */,
 				55B2B996222A6C3100900956 /* Copy */,
 				55B2B9422229213500900956 /* Timer */,
 				55B2B9412229212600900956 /* PerformSelector */,
@@ -884,46 +1750,80 @@
 			buildActionMask = 2147483647;
 			files = (
 				559620F622425FCC003EF84F /* 01Configurations多环境.m in Sources */,
+				55962452224A201A003EF84F /* 01一个项目内.m in Sources */,
+				559621B1224386C5003EF84F /* 02Capabilities.m in Sources */,
+				5596243C224A1BBD003EF84F /* 01TargetXcodeproj.m in Sources */,
+				55962455224A202B003EF84F /* 02一个工作空间内.m in Sources */,
+				5596242E224A1A37003EF84F /* 01XcodeResource.m in Sources */,
 				55B2B92522291BDB00900956 /* FuncRelated.m in Sources */,
+				55962438224A1AC8003EF84F /* 04ProjectXcodeproj.m in Sources */,
 				55B2BA39222E888D00900956 /* RunLoopTechnology.m in Sources */,
 				55B2B91322291A0600900956 /* MsgSend.m in Sources */,
 				55B2B99C222A763400900956 /* MemoryMangeARC.m in Sources */,
+				5596221322438838003EF84F /* ViewController.m in Sources */,
+				55962435224A1A8A003EF84F /* 03ProjectResource.m in Sources */,
 				55B2B92B22291EF400900956 /* XSNStimer.m in Sources */,
 				55B2B92E22291F8700900956 /* XSPermenantThread.m in Sources */,
 				55B2B900222917BE00900956 /* BaseDataType.m in Sources */,
 				55B2BA30222E81AE00900956 /* RunLoopState.m in Sources */,
 				55B2B93C2229208A00900956 /* CXQueue.m in Sources */,
 				559620F122425D37003EF84F /* 02开发组签名证书.m in Sources */,
+				559621F422438756003EF84F /* git.m in Sources */,
 				55B2B91F22291BBE00900956 /* ClassRelated.m in Sources */,
 				55B2B91C22291AC300900956 /* KvoTechnology.m in Sources */,
+				5596243F224A1BE8003EF84F /* 02TargetSetting.m in Sources */,
 				55B2B9C2222CCDBA00900956 /* car.m in Sources */,
+				55962442224A1C17003EF84F /* 03TargetBuildPhases.m in Sources */,
 				55B2B9372229206300900956 /* GDCThread.m in Sources */,
 				55B2B96322292AA700900956 /* XSNullable.m in Sources */,
 				55B2B90D222919B400900956 /* blockType.m in Sources */,
 				55B2B9032229181800900956 /* ObjectGrammar.m in Sources */,
 				55B2BA2A222E469200900956 /* Autoreleasepool.m in Sources */,
+				5596221522438838003EF84F /* NSTimerC.m in Sources */,
+				5596221822438838003EF84F /* NSLocaleC.m in Sources */,
 				55B2B8B32229171A00900956 /* ViewController.m in Sources */,
+				559621B2224386C5003EF84F /* 03ResourceTags.m in Sources */,
+				5596221A22438838003EF84F /* NSDictionaryC.m in Sources */,
 				55B2B966222A480400900956 /* MemoryDistribution.m in Sources */,
+				559623822249F0D0003EF84F /* 122121.m in Sources */,
+				559621B92243870C003EF84F /* 07BuildRules.m in Sources */,
 				559620EE22425CBC003EF84F /* 01项目配置元素信息.m in Sources */,
 				55B2B92222291BCB00900956 /* IvarRelated.m in Sources */,
+				559621AF224386C5003EF84F /* 04InfoPlist.m in Sources */,
 				55B2BA36222E821700900956 /* RunLoopProcess.m in Sources */,
+				5596221722438838003EF84F /* NSIndexPat(Set).m in Sources */,
+				5596222022438838003EF84F /* NSStringC.m in Sources */,
+				559621812243727D003EF84F /* 01Xocde资源.m in Sources */,
 				55B2B93D2229208A00900956 /* CXOperation.m in Sources */,
+				55962432224A1A65003EF84F /* 02UserLibrary.m in Sources */,
+				5596221B22438838003EF84F /* NSArrayC.m in Sources */,
 				55B2B91622291A5B00900956 /* NSObject+Associated.m in Sources */,
+				5596221F22438838003EF84F /* Selector.m in Sources */,
 				55B2B940222920CA00900956 /* XSGCDTimer.m in Sources */,
 				55B2B910222919EC00900956 /* classLoad.m in Sources */,
+				5596221622438838003EF84F /* NSFormatterC.m in Sources */,
+				5596221D22438838003EF84F /* NSNDataC.m in Sources */,
 				55B2B9BF222CCDAE00900956 /* Person.m in Sources */,
 				55B2B9342229202500900956 /* XCNSThread.m in Sources */,
+				5596219D22438669003EF84F /* libaray.m in Sources */,
+				559621B82243870C003EF84F /* 06BuildPhases.m in Sources */,
 				55B2BA2D222E66A800900956 /* RunLoopComposition.m in Sources */,
 				55B2B8BE2229171B00900956 /* main.m in Sources */,
+				55962445224A1C30003EF84F /* 04TargetBuildRules.m in Sources */,
 				55B2BA3E222E937200900956 /* ProcessAndThread.m in Sources */,
 				55B2BA63222E9AE500900956 /* ThreadMemoryManage.m in Sources */,
 				55B2B8B02229171A00900956 /* AppDelegate.m in Sources */,
 				55B2B9472229223500900956 /* XSProxy.m in Sources */,
 				55B2B9092229193200900956 /* Keyword.m in Sources */,
+				5596221E22438838003EF84F /* NSObjCRuntimeC.m in Sources */,
+				5596221422438838003EF84F /* NSObjectXS.m in Sources */,
+				5596221922438838003EF84F /* NSValue(Number).m in Sources */,
 				55B2B969222A4E7400900956 /* XSThreadSecurity.m in Sources */,
+				5596221C22438838003EF84F /* Protocol.m in Sources */,
 				559620F92242605C003EF84F /* 00Project_Target_Scheme设置.m in Sources */,
 				55B2B91922291AB800900956 /* KvcTechnology.m in Sources */,
 				55B2B9F4222D299D00900956 /* MemoryOtherDataType.m in Sources */,
+				559621B0224386C5003EF84F /* 01General.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

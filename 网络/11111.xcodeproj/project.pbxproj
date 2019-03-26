@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5596222522438875003EF84F /* HBLoginAccoutCheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596222222438874003EF84F /* HBLoginAccoutCheckView.m */; };
+		5596222622438875003EF84F /* HBConditionalDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596222322438874003EF84F /* HBConditionalDetailController.m */; };
+		5596222722438875003EF84F /* HBConditionalRouterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596222422438875003EF84F /* HBConditionalRouterModel.m */; };
 		55B2BAA8222F914B00900956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BAA7222F914B00900956 /* AppDelegate.m */; };
 		55B2BAAB222F914B00900956 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BAAA222F914B00900956 /* ViewController.m */; };
 		55B2BAAE222F914B00900956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B2BAAC222F914B00900956 /* Main.storyboard */; };
@@ -20,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5596222122438874003EF84F /* HBConditionalDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBConditionalDetailController.h; sourceTree = "<group>"; };
+		5596222222438874003EF84F /* HBLoginAccoutCheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLoginAccoutCheckView.m; sourceTree = "<group>"; };
+		5596222322438874003EF84F /* HBConditionalDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBConditionalDetailController.m; sourceTree = "<group>"; };
+		5596222422438875003EF84F /* HBConditionalRouterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBConditionalRouterModel.m; sourceTree = "<group>"; };
 		55B2BAA3222F914B00900956 /* 11111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11111.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B2BAA6222F914B00900956 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55B2BAA7222F914B00900956 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +116,10 @@
 		55B2BAC7222FD9B800900956 /* 1NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				5596222122438874003EF84F /* HBConditionalDetailController.h */,
+				5596222322438874003EF84F /* HBConditionalDetailController.m */,
+				5596222422438875003EF84F /* HBConditionalRouterModel.m */,
+				5596222222438874003EF84F /* HBLoginAccoutCheckView.m */,
 				55B2BACA222FDA0F00900956 /* NetWork.h */,
 				55B2BACB222FDA0F00900956 /* NetWork.m */,
 			);
@@ -194,11 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				55B2BAC2222FD7CF00900956 /* NSMutableURLRequestPost.m in Sources */,
+				5596222722438875003EF84F /* HBConditionalRouterModel.m in Sources */,
 				55B2BACC222FDA0F00900956 /* NetWork.m in Sources */,
 				55B2BAAB222F914B00900956 /* ViewController.m in Sources */,
+				5596222622438875003EF84F /* HBConditionalDetailController.m in Sources */,
 				55B2BABF222FD7B700900956 /* NSURLRequestGat.m in Sources */,
 				55B2BAB6222F914C00900956 /* main.m in Sources */,
 				55B2BAA8222F914B00900956 /* AppDelegate.m in Sources */,
+				5596222522438875003EF84F /* HBLoginAccoutCheckView.m in Sources */,
 				55B2BAC5222FD9A500900956 /* NetWorkElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
