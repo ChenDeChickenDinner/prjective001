@@ -11,12 +11,8 @@
 		559620F122425D37003EF84F /* 02开发组签名证书.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F022425D37003EF84F /* 02开发组签名证书.m */; };
 		559620F622425FCC003EF84F /* 01Configurations多环境.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F522425FCC003EF84F /* 01Configurations多环境.m */; };
 		559620F92242605C003EF84F /* 00Project_Target_Scheme设置.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F82242605C003EF84F /* 00Project_Target_Scheme设置.m */; };
-		559621812243727D003EF84F /* 01Xocde资源.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621802243727D003EF84F /* 01Xocde资源.m */; };
 		5596219D22438669003EF84F /* libaray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596219B22438668003EF84F /* libaray.m */; };
 		559621AF224386C5003EF84F /* 04InfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596219F224386C4003EF84F /* 04InfoPlist.m */; };
-		559621B0224386C5003EF84F /* 01General.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621A0224386C4003EF84F /* 01General.m */; };
-		559621B1224386C5003EF84F /* 02Capabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621A1224386C4003EF84F /* 02Capabilities.m */; };
-		559621B2224386C5003EF84F /* 03ResourceTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621A2224386C4003EF84F /* 03ResourceTags.m */; };
 		559621B82243870C003EF84F /* 06BuildPhases.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621B52243870C003EF84F /* 06BuildPhases.m */; };
 		559621B92243870C003EF84F /* 07BuildRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621B72243870C003EF84F /* 07BuildRules.m */; };
 		559621F422438756003EF84F /* git.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621F322438756003EF84F /* git.m */; };
@@ -34,17 +30,6 @@
 		5596221E22438838003EF84F /* NSObjCRuntimeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596220F22438838003EF84F /* NSObjCRuntimeC.m */; };
 		5596221F22438838003EF84F /* Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596221022438838003EF84F /* Selector.m */; };
 		5596222022438838003EF84F /* NSStringC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596221122438838003EF84F /* NSStringC.m */; };
-		559623822249F0D0003EF84F /* 122121.m in Sources */ = {isa = PBXBuildFile; fileRef = 559623812249F0D0003EF84F /* 122121.m */; };
-		5596242E224A1A37003EF84F /* 01XcodeResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596242D224A1A37003EF84F /* 01XcodeResource.m */; };
-		55962432224A1A65003EF84F /* 02UserLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962431224A1A65003EF84F /* 02UserLibrary.m */; };
-		55962435224A1A8A003EF84F /* 03ProjectResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962434224A1A8A003EF84F /* 03ProjectResource.m */; };
-		55962438224A1AC8003EF84F /* 04ProjectXcodeproj.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */; };
-		5596243C224A1BBD003EF84F /* 01TargetXcodeproj.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596243B224A1BBD003EF84F /* 01TargetXcodeproj.m */; };
-		5596243F224A1BE8003EF84F /* 02TargetSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596243E224A1BE8003EF84F /* 02TargetSetting.m */; };
-		55962442224A1C17003EF84F /* 03TargetBuildPhases.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962441224A1C17003EF84F /* 03TargetBuildPhases.m */; };
-		55962445224A1C30003EF84F /* 04TargetBuildRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962444224A1C30003EF84F /* 04TargetBuildRules.m */; };
-		55962452224A201A003EF84F /* 01一个项目内.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962451224A201A003EF84F /* 01一个项目内.m */; };
-		55962455224A202B003EF84F /* 02一个工作空间内.m in Sources */ = {isa = PBXBuildFile; fileRef = 55962454224A202B003EF84F /* 02一个工作空间内.m */; };
 		55B2B8B02229171A00900956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B8AF2229171A00900956 /* AppDelegate.m */; };
 		55B2B8B32229171A00900956 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2B8B22229171A00900956 /* ViewController.m */; };
 		55B2B8B62229171A00900956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B2B8B42229171A00900956 /* Main.storyboard */; };
@@ -96,15 +81,8 @@
 		559620F522425FCC003EF84F /* 01Configurations多环境.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01Configurations多环境.m"; sourceTree = "<group>"; };
 		559620F72242605C003EF84F /* 00Project_Target_Scheme设置.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "00Project_Target_Scheme设置.h"; sourceTree = "<group>"; };
 		559620F82242605C003EF84F /* 00Project_Target_Scheme设置.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "00Project_Target_Scheme设置.m"; sourceTree = "<group>"; };
-		5596217F2243727D003EF84F /* 01Xocde资源.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01Xocde资源.h"; sourceTree = "<group>"; };
-		559621802243727D003EF84F /* 01Xocde资源.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01Xocde资源.m"; sourceTree = "<group>"; };
-		55962192224385DE003EF84F /* ProjectMange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectMange.h; sourceTree = "<group>"; };
-		55962193224385DE003EF84F /* ProjectMange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectMange.m; sourceTree = "<group>"; };
 		5596219B22438668003EF84F /* libaray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libaray.m; sourceTree = "<group>"; };
 		5596219F224386C4003EF84F /* 04InfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 04InfoPlist.m; sourceTree = "<group>"; };
-		559621A0224386C4003EF84F /* 01General.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 01General.m; sourceTree = "<group>"; };
-		559621A1224386C4003EF84F /* 02Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 02Capabilities.m; sourceTree = "<group>"; };
-		559621A2224386C4003EF84F /* 03ResourceTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 03ResourceTags.m; sourceTree = "<group>"; };
 		559621A4224386C5003EF84F /* 02Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 02Asset.h; sourceTree = "<group>"; };
 		559621A5224386C5003EF84F /* 07Packaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 07Packaging.h; sourceTree = "<group>"; };
 		559621A6224386C5003EF84F /* 06Linking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 06Linking.h; sourceTree = "<group>"; };
@@ -174,28 +152,12 @@
 		5596221022438838003EF84F /* Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selector.m; sourceTree = "<group>"; };
 		5596221122438838003EF84F /* NSStringC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringC.m; sourceTree = "<group>"; };
 		5596221222438838003EF84F /* NSTimerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerC.h; sourceTree = "<group>"; };
-		559623802249F0D0003EF84F /* 122121.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 122121.h; sourceTree = "<group>"; };
-		559623812249F0D0003EF84F /* 122121.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 122121.m; sourceTree = "<group>"; };
 		5596242C224A1A37003EF84F /* 01XcodeResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01XcodeResource.h; sourceTree = "<group>"; };
 		5596242D224A1A37003EF84F /* 01XcodeResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01XcodeResource.m; sourceTree = "<group>"; };
 		55962430224A1A65003EF84F /* 02UserLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02UserLibrary.h; sourceTree = "<group>"; };
 		55962431224A1A65003EF84F /* 02UserLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 02UserLibrary.m; sourceTree = "<group>"; };
-		55962433224A1A8A003EF84F /* 03ProjectResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 03ProjectResource.h; sourceTree = "<group>"; };
-		55962434224A1A8A003EF84F /* 03ProjectResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 03ProjectResource.m; sourceTree = "<group>"; };
 		55962436224A1AC8003EF84F /* 04ProjectXcodeproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 04ProjectXcodeproj.h; sourceTree = "<group>"; };
 		55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 04ProjectXcodeproj.m; sourceTree = "<group>"; };
-		5596243A224A1BBC003EF84F /* 01TargetXcodeproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01TargetXcodeproj.h; sourceTree = "<group>"; };
-		5596243B224A1BBD003EF84F /* 01TargetXcodeproj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01TargetXcodeproj.m; sourceTree = "<group>"; };
-		5596243D224A1BE8003EF84F /* 02TargetSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02TargetSetting.h; sourceTree = "<group>"; };
-		5596243E224A1BE8003EF84F /* 02TargetSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 02TargetSetting.m; sourceTree = "<group>"; };
-		55962440224A1C17003EF84F /* 03TargetBuildPhases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 03TargetBuildPhases.h; sourceTree = "<group>"; };
-		55962441224A1C17003EF84F /* 03TargetBuildPhases.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 03TargetBuildPhases.m; sourceTree = "<group>"; };
-		55962443224A1C30003EF84F /* 04TargetBuildRules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 04TargetBuildRules.h; sourceTree = "<group>"; };
-		55962444224A1C30003EF84F /* 04TargetBuildRules.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 04TargetBuildRules.m; sourceTree = "<group>"; };
-		55962450224A201A003EF84F /* 01一个项目内.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01一个项目内.h"; sourceTree = "<group>"; };
-		55962451224A201A003EF84F /* 01一个项目内.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01一个项目内.m"; sourceTree = "<group>"; };
-		55962453224A202B003EF84F /* 02一个工作空间内.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02一个工作空间内.h"; sourceTree = "<group>"; };
-		55962454224A202B003EF84F /* 02一个工作空间内.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "02一个工作空间内.m"; sourceTree = "<group>"; };
 		55B2B8AB2229171A00900956 /* 2019OC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B2B8AE2229171A00900956 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55B2B8AF2229171A00900956 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -299,6 +261,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5576F5AD224E060800BC6C00 /* 1BuildSetting */ = {
+			isa = PBXGroup;
+			children = (
+				559621A9224386C5003EF84F /* 01Architectures.h */,
+				559621A4224386C5003EF84F /* 02Asset.h */,
+				559621A8224386C5003EF84F /* 03Build Locations.h */,
+				559621AA224386C5003EF84F /* 04Build Options.h */,
+				559621AE224386C5003EF84F /* 05Deployment.h */,
+				559621A6224386C5003EF84F /* 06Linking.h */,
+				559621A5224386C5003EF84F /* 07Packaging.h */,
+				559621AB224386C5003EF84F /* 08Signing.h */,
+				559621A7224386C5003EF84F /* 09Other.h */,
+				5596219F224386C4003EF84F /* 04InfoPlist.m */,
+			);
+			path = 1BuildSetting;
+			sourceTree = "<group>";
+		};
+		5576F5AE224E063500BC6C00 /* 2BuildPhases */ = {
+			isa = PBXGroup;
+			children = (
+				559621B52243870C003EF84F /* 06BuildPhases.m */,
+			);
+			path = 2BuildPhases;
+			sourceTree = "<group>";
+		};
+		5576F5AF224E065600BC6C00 /* 3BuildRules */ = {
+			isa = PBXGroup;
+			children = (
+				559621B72243870C003EF84F /* 07BuildRules.m */,
+			);
+			path = 3BuildRules;
+			sourceTree = "<group>";
+		};
+		5576F5B1224E0F1900BC6C00 /* 07多项目管理 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "07多项目管理";
+			sourceTree = "<group>";
+		};
 		559620EB22425C2D003EF84F /* 2真机构建打包 */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,49 +526,8 @@
 			isa = PBXGroup;
 			children = (
 				5596242F224A1A44003EF84F /* 01 */,
-				5596217822437222003EF84F /* 01Xcode资源 */,
-				5596217222437222003EF84F /* 02ProjectStting */,
-				5596217622437222003EF84F /* 05一库 */,
-				5596218C224384C9003EF84F /* 06ResourcesUse */,
-				5596218D224384E5003EF84F /* 07Cocoapods */,
 			);
 			path = "01项目配置";
-			sourceTree = "<group>";
-		};
-		5596217222437222003EF84F /* 02ProjectStting */ = {
-			isa = PBXGroup;
-			children = (
-				559621A3224386C5003EF84F /* project */,
-				5596219E224386C4003EF84F /* target */,
-				5596217522437222003EF84F /* xcodeproj */,
-			);
-			path = 02ProjectStting;
-			sourceTree = "<group>";
-		};
-		5596217522437222003EF84F /* xcodeproj */ = {
-			isa = PBXGroup;
-			children = (
-				55962192224385DE003EF84F /* ProjectMange.h */,
-				55962193224385DE003EF84F /* ProjectMange.m */,
-			);
-			path = xcodeproj;
-			sourceTree = "<group>";
-		};
-		5596217622437222003EF84F /* 05一库 */ = {
-			isa = PBXGroup;
-			children = (
-				5596219B22438668003EF84F /* libaray.m */,
-			);
-			path = "05一库";
-			sourceTree = "<group>";
-		};
-		5596217822437222003EF84F /* 01Xcode资源 */ = {
-			isa = PBXGroup;
-			children = (
-				5596217F2243727D003EF84F /* 01Xocde资源.h */,
-				559621802243727D003EF84F /* 01Xocde资源.m */,
-			);
-			path = "01Xcode资源";
 			sourceTree = "<group>";
 		};
 		5596217922437222003EF84F /* Xcode高级功能 */ = {
@@ -616,58 +577,11 @@
 			path = 02AppLoading;
 			sourceTree = "<group>";
 		};
-		5596218C224384C9003EF84F /* 06ResourcesUse */ = {
-			isa = PBXGroup;
-			children = (
-				5596237F2249C838003EF84F /* 02工作空间的 */,
-				5596237E2249C820003EF84F /* 01项目中的资源展示结构 */,
-				559623802249F0D0003EF84F /* 122121.h */,
-				559623812249F0D0003EF84F /* 122121.m */,
-			);
-			path = 06ResourcesUse;
-			sourceTree = "<group>";
-		};
-		5596218D224384E5003EF84F /* 07Cocoapods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 07Cocoapods;
-			sourceTree = "<group>";
-		};
 		5596218E2243855B003EF84F /* 04沙盒结构 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "04沙盒结构";
-			sourceTree = "<group>";
-		};
-		5596219E224386C4003EF84F /* target */ = {
-			isa = PBXGroup;
-			children = (
-				559621A0224386C4003EF84F /* 01General.m */,
-				559621A1224386C4003EF84F /* 02Capabilities.m */,
-				559621A2224386C4003EF84F /* 03ResourceTags.m */,
-				5596219F224386C4003EF84F /* 04InfoPlist.m */,
-				559621B52243870C003EF84F /* 06BuildPhases.m */,
-				559621B72243870C003EF84F /* 07BuildRules.m */,
-			);
-			path = target;
-			sourceTree = "<group>";
-		};
-		559621A3224386C5003EF84F /* project */ = {
-			isa = PBXGroup;
-			children = (
-				559621A9224386C5003EF84F /* 01Architectures.h */,
-				559621A4224386C5003EF84F /* 02Asset.h */,
-				559621A8224386C5003EF84F /* 03Build Locations.h */,
-				559621AA224386C5003EF84F /* 04Build Options.h */,
-				559621AE224386C5003EF84F /* 05Deployment.h */,
-				559621A6224386C5003EF84F /* 06Linking.h */,
-				559621A5224386C5003EF84F /* 07Packaging.h */,
-				559621AB224386C5003EF84F /* 08Signing.h */,
-				559621A7224386C5003EF84F /* 09Other.h */,
-			);
-			path = project;
 			sourceTree = "<group>";
 		};
 		559621BA22438738003EF84F /* IDE基本使用 */ = {
@@ -971,20 +885,6 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		5596237E2249C820003EF84F /* 01项目中的资源展示结构 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "01项目中的资源展示结构";
-			sourceTree = "<group>";
-		};
-		5596237F2249C838003EF84F /* 02工作空间的 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "02工作空间的";
-			sourceTree = "<group>";
-		};
 		5596242F224A1A44003EF84F /* 01 */ = {
 			isa = PBXGroup;
 			children = (
@@ -993,8 +893,9 @@
 				5596244B224A1D6E003EF84F /* 03Project */,
 				5596244C224A1D78003EF84F /* 04WorkSpace */,
 				55962439224A1B8C003EF84F /* 05target */,
-				55962456224A2097003EF84F /* 06三方库制作 */,
-				55962457224A20F2003EF84F /* 07Cocoapods管理项目 */,
+				55962456224A2097003EF84F /* 06三方库制作使用 */,
+				5576F5B1224E0F1900BC6C00 /* 07多项目管理 */,
+				55962457224A20F2003EF84F /* 08Cocoapods管理项目 */,
 			);
 			path = 01;
 			sourceTree = "<group>";
@@ -1002,9 +903,7 @@
 		55962439224A1B8C003EF84F /* 05target */ = {
 			isa = PBXGroup;
 			children = (
-				5596244D224A1D95003EF84F /* 1target组成结构 */,
-				5596244E224A1DAA003EF84F /* 2target编译设置 */,
-				5596244F224A1DC1003EF84F /* 3AppTarget利用外部资源 */,
+				5596244E224A1DAA003EF84F /* 1target编译设置 */,
 			);
 			path = 05target;
 			sourceTree = "<group>";
@@ -1030,8 +929,6 @@
 		5596244B224A1D6E003EF84F /* 03Project */ = {
 			isa = PBXGroup;
 			children = (
-				55962433224A1A8A003EF84F /* 03ProjectResource.h */,
-				55962434224A1A8A003EF84F /* 03ProjectResource.m */,
 				55962436224A1AC8003EF84F /* 04ProjectXcodeproj.h */,
 				55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */,
 			);
@@ -1045,51 +942,29 @@
 			path = 04WorkSpace;
 			sourceTree = "<group>";
 		};
-		5596244D224A1D95003EF84F /* 1target组成结构 */ = {
+		5596244E224A1DAA003EF84F /* 1target编译设置 */ = {
 			isa = PBXGroup;
 			children = (
-				5596243A224A1BBC003EF84F /* 01TargetXcodeproj.h */,
-				5596243B224A1BBD003EF84F /* 01TargetXcodeproj.m */,
+				5576F5AD224E060800BC6C00 /* 1BuildSetting */,
+				5576F5AE224E063500BC6C00 /* 2BuildPhases */,
+				5576F5AF224E065600BC6C00 /* 3BuildRules */,
 			);
-			path = "1target组成结构";
+			path = "1target编译设置";
 			sourceTree = "<group>";
 		};
-		5596244E224A1DAA003EF84F /* 2target编译设置 */ = {
+		55962456224A2097003EF84F /* 06三方库制作使用 */ = {
 			isa = PBXGroup;
 			children = (
-				5596243D224A1BE8003EF84F /* 02TargetSetting.h */,
-				5596243E224A1BE8003EF84F /* 02TargetSetting.m */,
-				55962440224A1C17003EF84F /* 03TargetBuildPhases.h */,
-				55962441224A1C17003EF84F /* 03TargetBuildPhases.m */,
-				55962443224A1C30003EF84F /* 04TargetBuildRules.h */,
-				55962444224A1C30003EF84F /* 04TargetBuildRules.m */,
+				5596219B22438668003EF84F /* libaray.m */,
 			);
-			path = "2target编译设置";
+			path = "06三方库制作使用";
 			sourceTree = "<group>";
 		};
-		5596244F224A1DC1003EF84F /* 3AppTarget利用外部资源 */ = {
-			isa = PBXGroup;
-			children = (
-				55962450224A201A003EF84F /* 01一个项目内.h */,
-				55962451224A201A003EF84F /* 01一个项目内.m */,
-				55962453224A202B003EF84F /* 02一个工作空间内.h */,
-				55962454224A202B003EF84F /* 02一个工作空间内.m */,
-			);
-			path = "3AppTarget利用外部资源";
-			sourceTree = "<group>";
-		};
-		55962456224A2097003EF84F /* 06三方库制作 */ = {
+		55962457224A20F2003EF84F /* 08Cocoapods管理项目 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "06三方库制作";
-			sourceTree = "<group>";
-		};
-		55962457224A20F2003EF84F /* 07Cocoapods管理项目 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "07Cocoapods管理项目";
+			path = "08Cocoapods管理项目";
 			sourceTree = "<group>";
 		};
 		55B2B8A22229171A00900956 = {
@@ -1750,18 +1625,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				559620F622425FCC003EF84F /* 01Configurations多环境.m in Sources */,
-				55962452224A201A003EF84F /* 01一个项目内.m in Sources */,
-				559621B1224386C5003EF84F /* 02Capabilities.m in Sources */,
-				5596243C224A1BBD003EF84F /* 01TargetXcodeproj.m in Sources */,
-				55962455224A202B003EF84F /* 02一个工作空间内.m in Sources */,
-				5596242E224A1A37003EF84F /* 01XcodeResource.m in Sources */,
 				55B2B92522291BDB00900956 /* FuncRelated.m in Sources */,
-				55962438224A1AC8003EF84F /* 04ProjectXcodeproj.m in Sources */,
 				55B2BA39222E888D00900956 /* RunLoopTechnology.m in Sources */,
 				55B2B91322291A0600900956 /* MsgSend.m in Sources */,
 				55B2B99C222A763400900956 /* MemoryMangeARC.m in Sources */,
 				5596221322438838003EF84F /* ViewController.m in Sources */,
-				55962435224A1A8A003EF84F /* 03ProjectResource.m in Sources */,
 				55B2B92B22291EF400900956 /* XSNStimer.m in Sources */,
 				55B2B92E22291F8700900956 /* XSPermenantThread.m in Sources */,
 				55B2B900222917BE00900956 /* BaseDataType.m in Sources */,
@@ -1771,9 +1639,7 @@
 				559621F422438756003EF84F /* git.m in Sources */,
 				55B2B91F22291BBE00900956 /* ClassRelated.m in Sources */,
 				55B2B91C22291AC300900956 /* KvoTechnology.m in Sources */,
-				5596243F224A1BE8003EF84F /* 02TargetSetting.m in Sources */,
 				55B2B9C2222CCDBA00900956 /* car.m in Sources */,
-				55962442224A1C17003EF84F /* 03TargetBuildPhases.m in Sources */,
 				55B2B9372229206300900956 /* GDCThread.m in Sources */,
 				55B2B96322292AA700900956 /* XSNullable.m in Sources */,
 				55B2B90D222919B400900956 /* blockType.m in Sources */,
@@ -1782,10 +1648,8 @@
 				5596221522438838003EF84F /* NSTimerC.m in Sources */,
 				5596221822438838003EF84F /* NSLocaleC.m in Sources */,
 				55B2B8B32229171A00900956 /* ViewController.m in Sources */,
-				559621B2224386C5003EF84F /* 03ResourceTags.m in Sources */,
 				5596221A22438838003EF84F /* NSDictionaryC.m in Sources */,
 				55B2B966222A480400900956 /* MemoryDistribution.m in Sources */,
-				559623822249F0D0003EF84F /* 122121.m in Sources */,
 				559621B92243870C003EF84F /* 07BuildRules.m in Sources */,
 				559620EE22425CBC003EF84F /* 01项目配置元素信息.m in Sources */,
 				55B2B92222291BCB00900956 /* IvarRelated.m in Sources */,
@@ -1793,9 +1657,7 @@
 				55B2BA36222E821700900956 /* RunLoopProcess.m in Sources */,
 				5596221722438838003EF84F /* NSIndexPat(Set).m in Sources */,
 				5596222022438838003EF84F /* NSStringC.m in Sources */,
-				559621812243727D003EF84F /* 01Xocde资源.m in Sources */,
 				55B2B93D2229208A00900956 /* CXOperation.m in Sources */,
-				55962432224A1A65003EF84F /* 02UserLibrary.m in Sources */,
 				5596221B22438838003EF84F /* NSArrayC.m in Sources */,
 				55B2B91622291A5B00900956 /* NSObject+Associated.m in Sources */,
 				5596221F22438838003EF84F /* Selector.m in Sources */,
@@ -1809,7 +1671,6 @@
 				559621B82243870C003EF84F /* 06BuildPhases.m in Sources */,
 				55B2BA2D222E66A800900956 /* RunLoopComposition.m in Sources */,
 				55B2B8BE2229171B00900956 /* main.m in Sources */,
-				55962445224A1C30003EF84F /* 04TargetBuildRules.m in Sources */,
 				55B2BA3E222E937200900956 /* ProcessAndThread.m in Sources */,
 				55B2BA63222E9AE500900956 /* ThreadMemoryManage.m in Sources */,
 				55B2B8B02229171A00900956 /* AppDelegate.m in Sources */,
@@ -1823,7 +1684,6 @@
 				559620F92242605C003EF84F /* 00Project_Target_Scheme设置.m in Sources */,
 				55B2B91922291AB800900956 /* KvcTechnology.m in Sources */,
 				55B2B9F4222D299D00900956 /* MemoryOtherDataType.m in Sources */,
-				559621B0224386C5003EF84F /* 01General.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

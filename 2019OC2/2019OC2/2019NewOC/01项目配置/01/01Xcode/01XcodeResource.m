@@ -11,3 +11,5 @@
 @implementation _1XcodeResource
 
 @end
+Xcode提供的资源SDK
+Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks
