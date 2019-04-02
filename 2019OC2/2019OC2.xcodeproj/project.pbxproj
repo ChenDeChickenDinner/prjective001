@@ -301,6 +301,14 @@
 			path = "07多项目管理";
 			sourceTree = "<group>";
 		};
+		5576F63D224E172700BC6C00 /* 01库的介绍 */ = {
+			isa = PBXGroup;
+			children = (
+				5596219B22438668003EF84F /* libaray.m */,
+			);
+			path = "01库的介绍";
+			sourceTree = "<group>";
+		};
 		559620EB22425C2D003EF84F /* 2真机构建打包 */ = {
 			isa = PBXGroup;
 			children = (
@@ -955,7 +963,7 @@
 		55962456224A2097003EF84F /* 06三方库制作使用 */ = {
 			isa = PBXGroup;
 			children = (
-				5596219B22438668003EF84F /* libaray.m */,
+				5576F63D224E172700BC6C00 /* 01库的介绍 */,
 			);
 			path = "06三方库制作使用";
 			sourceTree = "<group>";
