@@ -248,6 +248,8 @@
 		55B2BA3D222E937200900956 /* ProcessAndThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessAndThread.m; sourceTree = "<group>"; };
 		55B2BA61222E9AE500900956 /* ThreadMemoryManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadMemoryManage.h; sourceTree = "<group>"; };
 		55B2BA62222E9AE500900956 /* ThreadMemoryManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadMemoryManage.m; sourceTree = "<group>"; };
+		55B52BE82255B2A3009A927E /* 01ProjectManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01ProjectManage.h; sourceTree = "<group>"; };
+		55B52BE92255B2A3009A927E /* 01ProjectManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01ProjectManage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +299,8 @@
 		5576F5B1224E0F1900BC6C00 /* 07多项目管理 */ = {
 			isa = PBXGroup;
 			children = (
+				55B52BE82255B2A3009A927E /* 01ProjectManage.h */,
+				55B52BE92255B2A3009A927E /* 01ProjectManage.m */,
 			);
 			path = "07多项目管理";
 			sourceTree = "<group>";

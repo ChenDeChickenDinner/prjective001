@@ -11,19 +11,7 @@
 @implementation _4ProjectXcodeproj
 
 @end
-Project文件
-a.项目资源文件:1.头文件 源文件2.三方库文件3.资源文件
-b.Products文件:项目各种target构建出的产品
-c.Frameworks文件:项目各种target链接时候依赖的系统库
 
-
-//1.所有被工程管理的资源文件以及文件夹
-PBXFileReference:一个被工程管理的文件(所有类型的文件)
-1.被add近工程的文件(不管此文件在什么地方),打开一个ProjectXcodeproj后它所管理展示的所有资源文件
-2.add选项
-a.是否需要拷贝资源文件到项目中
-b.是否保留目录结构
-c.是否被添加到tagerte中
 
 
 
