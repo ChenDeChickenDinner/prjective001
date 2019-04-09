@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		559620EE22425CBC003EF84F /* 01项目配置元素信息.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620ED22425CBC003EF84F /* 01项目配置元素信息.m */; };
+		555B837E225C3976007383E5 /* 01Project文件组织.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B837D225C3976007383E5 /* 01Project文件组织.m */; };
 		559620F122425D37003EF84F /* 02开发组签名证书.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F022425D37003EF84F /* 02开发组签名证书.m */; };
-		559620F622425FCC003EF84F /* 01Configurations多环境.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F522425FCC003EF84F /* 01Configurations多环境.m */; };
-		559620F92242605C003EF84F /* 00Project_Target_Scheme设置.m in Sources */ = {isa = PBXBuildFile; fileRef = 559620F82242605C003EF84F /* 00Project_Target_Scheme设置.m */; };
 		5596219D22438669003EF84F /* libaray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596219B22438668003EF84F /* libaray.m */; };
 		559621AF224386C5003EF84F /* 04InfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5596219F224386C4003EF84F /* 04InfoPlist.m */; };
 		559621B82243870C003EF84F /* 06BuildPhases.m in Sources */ = {isa = PBXBuildFile; fileRef = 559621B52243870C003EF84F /* 06BuildPhases.m */; };
@@ -70,17 +68,20 @@
 		55B2BA39222E888D00900956 /* RunLoopTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BA38222E888D00900956 /* RunLoopTechnology.m */; };
 		55B2BA3E222E937200900956 /* ProcessAndThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BA3D222E937200900956 /* ProcessAndThread.m */; };
 		55B2BA63222E9AE500900956 /* ThreadMemoryManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BA62222E9AE500900956 /* ThreadMemoryManage.m */; };
+		55B52D79225ADA8E009A927E /* 1cocoapods.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B52D78225ADA8E009A927E /* 1cocoapods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		559620EC22425CBC003EF84F /* 01项目配置元素信息.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01项目配置元素信息.h"; sourceTree = "<group>"; };
-		559620ED22425CBC003EF84F /* 01项目配置元素信息.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01项目配置元素信息.m"; sourceTree = "<group>"; };
-		559620EF22425D37003EF84F /* 02开发组签名证书.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02开发组签名证书.h"; sourceTree = "<group>"; };
+		555B836D225C3481007383E5 /* 3制作公共库.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3制作公共库.h"; sourceTree = "<group>"; };
+		555B836E225C3481007383E5 /* 3制作公共库.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "3制作公共库.m"; sourceTree = "<group>"; };
+		555B8370225C3497007383E5 /* 2团队cocoapods操作.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "2团队cocoapods操作.h"; sourceTree = "<group>"; };
+		555B8371225C3497007383E5 /* 2团队cocoapods操作.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "2团队cocoapods操作.m"; sourceTree = "<group>"; };
+		555B8373225C34AC007383E5 /* 4cocoapods私有库.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4cocoapods私有库.h"; sourceTree = "<group>"; };
+		555B8374225C34AC007383E5 /* 4cocoapods私有库.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "4cocoapods私有库.m"; sourceTree = "<group>"; };
+		555B837C225C3976007383E5 /* 01Project文件组织.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01Project文件组织.h"; sourceTree = "<group>"; };
+		555B837D225C3976007383E5 /* 01Project文件组织.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01Project文件组织.m"; sourceTree = "<group>"; };
+		555B837F225C39B4007383E5 /* 01Target创建以及标识信息.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01Target创建以及标识信息.h"; sourceTree = "<group>"; };
 		559620F022425D37003EF84F /* 02开发组签名证书.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "02开发组签名证书.m"; sourceTree = "<group>"; };
-		559620F422425FCC003EF84F /* 01Configurations多环境.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "01Configurations多环境.h"; sourceTree = "<group>"; };
-		559620F522425FCC003EF84F /* 01Configurations多环境.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "01Configurations多环境.m"; sourceTree = "<group>"; };
-		559620F72242605C003EF84F /* 00Project_Target_Scheme设置.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "00Project_Target_Scheme设置.h"; sourceTree = "<group>"; };
-		559620F82242605C003EF84F /* 00Project_Target_Scheme设置.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "00Project_Target_Scheme设置.m"; sourceTree = "<group>"; };
 		5596219B22438668003EF84F /* libaray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libaray.m; sourceTree = "<group>"; };
 		5596219F224386C4003EF84F /* 04InfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 04InfoPlist.m; sourceTree = "<group>"; };
 		559621A4224386C5003EF84F /* 02Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 02Asset.h; sourceTree = "<group>"; };
@@ -156,8 +157,8 @@
 		5596242D224A1A37003EF84F /* 01XcodeResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01XcodeResource.m; sourceTree = "<group>"; };
 		55962430224A1A65003EF84F /* 02UserLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 02UserLibrary.h; sourceTree = "<group>"; };
 		55962431224A1A65003EF84F /* 02UserLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 02UserLibrary.m; sourceTree = "<group>"; };
-		55962436224A1AC8003EF84F /* 04ProjectXcodeproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 04ProjectXcodeproj.h; sourceTree = "<group>"; };
-		55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 04ProjectXcodeproj.m; sourceTree = "<group>"; };
+		55962436224A1AC8003EF84F /* 02Project资源管理.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02Project资源管理.h"; sourceTree = "<group>"; };
+		55962437224A1AC8003EF84F /* 02Project资源管理.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "02Project资源管理.m"; sourceTree = "<group>"; };
 		55B2B8AB2229171A00900956 /* 2019OC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019OC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B2B8AE2229171A00900956 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55B2B8AF2229171A00900956 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -248,8 +249,8 @@
 		55B2BA3D222E937200900956 /* ProcessAndThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessAndThread.m; sourceTree = "<group>"; };
 		55B2BA61222E9AE500900956 /* ThreadMemoryManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadMemoryManage.h; sourceTree = "<group>"; };
 		55B2BA62222E9AE500900956 /* ThreadMemoryManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadMemoryManage.m; sourceTree = "<group>"; };
-		55B52BE82255B2A3009A927E /* 01ProjectManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01ProjectManage.h; sourceTree = "<group>"; };
-		55B52BE92255B2A3009A927E /* 01ProjectManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 01ProjectManage.m; sourceTree = "<group>"; };
+		55B52D77225ADA8E009A927E /* 1cocoapods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 1cocoapods.h; sourceTree = "<group>"; };
+		55B52D78225ADA8E009A927E /* 1cocoapods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 1cocoapods.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +264,174 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		555B8376225C34EC007383E5 /* 1git版本控制 */ = {
+			isa = PBXGroup;
+			children = (
+				559621F322438756003EF84F /* git.m */,
+			);
+			path = "1git版本控制";
+			sourceTree = "<group>";
+		};
+		555B8377225C34F7007383E5 /* 3github公共 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3github公共";
+			sourceTree = "<group>";
+		};
+		555B8378225C351C007383E5 /* 2sourcetree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 2sourcetree;
+			sourceTree = "<group>";
+		};
+		555B8379225C353C007383E5 /* 4gitlab私有 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4gitlab私有";
+			sourceTree = "<group>";
+		};
+		555B837A225C3598007383E5 /* 5cocoapods */ = {
+			isa = PBXGroup;
+			children = (
+				55962456224A2097003EF84F /* 06三方库制作使用 */,
+				55B52D77225ADA8E009A927E /* 1cocoapods.h */,
+				55B52D78225ADA8E009A927E /* 1cocoapods.m */,
+				555B8370225C3497007383E5 /* 2团队cocoapods操作.h */,
+				555B8371225C3497007383E5 /* 2团队cocoapods操作.m */,
+				555B836D225C3481007383E5 /* 3制作公共库.h */,
+				555B836E225C3481007383E5 /* 3制作公共库.m */,
+				555B8373225C34AC007383E5 /* 4cocoapods私有库.h */,
+				555B8374225C34AC007383E5 /* 4cocoapods私有库.m */,
+			);
+			path = 5cocoapods;
+			sourceTree = "<group>";
+		};
+		555B8382225C3A02007383E5 /* 04Project的 scheme */ = {
+			isa = PBXGroup;
+			children = (
+				555B8387225C3C6B007383E5 /* 01Scheme创建管理 */,
+				555B8388225C3C80007383E5 /* 02Scheme设置 */,
+				555B8389225C3C94007383E5 /* 03Scheme的动作计划 */,
+			);
+			path = "04Project的 scheme";
+			sourceTree = "<group>";
+		};
+		555B8383225C3A04007383E5 /* 03Project的 target */ = {
+			isa = PBXGroup;
+			children = (
+				555B837F225C39B4007383E5 /* 01Target创建以及标识信息.h */,
+				55962439224A1B8C003EF84F /* 1target编译设置 */,
+			);
+			path = "03Project的 target";
+			sourceTree = "<group>";
+		};
+		555B8384225C3A07007383E5 /* 02Project资源管理 */ = {
+			isa = PBXGroup;
+			children = (
+				55962436224A1AC8003EF84F /* 02Project资源管理.h */,
+				55962437224A1AC8003EF84F /* 02Project资源管理.m */,
+			);
+			path = "02Project资源管理";
+			sourceTree = "<group>";
+		};
+		555B8385225C3A09007383E5 /* 01Project文件组织 */ = {
+			isa = PBXGroup;
+			children = (
+				555B837C225C3976007383E5 /* 01Project文件组织.h */,
+				555B837D225C3976007383E5 /* 01Project文件组织.m */,
+			);
+			path = "01Project文件组织";
+			sourceTree = "<group>";
+		};
+		555B8386225C3B66007383E5 /* 04Scheme的持续集成 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "04Scheme的持续集成";
+			sourceTree = "<group>";
+		};
+		555B8387225C3C6B007383E5 /* 01Scheme创建管理 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "01Scheme创建管理";
+			sourceTree = "<group>";
+		};
+		555B8388225C3C80007383E5 /* 02Scheme设置 */ = {
+			isa = PBXGroup;
+			children = (
+				559621F52243878D003EF84F /* 01Scheme.h */,
+			);
+			path = "02Scheme设置";
+			sourceTree = "<group>";
+		};
+		555B8389225C3C94007383E5 /* 03Scheme的动作计划 */ = {
+			isa = PBXGroup;
+			children = (
+				555B838A225C3CC7007383E5 /* 01开发者账号证书签名 */,
+				555B838E225C3D32007383E5 /* 02Scheme_Run(真机) */,
+				555B838D225C3D30007383E5 /* 03Scheme_Archive(打包) */,
+				555B8386225C3B66007383E5 /* 04Scheme的持续集成 */,
+			);
+			path = "03Scheme的动作计划";
+			sourceTree = "<group>";
+		};
+		555B838A225C3CC7007383E5 /* 01开发者账号证书签名 */ = {
+			isa = PBXGroup;
+			children = (
+				559621B3224386E8003EF84F /* 00AppleID.h */,
+				559620F022425D37003EF84F /* 02开发组签名证书.m */,
+			);
+			path = "01开发者账号证书签名";
+			sourceTree = "<group>";
+		};
+		555B838D225C3D30007383E5 /* 03Scheme_Archive(打包) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "03Scheme_Archive(打包)";
+			sourceTree = "<group>";
+		};
+		555B838E225C3D32007383E5 /* 02Scheme_Run(真机) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "02Scheme_Run(真机)";
+			sourceTree = "<group>";
+		};
+		555B838F225C4032007383E5 /* 07H5与原生交互 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "07H5与原生交互";
+			sourceTree = "<group>";
+		};
+		555B8391225C4183007383E5 /* 08Instruments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 08Instruments;
+			sourceTree = "<group>";
+		};
+		555B8392225C41C0007383E5 /* 01系统二次总结封装 */ = {
+			isa = PBXGroup;
+			children = (
+				55B2B8F72229172C00900956 /* 2OCAPI */,
+				55B2B8F82229172C00900956 /* 3XSTechnology */,
+			);
+			path = "01系统二次总结封装";
+			sourceTree = "<group>";
+		};
+		555B8393225C41CF007383E5 /* 02三方功能框架学习 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "02三方功能框架学习";
+			sourceTree = "<group>";
+		};
 		5576F5AD224E060800BC6C00 /* 1BuildSetting */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,96 +465,21 @@
 			path = 3BuildRules;
 			sourceTree = "<group>";
 		};
-		5576F5B1224E0F1900BC6C00 /* 07多项目管理 */ = {
-			isa = PBXGroup;
-			children = (
-				55B52BE82255B2A3009A927E /* 01ProjectManage.h */,
-				55B52BE92255B2A3009A927E /* 01ProjectManage.m */,
-			);
-			path = "07多项目管理";
-			sourceTree = "<group>";
-		};
 		5576F63D224E172700BC6C00 /* 01库的介绍 */ = {
 			isa = PBXGroup;
 			children = (
-				5596219B22438668003EF84F /* libaray.m */,
 			);
 			path = "01库的介绍";
-			sourceTree = "<group>";
-		};
-		559620EB22425C2D003EF84F /* 2真机构建打包 */ = {
-			isa = PBXGroup;
-			children = (
-				559620EC22425CBC003EF84F /* 01项目配置元素信息.h */,
-				559620ED22425CBC003EF84F /* 01项目配置元素信息.m */,
-				559620EF22425D37003EF84F /* 02开发组签名证书.h */,
-				559620F022425D37003EF84F /* 02开发组签名证书.m */,
-			);
-			path = "2真机构建打包";
-			sourceTree = "<group>";
-		};
-		559620F222425F3C003EF84F /* 1项目配置 */ = {
-			isa = PBXGroup;
-			children = (
-				559620F72242605C003EF84F /* 00Project_Target_Scheme设置.h */,
-				559620F82242605C003EF84F /* 00Project_Target_Scheme设置.m */,
-				559620F422425FCC003EF84F /* 01Configurations多环境.h */,
-				559620F522425FCC003EF84F /* 01Configurations多环境.m */,
-			);
-			path = "1项目配置";
-			sourceTree = "<group>";
-		};
-		559620F322425F4A003EF84F /* IOS技术点 */ = {
-			isa = PBXGroup;
-			children = (
-				559620F222425F3C003EF84F /* 1项目配置 */,
-				559620EB22425C2D003EF84F /* 2真机构建打包 */,
-				559620FA2242613F003EF84F /* 3自动构建打包分发 */,
-				559620FB224263B5003EF84F /* 4Cocopos */,
-				559620FC224263D0003EF84F /* 5项目管理 */,
-				559620FD224263E4003EF84F /* 6特殊技术 */,
-			);
-			path = "IOS技术点";
-			sourceTree = "<group>";
-		};
-		559620FA2242613F003EF84F /* 3自动构建打包分发 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "3自动构建打包分发";
-			sourceTree = "<group>";
-		};
-		559620FB224263B5003EF84F /* 4Cocopos */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 4Cocopos;
-			sourceTree = "<group>";
-		};
-		559620FC224263D0003EF84F /* 5项目管理 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "5项目管理";
-			sourceTree = "<group>";
-		};
-		559620FD224263E4003EF84F /* 6特殊技术 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "6特殊技术";
 			sourceTree = "<group>";
 		};
 		5596215E22437222003EF84F /* 2019NewOC */ = {
 			isa = PBXGroup;
 			children = (
-				5596217122437222003EF84F /* 01项目配置 */,
-				5596216B22437222003EF84F /* 02项目管理 */,
-				5596217A22437222003EF84F /* 03OC基础语法 */,
+				5596217122437222003EF84F /* 01项目管理 */,
+				55B2B8C52229172C00900956 /* 02OC开发 */,
+				5596217A22437222003EF84F /* 03项目技术 */,
 				5596215F22437222003EF84F /* 04OC框架API */,
-				5596216322437222003EF84F /* 05OC高级开发 */,
 				5596217022437222003EF84F /* 06框架封装学习 */,
-				5596217B22437222003EF84F /* OC项目功能 */,
 				5596217922437222003EF84F /* Xcode高级功能 */,
 			);
 			path = 2019NewOC;
@@ -422,124 +516,25 @@
 			path = "01系统级别";
 			sourceTree = "<group>";
 		};
-		5596216322437222003EF84F /* 05OC高级开发 */ = {
-			isa = PBXGroup;
-			children = (
-				5596216722437222003EF84F /* 01对象底层结构 */,
-				5596216822437222003EF84F /* 02内存管理 */,
-				5596216522437222003EF84F /* 03RunTime */,
-				5596216A22437222003EF84F /* 04RunLoop */,
-				5596216622437222003EF84F /* 05网络多线程 */,
-				5596216422437222003EF84F /* 06数据库持久化 */,
-				5596216922437222003EF84F /* 07H5与原生交互 */,
-			);
-			path = "05OC高级开发";
-			sourceTree = "<group>";
-		};
-		5596216422437222003EF84F /* 06数据库持久化 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "06数据库持久化";
-			sourceTree = "<group>";
-		};
-		5596216522437222003EF84F /* 03RunTime */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 03RunTime;
-			sourceTree = "<group>";
-		};
-		5596216622437222003EF84F /* 05网络多线程 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "05网络多线程";
-			sourceTree = "<group>";
-		};
-		5596216722437222003EF84F /* 01对象底层结构 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "01对象底层结构";
-			sourceTree = "<group>";
-		};
-		5596216822437222003EF84F /* 02内存管理 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "02内存管理";
-			sourceTree = "<group>";
-		};
-		5596216922437222003EF84F /* 07H5与原生交互 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "07H5与原生交互";
-			sourceTree = "<group>";
-		};
-		5596216A22437222003EF84F /* 04RunLoop */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 04RunLoop;
-			sourceTree = "<group>";
-		};
-		5596216B22437222003EF84F /* 02项目管理 */ = {
-			isa = PBXGroup;
-			children = (
-				5596216D22437222003EF84F /* 01构建打包发布 */,
-				5596216F22437222003EF84F /* 02持续集成 */,
-				5596216C22437222003EF84F /* 03项目版本管理 */,
-				5596216E22437222003EF84F /* 04代码仓库托管 */,
-			);
-			path = "02项目管理";
-			sourceTree = "<group>";
-		};
-		5596216C22437222003EF84F /* 03项目版本管理 */ = {
-			isa = PBXGroup;
-			children = (
-				559621F322438756003EF84F /* git.m */,
-			);
-			path = "03项目版本管理";
-			sourceTree = "<group>";
-		};
-		5596216D22437222003EF84F /* 01构建打包发布 */ = {
-			isa = PBXGroup;
-			children = (
-				559621B3224386E8003EF84F /* 00AppleID.h */,
-				559621F52243878D003EF84F /* 01Scheme.h */,
-			);
-			path = "01构建打包发布";
-			sourceTree = "<group>";
-		};
-		5596216E22437222003EF84F /* 04代码仓库托管 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "04代码仓库托管";
-			sourceTree = "<group>";
-		};
-		5596216F22437222003EF84F /* 02持续集成 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "02持续集成";
-			sourceTree = "<group>";
-		};
 		5596217022437222003EF84F /* 06框架封装学习 */ = {
 			isa = PBXGroup;
 			children = (
+				555B8393225C41CF007383E5 /* 02三方功能框架学习 */,
+				555B8392225C41C0007383E5 /* 01系统二次总结封装 */,
 			);
 			path = "06框架封装学习";
 			sourceTree = "<group>";
 		};
-		5596217122437222003EF84F /* 01项目配置 */ = {
+		5596217122437222003EF84F /* 01项目管理 */ = {
 			isa = PBXGroup;
 			children = (
-				5596242F224A1A44003EF84F /* 01 */,
+				55962449224A1D51003EF84F /* 01XcodeSDK */,
+				5596244A224A1D5E003EF84F /* 02UserLibrary工具缓存 */,
+				5596244B224A1D6E003EF84F /* 03Project项目结构 */,
+				5596244C224A1D78003EF84F /* 04WorkSpace工作空间 */,
+				55962457224A20F2003EF84F /* 项目管理 */,
 			);
-			path = "01项目配置";
+			path = "01项目管理";
 			sourceTree = "<group>";
 		};
 		5596217922437222003EF84F /* Xcode高级功能 */ = {
@@ -550,14 +545,7 @@
 			path = "Xcode高级功能";
 			sourceTree = "<group>";
 		};
-		5596217A22437222003EF84F /* 03OC基础语法 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "03OC基础语法";
-			sourceTree = "<group>";
-		};
-		5596217B22437222003EF84F /* OC项目功能 */ = {
+		5596217A22437222003EF84F /* 03项目技术 */ = {
 			isa = PBXGroup;
 			children = (
 				5596217C22437222003EF84F /* 01AppDelegate */,
@@ -565,7 +553,7 @@
 				5596217D22437222003EF84F /* 03AppPushNotification */,
 				5596218E2243855B003EF84F /* 04沙盒结构 */,
 			);
-			path = "OC项目功能";
+			path = "03项目技术";
 			sourceTree = "<group>";
 		};
 		5596217C22437222003EF84F /* 01AppDelegate */ = {
@@ -897,64 +885,7 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		5596242F224A1A44003EF84F /* 01 */ = {
-			isa = PBXGroup;
-			children = (
-				55962449224A1D51003EF84F /* 01Xcode */,
-				5596244A224A1D5E003EF84F /* 02UserLibrary */,
-				5596244B224A1D6E003EF84F /* 03Project */,
-				5596244C224A1D78003EF84F /* 04WorkSpace */,
-				55962439224A1B8C003EF84F /* 05target */,
-				55962456224A2097003EF84F /* 06三方库制作使用 */,
-				5576F5B1224E0F1900BC6C00 /* 07多项目管理 */,
-				55962457224A20F2003EF84F /* 08Cocoapods管理项目 */,
-			);
-			path = 01;
-			sourceTree = "<group>";
-		};
-		55962439224A1B8C003EF84F /* 05target */ = {
-			isa = PBXGroup;
-			children = (
-				5596244E224A1DAA003EF84F /* 1target编译设置 */,
-			);
-			path = 05target;
-			sourceTree = "<group>";
-		};
-		55962449224A1D51003EF84F /* 01Xcode */ = {
-			isa = PBXGroup;
-			children = (
-				5596242C224A1A37003EF84F /* 01XcodeResource.h */,
-				5596242D224A1A37003EF84F /* 01XcodeResource.m */,
-			);
-			path = 01Xcode;
-			sourceTree = "<group>";
-		};
-		5596244A224A1D5E003EF84F /* 02UserLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				55962430224A1A65003EF84F /* 02UserLibrary.h */,
-				55962431224A1A65003EF84F /* 02UserLibrary.m */,
-			);
-			path = 02UserLibrary;
-			sourceTree = "<group>";
-		};
-		5596244B224A1D6E003EF84F /* 03Project */ = {
-			isa = PBXGroup;
-			children = (
-				55962436224A1AC8003EF84F /* 04ProjectXcodeproj.h */,
-				55962437224A1AC8003EF84F /* 04ProjectXcodeproj.m */,
-			);
-			path = 03Project;
-			sourceTree = "<group>";
-		};
-		5596244C224A1D78003EF84F /* 04WorkSpace */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 04WorkSpace;
-			sourceTree = "<group>";
-		};
-		5596244E224A1DAA003EF84F /* 1target编译设置 */ = {
+		55962439224A1B8C003EF84F /* 1target编译设置 */ = {
 			isa = PBXGroup;
 			children = (
 				5576F5AD224E060800BC6C00 /* 1BuildSetting */,
@@ -964,19 +895,61 @@
 			path = "1target编译设置";
 			sourceTree = "<group>";
 		};
+		55962449224A1D51003EF84F /* 01XcodeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5596242C224A1A37003EF84F /* 01XcodeResource.h */,
+				5596242D224A1A37003EF84F /* 01XcodeResource.m */,
+			);
+			path = 01XcodeSDK;
+			sourceTree = "<group>";
+		};
+		5596244A224A1D5E003EF84F /* 02UserLibrary工具缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				55962430224A1A65003EF84F /* 02UserLibrary.h */,
+				55962431224A1A65003EF84F /* 02UserLibrary.m */,
+			);
+			path = "02UserLibrary工具缓存";
+			sourceTree = "<group>";
+		};
+		5596244B224A1D6E003EF84F /* 03Project项目结构 */ = {
+			isa = PBXGroup;
+			children = (
+				555B8385225C3A09007383E5 /* 01Project文件组织 */,
+				555B8384225C3A07007383E5 /* 02Project资源管理 */,
+				555B8383225C3A04007383E5 /* 03Project的 target */,
+				555B8382225C3A02007383E5 /* 04Project的 scheme */,
+			);
+			path = "03Project项目结构";
+			sourceTree = "<group>";
+		};
+		5596244C224A1D78003EF84F /* 04WorkSpace工作空间 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "04WorkSpace工作空间";
+			sourceTree = "<group>";
+		};
 		55962456224A2097003EF84F /* 06三方库制作使用 */ = {
 			isa = PBXGroup;
 			children = (
+				5596219B22438668003EF84F /* libaray.m */,
 				5576F63D224E172700BC6C00 /* 01库的介绍 */,
 			);
 			path = "06三方库制作使用";
 			sourceTree = "<group>";
 		};
-		55962457224A20F2003EF84F /* 08Cocoapods管理项目 */ = {
+		55962457224A20F2003EF84F /* 项目管理 */ = {
 			isa = PBXGroup;
 			children = (
+				555B8376225C34EC007383E5 /* 1git版本控制 */,
+				555B8378225C351C007383E5 /* 2sourcetree */,
+				555B8377225C34F7007383E5 /* 3github公共 */,
+				555B8379225C353C007383E5 /* 4gitlab私有 */,
+				555B837A225C3598007383E5 /* 5cocoapods */,
 			);
-			path = "08Cocoapods管理项目";
+			path = "项目管理";
 			sourceTree = "<group>";
 		};
 		55B2B8A22229171A00900956 = {
@@ -999,7 +972,6 @@
 			isa = PBXGroup;
 			children = (
 				5596215E22437222003EF84F /* 2019NewOC */,
-				55B2B8C42229172C00900956 /* 未命名文件夹 */,
 				55B2B8AE2229171A00900956 /* AppDelegate.h */,
 				55B2B8AF2229171A00900956 /* AppDelegate.m */,
 				55B2B8B12229171A00900956 /* ViewController.h */,
@@ -1013,33 +985,23 @@
 			path = 2019OC2;
 			sourceTree = "<group>";
 		};
-		55B2B8C42229172C00900956 /* 未命名文件夹 */ = {
+		55B2B8C52229172C00900956 /* 02OC开发 */ = {
 			isa = PBXGroup;
 			children = (
-				559620F322425F4A003EF84F /* IOS技术点 */,
-				55B2B8C52229172C00900956 /* 1OCTechnology */,
-				55B2B8F72229172C00900956 /* 2OCAPI */,
-				55B2B8F82229172C00900956 /* 3XSTechnology */,
+				55B2B8CC2229172C00900956 /* 00基本语法 */,
+				55B2B8F22229172C00900956 /* 01面向对象 */,
+				55B2B8D82229172C00900956 /* 02内存管理 */,
+				55B2B8CE2229172C00900956 /* 03RunTime */,
+				55B2B8C62229172C00900956 /* 04RunLoop */,
+				55B2B8E02229172C00900956 /* 05网络多线程 */,
+				55B2B8CD2229172C00900956 /* 06数据库持久化 */,
+				555B838F225C4032007383E5 /* 07H5与原生交互 */,
+				555B8391225C4183007383E5 /* 08Instruments */,
 			);
-			path = "未命名文件夹";
+			path = "02OC开发";
 			sourceTree = "<group>";
 		};
-		55B2B8C52229172C00900956 /* 1OCTechnology */ = {
-			isa = PBXGroup;
-			children = (
-				55B2B8CC2229172C00900956 /* 1BaseDataType */,
-				55B2B8F22229172C00900956 /* 2ObjectDataType */,
-				55B2B8D82229172C00900956 /* 3MemoryManag */,
-				55B2B8CE2229172C00900956 /* 4RunTime */,
-				55B2B8C62229172C00900956 /* 5RrunLoop */,
-				55B2B8E02229172C00900956 /* 6Thread */,
-				55B2B8F62229172C00900956 /* 7Network */,
-				55B2B8CD2229172C00900956 /* 8Archive */,
-			);
-			path = 1OCTechnology;
-			sourceTree = "<group>";
-		};
-		55B2B8C62229172C00900956 /* 5RrunLoop */ = {
+		55B2B8C62229172C00900956 /* 04RunLoop */ = {
 			isa = PBXGroup;
 			children = (
 				55B2B8CB2229172C00900956 /* 1RunLoop组成元素 */,
@@ -1047,7 +1009,7 @@
 				55B2B8C92229172C00900956 /* 3RunLoop操作执行流程 */,
 				55B2B8C72229172C00900956 /* 4RunLoop支撑的技术 */,
 			);
-			path = 5RrunLoop;
+			path = 04RunLoop;
 			sourceTree = "<group>";
 		};
 		55B2B8C72229172C00900956 /* 4RunLoop支撑的技术 */ = {
@@ -1086,23 +1048,23 @@
 			path = "1RunLoop组成元素";
 			sourceTree = "<group>";
 		};
-		55B2B8CC2229172C00900956 /* 1BaseDataType */ = {
+		55B2B8CC2229172C00900956 /* 00基本语法 */ = {
 			isa = PBXGroup;
 			children = (
 				55B2B8FE222917BE00900956 /* BaseDataType.h */,
 				55B2B8FF222917BE00900956 /* BaseDataType.m */,
 			);
-			path = 1BaseDataType;
+			path = "00基本语法";
 			sourceTree = "<group>";
 		};
-		55B2B8CD2229172C00900956 /* 8Archive */ = {
+		55B2B8CD2229172C00900956 /* 06数据库持久化 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = 8Archive;
+			path = "06数据库持久化";
 			sourceTree = "<group>";
 		};
-		55B2B8CE2229172C00900956 /* 4RunTime */ = {
+		55B2B8CE2229172C00900956 /* 03RunTime */ = {
 			isa = PBXGroup;
 			children = (
 				55B2B8D52229172C00900956 /* 01ClassLoad */,
@@ -1112,7 +1074,7 @@
 				55B2B8D02229172C00900956 /* 05Kvo */,
 				55B2B8D62229172C00900956 /* 06Associated */,
 			);
-			path = 4RunTime;
+			path = 03RunTime;
 			sourceTree = "<group>";
 		};
 		55B2B8CF2229172C00900956 /* 02MsgSend */ = {
@@ -1199,13 +1161,13 @@
 			path = 04Kvc;
 			sourceTree = "<group>";
 		};
-		55B2B8D82229172C00900956 /* 3MemoryManag */ = {
+		55B2B8D82229172C00900956 /* 02内存管理 */ = {
 			isa = PBXGroup;
 			children = (
 				55B2B8D92229172C00900956 /* 01内存分布存储 */,
 				55B2B8DA2229172C00900956 /* 03内存管理 */,
 			);
-			path = 3MemoryManag;
+			path = "02内存管理";
 			sourceTree = "<group>";
 		};
 		55B2B8D92229172C00900956 /* 01内存分布存储 */ = {
@@ -1246,7 +1208,7 @@
 			path = "3自动释放池";
 			sourceTree = "<group>";
 		};
-		55B2B8E02229172C00900956 /* 6Thread */ = {
+		55B2B8E02229172C00900956 /* 05网络多线程 */ = {
 			isa = PBXGroup;
 			children = (
 				55B2B8EE2229172C00900956 /* 1线程属性本质 */,
@@ -1254,7 +1216,7 @@
 				55B2BA99222F684100900956 /* 3系统API运用的多线程 */,
 				55B2B8E12229172C00900956 /* 4多线程面临问题 */,
 			);
-			path = 6Thread;
+			path = "05网络多线程";
 			sourceTree = "<group>";
 		};
 		55B2B8E12229172C00900956 /* 4多线程面临问题 */ = {
@@ -1372,7 +1334,7 @@
 			path = "1线程属性本质";
 			sourceTree = "<group>";
 		};
-		55B2B8F22229172C00900956 /* 2ObjectDataType */ = {
+		55B2B8F22229172C00900956 /* 01面向对象 */ = {
 			isa = PBXGroup;
 			children = (
 				55B2B8F42229172C00900956 /* 01对象语法 */,
@@ -1380,7 +1342,7 @@
 				55B2B8F32229172C00900956 /* 03系统关键字 */,
 				55B2B90A2229196200900956 /* 04Block */,
 			);
-			path = 2ObjectDataType;
+			path = "01面向对象";
 			sourceTree = "<group>";
 		};
 		55B2B8F32229172C00900956 /* 03系统关键字 */ = {
@@ -1410,13 +1372,6 @@
 				55B2B9052229189600900956 /* ObjectStruct.m */,
 			);
 			path = "02对象结构";
-			sourceTree = "<group>";
-		};
-		55B2B8F62229172C00900956 /* 7Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 7Network;
 			sourceTree = "<group>";
 		};
 		55B2B8F72229172C00900956 /* 2OCAPI */ = {
@@ -1636,7 +1591,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				559620F622425FCC003EF84F /* 01Configurations多环境.m in Sources */,
 				55B2B92522291BDB00900956 /* FuncRelated.m in Sources */,
 				55B2BA39222E888D00900956 /* RunLoopTechnology.m in Sources */,
 				55B2B91322291A0600900956 /* MsgSend.m in Sources */,
@@ -1663,10 +1617,10 @@
 				5596221A22438838003EF84F /* NSDictionaryC.m in Sources */,
 				55B2B966222A480400900956 /* MemoryDistribution.m in Sources */,
 				559621B92243870C003EF84F /* 07BuildRules.m in Sources */,
-				559620EE22425CBC003EF84F /* 01项目配置元素信息.m in Sources */,
 				55B2B92222291BCB00900956 /* IvarRelated.m in Sources */,
 				559621AF224386C5003EF84F /* 04InfoPlist.m in Sources */,
 				55B2BA36222E821700900956 /* RunLoopProcess.m in Sources */,
+				55B52D79225ADA8E009A927E /* 1cocoapods.m in Sources */,
 				5596221722438838003EF84F /* NSIndexPat(Set).m in Sources */,
 				5596222022438838003EF84F /* NSStringC.m in Sources */,
 				55B2B93D2229208A00900956 /* CXOperation.m in Sources */,
@@ -1675,6 +1629,7 @@
 				5596221F22438838003EF84F /* Selector.m in Sources */,
 				55B2B940222920CA00900956 /* XSGCDTimer.m in Sources */,
 				55B2B910222919EC00900956 /* classLoad.m in Sources */,
+				555B837E225C3976007383E5 /* 01Project文件组织.m in Sources */,
 				5596221622438838003EF84F /* NSFormatterC.m in Sources */,
 				5596221D22438838003EF84F /* NSNDataC.m in Sources */,
 				55B2B9BF222CCDAE00900956 /* Person.m in Sources */,
@@ -1693,7 +1648,6 @@
 				5596221922438838003EF84F /* NSValue(Number).m in Sources */,
 				55B2B969222A4E7400900956 /* XSThreadSecurity.m in Sources */,
 				5596221C22438838003EF84F /* Protocol.m in Sources */,
-				559620F92242605C003EF84F /* 00Project_Target_Scheme设置.m in Sources */,
 				55B2B91922291AB800900956 /* KvcTechnology.m in Sources */,
 				55B2B9F4222D299D00900956 /* MemoryOtherDataType.m in Sources */,
 			);
