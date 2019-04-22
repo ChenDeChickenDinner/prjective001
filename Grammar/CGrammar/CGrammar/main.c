@@ -8,9 +8,11 @@
 
 #include <stdio.h>
 #include "Scope.h"
+#include "Macro.h"
+#include "Pretreatment.h"
 
 int main(int argc, const char * argv[]) {
 
-    ScopeTest();
+
     return 0;
 }

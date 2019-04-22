@@ -14,6 +14,12 @@
 		5512D1982269A2D300933B88 /* Typedef.c in Sources */ = {isa = PBXBuildFile; fileRef = 5512D1972269A2D300933B88 /* Typedef.c */; };
 		5512D19B2269A30900933B88 /* Scope.c in Sources */ = {isa = PBXBuildFile; fileRef = 5512D19A2269A30900933B88 /* Scope.c */; };
 		5512D19E2269A32200933B88 /* Const.c in Sources */ = {isa = PBXBuildFile; fileRef = 5512D19D2269A32200933B88 /* Const.c */; };
+		55FCBEC3226D4DDB00EF4603 /* Static.c in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBEC2226D4DDB00EF4603 /* Static.c */; };
+		55FCBEC6226D525400EF4603 /* Process.c in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBEC5226D525400EF4603 /* Process.c */; };
+		55FCBEC9226D527000EF4603 /* Operator.c in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBEC8226D527000EF4603 /* Operator.c */; };
+		55FCBECC226D529000EF4603 /* Macro.c in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBECB226D529000EF4603 /* Macro.c */; };
+		55FCBED5226D91C900EF4603 /* Define.c in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBED4226D91C900EF4603 /* Define.c */; };
+		55FCBED8226D93AB00EF4603 /* Pretreatment.c in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBED7226D93AB00EF4603 /* Pretreatment.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +49,18 @@
 		5512D19A2269A30900933B88 /* Scope.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Scope.c; sourceTree = "<group>"; };
 		5512D19C2269A32200933B88 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		5512D19D2269A32200933B88 /* Const.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Const.c; sourceTree = "<group>"; };
+		55FCBEC1226D4DDB00EF4603 /* Static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Static.h; sourceTree = "<group>"; };
+		55FCBEC2226D4DDB00EF4603 /* Static.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Static.c; sourceTree = "<group>"; };
+		55FCBEC4226D525400EF4603 /* Process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Process.h; sourceTree = "<group>"; };
+		55FCBEC5226D525400EF4603 /* Process.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Process.c; sourceTree = "<group>"; };
+		55FCBEC7226D527000EF4603 /* Operator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
+		55FCBEC8226D527000EF4603 /* Operator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Operator.c; sourceTree = "<group>"; };
+		55FCBECA226D529000EF4603 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		55FCBECB226D529000EF4603 /* Macro.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Macro.c; sourceTree = "<group>"; };
+		55FCBED3226D91C900EF4603 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		55FCBED4226D91C900EF4603 /* Define.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Define.c; sourceTree = "<group>"; };
+		55FCBED6226D93AB00EF4603 /* Pretreatment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pretreatment.h; sourceTree = "<group>"; };
+		55FCBED7226D93AB00EF4603 /* Pretreatment.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Pretreatment.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,8 @@
 		5512D18F2269A09C00933B88 /* 4流程控制 */ = {
 			isa = PBXGroup;
 			children = (
+				55FCBEC4226D525400EF4603 /* Process.h */,
+				55FCBEC5226D525400EF4603 /* Process.c */,
 			);
 			path = "4流程控制";
 			sourceTree = "<group>";
@@ -108,6 +128,8 @@
 		5512D1902269A0B400933B88 /* 3运算符表达式语句 */ = {
 			isa = PBXGroup;
 			children = (
+				55FCBEC7226D527000EF4603 /* Operator.h */,
+				55FCBEC8226D527000EF4603 /* Operator.c */,
 			);
 			path = "3运算符表达式语句";
 			sourceTree = "<group>";
@@ -115,9 +137,9 @@
 		5512D1912269A18C00933B88 /* 2数据修饰关键字 */ = {
 			isa = PBXGroup;
 			children = (
-				5512D19F2269CB2800933B88 /* 3静态 */,
 				5512D1922269A1B700933B88 /* 1别名 */,
 				5512D1932269A1C400933B88 /* 2作用域 */,
+				5512D19F2269CB2800933B88 /* 3静态 */,
 				5512D1942269A1DE00933B88 /* 4常量限制 */,
 			);
 			path = "2数据修饰关键字";
@@ -153,6 +175,9 @@
 		5512D1952269A27C00933B88 /* 5预处理 */ = {
 			isa = PBXGroup;
 			children = (
+				55FCBED0226D915A00EF4603 /* 1宏定义 */,
+				55FCBED1226D916200EF4603 /* 2条件编译 */,
+				55FCBED2226D916F00EF4603 /* 3文件包含 */,
 			);
 			path = "5预处理";
 			sourceTree = "<group>";
@@ -160,8 +185,37 @@
 		5512D19F2269CB2800933B88 /* 3静态 */ = {
 			isa = PBXGroup;
 			children = (
+				55FCBEC1226D4DDB00EF4603 /* Static.h */,
+				55FCBEC2226D4DDB00EF4603 /* Static.c */,
 			);
 			path = "3静态";
+			sourceTree = "<group>";
+		};
+		55FCBED0226D915A00EF4603 /* 1宏定义 */ = {
+			isa = PBXGroup;
+			children = (
+				55FCBECA226D529000EF4603 /* Macro.h */,
+				55FCBECB226D529000EF4603 /* Macro.c */,
+			);
+			path = "1宏定义";
+			sourceTree = "<group>";
+		};
+		55FCBED1226D916200EF4603 /* 2条件编译 */ = {
+			isa = PBXGroup;
+			children = (
+				55FCBED3226D91C900EF4603 /* Define.h */,
+				55FCBED4226D91C900EF4603 /* Define.c */,
+			);
+			path = "2条件编译";
+			sourceTree = "<group>";
+		};
+		55FCBED2226D916F00EF4603 /* 3文件包含 */ = {
+			isa = PBXGroup;
+			children = (
+				55FCBED6226D93AB00EF4603 /* Pretreatment.h */,
+				55FCBED7226D93AB00EF4603 /* Pretreatment.c */,
+			);
+			path = "3文件包含";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +274,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FCBED5226D91C900EF4603 /* Define.c in Sources */,
 				5512D19B2269A30900933B88 /* Scope.c in Sources */,
+				55FCBEC3226D4DDB00EF4603 /* Static.c in Sources */,
 				5512D17F2269923700933B88 /* main.c in Sources */,
+				55FCBEC6226D525400EF4603 /* Process.c in Sources */,
+				55FCBECC226D529000EF4603 /* Macro.c in Sources */,
 				5512D19E2269A32200933B88 /* Const.c in Sources */,
 				5512D18722699E8100933B88 /* DataType.c in Sources */,
 				5512D1982269A2D300933B88 /* Typedef.c in Sources */,
+				55FCBED8226D93AB00EF4603 /* Pretreatment.c in Sources */,
 				5512D18A22699EC700933B88 /* PointerType.c in Sources */,
 				5512D18D22699F1700933B88 /* functionType.c in Sources */,
+				55FCBEC9226D527000EF4603 /* Operator.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG34P76GS7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Wno-unused-variable";
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -360,7 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG34P76GS7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WARNING_CFLAGS = "-Wno-unused-variable";
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};

@@ -10,5 +10,5 @@
 #define Scope_h
 
 #include <stdio.h>
-void ScopeTest(void);
+
 #endif /* Scope_h */

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5512D16A226974A900933B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5512D169226974A900933B88 /* main.m */; };
+		55FCBEDE226DA98300EF4603 /* OCDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBEDD226DA98300EF4603 /* OCDataType.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		5512D166226974A900933B88 /* OCGrammar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCGrammar; sourceTree = BUILT_PRODUCTS_DIR; };
 		5512D169226974A900933B88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55FCBEDC226DA98300EF4603 /* OCDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCDataType.h; sourceTree = "<group>"; };
+		55FCBEDD226DA98300EF4603 /* OCDataType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDataType.m; sourceTree = "<group>"; };
+		55FCBEE0226DB32400EF4603 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		55FCBEE1226DB32400EF4603 /* object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = object.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +62,29 @@
 		5512D168226974A900933B88 /* OCGrammar */ = {
 			isa = PBXGroup;
 			children = (
+				55FCBEDF226DB30E00EF4603 /* 对象 */,
+				55FCBEDB226DA8B500EF4603 /* 1数据类型 */,
 				5512D169226974A900933B88 /* main.m */,
 			);
 			path = OCGrammar;
+			sourceTree = "<group>";
+		};
+		55FCBEDB226DA8B500EF4603 /* 1数据类型 */ = {
+			isa = PBXGroup;
+			children = (
+				55FCBEDC226DA98300EF4603 /* OCDataType.h */,
+				55FCBEDD226DA98300EF4603 /* OCDataType.m */,
+			);
+			path = "1数据类型";
+			sourceTree = "<group>";
+		};
+		55FCBEDF226DB30E00EF4603 /* 对象 */ = {
+			isa = PBXGroup;
+			children = (
+				55FCBEE0226DB32400EF4603 /* object.h */,
+				55FCBEE1226DB32400EF4603 /* object.m */,
+			);
+			path = "对象";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5512D16A226974A900933B88 /* main.m in Sources */,
+				55FCBEDE226DA98300EF4603 /* OCDataType.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
