@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5512D16A226974A900933B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5512D169226974A900933B88 /* main.m */; };
-		551BE66F226FFED3000099B5 /* CDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BE66E226FFED3000099B5 /* CDObject.m */; };
+		551BE67F2270397F000099B5 /* Variables.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BE67E2270397F000099B5 /* Variables.m */; };
+		551BE68822703CFF000099B5 /* VariablesProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BE68722703CFF000099B5 /* VariablesProperty.m */; };
+		551BE68C22704EC6000099B5 /* Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BE68B22704EC6000099B5 /* Methods.m */; };
+		551BE69022705029000099B5 /* ClassCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BE68F22705029000099B5 /* ClassCD.m */; };
+		551BE694227054F9000099B5 /* ProtocolCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BE693227054F9000099B5 /* ProtocolCD.m */; };
+		551BE698227057E7000099B5 /* CDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BE697227057E7000099B5 /* CDObject.m */; };
 		55FCBEDE226DA98300EF4603 /* OCDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FCBEDD226DA98300EF4603 /* OCDataType.m */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +32,18 @@
 /* Begin PBXFileReference section */
 		5512D166226974A900933B88 /* OCGrammar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCGrammar; sourceTree = BUILT_PRODUCTS_DIR; };
 		5512D169226974A900933B88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		551BE66D226FFED3000099B5 /* CDObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDObject.h; sourceTree = "<group>"; };
-		551BE66E226FFED3000099B5 /* CDObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDObject.m; sourceTree = "<group>"; };
+		551BE67D2270397F000099B5 /* Variables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Variables.h; sourceTree = "<group>"; };
+		551BE67E2270397F000099B5 /* Variables.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Variables.m; sourceTree = "<group>"; };
+		551BE68622703CFF000099B5 /* VariablesProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariablesProperty.h; sourceTree = "<group>"; };
+		551BE68722703CFF000099B5 /* VariablesProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariablesProperty.m; sourceTree = "<group>"; };
+		551BE68A22704EC6000099B5 /* Methods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Methods.h; sourceTree = "<group>"; };
+		551BE68B22704EC6000099B5 /* Methods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Methods.m; sourceTree = "<group>"; };
+		551BE68E22705029000099B5 /* ClassCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassCD.h; sourceTree = "<group>"; };
+		551BE68F22705029000099B5 /* ClassCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassCD.m; sourceTree = "<group>"; };
+		551BE692227054F9000099B5 /* ProtocolCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolCD.h; sourceTree = "<group>"; };
+		551BE693227054F9000099B5 /* ProtocolCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolCD.m; sourceTree = "<group>"; };
+		551BE696227057E7000099B5 /* CDObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDObject.h; sourceTree = "<group>"; };
+		551BE697227057E7000099B5 /* CDObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDObject.m; sourceTree = "<group>"; };
 		55FCBEDC226DA98300EF4603 /* OCDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCDataType.h; sourceTree = "<group>"; };
 		55FCBEDD226DA98300EF4603 /* OCDataType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDataType.m; sourceTree = "<group>"; };
 		55FCBEE0226DB32400EF4603 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
@@ -65,7 +80,7 @@
 		5512D168226974A900933B88 /* OCGrammar */ = {
 			isa = PBXGroup;
 			children = (
-				55BBC3D8226FEF5600AF200E /* 类的声明实现 */,
+				55BBC3D8226FEF5600AF200E /* 基础 */,
 				55FCBEDF226DB30E00EF4603 /* 对象 */,
 				55FCBEDB226DA8B500EF4603 /* 1数据类型 */,
 				5512D169226974A900933B88 /* main.m */,
@@ -73,13 +88,121 @@
 			path = OCGrammar;
 			sourceTree = "<group>";
 		};
-		55BBC3D8226FEF5600AF200E /* 类的声明实现 */ = {
+		551BE67B22703957000099B5 /* 1成员变量 */ = {
 			isa = PBXGroup;
 			children = (
-				551BE66D226FFED3000099B5 /* CDObject.h */,
-				551BE66E226FFED3000099B5 /* CDObject.m */,
+				551BE67D2270397F000099B5 /* Variables.h */,
+				551BE67E2270397F000099B5 /* Variables.m */,
 			);
-			path = "类的声明实现";
+			path = "1成员变量";
+			sourceTree = "<group>";
+		};
+		551BE67C22703967000099B5 /* 2成员变量的封装 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE68622703CFF000099B5 /* VariablesProperty.h */,
+				551BE68722703CFF000099B5 /* VariablesProperty.m */,
+			);
+			path = "2成员变量的封装";
+			sourceTree = "<group>";
+		};
+		551BE68922704E97000099B5 /* 3方法的声明实现 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE68A22704EC6000099B5 /* Methods.h */,
+				551BE68B22704EC6000099B5 /* Methods.m */,
+			);
+			path = "3方法的声明实现";
+			sourceTree = "<group>";
+		};
+		551BE68D22705002000099B5 /* 4类继承扩展分类多态 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE68E22705029000099B5 /* ClassCD.h */,
+				551BE68F22705029000099B5 /* ClassCD.m */,
+			);
+			path = "4类继承扩展分类多态";
+			sourceTree = "<group>";
+		};
+		551BE691227054C1000099B5 /* 3协议 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE692227054F9000099B5 /* ProtocolCD.h */,
+				551BE693227054F9000099B5 /* ProtocolCD.m */,
+			);
+			path = "3协议";
+			sourceTree = "<group>";
+		};
+		551BE695227057C2000099B5 /* 3各种对象 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE696227057E7000099B5 /* CDObject.h */,
+				551BE697227057E7000099B5 /* CDObject.m */,
+				55FCBEE0226DB32400EF4603 /* object.h */,
+				55FCBEE1226DB32400EF4603 /* object.m */,
+			);
+			path = "3各种对象";
+			sourceTree = "<group>";
+		};
+		551BE69922705B49000099B5 /* 1对象本质 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "1对象本质";
+			sourceTree = "<group>";
+		};
+		551BE69A22705B57000099B5 /* 2对象内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2对象内存管理";
+			sourceTree = "<group>";
+		};
+		551BE69B22705BDD000099B5 /* 2对象 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE69922705B49000099B5 /* 1对象本质 */,
+				551BE69A22705B57000099B5 /* 2对象内存管理 */,
+				551BE695227057C2000099B5 /* 3各种对象 */,
+				551BE69C22705C06000099B5 /* 4Block对象 */,
+			);
+			path = "2对象";
+			sourceTree = "<group>";
+		};
+		551BE69C22705C06000099B5 /* 4Block对象 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4Block对象";
+			sourceTree = "<group>";
+		};
+		551BE69D22705C30000099B5 /* 1类 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE67B22703957000099B5 /* 1成员变量 */,
+				551BE67C22703967000099B5 /* 2成员变量的封装 */,
+				551BE68922704E97000099B5 /* 3方法的声明实现 */,
+				551BE68D22705002000099B5 /* 4类继承扩展分类多态 */,
+			);
+			path = "1类";
+			sourceTree = "<group>";
+		};
+		551BE69E22705C75000099B5 /* 4运行时 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4运行时";
+			sourceTree = "<group>";
+		};
+		55BBC3D8226FEF5600AF200E /* 基础 */ = {
+			isa = PBXGroup;
+			children = (
+				551BE69D22705C30000099B5 /* 1类 */,
+				551BE69B22705BDD000099B5 /* 2对象 */,
+				551BE691227054C1000099B5 /* 3协议 */,
+				551BE69E22705C75000099B5 /* 4运行时 */,
+			);
+			path = "基础";
 			sourceTree = "<group>";
 		};
 		55FCBEDB226DA8B500EF4603 /* 1数据类型 */ = {
@@ -94,8 +217,6 @@
 		55FCBEDF226DB30E00EF4603 /* 对象 */ = {
 			isa = PBXGroup;
 			children = (
-				55FCBEE0226DB32400EF4603 /* object.h */,
-				55FCBEE1226DB32400EF4603 /* object.m */,
 			);
 			path = "对象";
 			sourceTree = "<group>";
@@ -156,9 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551BE68C22704EC6000099B5 /* Methods.m in Sources */,
 				5512D16A226974A900933B88 /* main.m in Sources */,
 				55FCBEDE226DA98300EF4603 /* OCDataType.m in Sources */,
-				551BE66F226FFED3000099B5 /* CDObject.m in Sources */,
+				551BE698227057E7000099B5 /* CDObject.m in Sources */,
+				551BE67F2270397F000099B5 /* Variables.m in Sources */,
+				551BE694227054F9000099B5 /* ProtocolCD.m in Sources */,
+				551BE69022705029000099B5 /* ClassCD.m in Sources */,
+				551BE68822703CFF000099B5 /* VariablesProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

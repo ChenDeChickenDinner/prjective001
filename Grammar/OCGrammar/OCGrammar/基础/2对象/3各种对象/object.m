@@ -53,7 +53,7 @@ static void test6(){
 }
 //变量 参数 修饰符
 static void test7(){
-    
+    __typeof
     __strong __weak __block __bridge @autoreleasepool
     __unsafe_unretained unsafe_unretained
     nullable _Nonnull _Nullable    __nullable __null_unspecified
