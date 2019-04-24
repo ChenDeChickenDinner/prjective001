@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface object : NSObject
 
+//方法的声明实现
 @end
 
 NS_ASSUME_NONNULL_END
