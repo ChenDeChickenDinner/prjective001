@@ -28,8 +28,6 @@ static void test0(){
  1.逻辑型变量的定义符
  2.占 一个 字节
  3.取值  true / false
-
-
  */
 static void test1(){
     /* bool

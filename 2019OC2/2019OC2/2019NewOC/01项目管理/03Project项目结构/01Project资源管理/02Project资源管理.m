@@ -7,6 +7,9 @@
 //
 
 #import "04ProjectXcodeproj.h"
+
+https://www.jianshu.com/p/828c279df498
+
 Project文件组织
 a.属于各target的资源文件:
 b.Products文件:项目各种target构建出的产品

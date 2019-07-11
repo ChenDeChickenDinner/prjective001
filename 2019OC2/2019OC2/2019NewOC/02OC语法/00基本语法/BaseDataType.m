@@ -83,6 +83,7 @@ static void test2(){
         haha2  = 1 << 0, // 0001 1
         haha3  = 1 << 1, // 0010 2
         haha4  = 1 << 2, // 0100 4
+        
     }myPersonType5;
 
     //2.位掩码的用处原理
