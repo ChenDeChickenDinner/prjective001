@@ -180,4 +180,3 @@ public:
 typedef struct mj_objc_class *Class;
 
 
-

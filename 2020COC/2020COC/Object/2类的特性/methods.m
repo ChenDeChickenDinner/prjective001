@@ -1,5 +1,5 @@
 //
-//  methods.h
+//  methods.m
 //  2020COC
 //
 //  Created by xs on 2019/7/11.
@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface methods : NSObject
 
 @end
 
-NS_ASSUME_NONNULL_END
+@implementation methods
+
+@end

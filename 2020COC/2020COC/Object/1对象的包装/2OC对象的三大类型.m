@@ -19,46 +19,21 @@
 
 
 
+/**对象的三大类型
+元类对象:一个类只有一个元类对象
+类对象:一个类只有一个类对象
+实例对象:一个类可以有无数个实例对象
 
-/**
- 元类对象:一个类只有一个元类对象
  */
 + (void)func1{
-    
-}
-
-/**
- 类对象:一个类只有一个类对象
- */
-+ (void)func2{
-    
-}
-/**
- 实例对象:一个类可以有无数个实例对象
- */
-+ (void)func3{
-    
-}
-
-
-
-
-
-/*OC三大类型的对象
- */
-+ (void)test0{
-    //3.实例对象(自定义类型):一个类可以有无数个实例对象
-    NSObject *object = [[NSObject alloc]init];
-    
-    //2.类对象(Class类型):一个类只有一个类对象
+    Class object_meatClass = object_getClass([NSObject class]);
     Class object_class1 = [NSObject class];
-    Class object_class2 = [object class];
-    Class object_class3 = object_getClass(object);
-    
-    //1.元类对象(Class类型):一个类只有一个元类对象
-    Class object_meatClass = object_getClass(object_class1);
-    
+    Class object_class2 = [[NSObject class] class];
+    Class object_class3 = object_getClass([[NSObject alloc]init]);
+    NSObject *object = [[NSObject alloc]init];
 }
+
+
 
 //对象的isa
 + (void)test1{
@@ -72,8 +47,6 @@
     
     //3.(NSObject.metaClass).isa-->NSObject.metaClass
     Class nsobject_metaClass = object_getClass([NSObject class]);
-    
-    
     
     //1.(XSInterface.metaClass).isa-->基类的_元类对象(NSObject.metaClass)
     Class xsobject_metaClass2 = object_getClass([XSInterface class]);

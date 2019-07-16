@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5535090522DC47A3006040B2 /* inheritance(继承).m in Sources */ = {isa = PBXBuildFile; fileRef = 5535090422DC47A3006040B2 /* inheritance(继承).m */; };
+		5535090922DC480D006040B2 /* category(分类).m in Sources */ = {isa = PBXBuildFile; fileRef = 5535090822DC480D006040B2 /* category(分类).m */; };
+		5535090E22DC555E006040B2 /* property3(修饰词).m in Sources */ = {isa = PBXBuildFile; fileRef = 5535090B22DC555E006040B2 /* property3(修饰词).m */; };
+		5535090F22DC555E006040B2 /* property2(封装).m in Sources */ = {isa = PBXBuildFile; fileRef = 5535090C22DC555E006040B2 /* property2(封装).m */; };
 		5564AEAC22D462F000DE044D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEAB22D462F000DE044D /* main.m */; };
 		5564AEB722D47B5F00DE044D /* 01DataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEB622D47B5F00DE044D /* 01DataType.m */; };
 		5564AEBA22D489CB00DE044D /* 02Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEB922D489CB00DE044D /* 02Operation.m */; };
@@ -14,12 +18,11 @@
 		5564AEC022D48A6600DE044D /* 04Funcation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEBF22D48A6600DE044D /* 04Funcation.m */; };
 		5564AEC322D48AAC00DE044D /* 05TheKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEC222D48AAC00DE044D /* 05TheKey.m */; };
 		5564AEC622D48B1D00DE044D /* 06Macro.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEC522D48B1D00DE044D /* 06Macro.m */; };
-		5564AED922D70F5B00DE044D /* COC_Struct.h in Sources */ = {isa = PBXBuildFile; fileRef = 5564AED822D70F5B00DE044D /* COC_Struct.h */; };
-		5564AEDE22D71A8000DE044D /* COC_Struct.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEDD22D71A8000DE044D /* COC_Struct.mm */; };
-		5564AEF322D727EC00DE044D /* property.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEF222D727EC00DE044D /* property.m */; };
+		5564AEDE22D71A8000DE044D /* 1OC对象结构体.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEDD22D71A8000DE044D /* 1OC对象结构体.mm */; };
+		5564AEF322D727EC00DE044D /* property1(作用域).m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEF222D727EC00DE044D /* property1(作用域).m */; };
 		5564AEF622D7280100DE044D /* methods.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEF522D7280100DE044D /* methods.m */; };
-		5564AEF922D7281B00DE044D /* protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEF822D7281B00DE044D /* protocol.m */; };
-		5564AEFF22D72A3300DE044D /* object.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEFE22D72A3300DE044D /* object.m */; };
+		5564AEF922D7281B00DE044D /* protocol(协议).m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEF822D7281B00DE044D /* protocol(协议).m */; };
+		5564AEFF22D72A3300DE044D /* 2OC对象的三大类型.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564AEFE22D72A3300DE044D /* 2OC对象的三大类型.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +38,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5535090422DC47A3006040B2 /* inheritance(继承).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "inheritance(继承).m"; sourceTree = "<group>"; };
+		5535090822DC480D006040B2 /* category(分类).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "category(分类).m"; sourceTree = "<group>"; };
+		5535090B22DC555E006040B2 /* property3(修饰词).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "property3(修饰词).m"; sourceTree = "<group>"; };
+		5535090C22DC555E006040B2 /* property2(封装).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "property2(封装).m"; sourceTree = "<group>"; };
 		5564AEA822D462F000DE044D /* 2020COC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2020COC; sourceTree = BUILT_PRODUCTS_DIR; };
 		5564AEAB22D462F000DE044D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5564AEB522D47B5F00DE044D /* 01DataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 01DataType.h; sourceTree = "<group>"; };
@@ -49,15 +56,11 @@
 		5564AEC222D48AAC00DE044D /* 05TheKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 05TheKey.m; sourceTree = "<group>"; };
 		5564AEC422D48B1D00DE044D /* 06Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 06Macro.h; sourceTree = "<group>"; };
 		5564AEC522D48B1D00DE044D /* 06Macro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 06Macro.m; sourceTree = "<group>"; };
-		5564AED822D70F5B00DE044D /* COC_Struct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COC_Struct.h; sourceTree = "<group>"; };
-		5564AEDD22D71A8000DE044D /* COC_Struct.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = COC_Struct.mm; sourceTree = "<group>"; };
-		5564AEF122D727EC00DE044D /* property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = property.h; sourceTree = "<group>"; };
-		5564AEF222D727EC00DE044D /* property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = property.m; sourceTree = "<group>"; };
-		5564AEF422D7280100DE044D /* methods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = methods.h; sourceTree = "<group>"; };
+		5564AEDD22D71A8000DE044D /* 1OC对象结构体.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "1OC对象结构体.mm"; sourceTree = "<group>"; };
+		5564AEF222D727EC00DE044D /* property1(作用域).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "property1(作用域).m"; sourceTree = "<group>"; };
 		5564AEF522D7280100DE044D /* methods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = methods.m; sourceTree = "<group>"; };
-		5564AEF722D7281B00DE044D /* protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = protocol.h; sourceTree = "<group>"; };
-		5564AEF822D7281B00DE044D /* protocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = protocol.m; sourceTree = "<group>"; };
-		5564AEFE22D72A3300DE044D /* object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = object.m; sourceTree = "<group>"; };
+		5564AEF822D7281B00DE044D /* protocol(协议).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "protocol(协议).m"; sourceTree = "<group>"; };
+		5564AEFE22D72A3300DE044D /* 2OC对象的三大类型.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "2OC对象的三大类型.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5535091122DC742A006040B2 /* 6语言特性 */ = {
+			isa = PBXGroup;
+			children = (
+				5535091222DDC356006040B2 /* 1关键字 */,
+				5535091422DDC372006040B2 /* 3运行时 */,
+				5535091522DDC3D3006040B2 /* 4运行加载 */,
+				5535091622DDC424006040B2 /* 5内存管理 */,
+				5535091722DDC42D006040B2 /* 6Block */,
+				5535091C22DDC4FB006040B2 /* 7多线程 */,
+				5535091D22DDC503006040B2 /* 8RunLoop */,
+				5535091B22DDC4CA006040B2 /* 特殊技术 */,
+			);
+			path = "6语言特性";
+			sourceTree = "<group>";
+		};
+		5535091222DDC356006040B2 /* 1关键字 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "1关键字";
+			sourceTree = "<group>";
+		};
+		5535091422DDC372006040B2 /* 3运行时 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3运行时";
+			sourceTree = "<group>";
+		};
+		5535091522DDC3D3006040B2 /* 4运行加载 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4运行加载";
+			sourceTree = "<group>";
+		};
+		5535091622DDC424006040B2 /* 5内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "5内存管理";
+			sourceTree = "<group>";
+		};
+		5535091722DDC42D006040B2 /* 6Block */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 6Block;
+			sourceTree = "<group>";
+		};
+		5535091822DDC48A006040B2 /* KvcKvo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KvcKvo;
+			sourceTree = "<group>";
+		};
+		5535091922DDC49C006040B2 /* 内联技术 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "内联技术";
+			sourceTree = "<group>";
+		};
+		5535091A22DDC4AA006040B2 /* 通知机制 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "通知机制";
+			sourceTree = "<group>";
+		};
+		5535091B22DDC4CA006040B2 /* 特殊技术 */ = {
+			isa = PBXGroup;
+			children = (
+				5535091A22DDC4AA006040B2 /* 通知机制 */,
+				5535091922DDC49C006040B2 /* 内联技术 */,
+				5535091822DDC48A006040B2 /* KvcKvo */,
+			);
+			path = "特殊技术";
+			sourceTree = "<group>";
+		};
+		5535091C22DDC4FB006040B2 /* 7多线程 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "7多线程";
+			sourceTree = "<group>";
+		};
+		5535091D22DDC503006040B2 /* 8RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 8RunLoop;
+			sourceTree = "<group>";
+		};
+		5535091E22DDC6AB006040B2 /* 3面向对象 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3面向对象";
+			sourceTree = "<group>";
+		};
+		5535091F22DDC6B2006040B2 /* 4遵守协议 */ = {
+			isa = PBXGroup;
+			children = (
+				5564AEF822D7281B00DE044D /* protocol(协议).m */,
+			);
+			path = "4遵守协议";
+			sourceTree = "<group>";
+		};
 		5564AE9F22D462F000DE044D = {
 			isa = PBXGroup;
 			children = (
@@ -119,49 +232,35 @@
 		5564AEC822D48B6A00DE044D /* Object */ = {
 			isa = PBXGroup;
 			children = (
-				5564AEE922D7259B00DE044D /* 1对象的本质 */,
-				5564AEEB22D725B700DE044D /* 2OC类的组成信息 */,
-				5564AEEC22D725C900DE044D /* 4类的特性 */,
-				5564AEED22D7262600DE044D /* 5类的加载运行 */,
+				5564AEE922D7259B00DE044D /* 1对象的包装 */,
+				5564AEEB22D725B700DE044D /* 2类的特性 */,
+				5535091E22DDC6AB006040B2 /* 3面向对象 */,
+				5535091F22DDC6B2006040B2 /* 4遵守协议 */,
+				5535091122DC742A006040B2 /* 6语言特性 */,
 			);
 			path = Object;
 			sourceTree = "<group>";
 		};
-		5564AEE922D7259B00DE044D /* 1对象的本质 */ = {
+		5564AEE922D7259B00DE044D /* 1对象的包装 */ = {
 			isa = PBXGroup;
 			children = (
-				5564AED822D70F5B00DE044D /* COC_Struct.h */,
-				5564AEDD22D71A8000DE044D /* COC_Struct.mm */,
+				5564AEDD22D71A8000DE044D /* 1OC对象结构体.mm */,
+				5564AEFE22D72A3300DE044D /* 2OC对象的三大类型.m */,
 			);
-			path = "1对象的本质";
+			path = "1对象的包装";
 			sourceTree = "<group>";
 		};
-		5564AEEB22D725B700DE044D /* 2OC类的组成信息 */ = {
+		5564AEEB22D725B700DE044D /* 2类的特性 */ = {
 			isa = PBXGroup;
 			children = (
-				5564AEFE22D72A3300DE044D /* object.m */,
-				5564AEF122D727EC00DE044D /* property.h */,
-				5564AEF222D727EC00DE044D /* property.m */,
-				5564AEF422D7280100DE044D /* methods.h */,
+				5564AEF222D727EC00DE044D /* property1(作用域).m */,
+				5535090C22DC555E006040B2 /* property2(封装).m */,
+				5535090B22DC555E006040B2 /* property3(修饰词).m */,
 				5564AEF522D7280100DE044D /* methods.m */,
-				5564AEF722D7281B00DE044D /* protocol.h */,
-				5564AEF822D7281B00DE044D /* protocol.m */,
+				5535090422DC47A3006040B2 /* inheritance(继承).m */,
+				5535090822DC480D006040B2 /* category(分类).m */,
 			);
-			path = "2OC类的组成信息";
-			sourceTree = "<group>";
-		};
-		5564AEEC22D725C900DE044D /* 4类的特性 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "4类的特性";
-			sourceTree = "<group>";
-		};
-		5564AEED22D7262600DE044D /* 5类的加载运行 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "5类的加载运行";
+			path = "2类的特性";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,13 +321,16 @@
 			files = (
 				5564AEF622D7280100DE044D /* methods.m in Sources */,
 				5564AEAC22D462F000DE044D /* main.m in Sources */,
-				5564AEFF22D72A3300DE044D /* object.m in Sources */,
+				5564AEFF22D72A3300DE044D /* 2OC对象的三大类型.m in Sources */,
 				5564AEB722D47B5F00DE044D /* 01DataType.m in Sources */,
-				5564AEF922D7281B00DE044D /* protocol.m in Sources */,
+				5564AEF922D7281B00DE044D /* protocol(协议).m in Sources */,
 				5564AEC022D48A6600DE044D /* 04Funcation.m in Sources */,
-				5564AED922D70F5B00DE044D /* COC_Struct.h in Sources */,
-				5564AEF322D727EC00DE044D /* property.m in Sources */,
-				5564AEDE22D71A8000DE044D /* COC_Struct.mm in Sources */,
+				5535090E22DC555E006040B2 /* property3(修饰词).m in Sources */,
+				5564AEF322D727EC00DE044D /* property1(作用域).m in Sources */,
+				5535090F22DC555E006040B2 /* property2(封装).m in Sources */,
+				5535090922DC480D006040B2 /* category(分类).m in Sources */,
+				5535090522DC47A3006040B2 /* inheritance(继承).m in Sources */,
+				5564AEDE22D71A8000DE044D /* 1OC对象结构体.mm in Sources */,
 				5564AEBD22D489FA00DE044D /* 03Control.m in Sources */,
 				5564AEC322D48AAC00DE044D /* 05TheKey.m in Sources */,
 				5564AEC622D48B1D00DE044D /* 06Macro.m in Sources */,
