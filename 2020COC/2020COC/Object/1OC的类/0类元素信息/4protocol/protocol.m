@@ -10,6 +10,9 @@
 
 
 @protocol XSProtocol <NSObject>
+// 默认是必须实现的
+- (void)test3;
+
 //不强制要求实现的方法
 @optional
 - (void)test1;
@@ -51,6 +54,11 @@
 - (void)test2 {
     
 }
+
+- (void)test3 {
+    
+}
+
 
 @end
 
