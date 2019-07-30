@@ -19,11 +19,41 @@
 		552EE50322E9AACA00D7F0CB /* property2(封装).m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE4FF22E9AACA00D7F0CB /* property2(封装).m */; };
 		552EE50422E9AACA00D7F0CB /* property1(作用域).m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE50022E9AACA00D7F0CB /* property1(作用域).m */; };
 		552EE50522E9AACA00D7F0CB /* property3(修饰词).m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE50122E9AACA00D7F0CB /* property3(修饰词).m */; };
-		552EE50F22EA836700D7F0CB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE50E22EA836700D7F0CB /* Person.m */; };
+		552EE50F22EA836700D7F0CB /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE50E22EA836700D7F0CB /* Person2.m */; };
 		552EE51222EA89AE00D7F0CB /* NSObject+xs.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE51122EA89AE00D7F0CB /* NSObject+xs.m */; };
 		552EE51B22EA9BCC00D7F0CB /* XSTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE51A22EA9BCC00D7F0CB /* XSTestObject.m */; };
-		552EE51F22EAA94500D7F0CB /* XSNSObjectProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE51E22EAA94500D7F0CB /* XSNSObjectProtocol.m */; };
-		552EE53522EAC8C500D7F0CB /* XSNSObjectAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE53422EAC8C500D7F0CB /* XSNSObjectAPI.m */; };
+		552EE51F22EAA94500D7F0CB /* NSObject基协议.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE51E22EAA94500D7F0CB /* NSObject基协议.m */; };
+		552EE53522EAC8C500D7F0CB /* 基类NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE53422EAC8C500D7F0CB /* 基类NSObject.m */; };
+		552EE54222EE861300D7F0CB /* 基类NSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE54122EE861300D7F0CB /* 基类NSProxy.m */; };
+		552EE54E22EEBDD800D7F0CB /* NSObject+Associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE54D22EEBDD800D7F0CB /* NSObject+Associated.m */; };
+		552EE5A122EEC20400D7F0CB /* XCNSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE55522EEC20300D7F0CB /* XCNSThread.m */; };
+		552EE5A222EEC20400D7F0CB /* GDCThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE55822EEC20300D7F0CB /* GDCThread.m */; };
+		552EE5A322EEC20400D7F0CB /* CXQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE55D22EEC20300D7F0CB /* CXQueue.m */; };
+		552EE5A422EEC20400D7F0CB /* CXOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE55E22EEC20300D7F0CB /* CXOperation.m */; };
+		552EE5A522EEC20400D7F0CB /* XSThreadSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE56322EEC20300D7F0CB /* XSThreadSecurity.m */; };
+		552EE5A622EEC20400D7F0CB /* XSPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE56822EEC20300D7F0CB /* XSPermenantThread.m */; };
+		552EE5A722EEC20400D7F0CB /* ThreadMemoryManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE56E22EEC20300D7F0CB /* ThreadMemoryManage.m */; };
+		552EE5A922EEC20400D7F0CB /* ProcessAndThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE57322EEC20300D7F0CB /* ProcessAndThread.m */; };
+		552EE5AA22EEC20400D7F0CB /* MemoryDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE57822EEC20300D7F0CB /* MemoryDistribution.m */; };
+		552EE5AB22EEC20400D7F0CB /* Autoreleasepool.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE57E22EEC20300D7F0CB /* Autoreleasepool.m */; };
+		552EE5AC22EEC20400D7F0CB /* MemoryOtherDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE58122EEC20300D7F0CB /* MemoryOtherDataType.m */; };
+		552EE5AF22EEC20400D7F0CB /* MemoryMangeARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE58822EEC20300D7F0CB /* MemoryMangeARC.m */; };
+		552EE5B122EEC20400D7F0CB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE58E22EEC20300D7F0CB /* Person.m */; };
+		552EE5B222EEC20400D7F0CB /* car.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE58F22EEC20300D7F0CB /* car.m */; };
+		552EE5B322EEC20400D7F0CB /* RunLoopProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE59222EEC20300D7F0CB /* RunLoopProcess.m */; };
+		552EE5B422EEC20400D7F0CB /* RunLoopTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE59722EEC20300D7F0CB /* RunLoopTechnology.m */; };
+		552EE5B522EEC20400D7F0CB /* RunLoopState.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE59A22EEC20300D7F0CB /* RunLoopState.m */; };
+		552EE5B622EEC20400D7F0CB /* RunLoopComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE59C22EEC20300D7F0CB /* RunLoopComposition.m */; };
+		552EE5B722EEC20400D7F0CB /* blockType.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE5A022EEC20400D7F0CB /* blockType.m */; };
+		552EE5BA22EEC21900D7F0CB /* KvcTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE5B822EEC21900D7F0CB /* KvcTechnology.m */; };
+		552EE5C922EEC23F00D7F0CB /* ClassRelated.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE5BF22EEC23F00D7F0CB /* ClassRelated.m */; };
+		552EE5CA22EEC23F00D7F0CB /* IvarRelated.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE5C322EEC23F00D7F0CB /* IvarRelated.m */; };
+		552EE5CB22EEC23F00D7F0CB /* FuncRelated.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE5C522EEC23F00D7F0CB /* FuncRelated.m */; };
+		552EE5CC22EEC23F00D7F0CB /* XSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE5C722EEC23F00D7F0CB /* XSProxy.m */; };
+		552EE5CF22EEC24900D7F0CB /* MsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE5CE22EEC24900D7F0CB /* MsgSend.m */; };
+		5548772822EFCBDE00ECAB8F /* KvoTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 5548772622EFCBDE00ECAB8F /* KvoTechnology.m */; };
+		5548772B22EFD22100ECAB8F /* selfSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5548772A22EFD22100ECAB8F /* selfSuper.m */; };
+		55827A9022EEDF130035BBAE /* KvoDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 55827A8E22EEDDCC0035BBAE /* KvoDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,17 +90,85 @@
 		552EE4FF22E9AACA00D7F0CB /* property2(封装).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "property2(封装).m"; sourceTree = "<group>"; };
 		552EE50022E9AACA00D7F0CB /* property1(作用域).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "property1(作用域).m"; sourceTree = "<group>"; };
 		552EE50122E9AACA00D7F0CB /* property3(修饰词).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "property3(修饰词).m"; sourceTree = "<group>"; };
-		552EE50D22EA836700D7F0CB /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		552EE50E22EA836700D7F0CB /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		552EE50D22EA836700D7F0CB /* Person2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person2.h; sourceTree = "<group>"; };
+		552EE50E22EA836700D7F0CB /* Person2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
 		552EE51022EA89AE00D7F0CB /* NSObject+xs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+xs.h"; sourceTree = "<group>"; };
 		552EE51122EA89AE00D7F0CB /* NSObject+xs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+xs.m"; sourceTree = "<group>"; };
 		552EE51522EA8B8700D7F0CB /* NSObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		552EE51922EA9BCC00D7F0CB /* XSTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSTestObject.h; sourceTree = "<group>"; };
 		552EE51A22EA9BCC00D7F0CB /* XSTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSTestObject.m; sourceTree = "<group>"; };
-		552EE51D22EAA94500D7F0CB /* XSNSObjectProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSNSObjectProtocol.h; sourceTree = "<group>"; };
-		552EE51E22EAA94500D7F0CB /* XSNSObjectProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSNSObjectProtocol.m; sourceTree = "<group>"; };
-		552EE53322EAC8C500D7F0CB /* XSNSObjectAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSNSObjectAPI.h; sourceTree = "<group>"; };
-		552EE53422EAC8C500D7F0CB /* XSNSObjectAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSNSObjectAPI.m; sourceTree = "<group>"; };
+		552EE51D22EAA94500D7F0CB /* NSObject基协议.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject基协议.h"; sourceTree = "<group>"; };
+		552EE51E22EAA94500D7F0CB /* NSObject基协议.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject基协议.m"; sourceTree = "<group>"; };
+		552EE53322EAC8C500D7F0CB /* 基类NSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "基类NSObject.h"; sourceTree = "<group>"; };
+		552EE53422EAC8C500D7F0CB /* 基类NSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "基类NSObject.m"; sourceTree = "<group>"; };
+		552EE54022EE861300D7F0CB /* 基类NSProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "基类NSProxy.h"; sourceTree = "<group>"; };
+		552EE54122EE861300D7F0CB /* 基类NSProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "基类NSProxy.m"; sourceTree = "<group>"; };
+		552EE54C22EEBDD800D7F0CB /* NSObject+Associated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associated.h"; sourceTree = "<group>"; };
+		552EE54D22EEBDD800D7F0CB /* NSObject+Associated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associated.m"; sourceTree = "<group>"; };
+		552EE55522EEC20300D7F0CB /* XCNSThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNSThread.m; sourceTree = "<group>"; };
+		552EE55622EEC20300D7F0CB /* XCNSThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNSThread.h; sourceTree = "<group>"; };
+		552EE55822EEC20300D7F0CB /* GDCThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDCThread.m; sourceTree = "<group>"; };
+		552EE55922EEC20300D7F0CB /* GDCThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCThread.h; sourceTree = "<group>"; };
+		552EE55B22EEC20300D7F0CB /* CXQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXQueue.h; sourceTree = "<group>"; };
+		552EE55C22EEC20300D7F0CB /* CXOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXOperation.h; sourceTree = "<group>"; };
+		552EE55D22EEC20300D7F0CB /* CXQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXQueue.m; sourceTree = "<group>"; };
+		552EE55E22EEC20300D7F0CB /* CXOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXOperation.m; sourceTree = "<group>"; };
+		552EE56222EEC20300D7F0CB /* ThreadSecurityHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadSecurityHeader.h; sourceTree = "<group>"; };
+		552EE56322EEC20300D7F0CB /* XSThreadSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSThreadSecurity.m; sourceTree = "<group>"; };
+		552EE56422EEC20300D7F0CB /* XSThreadSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSThreadSecurity.h; sourceTree = "<group>"; };
+		552EE56622EEC20300D7F0CB /* XSPermenantThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSPermenantThread.h; sourceTree = "<group>"; };
+		552EE56822EEC20300D7F0CB /* XSPermenantThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSPermenantThread.m; sourceTree = "<group>"; };
+		552EE56E22EEC20300D7F0CB /* ThreadMemoryManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadMemoryManage.m; sourceTree = "<group>"; };
+		552EE57122EEC20300D7F0CB /* ThreadMemoryManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadMemoryManage.m; sourceTree = "<group>"; };
+		552EE57222EEC20300D7F0CB /* ProcessAndThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessAndThread.h; sourceTree = "<group>"; };
+		552EE57322EEC20300D7F0CB /* ProcessAndThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessAndThread.m; sourceTree = "<group>"; };
+		552EE57422EEC20300D7F0CB /* ThreadMemoryManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadMemoryManage.h; sourceTree = "<group>"; };
+		552EE57722EEC20300D7F0CB /* MemoryDistribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryDistribution.h; sourceTree = "<group>"; };
+		552EE57822EEC20300D7F0CB /* MemoryDistribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryDistribution.m; sourceTree = "<group>"; };
+		552EE57D22EEC20300D7F0CB /* Autoreleasepool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Autoreleasepool.h; sourceTree = "<group>"; };
+		552EE57E22EEC20300D7F0CB /* Autoreleasepool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Autoreleasepool.m; sourceTree = "<group>"; };
+		552EE58022EEC20300D7F0CB /* MemoryCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryCopy.h; sourceTree = "<group>"; };
+		552EE58122EEC20300D7F0CB /* MemoryOtherDataType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryOtherDataType.m; sourceTree = "<group>"; };
+		552EE58222EEC20300D7F0CB /* MemoryCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryCopy.m; sourceTree = "<group>"; };
+		552EE58322EEC20300D7F0CB /* MemoryOtherDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryOtherDataType.h; sourceTree = "<group>"; };
+		552EE58522EEC20300D7F0CB /* MemoryMangeARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryMangeARC.h; sourceTree = "<group>"; };
+		552EE58622EEC20300D7F0CB /* MemoryMangeNature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryMangeNature.h; sourceTree = "<group>"; };
+		552EE58722EEC20300D7F0CB /* MemoryMangeMRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryMangeMRC.m; sourceTree = "<group>"; };
+		552EE58822EEC20300D7F0CB /* MemoryMangeARC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryMangeARC.m; sourceTree = "<group>"; };
+		552EE58922EEC20300D7F0CB /* MemoryMangeMRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryMangeMRC.h; sourceTree = "<group>"; };
+		552EE58A22EEC20300D7F0CB /* MemoryMangeNature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryMangeNature.m; sourceTree = "<group>"; };
+		552EE58C22EEC20300D7F0CB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		552EE58D22EEC20300D7F0CB /* car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = car.h; sourceTree = "<group>"; };
+		552EE58E22EEC20300D7F0CB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		552EE58F22EEC20300D7F0CB /* car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = car.m; sourceTree = "<group>"; };
+		552EE59222EEC20300D7F0CB /* RunLoopProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopProcess.m; sourceTree = "<group>"; };
+		552EE59322EEC20300D7F0CB /* RunLoopProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopProcess.h; sourceTree = "<group>"; };
+		552EE59622EEC20300D7F0CB /* RunLoopTechnology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTechnology.h; sourceTree = "<group>"; };
+		552EE59722EEC20300D7F0CB /* RunLoopTechnology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTechnology.m; sourceTree = "<group>"; };
+		552EE59922EEC20300D7F0CB /* RunLoopState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopState.h; sourceTree = "<group>"; };
+		552EE59A22EEC20300D7F0CB /* RunLoopState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopState.m; sourceTree = "<group>"; };
+		552EE59C22EEC20300D7F0CB /* RunLoopComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopComposition.m; sourceTree = "<group>"; };
+		552EE59D22EEC20300D7F0CB /* RunLoopComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopComposition.h; sourceTree = "<group>"; };
+		552EE59F22EEC20400D7F0CB /* blockType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blockType.h; sourceTree = "<group>"; };
+		552EE5A022EEC20400D7F0CB /* blockType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blockType.m; sourceTree = "<group>"; };
+		552EE5B822EEC21900D7F0CB /* KvcTechnology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KvcTechnology.m; sourceTree = "<group>"; };
+		552EE5B922EEC21900D7F0CB /* KvcTechnology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvcTechnology.h; sourceTree = "<group>"; };
+		552EE5BF22EEC23F00D7F0CB /* ClassRelated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassRelated.m; sourceTree = "<group>"; };
+		552EE5C022EEC23F00D7F0CB /* ClassRelated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassRelated.h; sourceTree = "<group>"; };
+		552EE5C222EEC23F00D7F0CB /* IvarRelated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IvarRelated.h; sourceTree = "<group>"; };
+		552EE5C322EEC23F00D7F0CB /* IvarRelated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IvarRelated.m; sourceTree = "<group>"; };
+		552EE5C522EEC23F00D7F0CB /* FuncRelated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuncRelated.m; sourceTree = "<group>"; };
+		552EE5C622EEC23F00D7F0CB /* XSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSProxy.h; sourceTree = "<group>"; };
+		552EE5C722EEC23F00D7F0CB /* XSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSProxy.m; sourceTree = "<group>"; };
+		552EE5C822EEC23F00D7F0CB /* FuncRelated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuncRelated.h; sourceTree = "<group>"; };
+		552EE5CD22EEC24900D7F0CB /* MsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgSend.h; sourceTree = "<group>"; };
+		552EE5CE22EEC24900D7F0CB /* MsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgSend.m; sourceTree = "<group>"; };
+		5548772622EFCBDE00ECAB8F /* KvoTechnology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KvoTechnology.m; sourceTree = "<group>"; };
+		5548772722EFCBDE00ECAB8F /* KvoTechnology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvoTechnology.h; sourceTree = "<group>"; };
+		5548772922EFD22100ECAB8F /* selfSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selfSuper.h; sourceTree = "<group>"; };
+		5548772A22EFD22100ECAB8F /* selfSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selfSuper.m; sourceTree = "<group>"; };
+		55827A8D22EEDDCC0035BBAE /* KvoDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KvoDocument.h; sourceTree = "<group>"; };
+		55827A8E22EEDDCC0035BBAE /* KvoDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvoDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +185,18 @@
 		552EE4D022E97CB600D7F0CB = {
 			isa = PBXGroup;
 			children = (
-				552EE53622EADB2700D7F0CB /* KVO */,
-				552EE4DB22E97CB600D7F0CB /* Runtime */,
+				552EE4DB22E97CB600D7F0CB /* 1Runtime */,
+				552EE4FA22E99F5200D7F0CB /* 2interface */,
+				552EE50922E9AB3400D7F0CB /* 2NSObject */,
+				552EE51722EA916700D7F0CB /* 3Protocol */,
+				552EE55122EEC0D200D7F0CB /* 4NSKeyValueObserving */,
+				552EE55022EEBEE300D7F0CB /* 5KVC */,
+				552EE59E22EEC20400D7F0CB /* 6Block */,
+				552EE57522EEC20300D7F0CB /* 内存管理 */,
+				552EE55222EEC20300D7F0CB /* 网络多线程 */,
+				552EE4DC22E97CB600D7F0CB /* main.m */,
 				552EE4DA22E97CB600D7F0CB /* Products */,
+				552EE59022EEC20300D7F0CB /* RunLoop */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,18 +208,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		552EE4DB22E97CB600D7F0CB /* Runtime */ = {
+		552EE4DB22E97CB600D7F0CB /* 1Runtime */ = {
 			isa = PBXGroup;
 			children = (
-				552EE4DC22E97CB600D7F0CB /* main.m */,
 				552EE4F922E9918800D7F0CB /* 1数据结构 */,
-				552EE4FA22E99F5200D7F0CB /* 2interface */,
-				552EE50922E9AB3400D7F0CB /* 3NSObject */,
-				552EE50A22E9AB5A00D7F0CB /* 4运行时加载 */,
-				552EE50B22E9AB6400D7F0CB /* 5消息机制 */,
-				552EE50C22E9AB7100D7F0CB /* 6API */,
+				552EE50C22E9AB7100D7F0CB /* 2配置类信息 */,
+				552EE50A22E9AB5A00D7F0CB /* 3运行时加载 */,
+				552EE53C22EE836800D7F0CB /* 4关联对象 */,
+				552EE50B22E9AB6400D7F0CB /* 4消息机制 */,
 			);
-			path = Runtime;
+			path = 1Runtime;
 			sourceTree = "<group>";
 		};
 		552EE4F922E9918800D7F0CB /* 1数据结构 */ = {
@@ -141,97 +246,462 @@
 		552EE4FA22E99F5200D7F0CB /* 2interface */ = {
 			isa = PBXGroup;
 			children = (
-				552EE4FE22E9AACA00D7F0CB /* 1@property */,
+				552EE4FE22E9AACA00D7F0CB /* 1Property */,
 				552EE50722E9AAE200D7F0CB /* 2继承多态 */,
-				552EE50822E9AAEA00D7F0CB /* 3category */,
-				552EE51722EA916700D7F0CB /* 4protocol */,
-				552EE51622EA8BBD00D7F0CB /* 5extension */,
+				552EE51622EA8BBD00D7F0CB /* 3extension */,
+				552EE50822E9AAEA00D7F0CB /* 4category */,
 			);
 			path = 2interface;
 			sourceTree = "<group>";
 		};
-		552EE4FE22E9AACA00D7F0CB /* 1@property */ = {
+		552EE4FE22E9AACA00D7F0CB /* 1Property */ = {
 			isa = PBXGroup;
 			children = (
 				552EE4FF22E9AACA00D7F0CB /* property2(封装).m */,
 				552EE50022E9AACA00D7F0CB /* property1(作用域).m */,
 				552EE50122E9AACA00D7F0CB /* property3(修饰词).m */,
 			);
-			path = "1@property";
+			path = 1Property;
 			sourceTree = "<group>";
 		};
 		552EE50722E9AAE200D7F0CB /* 2继承多态 */ = {
 			isa = PBXGroup;
 			children = (
-				552EE50D22EA836700D7F0CB /* Person.h */,
-				552EE50E22EA836700D7F0CB /* Person.m */,
+				552EE50D22EA836700D7F0CB /* Person2.h */,
+				552EE50E22EA836700D7F0CB /* Person2.m */,
 			);
 			path = "2继承多态";
 			sourceTree = "<group>";
 		};
-		552EE50822E9AAEA00D7F0CB /* 3category */ = {
+		552EE50822E9AAEA00D7F0CB /* 4category */ = {
 			isa = PBXGroup;
 			children = (
 				552EE51022EA89AE00D7F0CB /* NSObject+xs.h */,
 				552EE51122EA89AE00D7F0CB /* NSObject+xs.m */,
 			);
-			path = 3category;
+			path = 4category;
 			sourceTree = "<group>";
 		};
-		552EE50922E9AB3400D7F0CB /* 3NSObject */ = {
+		552EE50922E9AB3400D7F0CB /* 2NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				552EE53322EAC8C500D7F0CB /* XSNSObjectAPI.h */,
-				552EE53422EAC8C500D7F0CB /* XSNSObjectAPI.m */,
-				552EE51D22EAA94500D7F0CB /* XSNSObjectProtocol.h */,
-				552EE51E22EAA94500D7F0CB /* XSNSObjectProtocol.m */,
+				552EE53322EAC8C500D7F0CB /* 基类NSObject.h */,
+				552EE53422EAC8C500D7F0CB /* 基类NSObject.m */,
+				552EE54022EE861300D7F0CB /* 基类NSProxy.h */,
+				552EE54122EE861300D7F0CB /* 基类NSProxy.m */,
 			);
-			path = 3NSObject;
+			path = 2NSObject;
 			sourceTree = "<group>";
 		};
-		552EE50A22E9AB5A00D7F0CB /* 4运行时加载 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "4运行时加载";
-			sourceTree = "<group>";
-		};
-		552EE50B22E9AB6400D7F0CB /* 5消息机制 */ = {
+		552EE50A22E9AB5A00D7F0CB /* 3运行时加载 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "5消息机制";
+			path = "3运行时加载";
 			sourceTree = "<group>";
 		};
-		552EE50C22E9AB7100D7F0CB /* 6API */ = {
+		552EE50B22E9AB6400D7F0CB /* 4消息机制 */ = {
 			isa = PBXGroup;
 			children = (
+				552EE5CD22EEC24900D7F0CB /* MsgSend.h */,
+				552EE5CE22EEC24900D7F0CB /* MsgSend.m */,
+				5548772922EFD22100ECAB8F /* selfSuper.h */,
+				5548772A22EFD22100ECAB8F /* selfSuper.m */,
 			);
-			path = 6API;
+			path = "4消息机制";
 			sourceTree = "<group>";
 		};
-		552EE51622EA8BBD00D7F0CB /* 5extension */ = {
+		552EE50C22E9AB7100D7F0CB /* 2配置类信息 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE5BE22EEC23F00D7F0CB /* 1ClassRelated */,
+				552EE5C122EEC23F00D7F0CB /* 2IvarRelated */,
+				552EE5C422EEC23F00D7F0CB /* 3funcRelated */,
+			);
+			path = "2配置类信息";
+			sourceTree = "<group>";
+		};
+		552EE51622EA8BBD00D7F0CB /* 3extension */ = {
 			isa = PBXGroup;
 			children = (
 				552EE51522EA8B8700D7F0CB /* NSObject+Extension.h */,
 			);
-			path = 5extension;
+			path = 3extension;
 			sourceTree = "<group>";
 		};
-		552EE51722EA916700D7F0CB /* 4protocol */ = {
+		552EE51722EA916700D7F0CB /* 3Protocol */ = {
 			isa = PBXGroup;
 			children = (
 				552EE51922EA9BCC00D7F0CB /* XSTestObject.h */,
 				552EE51A22EA9BCC00D7F0CB /* XSTestObject.m */,
+				552EE51D22EAA94500D7F0CB /* NSObject基协议.h */,
+				552EE51E22EAA94500D7F0CB /* NSObject基协议.m */,
 			);
-			path = 4protocol;
+			path = 3Protocol;
 			sourceTree = "<group>";
 		};
-		552EE53622EADB2700D7F0CB /* KVO */ = {
+		552EE53C22EE836800D7F0CB /* 4关联对象 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE54C22EEBDD800D7F0CB /* NSObject+Associated.h */,
+				552EE54D22EEBDD800D7F0CB /* NSObject+Associated.m */,
+			);
+			path = "4关联对象";
+			sourceTree = "<group>";
+		};
+		552EE55022EEBEE300D7F0CB /* 5KVC */ = {
+			isa = PBXGroup;
+			children = (
+				552EE5B922EEC21900D7F0CB /* KvcTechnology.h */,
+				552EE5B822EEC21900D7F0CB /* KvcTechnology.m */,
+			);
+			path = 5KVC;
+			sourceTree = "<group>";
+		};
+		552EE55122EEC0D200D7F0CB /* 4NSKeyValueObserving */ = {
+			isa = PBXGroup;
+			children = (
+				55827A8D22EEDDCC0035BBAE /* KvoDocument.h */,
+				55827A8E22EEDDCC0035BBAE /* KvoDocument.m */,
+				5548772722EFCBDE00ECAB8F /* KvoTechnology.h */,
+				5548772622EFCBDE00ECAB8F /* KvoTechnology.m */,
+			);
+			path = 4NSKeyValueObserving;
+			sourceTree = "<group>";
+		};
+		552EE55222EEC20300D7F0CB /* 网络多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE55322EEC20300D7F0CB /* 2多线程技术方案 */,
+				552EE55F22EEC20300D7F0CB /* 3系统API运用的多线程 */,
+				552EE56022EEC20300D7F0CB /* 4多线程面临问题 */,
+				552EE56F22EEC20300D7F0CB /* 1线程属性本质 */,
+			);
+			path = "网络多线程";
+			sourceTree = "<group>";
+		};
+		552EE55322EEC20300D7F0CB /* 2多线程技术方案 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE55422EEC20300D7F0CB /* 1NSthread */,
+				552EE55722EEC20300D7F0CB /* 2GCD */,
+				552EE55A22EEC20300D7F0CB /* 3NSOperation */,
+			);
+			path = "2多线程技术方案";
+			sourceTree = "<group>";
+		};
+		552EE55422EEC20300D7F0CB /* 1NSthread */ = {
+			isa = PBXGroup;
+			children = (
+				552EE55522EEC20300D7F0CB /* XCNSThread.m */,
+				552EE55622EEC20300D7F0CB /* XCNSThread.h */,
+			);
+			path = 1NSthread;
+			sourceTree = "<group>";
+		};
+		552EE55722EEC20300D7F0CB /* 2GCD */ = {
+			isa = PBXGroup;
+			children = (
+				552EE55822EEC20300D7F0CB /* GDCThread.m */,
+				552EE55922EEC20300D7F0CB /* GDCThread.h */,
+			);
+			path = 2GCD;
+			sourceTree = "<group>";
+		};
+		552EE55A22EEC20300D7F0CB /* 3NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				552EE55B22EEC20300D7F0CB /* CXQueue.h */,
+				552EE55C22EEC20300D7F0CB /* CXOperation.h */,
+				552EE55D22EEC20300D7F0CB /* CXQueue.m */,
+				552EE55E22EEC20300D7F0CB /* CXOperation.m */,
+			);
+			path = 3NSOperation;
+			sourceTree = "<group>";
+		};
+		552EE55F22EEC20300D7F0CB /* 3系统API运用的多线程 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = KVO;
+			path = "3系统API运用的多线程";
+			sourceTree = "<group>";
+		};
+		552EE56022EEC20300D7F0CB /* 4多线程面临问题 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE56122EEC20300D7F0CB /* 2线程安全 */,
+				552EE56522EEC20300D7F0CB /* 3线程保活 */,
+				552EE56922EEC20300D7F0CB /* 4多线程复杂使用场景 */,
+				552EE56D22EEC20300D7F0CB /* 1多线程与内存管理 */,
+			);
+			path = "4多线程面临问题";
+			sourceTree = "<group>";
+		};
+		552EE56122EEC20300D7F0CB /* 2线程安全 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE56222EEC20300D7F0CB /* ThreadSecurityHeader.h */,
+				552EE56322EEC20300D7F0CB /* XSThreadSecurity.m */,
+				552EE56422EEC20300D7F0CB /* XSThreadSecurity.h */,
+			);
+			path = "2线程安全";
+			sourceTree = "<group>";
+		};
+		552EE56522EEC20300D7F0CB /* 3线程保活 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE56622EEC20300D7F0CB /* XSPermenantThread.h */,
+				552EE56722EEC20300D7F0CB /* 线程与runloop结合处理事件 */,
+				552EE56822EEC20300D7F0CB /* XSPermenantThread.m */,
+			);
+			path = "3线程保活";
+			sourceTree = "<group>";
+		};
+		552EE56722EEC20300D7F0CB /* 线程与runloop结合处理事件 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "线程与runloop结合处理事件";
+			sourceTree = "<group>";
+		};
+		552EE56922EEC20300D7F0CB /* 4多线程复杂使用场景 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE56A22EEC20300D7F0CB /* 3多线程实际需求 */,
+				552EE56B22EEC20300D7F0CB /* 2多线程通信 */,
+				552EE56C22EEC20300D7F0CB /* 1多线程嵌套使用 */,
+			);
+			path = "4多线程复杂使用场景";
+			sourceTree = "<group>";
+		};
+		552EE56A22EEC20300D7F0CB /* 3多线程实际需求 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3多线程实际需求";
+			sourceTree = "<group>";
+		};
+		552EE56B22EEC20300D7F0CB /* 2多线程通信 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2多线程通信";
+			sourceTree = "<group>";
+		};
+		552EE56C22EEC20300D7F0CB /* 1多线程嵌套使用 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "1多线程嵌套使用";
+			sourceTree = "<group>";
+		};
+		552EE56D22EEC20300D7F0CB /* 1多线程与内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE56E22EEC20300D7F0CB /* ThreadMemoryManage.m */,
+			);
+			path = "1多线程与内存管理";
+			sourceTree = "<group>";
+		};
+		552EE56F22EEC20300D7F0CB /* 1线程属性本质 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE57022EEC20300D7F0CB /* 0进程线程 */,
+			);
+			path = "1线程属性本质";
+			sourceTree = "<group>";
+		};
+		552EE57022EEC20300D7F0CB /* 0进程线程 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE57122EEC20300D7F0CB /* ThreadMemoryManage.m */,
+				552EE57222EEC20300D7F0CB /* ProcessAndThread.h */,
+				552EE57322EEC20300D7F0CB /* ProcessAndThread.m */,
+				552EE57422EEC20300D7F0CB /* ThreadMemoryManage.h */,
+			);
+			path = "0进程线程";
+			sourceTree = "<group>";
+		};
+		552EE57522EEC20300D7F0CB /* 内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE57622EEC20300D7F0CB /* 01内存分布存储 */,
+				552EE57922EEC20300D7F0CB /* 03内存管理 */,
+			);
+			path = "内存管理";
+			sourceTree = "<group>";
+		};
+		552EE57622EEC20300D7F0CB /* 01内存分布存储 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE57722EEC20300D7F0CB /* MemoryDistribution.h */,
+				552EE57822EEC20300D7F0CB /* MemoryDistribution.m */,
+			);
+			path = "01内存分布存储";
+			sourceTree = "<group>";
+		};
+		552EE57922EEC20300D7F0CB /* 03内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE57A22EEC20300D7F0CB /* 5运用场景 */,
+				552EE57B22EEC20300D7F0CB /* 6桥接非OC对象 */,
+				552EE57C22EEC20300D7F0CB /* 3自动释放池 */,
+				552EE57F22EEC20300D7F0CB /* 4框架底层相关数据类型 */,
+				552EE58422EEC20300D7F0CB /* 2底层原理 */,
+				552EE58B22EEC20300D7F0CB /* 1素材 */,
+			);
+			path = "03内存管理";
+			sourceTree = "<group>";
+		};
+		552EE57A22EEC20300D7F0CB /* 5运用场景 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "5运用场景";
+			sourceTree = "<group>";
+		};
+		552EE57B22EEC20300D7F0CB /* 6桥接非OC对象 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "6桥接非OC对象";
+			sourceTree = "<group>";
+		};
+		552EE57C22EEC20300D7F0CB /* 3自动释放池 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE57D22EEC20300D7F0CB /* Autoreleasepool.h */,
+				552EE57E22EEC20300D7F0CB /* Autoreleasepool.m */,
+			);
+			path = "3自动释放池";
+			sourceTree = "<group>";
+		};
+		552EE57F22EEC20300D7F0CB /* 4框架底层相关数据类型 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE58022EEC20300D7F0CB /* MemoryCopy.h */,
+				552EE58122EEC20300D7F0CB /* MemoryOtherDataType.m */,
+				552EE58222EEC20300D7F0CB /* MemoryCopy.m */,
+				552EE58322EEC20300D7F0CB /* MemoryOtherDataType.h */,
+			);
+			path = "4框架底层相关数据类型";
+			sourceTree = "<group>";
+		};
+		552EE58422EEC20300D7F0CB /* 2底层原理 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE58522EEC20300D7F0CB /* MemoryMangeARC.h */,
+				552EE58622EEC20300D7F0CB /* MemoryMangeNature.h */,
+				552EE58722EEC20300D7F0CB /* MemoryMangeMRC.m */,
+				552EE58822EEC20300D7F0CB /* MemoryMangeARC.m */,
+				552EE58922EEC20300D7F0CB /* MemoryMangeMRC.h */,
+				552EE58A22EEC20300D7F0CB /* MemoryMangeNature.m */,
+			);
+			path = "2底层原理";
+			sourceTree = "<group>";
+		};
+		552EE58B22EEC20300D7F0CB /* 1素材 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE58C22EEC20300D7F0CB /* Person.h */,
+				552EE58D22EEC20300D7F0CB /* car.h */,
+				552EE58E22EEC20300D7F0CB /* Person.m */,
+				552EE58F22EEC20300D7F0CB /* car.m */,
+			);
+			path = "1素材";
+			sourceTree = "<group>";
+		};
+		552EE59022EEC20300D7F0CB /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				552EE59122EEC20300D7F0CB /* 3RunLoop操作执行流程 */,
+				552EE59422EEC20300D7F0CB /* 3RunLoop操作 */,
+				552EE59522EEC20300D7F0CB /* 4RunLoop支撑的技术 */,
+				552EE59822EEC20300D7F0CB /* 2RunLoop状态 */,
+				552EE59B22EEC20300D7F0CB /* 1RunLoop组成元素 */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		552EE59122EEC20300D7F0CB /* 3RunLoop操作执行流程 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE59222EEC20300D7F0CB /* RunLoopProcess.m */,
+				552EE59322EEC20300D7F0CB /* RunLoopProcess.h */,
+			);
+			path = "3RunLoop操作执行流程";
+			sourceTree = "<group>";
+		};
+		552EE59422EEC20300D7F0CB /* 3RunLoop操作 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3RunLoop操作";
+			sourceTree = "<group>";
+		};
+		552EE59522EEC20300D7F0CB /* 4RunLoop支撑的技术 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE59622EEC20300D7F0CB /* RunLoopTechnology.h */,
+				552EE59722EEC20300D7F0CB /* RunLoopTechnology.m */,
+			);
+			path = "4RunLoop支撑的技术";
+			sourceTree = "<group>";
+		};
+		552EE59822EEC20300D7F0CB /* 2RunLoop状态 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE59922EEC20300D7F0CB /* RunLoopState.h */,
+				552EE59A22EEC20300D7F0CB /* RunLoopState.m */,
+			);
+			path = "2RunLoop状态";
+			sourceTree = "<group>";
+		};
+		552EE59B22EEC20300D7F0CB /* 1RunLoop组成元素 */ = {
+			isa = PBXGroup;
+			children = (
+				552EE59C22EEC20300D7F0CB /* RunLoopComposition.m */,
+				552EE59D22EEC20300D7F0CB /* RunLoopComposition.h */,
+			);
+			path = "1RunLoop组成元素";
+			sourceTree = "<group>";
+		};
+		552EE59E22EEC20400D7F0CB /* 6Block */ = {
+			isa = PBXGroup;
+			children = (
+				552EE59F22EEC20400D7F0CB /* blockType.h */,
+				552EE5A022EEC20400D7F0CB /* blockType.m */,
+			);
+			path = 6Block;
+			sourceTree = "<group>";
+		};
+		552EE5BE22EEC23F00D7F0CB /* 1ClassRelated */ = {
+			isa = PBXGroup;
+			children = (
+				552EE5C022EEC23F00D7F0CB /* ClassRelated.h */,
+				552EE5BF22EEC23F00D7F0CB /* ClassRelated.m */,
+			);
+			path = 1ClassRelated;
+			sourceTree = "<group>";
+		};
+		552EE5C122EEC23F00D7F0CB /* 2IvarRelated */ = {
+			isa = PBXGroup;
+			children = (
+				552EE5C222EEC23F00D7F0CB /* IvarRelated.h */,
+				552EE5C322EEC23F00D7F0CB /* IvarRelated.m */,
+			);
+			path = 2IvarRelated;
+			sourceTree = "<group>";
+		};
+		552EE5C422EEC23F00D7F0CB /* 3funcRelated */ = {
+			isa = PBXGroup;
+			children = (
+				552EE5C822EEC23F00D7F0CB /* FuncRelated.h */,
+				552EE5C522EEC23F00D7F0CB /* FuncRelated.m */,
+				552EE5C622EEC23F00D7F0CB /* XSProxy.h */,
+				552EE5C722EEC23F00D7F0CB /* XSProxy.m */,
+			);
+			path = 3funcRelated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,22 +761,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				552EE50322E9AACA00D7F0CB /* property2(封装).m in Sources */,
+				552EE5CC22EEC23F00D7F0CB /* XSProxy.m in Sources */,
+				552EE5B522EEC20400D7F0CB /* RunLoopState.m in Sources */,
 				552EE4F822E990FD00D7F0CB /* category_t.m in Sources */,
-				552EE50F22EA836700D7F0CB /* Person.m in Sources */,
+				552EE50F22EA836700D7F0CB /* Person2.m in Sources */,
 				552EE50422E9AACA00D7F0CB /* property1(作用域).m in Sources */,
-				552EE51F22EAA94500D7F0CB /* XSNSObjectProtocol.m in Sources */,
+				552EE51F22EAA94500D7F0CB /* NSObject基协议.m in Sources */,
+				552EE5B122EEC20400D7F0CB /* Person.m in Sources */,
 				552EE51222EA89AE00D7F0CB /* NSObject+xs.m in Sources */,
+				552EE5A322EEC20400D7F0CB /* CXQueue.m in Sources */,
+				552EE5B222EEC20400D7F0CB /* car.m in Sources */,
 				552EE50522E9AACA00D7F0CB /* property3(修饰词).m in Sources */,
+				552EE5AA22EEC20400D7F0CB /* MemoryDistribution.m in Sources */,
+				552EE5C922EEC23F00D7F0CB /* ClassRelated.m in Sources */,
+				552EE5CF22EEC24900D7F0CB /* MsgSend.m in Sources */,
 				552EE4F522E990D800D7F0CB /* property_t.m in Sources */,
+				552EE5AB22EEC20400D7F0CB /* Autoreleasepool.m in Sources */,
+				552EE5B722EEC20400D7F0CB /* blockType.m in Sources */,
 				552EE4DD22E97CB600D7F0CB /* main.m in Sources */,
+				552EE5AF22EEC20400D7F0CB /* MemoryMangeARC.m in Sources */,
+				552EE5A222EEC20400D7F0CB /* GDCThread.m in Sources */,
 				552EE4EB22E9898E00D7F0CB /* method_t.m in Sources */,
-				552EE53522EAC8C500D7F0CB /* XSNSObjectAPI.m in Sources */,
+				55827A9022EEDF130035BBAE /* KvoDocument.m in Sources */,
+				552EE53522EAC8C500D7F0CB /* 基类NSObject.m in Sources */,
 				552EE4EF22E98F3100D7F0CB /* objc_class.m in Sources */,
 				552EE51B22EA9BCC00D7F0CB /* XSTestObject.m in Sources */,
+				552EE5A722EEC20400D7F0CB /* ThreadMemoryManage.m in Sources */,
+				552EE5A622EEC20400D7F0CB /* XSPermenantThread.m in Sources */,
+				552EE5BA22EEC21900D7F0CB /* KvcTechnology.m in Sources */,
+				552EE5A422EEC20400D7F0CB /* CXOperation.m in Sources */,
+				552EE5B322EEC20400D7F0CB /* RunLoopProcess.m in Sources */,
+				552EE5A522EEC20400D7F0CB /* XSThreadSecurity.m in Sources */,
+				552EE5CA22EEC23F00D7F0CB /* IvarRelated.m in Sources */,
+				552EE54E22EEBDD800D7F0CB /* NSObject+Associated.m in Sources */,
 				552EE4E522E97FCE00D7F0CB /* ISA.m in Sources */,
+				552EE5CB22EEC23F00D7F0CB /* FuncRelated.m in Sources */,
+				5548772822EFCBDE00ECAB8F /* KvoTechnology.m in Sources */,
+				552EE5A122EEC20400D7F0CB /* XCNSThread.m in Sources */,
 				552EE4FD22E9A97000D7F0CB /* spuerclass.m in Sources */,
+				552EE5B622EEC20400D7F0CB /* RunLoopComposition.m in Sources */,
 				552EE4F222E9905C00D7F0CB /* ivar_t.m in Sources */,
+				552EE5B422EEC20400D7F0CB /* RunLoopTechnology.m in Sources */,
+				552EE5AC22EEC20400D7F0CB /* MemoryOtherDataType.m in Sources */,
+				552EE54222EE861300D7F0CB /* 基类NSProxy.m in Sources */,
 				552EE4EE22E98CCB00D7F0CB /* cache_t.m in Sources */,
+				552EE5A922EEC20400D7F0CB /* ProcessAndThread.m in Sources */,
+				5548772B22EFD22100ECAB8F /* selfSuper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
