@@ -17,11 +17,6 @@
 @property(weak)     NSString *name12;
 @property(copy)     NSString *name13;
 @property(assign)   NSString *name14;
-/**
- 变量空提示，一般修饰对象
- */
-@property(nonnull)NSString *name5;
-@property(nullable)NSString *name6;
 
 
 /**
@@ -47,6 +42,7 @@
 /**
  添加类方法
  1.给类添加类方法,注意必须实现，不然存在方法找不到,一般配合readonly、readwrite使用
+ 2.不会生成成员变量
  */
 @property(class,readonly) property3 *sharedInstance;
 

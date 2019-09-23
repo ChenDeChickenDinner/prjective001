@@ -1,303 +1,317 @@
 //
-//  blockType.m
-//  2019OC
+//  main.m
+//  XSTEST
 //
-//  Created by xs on 2019/2/25.
-//  Copyright © 2019 Touker. All rights reserved.
+//  Created by xs on 2019/8/7.
+//  Copyright © 2019 xax. All rights reserved.
 //
 
-#import "blockType.h"
+#import <Foundation/Foundation.h>
 
-@implementation blockType2
-@end
-@interface blockType()
-typedef void(^myBlock)(void);
-@property(nonatomic,copy) void(^block1)(void);
-@property(nonatomic,copy) myBlock block2;
-@end
-
-@implementation blockType
-+ (void)testBlock:(void(^)(void))blcok{
-
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        
+        
+        
+    }
+    return 0;
 }
+
+typedef void(^Block)(void);
+
+@interface Person : NSObject
+
+@end
+
+@implementation Person
+- (void)dealloc{
+    NSLog(@"self:%@,%s",self,__func__);
+}
+@end
+@interface XSBlock : NSObject
+@property(nonatomic,copy) void (^myblcok1)(void);
+@property(nonatomic,copy) Block myblock2;
+
+@end
+
+@implementation XSBlock
+
+// 1.blcok的写法
 + (void)load{
     
+    [self test7];
+    
 }
+
+- (instancetype)initWithBlcok:(void(^)(void))block
+{
+    self = [super init];
+    if (self) {
+        self.myblcok1 = block;
+    }
+    return self;
+}
+
+//block本质 结构体对象
+//static __main_block_imp_0 {
+//    static __block_imp impl;
+//    static __main_block_desc_0* Desc;
+//    __main_block_imp_0(void *fp,static __main_block_desc_0* Desc,int flags =0){
+//        impl.isa = &_NSConcreteStackBlock;
+//        impl.Flags = flags;
+//        impl.FuncPtr = fp;
+//        Desc = Desc;
+//    }
+//};
+
+
+
+
+//block的类型:从block对象的生命周期上看问题，研究它创建后存在于哪里,什么时候被销毁，因为其生命周期原因 在调用时候存在的潜在风险
 /**
- block基本用法
+ 全局 block:
+ 没有用到外界变量或只用到全局变量、静态变量的block为_NSConcreteGlobalBlock，
+ 生命周期从创建到应用程序结束
  */
+Block globalblock = ^(){
+    NSLog(@"函数外全局block");
+};
 + (void)test1{
-    /*
-     1.声明block类型变量: 返回值类型(^变量)(参数类型列表)
-     2.block实现: ^(形参列表...){
-        返回值
-     };
-     3.block调用: block();
-     */
-    int (^block)(int) = ^(int a){
-        NSLog(@"a = %d\n",a);
-        return 0;
+    static int age = 10;
+    Block block1 = ^(){
+        NSLog(@"age = %d",age);
     };
-    block(10);
-
-    /*
-     1.block定义者:根据 参数，执行代码，返回结果
-     2.block持有者:负责 执行传参
-     */
-    /*
-     block 运用的各种形式
-     1.直接代码块
-     2.当参数传递
-     3.当对象属性
-     */
-
+    static Block block2= ^(){
+        NSLog(@"age = %d",age);
+    };
 }
-/*block本质
- 1.一个功能代码块，会对其内部使用的外部变量进行捕捉，在适当的时候执行代码
- 2.一个OC对象
+
+
+/**
+ 栈区block:
+ 1.只用到外部局部变量，且没有强指针引用的block都是StackBlock。
+ 2.StackBlock的生命周期由系统控制的，一旦返回之后，就被系统销毁了
+ 3.风险,如果被销毁后再调用就会有问题
  */
 + (void)test2{
-/*
-    // block 结构体 FuncPtr 为 block执行的逻辑函数
-    struct __main_block_impl_0 {
-        struct __block_impl impl;
-        struct __main_block_desc_0* Desc;
-        // 构造函数（类似于OC的init方法），返回结构体对象
-        __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, int flags=0) {
-            impl.isa = &_NSConcreteStackBlock;
-            impl.Flags = flags;
-            impl.FuncPtr = fp;
-            Desc = desc;
-        }
+    int age = 10;
+    ^(){
+        NSLog(@"age = %d",age);
     };
-
-    // 封装了block执行逻辑的函数
-    static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
-
-    }
-
-
-    // 定义block变量 = &block结构体
-    void (*block)(void) = &__main_block_impl_0(
-                                               __main_block_func_0,
-                                               &__main_block_desc_0_DATA
-                                               );
-
-    // 执行block内部的代码
-    block->FuncPtr(block);
- */
 }
 
 /**
- 对外部基本数据类型变量的捕捉访问
- */
-int  age = 10;
-static int hegight = 20;
-
-+ (void)test3{
-    /*
-     局部变量的捕获相当于 跨 函数 访问变量,在B函数使用A函数的变量，理所当然的需要进制值传递保存
-     */
-    {
-        int age = 20;
-        void(^block)(void) = ^{
-            NSLog(@"age = %d\n",age);
-        };
-        age = 30;
-        block();
-
-        /*
-         struct __main_block_impl_0 {
-         struct __block_impl impl;
-         struct __main_block_desc_0* Desc;
-         int age; // 捕获了外部的自动局部变量 值传递
-         };
-         */
-    }
-    {
-       static int age = 20;
-        void(^block)(void) = ^{
-            NSLog(@"age = %d\n",age);
-        };
-        age = 30;
-        block();
-
-        /*
-         struct __main_block_impl_0 {
-         struct __block_impl impl;
-         struct __main_block_desc_0* Desc;
-         int *age; // 捕获了外部的静态的局部变量 指针传递传递
-         };
-         */
-    }
-    {
-        // 全局变量 不会进行捕获，因为全局变量谁都可以直接访问
-        void(^block)(void) = ^{
-            int age2 = age;
-            int hegight2 = hegight;
-        };
-        age = 30;
-        block();
-    }
-
-
-}
-/**
-block类型
-1. block有3种类型，可以通过调用class方法或者isa指针查看具体类型，最终都是继承自NSBlock类型
-a. __NSGlobalBlock__ （ _NSConcreteGlobalBlock ）
-b. __NSStackBlock__ （ _NSConcreteStackBlock
-c. __NSMallocBlock__ （ _NSConcreteMallocBlock ）
-
-1.没有访问auto变量 为 NSGlobalBlock <分配在数据区>
-a.这个没有访问auto变量，或者仅仅访问了全局变量的block 一般是抽成函数
-
-2.访问了auto变量 为 NSStackBlock <分配在栈区>
-a.访问了auto变量的block 因其分配在栈 上，代码块结束后 再调用的话有潜在风险
+ 堆区block:
+ 1.对栈区的block进行copy操作，对其引用计算器加1，其引用计算器为0的时候被销毁
+ 2.将其拷贝到堆上，其销毁由程序员手动管理，或者由系统的内存管理系统ARC、自动释放池
  
-3.NSStackaBlock copy <分配在堆区>
-a.为解决堆上的block风险问题，将block 进行copy就会 生成一个再堆上的block,升级为NSMallocBlock类型
-
-3.block的copy
+ copy操作的底层
+ 1.原本栈上有一block对象 随函数结束而被销毁
+ 2.copy后复制一份 block对象 存到堆上
+ 
+ 
+ block的copy
  a.数据区  的block copy 无任何变化
  b.栈区    的block copy 会生成一个 NSMallocBlock block
  c.堆上的  的block copy 引用计算器加1
-
- d.在ARC环境下，编译器会根据情况自动将栈上的block复制到堆上
- 1.block作为函数返回值时
+ 
+ 在ARC环境下，编译器会根据情况自动将栈上的block复制到堆上，最后ARC自动管理释放
+ 1.block作为函数返回值时（在MRC下，函数一结束block就被销毁，在调用就很危险，要手动进行copy操作）
  2.将block赋值给__strong指针时
  3.block作为Cocoa API中方法名含有usingBlock的方法参数时
  4.block作为GCD API的方法参数时
-
- e.ARC下block属性的建议写法
- @property (strong, nonatomic) void (^block)(void);
- @property (copy, nonatomic) void (^block)(void);
+ 
  */
-- (void)test4{
-
++ (void)test3{
+    int age = 10;
+    [^(void){
+        NSLog(@"age = %d",age);
+    } copy];
 }
-/**
- 对外部对象类型变量的捕捉访问
+
+
+/**block的结构组成:研究对外部变量的访问原理，以及对外部变量的内存管理方面的影响
+ 
+ block对访问外部数据的捕捉
+ 1.全局变量:不会捕捉 直接访问
+ 2.局部变量:会捕捉
+ 
+ 
+ block对捕捉数据的类型定义，传进来的是什么
+ 1.局部自动变量:会捕捉，原类型;
+ 2.局部静态变量:会捕捉，原类型的指针
+ 
  */
-- (void)test5{
-    // self _cmd 为什么在方法中可以使用的原因是 默认是当做参数传递进来的
-    void(^block)(void) = ^{
-        NSLog(@"self = %@\n",self);
-        NSLog(@"self.name = %@\n",_name);
-        NSLog(@"self.name = %@\n",[self name]);
+int height = 188;
++ (void)test4{
+    int age1 = 33;
+    NSObject *objc = [[NSObject alloc]init];
+    static int age2 = 22;
+    /*
+     struct __main_block_impl_0 {
+     struct __block_impl impl;
+     struct __main_block_desc_0* Desc;
+     height; // 直接访问
+     int age1 ;  // 原类型值传递
+     NSObject *objc //原类型指针传递
+     int *age2 // 原类型指针传递
+     };
+     */
+    Block block = ^(){
+        NSLog(@"height = %d,age1 = %d,age2 = %d,objc = %@",height,age1,age2,objc);
     };
-    block();
-
-    // 对对象类型的 auto变量 也会进行捕捉 (NSObject *)
-    NSObject *obje = [[NSObject alloc]init]; // 在栈上
-    void(^block2)(void) = ^{
-        NSLog(@"obje = %@\n",obje);
-    }; // 在堆上 将obje拷贝一份到堆上，强引用 obje 对象，
-    block2();
+    
 }
-/**
- 会对外部对象类型变量进行内存管理
- 1.如果block是在栈上:将不会对auto变量产生强引用
- 2.block被拷贝到堆上:
- a.会调用block内部的copy函数，copy函数内部会调用_Block_object_assign函数
- b._Block_object_assign函数会根据auto变量的修饰符（__strong、__weak、__unsafe_unretained）做出相应的操作，形成强引用（retain）或者弱引用
- 3.如果block从堆上移除
+
+
+
+
+// block捕捉对象类型数据的内存管理
+/*
+ 1.对象有内存管理关键字 __weak,__strong...等
+ 2.在捕捉持有对象的时候，当然要进行内存管理的操作，内存修饰关键字也会捕捉，这个跟什么类型的block无关
+ 3.最后实际对捕捉对象的引用计算器的影响要看block的类型
+ */
+
+
+/*
+ 1.当访问了外部变量为对象类型时，block 的desc 中会新增 2个内存管理函数
+ 2.只有对 block 对象进行copy操作的时候 会调用 内存管理函数
+ 
+ static struct __main_block_desc_0 {
+ size_t reserved;
+ size_t Block_size;
+ void (*copy)(struct __main_block_impl_0*, struct __main_block_impl_0*);
+ void (*dispose)(struct __main_block_impl_0*);
+ }
+ 
+ copy函数:block被拷贝到堆上:
+ 0.新增拷贝一份block对象到堆上:
+ 1.copy函数内部会调用_Block_object_assign函数
+ 2._Block_object_assign函数会根据auto变量的修饰符（__strong、__weak、__unsafe_unretained）做出相应的操作，
+ 3.形成强引用（retain）或者弱引用
+ 
+ dispose函数:lock从堆上移除
  a.会调用block内部的dispose函数
  b.dispose函数内部会调用_Block_object_dispose函数
  _Block_object_dispose函数会自动释放引用的auto变量（release）
-
  */
-- (void)test6{
 
-}
-
-
-/**
- 对auto变量的修改
- 1.block 内部 不能对 auto变量 进行直接修改 一个再A函数 一个在B函数
- 2.__block可以用于解决block内部无法修改auto变量值的问题
- 3.__block 修饰的 auto变量 会被编译器包装成一个对象，对象里面有对应的变量
- 4.__block不能修饰全局变量、静态变量（static）
- 5.block 会对 __block对象进行强引用
-
-
-__block对象对其包装对象的引用问题
- a.修饰基本类型 不存在内存管理 问题
- b.修饰对象类型，存在内存管理问题，至于 __block对象对其是强 还是弱引用 看 对象的内存修饰符
- */
-- (void)test7{
-
-    { //  1.当block在栈上时，__block对象不会对 其包装的对象产生强引用
-        int age1 = 10;
-        __block int age2 = 10;
-        __block NSObject *objc1 = [[NSObject alloc]init];
-        __block __weak NSObject *objc2 = [[NSObject alloc]init];
-        // 上面都在栈上
-        ^{
-            NSLog(@"%d,%d,%@,%@",age1,age2,objc1,objc2);
-        }(); // block 也在栈上，访问auto变量有风险
++ (void)test5{
+    
+    {
+        {
+            Person *ob1 = [[Person alloc]init];
+            Person *ob2 = [[Person alloc]init];
+            __weak NSObject *ob3 = ob2;
+            ^(){
+                NSLog(@"%@,%@",ob1,ob3);
+            };
+        } // 上面的block在栈上，block中无copy操作，所以无论外面是强 还是若 都不会形成强引用，最后的结果可能导致访问到空对象
+        NSLog(@"-------");
+        
     }
-    { //  1.当block在堆上时，__block对象可以对 其包装的对象产生强引用，具体看修饰符
-        int age1 = 10;
-        __block int age2 = 10;
-        __block NSObject *objc1 = [[NSObject alloc]init];
-        __block __weak NSObject *objc2 = [[NSObject alloc]init];
-        // 上面都在栈上
-        void(^block)(void) =^{
-            /*
-          age1:值传递
-          age2:__block拷贝到堆上，被block强引用，_block对象 中 有 inat age2,不存在内存管理问题
-          objc1:__block拷贝到堆上，被block强引用，_block对象 中 强引用 objc1
-          objc2:__block拷贝到堆上，被block强引用，_block对象 中 弱引用 objc2
-             */
-            NSLog(@"%d,%d,%@,%@",age1,age2,objc1,objc2);
-        };
+    
+    {
+        /*
+         1.栈上 有2个Person对象，以及2个自动变量指针ob1，ob2
+         2.栈上 还有一个block对象，对2个自动变量的持有对对象的内存管理无硬性
+         3.被拷贝到堆上的block对象，根据捕捉的对象的内存管理修饰符进行相应的操作
+         */
+        Block block;
+        {
+            Person *ob1 = [[Person alloc]init];
+            Person *ob2 = [[Person alloc]init];
+            __weak NSObject *ob3 = ob2;
+            block = ^(){
+                NSLog(@"%@,%@",ob1,ob3);
+            };
+            NSLog(@"block-class = %@",[block class]);
+        }
+        NSLog(@"-------");
         block();
     }
-
+    
+}
+/*
+ 1、为什么不能直接修改 而要通过 __block 对象包装数据
+ 1.使用可以:只要能拿到指针地址 就可以使用，使用过程中可能会出现意外
+ 2.修改不行:修改的原意是想修改原数据，但block内部捕捉的只是指针，
+ 3.你修改捕捉的指针达不到修改原数据的意图，所以从编码的角度上将不允许修改
+ 4.__block 对象，将原数据包装成__block对象的组成部分，这样通过指针就可以达到修改原数据的意图
+ 
+ 
+ 2.__block的底层结构
+ 1.每一个 被 __block 包装的变量最后变成 一个 结构体变量
+ 2.被包装的数据是什么类型，在结构体中还是什么类型
+ 2.1包装基本数据类型
+ struct __Block_byref_age_0 {
+ void *__isa;
+ __Block_byref_age_0 *__forwarding;
+ int __flags;
+ int __size;
+ int age; //
+ };
+ 2.2.包装对象类型 多了2个内存管理函数
+ struct __Block_byref_weakPerson_0 {
+ void *__isa; // 8
+ __Block_byref_weakPerson_0 *__forwarding; // 8
+ int __flags; // 4
+ int __size; // 4
+ void (*__Block_byref_id_object_copy)(void*, void*);
+ void (*__Block_byref_id_object_dispose)(void*);
+ MJPerson *__weak weakPerson;
+ };
+ */
++ (void)test6{
+    
+    Person *person1 = [[Person alloc]init];
+    NSMutableArray *array = [NSMutableArray array];
+    Block block = ^(){
+        /*
+         1.可以使用，不能修改
+         */
+        [array addObject:person1];
+        [array removeAllObjects];
+        //array = nil;
+    };
+    
+    /*
+     1.原本我想将person2 置为nil;
+     2.blockPerson 就相当于block对象中捕捉到指针，操作blockPerson 不会对 person2 有任何影响
+     */
+    Person *person2 = [[Person alloc]init];
+    Person *blockPerson = person2;
+    blockPerson = nil;
 }
 
-/**
- 1.全局变量，不会捕捉 直接访问
- 2.局部静态变量，会捕捉，指针传递
- 3.局部自动变量 会捕捉
-     a.普通对象值
-         a1.基本类型:捕捉,值传递
-         a2.对象类型
-            1.栈上的block,捕捉，指针传递 不会强引用
-            2.堆上的block,捕捉，指针传递，看其修饰符
-     b.__block对象
-         a1.基本类型:捕捉__block对象,指针传递，__block对象对其包装对象 值传递引用
-         a2.对象类型
-             1.栈上的block,捕捉__block对象，指针传递 __block对象对其包装对象不会强引用
-             2.堆上的block,捕捉__block对象，指针传递，__block对象对其包装对象的引用看其修饰符
+
+/* __block 对象 与 被 __block 包装的对象
+ 1.被__block 包装的对象可以被内存管理关键字修饰
+ 2.__block 对象本身不能被内存管理关键字修饰
+ 3.So 内存管理关键字修饰的都是被包装的对象
+ __block __strong Person *ob3  = ob1;
+ __block __weak  Person *ob4  = ob2;
+ 
+ __strong __block  Person *ob3  = ob1;
+ __weak __block   Person *ob4  = ob2;
+ 
  */
 
 
-/**
- 循环引用
+/* block 对 __block 对象内存管理
+ 1.还是那个原则，栈上的 block并不会对__block变量产生强引用
+ 2.当block被copy到堆时，会调用block内部的copy函数，copy函数内部会调用_Block_object_assign函数，对__block变量形成强引用
+ 3.只会形成强引用，__block 不存在被弱引用
  */
-- (void)test8{
-    self.name = @"123";
-    self.block=^{
-        self.name;
-    };
-    {
-        __weak typeof(self) weakSelf = self;
-        self.block=^{
-          NSString *name =  weakSelf.name;
-        };
-    }
-    {
-        __block  blockType2 *objc1 = [[blockType2 alloc]init];
-        objc1.block=^{
-            NSString *name =  objc1.name;
-            objc1 = nil;
-        };
-        objc1.block();
-    }
 
-
+/* __block 对象 对 包装对象的内存管理
+ 1.当__block变量在栈上时，不会对指向的对象产生强引用
+ 2.当__block变量在堆上时，根据被包装对象的内存管理修饰词 形成 强弱引用
+ 
+ */
++ (void)test7{
+    
+    
 }
 @end
-
