@@ -6,11 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		556706242472627300E7F2F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 556706232472627300E7F2F6 /* main.m */; };
-		55670652247270FE00E7F2F6 /* pod_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 55670651247270FE00E7F2F6 /* pod_A.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		5567061E2472627300E7F2F6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -126,8 +121,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556706242472627300E7F2F6 /* main.m in Sources */,
-				55670652247270FE00E7F2F6 /* pod_A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
