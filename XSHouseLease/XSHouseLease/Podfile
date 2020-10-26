@@ -1,0 +1,47 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
+source 'https://github.com/CocoaPods/Specs.git'
+target 'XSHouseLease' do
+
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'IQKeyboardManager'
+pod 'XWAlert'
+
+pod 'AFNetworking', '~> 4.0.1'
+pod 'MBProgressHUD', '~> 1.2.0'
+pod 'YBModelFile', :configurations => ['Debug']
+pod 'AESCrypt','~> 0.0.1'
+pod 'BRPickerView'
+pod 'HXPhotoPicker'
+pod 'SDCycleScrollView'
+pod 'SDWebImage'
+#pod 'YYKit'
+#pod 'AMap2DMap' 
+pod 'AMapSearch'
+pod 'AMapLocation'
+pod 'ProgressHUD'
+pod 'DZNEmptyDataSet'
+pod 'JXCategoryView'
+#pod 'LYEmptyView'
+pod 'AMapFoundation'
+pod 'AMap3DMap'
+pod 'Masonry'
+pod 'TXIMSDK_TUIKit_iOS'
+#pod 'mob_sharesdk'
+#pod 'mob_sharesdk/ShareSDKPlatforms/QQ','4.3.7'
+#pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo','4.3.7'
+#pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull','4.3.7'
+
+# 主模块(必须)
+pod 'mob_sharesdk'
+
+# UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+pod 'mob_sharesdk/ShareSDKUI'
+# 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+#pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'
+pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'
+pod 'AlipaySDK-iOS'
+pod 'JPush'
+end

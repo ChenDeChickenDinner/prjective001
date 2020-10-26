@@ -1,0 +1,35 @@
+[
+    {
+        "cellClass":"XSHouseDetailsImagesCell",
+        "cellHeight":220
+    },
+    {
+        "cellClass":"XSHouseDetailsBasicInfoCell",
+        "cellHeight":115
+    },
+    {
+        "cellClass":"XSHouseDetailsBusinessInfoCell",
+        "cellHeight":115
+    },
+    {
+        "cellClass":"XSHouseDoorCell",
+        "cellHeight":300
+    },
+    {
+        "cellClass":"XSHouseBuildingCell",
+        "cellHeight":190
+    },
+    {
+        "cellClass":"XSHouseDetailsAddressInfoCell",
+        "cellHeight":242
+    },
+    {
+        "cellClass":"XSHouseStoriedCell",
+        "cellHeight":352
+    },
+    {
+        "cellClass":"XSHouseRecommendedCell",
+        "cellHeight":510
+    }
+
+]

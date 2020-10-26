@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XSAboutViewController">
+            <connections>
+                <outlet property="text" destination="xVV-uQ-bHW" id="dbg-CX-TgW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vsLable" destination="Lhm-bm-t2k" id="NzL-RV-rdw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FAPPLOG" translatesAutoresizingMaskIntoConstraints="NO" id="DYo-zS-WZL">
+                    <rect key="frame" x="162" y="89" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="aym-Kt-v3n"/>
+                        <constraint firstAttribute="width" constant="90" id="l6t-5I-RF1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v0.1.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhm-bm-t2k">
+                    <rect key="frame" x="189.5" y="212.5" width="35" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="xVV-uQ-bHW">
+                    <rect key="frame" x="30" y="238.5" width="354" height="573.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房鼎汇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkn-74-a28">
+                    <rect key="frame" x="181" y="187" width="52" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xVV-uQ-bHW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="3JU-nK-DjN"/>
+                <constraint firstItem="Lhm-bm-t2k" firstAttribute="top" secondItem="Zkn-74-a28" secondAttribute="bottom" constant="5" id="7DS-sW-Tgq"/>
+                <constraint firstItem="Zkn-74-a28" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Msq-QJ-aAq"/>
+                <constraint firstItem="Lhm-bm-t2k" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wts-RK-c5g"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="xVV-uQ-bHW" secondAttribute="bottom" constant="50" id="fds-wA-HGs"/>
+                <constraint firstItem="DYo-zS-WZL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g1l-eX-45M"/>
+                <constraint firstItem="Zkn-74-a28" firstAttribute="top" secondItem="DYo-zS-WZL" secondAttribute="bottom" constant="8" id="m2a-SC-mF7"/>
+                <constraint firstItem="xVV-uQ-bHW" firstAttribute="top" secondItem="Lhm-bm-t2k" secondAttribute="bottom" constant="10" id="oiJ-FX-P1h"/>
+                <constraint firstItem="DYo-zS-WZL" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="45" id="rbT-iS-lWU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xVV-uQ-bHW" secondAttribute="trailing" constant="30" id="xwR-1Z-EBv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="133" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FAPPLOG" width="120" height="120"/>
+    </resources>
+</document>

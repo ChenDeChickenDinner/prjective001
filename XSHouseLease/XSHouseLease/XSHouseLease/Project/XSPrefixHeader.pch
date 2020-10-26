@@ -1,0 +1,90 @@
+//
+//  XSPrefixHeader.pch
+//  XSHouseLease
+//
+//  Created by heartbeats on 2020/3/16.
+//  Copyright © 2020 fang. All rights reserved.
+//
+
+#ifndef XSPrefixHeader_pch
+#define XSPrefixHeader_pch
+#import "MJExtension.h"
+#import "MJRefresh.h"
+
+#import "HBCategory.h"
+
+#import "MBProgressHUD.h"
+//#import "YBModelFile.h"
+#import "XSUserServer.h"
+#import "NSData+Base64.h"
+#import "NSString+Base64.h"
+#import "XSRoundedView.h"
+#import "BRPickerView.h"
+#import "HXPhotoPicker.h"
+#import "UIView+HBExtension.h"
+
+#import "SDWebImage.h"
+#import "SDCycleScrollView.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <MAMapKit/MAMapKit.h>
+#import "XSMapViewController.h"
+#import "XSHouseInfoShowCell.h"
+
+#import "ProgressHUD.h"
+#import "XSHouseSubMitModel.h"
+
+#import "XSHouseEnum.h"
+
+
+#import "XSPublicServer.h"
+#import "XSHouseSubMitServer.h"
+#import "XSHouseModuleViewController.h"
+#import "XSHouseDetailsModel.h"
+#import "LYEmptyViewHeader.h"
+#import "GSMacro.h"
+#import "Masonry.h"
+
+#define XSColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define XSColorAlpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+#define WEAK_SELF __weak typeof(self)weakSelf = self
+#define STRONG_SELF __strong typeof(weakSelf)self = weakSelf
+
+#define KMenuViewHeight      45
+#define KHeadImageViewHeight 250
+#define KStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define KNavBarHeight self.navigationController.navigationBar.frame.size.height
+#define KNavbarAndStatusHieght (KStatusBarHeight+KNavBarHeight)
+
+static NSString *XSHouseDetailsBusinessInfoCellStr = @"XSHouseDetailsBusinessInfoCellStr";
+static NSString *XSHouseDetailsFacilitiesInfoCellStr = @"XSHouseDetailsFacilitiesInfoCellStr";
+static NSString *XSItemCollectionViewCellStr = @"XSItemCollectionViewCellStr";
+static NSString *XSItemCollectionViewCellStr222 = @"XSItemCollectionViewCellStr222";
+
+
+//获取屏幕宽高
+#define KScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+#define KScreenHeight ([[UIScreen mainScreen] bounds].size.height)
+#define kScreenFrame [UIScreen mainScreen].bounds
+
+#define SCREEN_SIZE (((NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1) && UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation))?CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width):[UIScreen mainScreen].bounds.size)
+
+
+
+
+#undef    AS_SINGLETON
+#define AS_SINGLETON( __class ) \
++ (__class *)sharedInstance;
+
+#undef    DEF_SINGLETON
+#define DEF_SINGLETON( __class ) \
++ (__class *)sharedInstance \
+{ \
+static dispatch_once_t once; \
+static __class * __singleton__; \
+dispatch_once(&once, ^{ __singleton__ = [[__class alloc] init]; } ); \
+return __singleton__; \
+}
+
+
+#endif /* XSPrefixHeader_pch */
