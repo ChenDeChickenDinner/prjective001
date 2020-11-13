@@ -27,8 +27,7 @@
     int _height;
 @private // 有的:私有，只能在当前类的对象方法中直接访问。
     char * _name;
-@package // 包:同一个“体系内”（框架）可以访问，介于@private和@public之间
-    NSString *_oldName;
+
 }
 
 
