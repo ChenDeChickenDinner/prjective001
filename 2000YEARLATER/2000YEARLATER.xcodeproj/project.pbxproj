@@ -18,8 +18,13 @@
 		551EACFA255BBBF300992CD9 /* Func.m in Sources */ = {isa = PBXBuildFile; fileRef = 551EACF9255BBBF300992CD9 /* Func.m */; };
 		551EAD00255BBC2C00992CD9 /* Macro.m in Sources */ = {isa = PBXBuildFile; fileRef = 551EACFF255BBC2C00992CD9 /* Macro.m */; };
 		551EAD04255BBC4800992CD9 /* TheKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 551EAD03255BBC4800992CD9 /* TheKey.m */; };
-		5542695D255D1D3400A0E2B1 /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5542695C255D1D3400A0E2B1 /* Interface.m */; };
-		55426967255D27FD00A0E2B1 /* OBJECT.m in Sources */ = {isa = PBXBuildFile; fileRef = 55426966255D27FD00A0E2B1 /* OBJECT.m */; };
+		555B8B112563676C00032179 /* Interface2.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B072563676C00032179 /* Interface2.m */; };
+		555B8B122563676C00032179 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B0B2563676C00032179 /* Block.m */; };
+		555B8B132563676C00032179 /* Interface1.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B0C2563676C00032179 /* Interface1.m */; };
+		555B8B152563676C00032179 /* Nullable.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B102563676C00032179 /* Nullable.m */; };
+		555B8B1B2563692700032179 /* OBJECT.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B1A2563692700032179 /* OBJECT.m */; };
+		555B8B3525639EA900032179 /* XSOBject.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B3425639EA900032179 /* XSOBject.m */; };
+		555B8B3A2563C4C400032179 /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B0D2563676C00032179 /* Protocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,10 +62,20 @@
 		551EACFF255BBC2C00992CD9 /* Macro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Macro.m; sourceTree = "<group>"; };
 		551EAD02255BBC4800992CD9 /* TheKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheKey.h; sourceTree = "<group>"; };
 		551EAD03255BBC4800992CD9 /* TheKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheKey.m; sourceTree = "<group>"; };
-		5542695B255D1D3400A0E2B1 /* Interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
-		5542695C255D1D3400A0E2B1 /* Interface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Interface.m; sourceTree = "<group>"; };
-		55426965255D27FD00A0E2B1 /* OBJECT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBJECT.h; sourceTree = "<group>"; };
-		55426966255D27FD00A0E2B1 /* OBJECT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBJECT.m; sourceTree = "<group>"; };
+		555B8B072563676C00032179 /* Interface2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interface2.m; sourceTree = "<group>"; };
+		555B8B082563676C00032179 /* Nullable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nullable.h; sourceTree = "<group>"; };
+		555B8B092563676C00032179 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		555B8B0A2563676C00032179 /* Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		555B8B0B2563676C00032179 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
+		555B8B0C2563676C00032179 /* Interface1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interface1.m; sourceTree = "<group>"; };
+		555B8B0D2563676C00032179 /* Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
+		555B8B0E2563676C00032179 /* Interface1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface1.h; sourceTree = "<group>"; };
+		555B8B0F2563676C00032179 /* Interface2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface2.h; sourceTree = "<group>"; };
+		555B8B102563676C00032179 /* Nullable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nullable.m; sourceTree = "<group>"; };
+		555B8B192563692700032179 /* OBJECT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBJECT.h; sourceTree = "<group>"; };
+		555B8B1A2563692700032179 /* OBJECT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBJECT.m; sourceTree = "<group>"; };
+		555B8B3325639EA900032179 /* XSOBject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSOBject.h; sourceTree = "<group>"; };
+		555B8B3425639EA900032179 /* XSOBject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSOBject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,12 +193,38 @@
 		5542694C255D144400A0E2B1 /* OCCCCC */ = {
 			isa = PBXGroup;
 			children = (
-				5542695B255D1D3400A0E2B1 /* Interface.h */,
-				5542695C255D1D3400A0E2B1 /* Interface.m */,
-				55426965255D27FD00A0E2B1 /* OBJECT.h */,
-				55426966255D27FD00A0E2B1 /* OBJECT.m */,
+				555B8B1E256372D500032179 /* NSObject */,
+				555B8B18256368B900032179 /* New Group */,
 			);
 			path = OCCCCC;
+			sourceTree = "<group>";
+		};
+		555B8B18256368B900032179 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				555B8B0E2563676C00032179 /* Interface1.h */,
+				555B8B0C2563676C00032179 /* Interface1.m */,
+				555B8B0F2563676C00032179 /* Interface2.h */,
+				555B8B072563676C00032179 /* Interface2.m */,
+				555B8B0A2563676C00032179 /* Protocol.h */,
+				555B8B0D2563676C00032179 /* Protocol.m */,
+				555B8B092563676C00032179 /* Block.h */,
+				555B8B0B2563676C00032179 /* Block.m */,
+				555B8B082563676C00032179 /* Nullable.h */,
+				555B8B102563676C00032179 /* Nullable.m */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		555B8B1E256372D500032179 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				555B8B192563692700032179 /* OBJECT.h */,
+				555B8B1A2563692700032179 /* OBJECT.m */,
+				555B8B3325639EA900032179 /* XSOBject.h */,
+				555B8B3425639EA900032179 /* XSOBject.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,18 +284,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				551EACFA255BBBF300992CD9 /* Func.m in Sources */,
+				555B8B1B2563692700032179 /* OBJECT.m in Sources */,
 				551EACD5255BB85200992CD9 /* 01BaseData.m in Sources */,
 				551EAD00255BBC2C00992CD9 /* Macro.m in Sources */,
-				55426967255D27FD00A0E2B1 /* OBJECT.m in Sources */,
 				551EACD9255BB90A00992CD9 /* 02Enum.m in Sources */,
-				5542695D255D1D3400A0E2B1 /* Interface.m in Sources */,
+				555B8B152563676C00032179 /* Nullable.m in Sources */,
 				551EAD04255BBC4800992CD9 /* TheKey.m in Sources */,
 				551EACC8255A8D0200992CD9 /* main.m in Sources */,
 				551EACE4255BBA7000992CD9 /* 04Array.m in Sources */,
+				555B8B132563676C00032179 /* Interface1.m in Sources */,
 				551EACE8255BBAB600992CD9 /* 05Pointer.m in Sources */,
+				555B8B122563676C00032179 /* Block.m in Sources */,
+				555B8B3525639EA900032179 /* XSOBject.m in Sources */,
 				551EACF5255BBBD700992CD9 /* Control.m in Sources */,
 				551EACDD255BB91D00992CD9 /* 03Struct.m in Sources */,
+				555B8B112563676C00032179 /* Interface2.m in Sources */,
 				551EACEF255BBB9700992CD9 /* Operator.m in Sources */,
+				555B8B3A2563C4C400032179 /* Protocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

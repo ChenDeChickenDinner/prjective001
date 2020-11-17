@@ -305,9 +305,7 @@
 		55BB7692225E10730092C6DC /* DevicesInfoAndUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevicesInfoAndUserInfo.h; sourceTree = "<group>"; };
 		55BB7693225E10730092C6DC /* DevicesInfoAndUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevicesInfoAndUserInfo.m; sourceTree = "<group>"; };
 		55BB7713226031DC0092C6DC /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		55BB77152260323F0092C6DC /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		55BB7716226032C90092C6DC /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		55BB771A226033C10092C6DC /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		55BB775F226079130092C6DC /* 47d19c496c9965288fd66c0a4f4172e4_hd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 47d19c496c9965288fd66c0a4f4172e4_hd.jpg; sourceTree = "<group>"; };
 		55BB776122607A6D0092C6DC /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		55BB77E8226464900092C6DC /* 01真机归档.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "01真机归档.m"; sourceTree = "<group>"; };
@@ -546,10 +544,7 @@
 			isa = PBXGroup;
 			children = (
 				55BB776122607A6D0092C6DC /* Header.h */,
-				55BB77EE226475350092C6DC /* 00后台服务 */,
-				55BB77142260322D0092C6DC /* 00操作系统 */,
 				5596217122437222003EF84F /* 01项目管理 */,
-				5596217022437222003EF84F /* 02项目经验 */,
 				55B2B8C52229172C00900956 /* 02OC语法 */,
 				5596215F22437222003EF84F /* 04OC框架学习 */,
 				5596217922437222003EF84F /* Xcode高级功能 */,
@@ -587,15 +582,6 @@
 			children = (
 			);
 			path = "01系统级别";
-			sourceTree = "<group>";
-		};
-		5596217022437222003EF84F /* 02项目经验 */ = {
-			isa = PBXGroup;
-			children = (
-				55BB771C226034F40092C6DC /* 01本端的项目经验技术特色 */,
-				55BB771B226034CB0092C6DC /* 02多端联合处理 */,
-			);
-			path = "02项目经验";
 			sourceTree = "<group>";
 		};
 		5596217122437222003EF84F /* 01项目管理 */ = {
@@ -1050,7 +1036,6 @@
 		55B2B8C52229172C00900956 /* 02OC语法 */ = {
 			isa = PBXGroup;
 			children = (
-				55BB7718226033360092C6DC /* 00C语言 */,
 				55B2B8CC2229172C00900956 /* 00基本语法 */,
 				55B2B8F22229172C00900956 /* 01面向对象 */,
 				55B2B8D82229172C00900956 /* 02内存管理 */,
@@ -1635,14 +1620,6 @@
 			path = "4scheme管理";
 			sourceTree = "<group>";
 		};
-		55BB77142260322D0092C6DC /* 00操作系统 */ = {
-			isa = PBXGroup;
-			children = (
-				55BB77152260323F0092C6DC /* Header.h */,
-			);
-			path = "00操作系统";
-			sourceTree = "<group>";
-		};
 		55BB7717226033140092C6DC /* 0X资料 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1654,36 +1631,6 @@
 				555B8391225C4183007383E5 /* 08Instruments */,
 			);
 			path = "0X资料";
-			sourceTree = "<group>";
-		};
-		55BB7718226033360092C6DC /* 00C语言 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "00C语言";
-			sourceTree = "<group>";
-		};
-		55BB7719226033930092C6DC /* 三方解决方案学习 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "三方解决方案学习";
-			sourceTree = "<group>";
-		};
-		55BB771B226034CB0092C6DC /* 02多端联合处理 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "02多端联合处理";
-			sourceTree = "<group>";
-		};
-		55BB771C226034F40092C6DC /* 01本端的项目经验技术特色 */ = {
-			isa = PBXGroup;
-			children = (
-				55BB7719226033930092C6DC /* 三方解决方案学习 */,
-				55BB771A226033C10092C6DC /* Header.h */,
-			);
-			path = "01本端的项目经验技术特色";
 			sourceTree = "<group>";
 		};
 		55BB771E226035D40092C6DC /* 01系统框架 */ = {
@@ -1716,21 +1663,6 @@
 			children = (
 			);
 			path = "6持续集成构建";
-			sourceTree = "<group>";
-		};
-		55BB77EE226475350092C6DC /* 00后台服务 */ = {
-			isa = PBXGroup;
-			children = (
-				55BB77EF2264768A0092C6DC /* New Group */,
-			);
-			path = "00后台服务";
-			sourceTree = "<group>";
-		};
-		55BB77EF2264768A0092C6DC /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		55E1EA8A226863380001F67C /* NotificationsDemo */ = {
