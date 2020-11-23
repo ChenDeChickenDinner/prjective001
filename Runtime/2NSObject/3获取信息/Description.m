@@ -9,6 +9,15 @@
 #import "Description.h"
 
 @implementation Description
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        IMP imp = [self methodForSelector:@selector(hash)];
+    }
+    return self;
+}
 // 对象的hash值 一般用到特别的场景下
 - (NSUInteger)hash{
     NSUInteger hash = [super hash];
