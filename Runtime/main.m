@@ -10,9 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSNotification
-        NSObject *cc = nil;
-        [cc copy];
+
 //        NSInteger
 //        NSUInteger
 //        CGFloat
