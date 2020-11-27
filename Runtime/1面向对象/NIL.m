@@ -8,6 +8,8 @@
 #import "NIL.h"
 
 @implementation NIL
+
+//NullSafe github
 + (void)load{
     //    本质上 nil , Nil 和 NULL 是一样的
         Class class1 = Nil;
