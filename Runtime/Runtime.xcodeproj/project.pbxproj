@@ -13,16 +13,19 @@
 		5519450A2570957900ACD0DD /* CreatingStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945092570957900ACD0DD /* CreatingStrings.m */; };
 		551945102570A38F00ACD0DD /* GettingLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 5519450F2570A38F00ACD0DD /* GettingLength.m */; };
 		551945142570A49000ACD0DD /* GettingCharactersandBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945132570A49000ACD0DD /* GettingCharactersandBytes.m */; };
-		551945182570A4D400ACD0DD /* IdentifyingandComparingStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945172570A4D400ACD0DD /* IdentifyingandComparingStrings.m */; };
+		551945182570A4D400ACD0DD /* ComparingStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945172570A4D400ACD0DD /* ComparingStrings.m */; };
 		5519451C2570A54800ACD0DD /* AppendingString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5519451B2570A54800ACD0DD /* AppendingString.m */; };
 		551945202570A58000ACD0DD /* ChangingCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5519451F2570A58000ACD0DD /* ChangingCase.m */; };
 		551945242570A5C100ACD0DD /* DividingStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945232570A5C100ACD0DD /* DividingStrings.m */; };
-		551945292570C1F000ACD0DD /* Characters.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945282570C1F000ACD0DD /* Characters.m */; };
 		5519452E2570CA8900ACD0DD /* FindingStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5519452D2570CA8900ACD0DD /* FindingStrings.m */; };
 		551945342570D9B100ACD0DD /* ReplacingSubstrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945332570D9B100ACD0DD /* ReplacingSubstrings.m */; };
 		5519453A2570E06000ACD0DD /* ConvertingString.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945392570E06000ACD0DD /* ConvertingString.m */; };
 		551945402570E44C00ACD0DD /* StringNumericValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 5519453F2570E44C00ACD0DD /* StringNumericValues.m */; };
 		551945462570F06F00ACD0DD /* StringPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 551945452570F06F00ACD0DD /* StringPaths.m */; };
+		551945522574CF6800ACD0DD /* NSRegularExpression(正则).m in Sources */ = {isa = PBXBuildFile; fileRef = 551945512574CF6800ACD0DD /* NSRegularExpression(正则).m */; };
+		5519455C2574F96000ACD0DD /* Localization(本地化).m in Sources */ = {isa = PBXBuildFile; fileRef = 5519455B2574F96000ACD0DD /* Localization(本地化).m */; };
+		551945602574F98400ACD0DD /* Characters(字符集).m in Sources */ = {isa = PBXBuildFile; fileRef = 5519455F2574F98400ACD0DD /* Characters(字符集).m */; };
+		551945682574F9D400ACD0DD /* NSAttributedString(富文本).m in Sources */ = {isa = PBXBuildFile; fileRef = 551945672574F9D400ACD0DD /* NSAttributedString(富文本).m */; };
 		552EE4DD22E97CB600D7F0CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE4DC22E97CB600D7F0CB /* main.m */; };
 		552EE4E522E97FCE00D7F0CB /* ISA.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE4E422E97FCE00D7F0CB /* ISA.m */; };
 		552EE4EB22E9898E00D7F0CB /* method_t.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EE4EA22E9898E00D7F0CB /* method_t.m */; };
@@ -87,8 +90,8 @@
 		5582A5F8256F5299005DF600 /* Exceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A5F7256F5299005DF600 /* Exceptions.m */; };
 		5582A5FD256F551B005DF600 /* Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A5FC256F551B005DF600 /* Sorting.m */; };
 		5582A605256F870D005DF600 /* NSObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A604256F870D005DF600 /* NSObjCRuntime.m */; };
-		5582A60E256F9159005DF600 /* NSValueTransformer(CoreData).m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A60D256F9159005DF600 /* NSValueTransformer(CoreData).m */; };
 		5582A613256F939C005DF600 /* Unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A612256F939C005DF600 /* Unicode.m */; };
+		558FDF942579C1EC00DDCD35 /* NSDictionaryC.m in Sources */ = {isa = PBXBuildFile; fileRef = 558FDF932579C1EC00DDCD35 /* NSDictionaryC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,16 +119,14 @@
 		5519450F2570A38F00ACD0DD /* GettingLength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GettingLength.m; sourceTree = "<group>"; };
 		551945122570A49000ACD0DD /* GettingCharactersandBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GettingCharactersandBytes.h; sourceTree = "<group>"; };
 		551945132570A49000ACD0DD /* GettingCharactersandBytes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GettingCharactersandBytes.m; sourceTree = "<group>"; };
-		551945162570A4D400ACD0DD /* IdentifyingandComparingStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentifyingandComparingStrings.h; sourceTree = "<group>"; };
-		551945172570A4D400ACD0DD /* IdentifyingandComparingStrings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentifyingandComparingStrings.m; sourceTree = "<group>"; };
+		551945162570A4D400ACD0DD /* ComparingStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComparingStrings.h; sourceTree = "<group>"; };
+		551945172570A4D400ACD0DD /* ComparingStrings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComparingStrings.m; sourceTree = "<group>"; };
 		5519451A2570A54800ACD0DD /* AppendingString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppendingString.h; sourceTree = "<group>"; };
 		5519451B2570A54800ACD0DD /* AppendingString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppendingString.m; sourceTree = "<group>"; };
 		5519451E2570A58000ACD0DD /* ChangingCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangingCase.h; sourceTree = "<group>"; };
 		5519451F2570A58000ACD0DD /* ChangingCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangingCase.m; sourceTree = "<group>"; };
 		551945222570A5C100ACD0DD /* DividingStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DividingStrings.h; sourceTree = "<group>"; };
 		551945232570A5C100ACD0DD /* DividingStrings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DividingStrings.m; sourceTree = "<group>"; };
-		551945272570C1F000ACD0DD /* Characters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Characters.h; sourceTree = "<group>"; };
-		551945282570C1F000ACD0DD /* Characters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Characters.m; sourceTree = "<group>"; };
 		5519452C2570CA8900ACD0DD /* FindingStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindingStrings.h; sourceTree = "<group>"; };
 		5519452D2570CA8900ACD0DD /* FindingStrings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindingStrings.m; sourceTree = "<group>"; };
 		551945322570D9B100ACD0DD /* ReplacingSubstrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplacingSubstrings.h; sourceTree = "<group>"; };
@@ -136,6 +137,14 @@
 		5519453F2570E44C00ACD0DD /* StringNumericValues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringNumericValues.m; sourceTree = "<group>"; };
 		551945442570F06F00ACD0DD /* StringPaths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringPaths.h; sourceTree = "<group>"; };
 		551945452570F06F00ACD0DD /* StringPaths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringPaths.m; sourceTree = "<group>"; };
+		551945502574CF6800ACD0DD /* NSRegularExpression(正则).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression(正则).h"; sourceTree = "<group>"; };
+		551945512574CF6800ACD0DD /* NSRegularExpression(正则).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression(正则).m"; sourceTree = "<group>"; };
+		5519455A2574F96000ACD0DD /* Localization(本地化).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Localization(本地化).h"; sourceTree = "<group>"; };
+		5519455B2574F96000ACD0DD /* Localization(本地化).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Localization(本地化).m"; sourceTree = "<group>"; };
+		5519455E2574F98400ACD0DD /* Characters(字符集).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Characters(字符集).h"; sourceTree = "<group>"; };
+		5519455F2574F98400ACD0DD /* Characters(字符集).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Characters(字符集).m"; sourceTree = "<group>"; };
+		551945662574F9D400ACD0DD /* NSAttributedString(富文本).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString(富文本).h"; sourceTree = "<group>"; };
+		551945672574F9D400ACD0DD /* NSAttributedString(富文本).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString(富文本).m"; sourceTree = "<group>"; };
 		552EE4D922E97CB600D7F0CB /* Runtime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Runtime; sourceTree = BUILT_PRODUCTS_DIR; };
 		552EE4DC22E97CB600D7F0CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		552EE4E322E97FCD00D7F0CB /* ISA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISA.h; sourceTree = "<group>"; };
@@ -274,10 +283,11 @@
 		5582A5FC256F551B005DF600 /* Sorting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sorting.m; sourceTree = "<group>"; };
 		5582A603256F870D005DF600 /* NSObjCRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjCRuntime.h; sourceTree = "<group>"; };
 		5582A604256F870D005DF600 /* NSObjCRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjCRuntime.m; sourceTree = "<group>"; };
-		5582A60C256F9159005DF600 /* NSValueTransformer(CoreData).h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer(CoreData).h"; sourceTree = "<group>"; };
-		5582A60D256F9159005DF600 /* NSValueTransformer(CoreData).m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer(CoreData).m"; sourceTree = "<group>"; };
 		5582A611256F939C005DF600 /* Unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unicode.h; sourceTree = "<group>"; };
 		5582A612256F939C005DF600 /* Unicode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unicode.m; sourceTree = "<group>"; };
+		558FDF922579C1EC00DDCD35 /* NSDictionaryC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDictionaryC.h; sourceTree = "<group>"; };
+		558FDF932579C1EC00DDCD35 /* NSDictionaryC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryC.m; sourceTree = "<group>"; };
+		558FDF97257A258E00DDCD35 /* writeDict.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = writeDict.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +313,12 @@
 		55090686256B7D2E001739E0 /* 1BasicValues */ = {
 			isa = PBXGroup;
 			children = (
+				557C9410256E4F07003DE7C3 /* Numbers.h */,
+				557C9411256E4F07003DE7C3 /* Numbers.m */,
+				5582A5EB256F3F2F005DF600 /* NSNumber(Wrappers).h */,
+				5582A5EC256F3F2F005DF600 /* NSNumber(Wrappers).m */,
+				5582A5F0256F3F46005DF600 /* NSValue(Wrappers).h */,
+				5582A5F1256F3F46005DF600 /* NSValue(Wrappers).m */,
 				55090773256CE6DA001739E0 /* 1Nubmers Geometry Ranges */,
 				5582A60A256F8853005DF600 /* 2Binary Data and URLs */,
 			);
@@ -312,8 +328,6 @@
 		55090773256CE6DA001739E0 /* 1Nubmers Geometry Ranges */ = {
 			isa = PBXGroup;
 			children = (
-				557C9410256E4F07003DE7C3 /* Numbers.h */,
-				557C9411256E4F07003DE7C3 /* Numbers.m */,
 			);
 			path = "1Nubmers Geometry Ranges";
 			sourceTree = "<group>";
@@ -337,15 +351,16 @@
 		5509077B256CE84B001739E0 /* 2Strings */ = {
 			isa = PBXGroup;
 			children = (
-				5582A611256F939C005DF600 /* Unicode.h */,
-				5582A612256F939C005DF600 /* Unicode.m */,
-				5582A619256F959E005DF600 /* 1Strings */,
-				5582A61A256F95A3005DF600 /* 2Strings with Metadata */,
-				5582A61B256F95B0005DF600 /* 3Characters */,
-				5582A61C256F95D2005DF600 /* 4Pattern Matching  */,
-				5582A61D256F95DA005DF600 /* 5Spelling and Grammar */,
-				5582A61E256F95E3005DF600 /* 6Localization */,
-				5582A61F256F95F0005DF600 /* 7Deprecated */,
+				551945812575D52800ACD0DD /* 0编码比较规则枚举 */,
+				551945762575D28600ACD0DD /* 1创建 */,
+				5519457D2575D48800ACD0DD /* 1特殊字符集 */,
+				551945772575D28D00ACD0DD /* 2长度数值字符 */,
+				551945792575D34F00ACD0DD /* 3比较查找 */,
+				551945782575D32800ACD0DD /* 4分割替换拼接 */,
+				5519457A2575D36300ACD0DD /* 5大小转换对象化 */,
+				5519457B2575D38100ACD0DD /* 6路径字符串提取与改变 */,
+				5519457F2575D4C500ACD0DD /* 本地化 */,
+				5519457E2575D4BD00ACD0DD /* 富文本 */,
 			);
 			path = 2Strings;
 			sourceTree = "<group>";
@@ -353,6 +368,14 @@
 		5509077C256CE861001739E0 /* 3Collections */ = {
 			isa = PBXGroup;
 			children = (
+				551945892575D9A400ACD0DD /* Iteration(迭代) */,
+				551945832575D6EA00ACD0DD /* 1Dict */,
+				551945822575D6E400ACD0DD /* 2Array */,
+				551945842575D70700ACD0DD /* 3Set */,
+				551945852575D73100ACD0DD /* 4Indexes */,
+				551945872575D92200ACD0DD /* NSCache */,
+				551945862575D8FA00ACD0DD /* OrderedSet */,
+				551945882575D92B00ACD0DD /* Table */,
 			);
 			path = 3Collections;
 			sourceTree = "<group>";
@@ -386,7 +409,7 @@
 				5582A602256F86FA005DF600 /* NSObjCRuntime */,
 				5509077F256CE915001739E0 /* 2 Filters and Sorting */,
 				55090686256B7D2E001739E0 /* 1BasicValues */,
-				557C9423256F3986003DE7C3 /* 2 ValueWrappers and Transformations */,
+				557C9423256F3986003DE7C3 /* 2ValueWrappers */,
 				5509077B256CE84B001739E0 /* 2Strings */,
 				5509077C256CE861001739E0 /* 3Collections */,
 				5509077D256CE87C001739E0 /* 4Date and Time */,
@@ -609,119 +632,167 @@
 			path = SharedInstance;
 			sourceTree = "<group>";
 		};
-		551945012570949D00ACD0DD /* 分割字符串 */ = {
-			isa = PBXGroup;
-			children = (
-				551945222570A5C100ACD0DD /* DividingStrings.h */,
-				551945232570A5C100ACD0DD /* DividingStrings.m */,
-			);
-			path = "分割字符串";
-			sourceTree = "<group>";
-		};
-		55194502257094B300ACD0DD /* 改变大小写 */ = {
-			isa = PBXGroup;
-			children = (
-				5519451E2570A58000ACD0DD /* ChangingCase.h */,
-				5519451F2570A58000ACD0DD /* ChangingCase.m */,
-			);
-			path = "改变大小写";
-			sourceTree = "<group>";
-		};
-		55194503257094CB00ACD0DD /* 拼接字符串 */ = {
-			isa = PBXGroup;
-			children = (
-				5519451A2570A54800ACD0DD /* AppendingString.h */,
-				5519451B2570A54800ACD0DD /* AppendingString.m */,
-			);
-			path = "拼接字符串";
-			sourceTree = "<group>";
-		};
-		55194504257094D500ACD0DD /* 识别和比较字符串 */ = {
-			isa = PBXGroup;
-			children = (
-				551945162570A4D400ACD0DD /* IdentifyingandComparingStrings.h */,
-				551945172570A4D400ACD0DD /* IdentifyingandComparingStrings.m */,
-			);
-			path = "识别和比较字符串";
-			sourceTree = "<group>";
-		};
-		55194505257094F000ACD0DD /* 获取字符和字节 */ = {
-			isa = PBXGroup;
-			children = (
-				551945122570A49000ACD0DD /* GettingCharactersandBytes.h */,
-				551945132570A49000ACD0DD /* GettingCharactersandBytes.m */,
-			);
-			path = "获取字符和字节";
-			sourceTree = "<group>";
-		};
-		55194506257094FF00ACD0DD /* 获取字符串的长度 */ = {
-			isa = PBXGroup;
-			children = (
-				5519450E2570A38F00ACD0DD /* GettingLength.h */,
-				5519450F2570A38F00ACD0DD /* GettingLength.m */,
-			);
-			path = "获取字符串的长度";
-			sourceTree = "<group>";
-		};
-		551945072570950B00ACD0DD /* 创建字符串 */ = {
+		551945762575D28600ACD0DD /* 1创建 */ = {
 			isa = PBXGroup;
 			children = (
 				551945082570957900ACD0DD /* CreatingStrings.h */,
 				551945092570957900ACD0DD /* CreatingStrings.m */,
 			);
-			path = "创建字符串";
+			path = "1创建";
 			sourceTree = "<group>";
 		};
-		5519452B2570CA5B00ACD0DD /* 查找字符和子字符串 */ = {
+		551945772575D28D00ACD0DD /* 2长度数值字符 */ = {
 			isa = PBXGroup;
 			children = (
-				5519452C2570CA8900ACD0DD /* FindingStrings.h */,
-				5519452D2570CA8900ACD0DD /* FindingStrings.m */,
+				551945122570A49000ACD0DD /* GettingCharactersandBytes.h */,
+				551945132570A49000ACD0DD /* GettingCharactersandBytes.m */,
+				5519453E2570E44C00ACD0DD /* StringNumericValues.h */,
+				5519453F2570E44C00ACD0DD /* StringNumericValues.m */,
+				5519450E2570A38F00ACD0DD /* GettingLength.h */,
+				5519450F2570A38F00ACD0DD /* GettingLength.m */,
 			);
-			path = "查找字符和子字符串";
+			path = "2长度数值字符";
 			sourceTree = "<group>";
 		};
-		551945312570D99F00ACD0DD /* 替换子字符串 */ = {
+		551945782575D32800ACD0DD /* 4分割替换拼接 */ = {
 			isa = PBXGroup;
 			children = (
+				551945222570A5C100ACD0DD /* DividingStrings.h */,
+				551945232570A5C100ACD0DD /* DividingStrings.m */,
 				551945322570D9B100ACD0DD /* ReplacingSubstrings.h */,
 				551945332570D9B100ACD0DD /* ReplacingSubstrings.m */,
+				5519451A2570A54800ACD0DD /* AppendingString.h */,
+				5519451B2570A54800ACD0DD /* AppendingString.m */,
 			);
-			path = "替换子字符串";
+			path = "4分割替换拼接";
 			sourceTree = "<group>";
 		};
-		551945372570E04100ACD0DD /* propertyList */ = {
+		551945792575D34F00ACD0DD /* 3比较查找 */ = {
+			isa = PBXGroup;
+			children = (
+				551945162570A4D400ACD0DD /* ComparingStrings.h */,
+				551945172570A4D400ACD0DD /* ComparingStrings.m */,
+				5519452C2570CA8900ACD0DD /* FindingStrings.h */,
+				5519452D2570CA8900ACD0DD /* FindingStrings.m */,
+				551945502574CF6800ACD0DD /* NSRegularExpression(正则).h */,
+				551945512574CF6800ACD0DD /* NSRegularExpression(正则).m */,
+			);
+			path = "3比较查找";
+			sourceTree = "<group>";
+		};
+		5519457A2575D36300ACD0DD /* 5大小转换对象化 */ = {
 			isa = PBXGroup;
 			children = (
 				551945382570E06000ACD0DD /* ConvertingString.h */,
 				551945392570E06000ACD0DD /* ConvertingString.m */,
+				5519451E2570A58000ACD0DD /* ChangingCase.h */,
+				5519451F2570A58000ACD0DD /* ChangingCase.m */,
 			);
-			path = propertyList;
+			path = "5大小转换对象化";
 			sourceTree = "<group>";
 		};
-		5519453C2570E3F900ACD0DD /* Sizing and Drawing Strings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Sizing and Drawing Strings";
-			sourceTree = "<group>";
-		};
-		5519453D2570E41C00ACD0DD /* 字符串数值化 */ = {
-			isa = PBXGroup;
-			children = (
-				5519453E2570E44C00ACD0DD /* StringNumericValues.h */,
-				5519453F2570E44C00ACD0DD /* StringNumericValues.m */,
-			);
-			path = "字符串数值化";
-			sourceTree = "<group>";
-		};
-		551945432570F04800ACD0DD /* 路径andURL相关 */ = {
+		5519457B2575D38100ACD0DD /* 6路径字符串提取与改变 */ = {
 			isa = PBXGroup;
 			children = (
 				551945442570F06F00ACD0DD /* StringPaths.h */,
 				551945452570F06F00ACD0DD /* StringPaths.m */,
 			);
-			path = "路径andURL相关";
+			path = "6路径字符串提取与改变";
+			sourceTree = "<group>";
+		};
+		5519457D2575D48800ACD0DD /* 1特殊字符集 */ = {
+			isa = PBXGroup;
+			children = (
+				5519455E2574F98400ACD0DD /* Characters(字符集).h */,
+				5519455F2574F98400ACD0DD /* Characters(字符集).m */,
+			);
+			path = "1特殊字符集";
+			sourceTree = "<group>";
+		};
+		5519457E2575D4BD00ACD0DD /* 富文本 */ = {
+			isa = PBXGroup;
+			children = (
+				551945662574F9D400ACD0DD /* NSAttributedString(富文本).h */,
+				551945672574F9D400ACD0DD /* NSAttributedString(富文本).m */,
+			);
+			path = "富文本";
+			sourceTree = "<group>";
+		};
+		5519457F2575D4C500ACD0DD /* 本地化 */ = {
+			isa = PBXGroup;
+			children = (
+				5519455A2574F96000ACD0DD /* Localization(本地化).h */,
+				5519455B2574F96000ACD0DD /* Localization(本地化).m */,
+			);
+			path = "本地化";
+			sourceTree = "<group>";
+		};
+		551945812575D52800ACD0DD /* 0编码比较规则枚举 */ = {
+			isa = PBXGroup;
+			children = (
+				5582A611256F939C005DF600 /* Unicode.h */,
+				5582A612256F939C005DF600 /* Unicode.m */,
+			);
+			path = "0编码比较规则枚举";
+			sourceTree = "<group>";
+		};
+		551945822575D6E400ACD0DD /* 2Array */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 2Array;
+			sourceTree = "<group>";
+		};
+		551945832575D6EA00ACD0DD /* 1Dict */ = {
+			isa = PBXGroup;
+			children = (
+				558FDF922579C1EC00DDCD35 /* NSDictionaryC.h */,
+				558FDF932579C1EC00DDCD35 /* NSDictionaryC.m */,
+				558FDF97257A258E00DDCD35 /* writeDict.plist */,
+			);
+			path = 1Dict;
+			sourceTree = "<group>";
+		};
+		551945842575D70700ACD0DD /* 3Set */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3Set;
+			sourceTree = "<group>";
+		};
+		551945852575D73100ACD0DD /* 4Indexes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 4Indexes;
+			sourceTree = "<group>";
+		};
+		551945862575D8FA00ACD0DD /* OrderedSet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OrderedSet;
+			sourceTree = "<group>";
+		};
+		551945872575D92200ACD0DD /* NSCache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSCache;
+			sourceTree = "<group>";
+		};
+		551945882575D92B00ACD0DD /* Table */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		551945892575D9A400ACD0DD /* Iteration(迭代) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Iteration(迭代)";
 			sourceTree = "<group>";
 		};
 		552EE4D022E97CB600D7F0CB = {
@@ -1346,17 +1417,11 @@
 			path = "NSObject(Pr)";
 			sourceTree = "<group>";
 		};
-		557C9423256F3986003DE7C3 /* 2 ValueWrappers and Transformations */ = {
+		557C9423256F3986003DE7C3 /* 2ValueWrappers */ = {
 			isa = PBXGroup;
 			children = (
-				5582A5EB256F3F2F005DF600 /* NSNumber(Wrappers).h */,
-				5582A5EC256F3F2F005DF600 /* NSNumber(Wrappers).m */,
-				5582A5F0256F3F46005DF600 /* NSValue(Wrappers).h */,
-				5582A5F1256F3F46005DF600 /* NSValue(Wrappers).m */,
-				5582A60C256F9159005DF600 /* NSValueTransformer(CoreData).h */,
-				5582A60D256F9159005DF600 /* NSValueTransformer(CoreData).m */,
 			);
-			path = "2 ValueWrappers and Transformations";
+			path = 2ValueWrappers;
 			sourceTree = "<group>";
 		};
 		5582A602256F86FA005DF600 /* NSObjCRuntime */ = {
@@ -1373,70 +1438,6 @@
 			children = (
 			);
 			path = "2Binary Data and URLs";
-			sourceTree = "<group>";
-		};
-		5582A619256F959E005DF600 /* 1Strings */ = {
-			isa = PBXGroup;
-			children = (
-				551945432570F04800ACD0DD /* 路径andURL相关 */,
-				5519453D2570E41C00ACD0DD /* 字符串数值化 */,
-				5519453C2570E3F900ACD0DD /* Sizing and Drawing Strings */,
-				551945372570E04100ACD0DD /* propertyList */,
-				551945312570D99F00ACD0DD /* 替换子字符串 */,
-				5519452B2570CA5B00ACD0DD /* 查找字符和子字符串 */,
-				551945072570950B00ACD0DD /* 创建字符串 */,
-				55194506257094FF00ACD0DD /* 获取字符串的长度 */,
-				55194505257094F000ACD0DD /* 获取字符和字节 */,
-				55194504257094D500ACD0DD /* 识别和比较字符串 */,
-				55194503257094CB00ACD0DD /* 拼接字符串 */,
-				55194502257094B300ACD0DD /* 改变大小写 */,
-				551945012570949D00ACD0DD /* 分割字符串 */,
-			);
-			path = 1Strings;
-			sourceTree = "<group>";
-		};
-		5582A61A256F95A3005DF600 /* 2Strings with Metadata */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "2Strings with Metadata";
-			sourceTree = "<group>";
-		};
-		5582A61B256F95B0005DF600 /* 3Characters */ = {
-			isa = PBXGroup;
-			children = (
-				551945272570C1F000ACD0DD /* Characters.h */,
-				551945282570C1F000ACD0DD /* Characters.m */,
-			);
-			path = 3Characters;
-			sourceTree = "<group>";
-		};
-		5582A61C256F95D2005DF600 /* 4Pattern Matching  */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "4Pattern Matching ";
-			sourceTree = "<group>";
-		};
-		5582A61D256F95DA005DF600 /* 5Spelling and Grammar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "5Spelling and Grammar";
-			sourceTree = "<group>";
-		};
-		5582A61E256F95E3005DF600 /* 6Localization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 6Localization;
-			sourceTree = "<group>";
-		};
-		5582A61F256F95F0005DF600 /* 7Deprecated */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 7Deprecated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1501,6 +1502,7 @@
 				555B8BB62564F28400032179 /* Protocol.m in Sources */,
 				555B8DAE2567897200032179 /* Class.m in Sources */,
 				552EE4F822E990FD00D7F0CB /* category_t.m in Sources */,
+				558FDF942579C1EC00DDCD35 /* NSDictionaryC.m in Sources */,
 				551945102570A38F00ACD0DD /* GettingLength.m in Sources */,
 				552EE5B122EEC20400D7F0CB /* Person.m in Sources */,
 				551945142570A49000ACD0DD /* GettingCharactersandBytes.m in Sources */,
@@ -1512,7 +1514,6 @@
 				550907DD256E3234001739E0 /* NSObject(Class).m in Sources */,
 				552EE5CF22EEC24900D7F0CB /* MsgSend.m in Sources */,
 				5519452E2570CA8900ACD0DD /* FindingStrings.m in Sources */,
-				5582A60E256F9159005DF600 /* NSValueTransformer(CoreData).m in Sources */,
 				555B8BC22564F2CE00032179 /* @property.m in Sources */,
 				5519453A2570E06000ACD0DD /* ConvertingString.m in Sources */,
 				552EE4F522E990D800D7F0CB /* property_t.m in Sources */,
@@ -1532,6 +1533,7 @@
 				557C9420256F3283003DE7C3 /* BinaryData.m in Sources */,
 				552EE4EF22E98F3100D7F0CB /* objc_class.m in Sources */,
 				552EE5A722EEC20400D7F0CB /* ThreadMemoryManage.m in Sources */,
+				5519455C2574F96000ACD0DD /* Localization(本地化).m in Sources */,
 				552EE5A622EEC20400D7F0CB /* XSPermenantThread.m in Sources */,
 				5582A613256F939C005DF600 /* Unicode.m in Sources */,
 				552EE5BA22EEC21900D7F0CB /* KvcTechnology.m in Sources */,
@@ -1539,18 +1541,19 @@
 				555B8BBB2564F28400032179 /* Nullable.m in Sources */,
 				552EE5B322EEC20400D7F0CB /* RunLoopProcess.m in Sources */,
 				552EE5A522EEC20400D7F0CB /* XSThreadSecurity.m in Sources */,
+				551945522574CF6800ACD0DD /* NSRegularExpression(正则).m in Sources */,
 				552EE5CA22EEC23F00D7F0CB /* IvarRelated.m in Sources */,
 				550907D1256E2CEF001739E0 /* SharedInstance.m in Sources */,
 				555B8BA22564F27400032179 /* Pretreatment.c in Sources */,
 				555B8BA32564F27400032179 /* Macro.c in Sources */,
 				552EE54E22EEBDD800D7F0CB /* NSObject+Associated.m in Sources */,
+				551945602574F98400ACD0DD /* Characters(字符集).m in Sources */,
 				552EE4E522E97FCE00D7F0CB /* ISA.m in Sources */,
 				551945202570A58000ACD0DD /* ChangingCase.m in Sources */,
 				552EE5CB22EEC23F00D7F0CB /* FuncRelated.m in Sources */,
 				5548772822EFCBDE00ECAB8F /* KvoTechnology.m in Sources */,
 				552EE5A122EEC20400D7F0CB /* XCNSThread.m in Sources */,
 				5582A605256F870D005DF600 /* NSObjCRuntime.m in Sources */,
-				551945292570C1F000ACD0DD /* Characters.m in Sources */,
 				5582A5ED256F3F2F005DF600 /* NSNumber(Wrappers).m in Sources */,
 				555B8BA12564F27400032179 /* Define.c in Sources */,
 				552EE4FD22E9A97000D7F0CB /* spuerclass.m in Sources */,
@@ -1564,6 +1567,7 @@
 				552EE5AC22EEC20400D7F0CB /* MemoryOtherDataType.m in Sources */,
 				555B8BC12564F2CE00032179 /* Category.m in Sources */,
 				5519450A2570957900ACD0DD /* CreatingStrings.m in Sources */,
+				551945682574F9D400ACD0DD /* NSAttributedString(富文本).m in Sources */,
 				551945462570F06F00ACD0DD /* StringPaths.m in Sources */,
 				555B8BA52564F27400032179 /* Scope.c in Sources */,
 				557C93FE256E4C84003DE7C3 /* NSCopyingX.m in Sources */,
@@ -1574,7 +1578,7 @@
 				5548772B22EFD22100ECAB8F /* selfSuper.m in Sources */,
 				555B8B9E2564F27400032179 /* functionType.c in Sources */,
 				555B8BA82564F27400032179 /* Operator.c in Sources */,
-				551945182570A4D400ACD0DD /* IdentifyingandComparingStrings.m in Sources */,
+				551945182570A4D400ACD0DD /* ComparingStrings.m in Sources */,
 				551945402570E44C00ACD0DD /* StringNumericValues.m in Sources */,
 				550906B3256B9CF2001739E0 /* objCType.m in Sources */,
 			);

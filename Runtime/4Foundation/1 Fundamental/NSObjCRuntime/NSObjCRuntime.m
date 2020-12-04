@@ -17,13 +17,13 @@
  };
  
  typedef NS_OPTIONS(NSUInteger, NSEnumerationOptions) {
-     NSEnumerationConcurrent = (1UL << 0),
-     NSEnumerationReverse = (1UL << 1),
+     NSEnumerationConcurrent = (1UL << 0),  多线程同时进行，不能保证顺序
+     NSEnumerationReverse = (1UL << 1),单线程反顺序进行
  };
 
  typedef NS_OPTIONS(NSUInteger, NSSortOptions) {
-     NSSortConcurrent = (1UL << 0),
-     NSSortStable = (1UL << 4),
+     NSSortConcurrent = (1UL << 0), 同时  是高效的但不稳定的排序算法,例如:快速排序
+     NSSortStable = (1UL << 4),稳定 是稳定的排序算法,例如:冒泡排序 插入排序
  };
 
  

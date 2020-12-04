@@ -6,9 +6,9 @@
 //  Copyright © 2020 xax. All rights reserved.
 //
 
-#import "IdentifyingandComparingStrings.h"
+#import "ComparingStrings.h"
 
-@implementation IdentifyingandComparingStrings
+@implementation ComparingStrings
 //https://www.jianshu.com/p/64fbd9b62495
 + (void)load{
     

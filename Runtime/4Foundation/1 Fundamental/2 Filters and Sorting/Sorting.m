@@ -7,13 +7,7 @@
 //
 
 #import "Sorting.h"
-/*
- typedef NS_CLOSED_ENUM(NSInteger, NSComparisonResult) {
-     NSOrderedAscending = -1L, 前者小于后置
-     NSOrderedSame, 二者相等
-     NSOrderedDescending 前者大于后者
- };
- */
+
 @implementation Sorting
 + (void)load{
 }

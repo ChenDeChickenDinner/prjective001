@@ -75,6 +75,9 @@
          */
 
     }
+    { // 用于将值从一种表示形式转换为另一种表示形式的抽象类。  CoreData
+        NSValueTransformer *ob = [[NSValueTransformer alloc]init];
+    }
 }
 
 

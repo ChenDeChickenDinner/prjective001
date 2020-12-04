@@ -1,8 +1,8 @@
 //
-//  IdentifyingandComparingStrings.h
+//  NSAttributedString(富文本).h
 //  Runtime
 //
-//  Created by xs on 2020/11/27.
+//  Created by xs on 2020/11/30.
 //  Copyright © 2020 xax. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IdentifyingandComparingStrings : NSObject
+@interface NSAttributedString_____ : NSObject
 
 @end
 
