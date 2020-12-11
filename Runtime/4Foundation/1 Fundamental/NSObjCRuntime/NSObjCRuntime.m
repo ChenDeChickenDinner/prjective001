@@ -26,17 +26,17 @@
      NSSortStable = (1UL << 4),稳定 是稳定的排序算法,例如:冒泡排序 插入排序
  };
 
- 
+ typedef NS_OPTIONS(NSUInteger, NSBinarySearchingOptions) {
+     NSBinarySearchingFirstEqual = (1UL << 8),
+     NSBinarySearchingLastEqual = (1UL << 9),
+     NSBinarySearchingInsertionIndex = (1UL << 10),
+ };
  */
 
 
 @implementation NSObjCRuntime
 + (void)load{
     
-
-    NSInteger notFound = NSNotFound;
-    
-    NSComparisonResult resule = NSOrderedAscending;
 
 }
 @end

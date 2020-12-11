@@ -91,7 +91,7 @@
 + (void)test3{
     {
         NSNumber *num1 = [NSNumber numberWithInt:10];
-        NSNumber *num2 = [[NSNumber alloc]init];
+        NSNumber *num2 = [NSNumber numberWithInt:10];
         
         /*
          1.2个Number做比较 大小还是一样，2个对象不能为空否则会崩溃

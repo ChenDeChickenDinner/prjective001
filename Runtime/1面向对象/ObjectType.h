@@ -1,8 +1,8 @@
 //
-//  NSDictionaryC.h
+//  ObjectType.h
 //  Runtime
 //
-//  Created by xs on 2020/12/4.
+//  Created by xs on 2020/12/7.
 //  Copyright © 2020 xax. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSDictionaryC : NSObject
+@interface ObjectType : NSObject
 
 @end
 

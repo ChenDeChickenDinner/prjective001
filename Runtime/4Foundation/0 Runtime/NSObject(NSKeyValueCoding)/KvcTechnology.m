@@ -34,4 +34,17 @@
     int age2 = [[value valueForKeyPath:@"age"] intValue];
 
 }
+- (void)arrayKvc{
+
+//    - setValue:forKey:
+//    - valueForKey:
+ 
+}
+
+- (void)setKvc{
+
+//    - setValue:forKey:
+//    - valueForKey:
+ 
+}
 @end

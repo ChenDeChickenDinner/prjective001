@@ -9,19 +9,31 @@
 #import "Numbers.h"
 
 @implementation Numbers
-
++ (void)load{
+    [self test];
+}
 /* runtime里面定义的
  1. typedef long NSInteger;
  2. typedef unsigned long NSUInteger;
+ 
+ static const NSInteger NSNotFound = NSIntegerMax;
+
  */
 + (void)test{
  
     NSInteger value1 = 10;
-    
-    value1 = NSIntegerMin;
-    value1 = NSIntegerMax;
-
     NSUInteger value2 = 10;
+
+    NSInteger valueMin = NSIntegerMin;// -9223372036854775808
+    NSInteger valueMax = NSIntegerMax; // 9223372036854775807
+    NSInteger valueNotFound = NSNotFound; //9223372036854775807
+
+    NSUInteger valueUMax = NSUIntegerMax; // -1
+    NSLog(@"valueMin = %ld",(long)NSIntegerMin);
+    NSLog(@"valueMax = %ld",(long)NSIntegerMax);
+    NSLog(@"valueNotFound = %ld",(long)NSNotFound);
+    NSLog(@"valueUMax = %ld",NSUIntegerMax);
+    NSLog(@"----------");
 }
 
 /** CoreGraphics/CGBase.h

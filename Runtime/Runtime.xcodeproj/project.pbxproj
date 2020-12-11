@@ -91,7 +91,16 @@
 		5582A5FD256F551B005DF600 /* Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A5FC256F551B005DF600 /* Sorting.m */; };
 		5582A605256F870D005DF600 /* NSObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A604256F870D005DF600 /* NSObjCRuntime.m */; };
 		5582A613256F939C005DF600 /* Unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5582A612256F939C005DF600 /* Unicode.m */; };
-		558FDF942579C1EC00DDCD35 /* NSDictionaryC.m in Sources */ = {isa = PBXBuildFile; fileRef = 558FDF932579C1EC00DDCD35 /* NSDictionaryC.m */; };
+		558FDFA2257E10A900DDCD35 /* ObjectType.m in Sources */ = {isa = PBXBuildFile; fileRef = 558FDFA1257E10A900DDCD35 /* ObjectType.m */; };
+		558FDFA8257E155C00DDCD35 /* IsEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 558FDFA7257E155C00DDCD35 /* IsEqual.m */; };
+		55B3B87F2581EF2B00FDED62 /* NSPredicatec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B87E2581EF2B00FDED62 /* NSPredicatec.m */; };
+		55B3B8842581F85E00FDED62 /* 0CollectionsEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8832581F85E00FDED62 /* 0CollectionsEnum.m */; };
+		55B3B8BA25830C0400FDED62 /* NSIndexPath_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8B925830C0400FDED62 /* NSIndexPath_.m */; };
+		55B3B8BF25830E2A00FDED62 /* NSIndexSet_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8BE25830E2A00FDED62 /* NSIndexSet_.m */; };
+		55B3B8C6258314FA00FDED62 /* NSSet_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8C5258314FA00FDED62 /* NSSet_.m */; };
+		55B3B8CE258319B700FDED62 /* NSDictionary_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8CD258319B700FDED62 /* NSDictionary_.m */; };
+		55B3B8D52583430C00FDED62 /* NSArray_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8D42583430C00FDED62 /* NSArray_.m */; };
+		55B3B8DD25835B6200FDED62 /* Compare_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8DC25835B6200FDED62 /* Compare_.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -285,9 +294,28 @@
 		5582A604256F870D005DF600 /* NSObjCRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjCRuntime.m; sourceTree = "<group>"; };
 		5582A611256F939C005DF600 /* Unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unicode.h; sourceTree = "<group>"; };
 		5582A612256F939C005DF600 /* Unicode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unicode.m; sourceTree = "<group>"; };
-		558FDF922579C1EC00DDCD35 /* NSDictionaryC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDictionaryC.h; sourceTree = "<group>"; };
-		558FDF932579C1EC00DDCD35 /* NSDictionaryC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryC.m; sourceTree = "<group>"; };
 		558FDF97257A258E00DDCD35 /* writeDict.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = writeDict.plist; sourceTree = "<group>"; };
+		558FDF9E257DF43F00DDCD35 /* arrayPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = arrayPlist.plist; sourceTree = "<group>"; };
+		558FDFA0257E10A900DDCD35 /* ObjectType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectType.h; sourceTree = "<group>"; };
+		558FDFA1257E10A900DDCD35 /* ObjectType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectType.m; sourceTree = "<group>"; };
+		558FDFA6257E155C00DDCD35 /* IsEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsEqual.h; sourceTree = "<group>"; };
+		558FDFA7257E155C00DDCD35 /* IsEqual.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IsEqual.m; sourceTree = "<group>"; };
+		55B3B87D2581EF2B00FDED62 /* NSPredicatec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSPredicatec.h; sourceTree = "<group>"; };
+		55B3B87E2581EF2B00FDED62 /* NSPredicatec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPredicatec.m; sourceTree = "<group>"; };
+		55B3B8822581F85E00FDED62 /* 0CollectionsEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 0CollectionsEnum.h; sourceTree = "<group>"; };
+		55B3B8832581F85E00FDED62 /* 0CollectionsEnum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 0CollectionsEnum.m; sourceTree = "<group>"; };
+		55B3B8B825830C0400FDED62 /* NSIndexPath_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSIndexPath_.h; sourceTree = "<group>"; };
+		55B3B8B925830C0400FDED62 /* NSIndexPath_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSIndexPath_.m; sourceTree = "<group>"; };
+		55B3B8BD25830E2A00FDED62 /* NSIndexSet_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSIndexSet_.h; sourceTree = "<group>"; };
+		55B3B8BE25830E2A00FDED62 /* NSIndexSet_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSIndexSet_.m; sourceTree = "<group>"; };
+		55B3B8C4258314FA00FDED62 /* NSSet_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSet_.h; sourceTree = "<group>"; };
+		55B3B8C5258314FA00FDED62 /* NSSet_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSet_.m; sourceTree = "<group>"; };
+		55B3B8CC258319B700FDED62 /* NSDictionary_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDictionary_.h; sourceTree = "<group>"; };
+		55B3B8CD258319B700FDED62 /* NSDictionary_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_.m; sourceTree = "<group>"; };
+		55B3B8D32583430C00FDED62 /* NSArray_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArray_.h; sourceTree = "<group>"; };
+		55B3B8D42583430C00FDED62 /* NSArray_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArray_.m; sourceTree = "<group>"; };
+		55B3B8DB25835B6200FDED62 /* Compare_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Compare_.h; sourceTree = "<group>"; };
+		55B3B8DC25835B6200FDED62 /* Compare_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Compare_.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,14 +396,13 @@
 		5509077C256CE861001739E0 /* 3Collections */ = {
 			isa = PBXGroup;
 			children = (
-				551945892575D9A400ACD0DD /* Iteration(迭代) */,
-				551945832575D6EA00ACD0DD /* 1Dict */,
-				551945822575D6E400ACD0DD /* 2Array */,
-				551945842575D70700ACD0DD /* 3Set */,
-				551945852575D73100ACD0DD /* 4Indexes */,
-				551945872575D92200ACD0DD /* NSCache */,
-				551945862575D8FA00ACD0DD /* OrderedSet */,
-				551945882575D92B00ACD0DD /* Table */,
+				55B3B8812581F7F100FDED62 /* 1集合相关枚举 */,
+				55B3B8D9258350B600FDED62 /* 2对象比对(Compare) */,
+				55B3B8B225830BB200FDED62 /* 3索引路径 */,
+				55B3B8BC25830E1400FDED62 /* 4索引集合 */,
+				55B3B8C32583148C00FDED62 /* 5无序唯一对象集合(NSSet) */,
+				55B3B8CB258319A100FDED62 /* 6键值对集合(NSDictionary) */,
+				55B3B8D2258342E400FDED62 /* 7有序集合(NSArray) */,
 			);
 			path = 3Collections;
 			sourceTree = "<group>";
@@ -406,6 +433,8 @@
 		55090780256CE9AC001739E0 /* 1 Fundamental */ = {
 			isa = PBXGroup;
 			children = (
+				55B3B8E325835DBE00FDED62 /* 数据对象探究 */,
+				55B3B8AF25821B4800FDED62 /* 数据转换 */,
 				5582A602256F86FA005DF600 /* NSObjCRuntime */,
 				5509077F256CE915001739E0 /* 2 Filters and Sorting */,
 				55090686256B7D2E001739E0 /* 1BasicValues */,
@@ -587,6 +616,7 @@
 		5509079C256CF902001739E0 /* 0 Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				558FDFA5257E148F00DDCD35 /* copy */,
 				5509079E256CFC03001739E0 /* NSObject基类 */,
 				557C9404256E4D11003DE7C3 /* NSObject(Pr) */,
 				552EE55022EEBEE300D7F0CB /* NSObject(NSKeyValueCoding) */,
@@ -736,65 +766,6 @@
 			path = "0编码比较规则枚举";
 			sourceTree = "<group>";
 		};
-		551945822575D6E400ACD0DD /* 2Array */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 2Array;
-			sourceTree = "<group>";
-		};
-		551945832575D6EA00ACD0DD /* 1Dict */ = {
-			isa = PBXGroup;
-			children = (
-				558FDF922579C1EC00DDCD35 /* NSDictionaryC.h */,
-				558FDF932579C1EC00DDCD35 /* NSDictionaryC.m */,
-				558FDF97257A258E00DDCD35 /* writeDict.plist */,
-			);
-			path = 1Dict;
-			sourceTree = "<group>";
-		};
-		551945842575D70700ACD0DD /* 3Set */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 3Set;
-			sourceTree = "<group>";
-		};
-		551945852575D73100ACD0DD /* 4Indexes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 4Indexes;
-			sourceTree = "<group>";
-		};
-		551945862575D8FA00ACD0DD /* OrderedSet */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OrderedSet;
-			sourceTree = "<group>";
-		};
-		551945872575D92200ACD0DD /* NSCache */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NSCache;
-			sourceTree = "<group>";
-		};
-		551945882575D92B00ACD0DD /* Table */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Table;
-			sourceTree = "<group>";
-		};
-		551945892575D9A400ACD0DD /* Iteration(迭代) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Iteration(迭代)";
-			sourceTree = "<group>";
-		};
 		552EE4D022E97CB600D7F0CB = {
 			isa = PBXGroup;
 			children = (
@@ -871,6 +842,8 @@
 				555B8BB52564F28400032179 /* Nullable.m */,
 				555B8BAC2564F28400032179 /* NIL.h */,
 				555B8BB22564F28400032179 /* NIL.m */,
+				558FDFA0257E10A900DDCD35 /* ObjectType.h */,
+				558FDFA1257E10A900DDCD35 /* ObjectType.m */,
 			);
 			path = "1面向对象";
 			sourceTree = "<group>";
@@ -1440,6 +1413,96 @@
 			path = "2Binary Data and URLs";
 			sourceTree = "<group>";
 		};
+		558FDFA5257E148F00DDCD35 /* copy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = copy;
+			sourceTree = "<group>";
+		};
+		55B3B8812581F7F100FDED62 /* 1集合相关枚举 */ = {
+			isa = PBXGroup;
+			children = (
+				55B3B8822581F85E00FDED62 /* 0CollectionsEnum.h */,
+				55B3B8832581F85E00FDED62 /* 0CollectionsEnum.m */,
+			);
+			path = "1集合相关枚举";
+			sourceTree = "<group>";
+		};
+		55B3B8AF25821B4800FDED62 /* 数据转换 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "数据转换";
+			sourceTree = "<group>";
+		};
+		55B3B8B225830BB200FDED62 /* 3索引路径 */ = {
+			isa = PBXGroup;
+			children = (
+				55B3B8B825830C0400FDED62 /* NSIndexPath_.h */,
+				55B3B8B925830C0400FDED62 /* NSIndexPath_.m */,
+			);
+			path = "3索引路径";
+			sourceTree = "<group>";
+		};
+		55B3B8BC25830E1400FDED62 /* 4索引集合 */ = {
+			isa = PBXGroup;
+			children = (
+				55B3B8BD25830E2A00FDED62 /* NSIndexSet_.h */,
+				55B3B8BE25830E2A00FDED62 /* NSIndexSet_.m */,
+			);
+			path = "4索引集合";
+			sourceTree = "<group>";
+		};
+		55B3B8C32583148C00FDED62 /* 5无序唯一对象集合(NSSet) */ = {
+			isa = PBXGroup;
+			children = (
+				55B3B8C4258314FA00FDED62 /* NSSet_.h */,
+				55B3B8C5258314FA00FDED62 /* NSSet_.m */,
+			);
+			path = "5无序唯一对象集合(NSSet)";
+			sourceTree = "<group>";
+		};
+		55B3B8CB258319A100FDED62 /* 6键值对集合(NSDictionary) */ = {
+			isa = PBXGroup;
+			children = (
+				55B3B8CC258319B700FDED62 /* NSDictionary_.h */,
+				55B3B8CD258319B700FDED62 /* NSDictionary_.m */,
+				558FDF97257A258E00DDCD35 /* writeDict.plist */,
+			);
+			path = "6键值对集合(NSDictionary)";
+			sourceTree = "<group>";
+		};
+		55B3B8D2258342E400FDED62 /* 7有序集合(NSArray) */ = {
+			isa = PBXGroup;
+			children = (
+				55B3B8D32583430C00FDED62 /* NSArray_.h */,
+				55B3B8D42583430C00FDED62 /* NSArray_.m */,
+				55B3B87D2581EF2B00FDED62 /* NSPredicatec.h */,
+				55B3B87E2581EF2B00FDED62 /* NSPredicatec.m */,
+				558FDF9E257DF43F00DDCD35 /* arrayPlist.plist */,
+			);
+			path = "7有序集合(NSArray)";
+			sourceTree = "<group>";
+		};
+		55B3B8D9258350B600FDED62 /* 2对象比对(Compare) */ = {
+			isa = PBXGroup;
+			children = (
+				558FDFA6257E155C00DDCD35 /* IsEqual.h */,
+				558FDFA7257E155C00DDCD35 /* IsEqual.m */,
+				55B3B8DB25835B6200FDED62 /* Compare_.h */,
+				55B3B8DC25835B6200FDED62 /* Compare_.m */,
+			);
+			path = "2对象比对(Compare)";
+			sourceTree = "<group>";
+		};
+		55B3B8E325835DBE00FDED62 /* 数据对象探究 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "数据对象探究";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1502,7 +1565,6 @@
 				555B8BB62564F28400032179 /* Protocol.m in Sources */,
 				555B8DAE2567897200032179 /* Class.m in Sources */,
 				552EE4F822E990FD00D7F0CB /* category_t.m in Sources */,
-				558FDF942579C1EC00DDCD35 /* NSDictionaryC.m in Sources */,
 				551945102570A38F00ACD0DD /* GettingLength.m in Sources */,
 				552EE5B122EEC20400D7F0CB /* Person.m in Sources */,
 				551945142570A49000ACD0DD /* GettingCharactersandBytes.m in Sources */,
@@ -1520,12 +1582,17 @@
 				557C9407256E4D20003DE7C3 /* NSObject(Pr).m in Sources */,
 				555B8BA42564F27400032179 /* Static.c in Sources */,
 				552EE5AB22EEC20400D7F0CB /* Autoreleasepool.m in Sources */,
+				55B3B87F2581EF2B00FDED62 /* NSPredicatec.m in Sources */,
+				55B3B8D52583430C00FDED62 /* NSArray_.m in Sources */,
 				552EE4DD22E97CB600D7F0CB /* main.m in Sources */,
 				555B8B9F2564F27400032179 /* DataType.c in Sources */,
 				555B8BA62564F27400032179 /* Const.c in Sources */,
+				558FDFA2257E10A900DDCD35 /* ObjectType.m in Sources */,
 				557C9412256E4F07003DE7C3 /* Numbers.m in Sources */,
 				552EE5AF22EEC20400D7F0CB /* MemoryMangeARC.m in Sources */,
+				55B3B8DD25835B6200FDED62 /* Compare_.m in Sources */,
 				552EE5A222EEC20400D7F0CB /* GDCThread.m in Sources */,
+				55B3B8842581F85E00FDED62 /* 0CollectionsEnum.m in Sources */,
 				552EE4EB22E9898E00D7F0CB /* method_t.m in Sources */,
 				5582A5FD256F551B005DF600 /* Sorting.m in Sources */,
 				555B8BA72564F27400032179 /* Typedef.c in Sources */,
@@ -1537,12 +1604,14 @@
 				552EE5A622EEC20400D7F0CB /* XSPermenantThread.m in Sources */,
 				5582A613256F939C005DF600 /* Unicode.m in Sources */,
 				552EE5BA22EEC21900D7F0CB /* KvcTechnology.m in Sources */,
+				55B3B8BA25830C0400FDED62 /* NSIndexPath_.m in Sources */,
 				552EE5A422EEC20400D7F0CB /* CXOperation.m in Sources */,
 				555B8BBB2564F28400032179 /* Nullable.m in Sources */,
 				552EE5B322EEC20400D7F0CB /* RunLoopProcess.m in Sources */,
 				552EE5A522EEC20400D7F0CB /* XSThreadSecurity.m in Sources */,
 				551945522574CF6800ACD0DD /* NSRegularExpression(正则).m in Sources */,
 				552EE5CA22EEC23F00D7F0CB /* IvarRelated.m in Sources */,
+				558FDFA8257E155C00DDCD35 /* IsEqual.m in Sources */,
 				550907D1256E2CEF001739E0 /* SharedInstance.m in Sources */,
 				555B8BA22564F27400032179 /* Pretreatment.c in Sources */,
 				555B8BA32564F27400032179 /* Macro.c in Sources */,
@@ -1550,6 +1619,7 @@
 				551945602574F98400ACD0DD /* Characters(字符集).m in Sources */,
 				552EE4E522E97FCE00D7F0CB /* ISA.m in Sources */,
 				551945202570A58000ACD0DD /* ChangingCase.m in Sources */,
+				55B3B8CE258319B700FDED62 /* NSDictionary_.m in Sources */,
 				552EE5CB22EEC23F00D7F0CB /* FuncRelated.m in Sources */,
 				5548772822EFCBDE00ECAB8F /* KvoTechnology.m in Sources */,
 				552EE5A122EEC20400D7F0CB /* XCNSThread.m in Sources */,
@@ -1562,7 +1632,9 @@
 				552EE5B422EEC20400D7F0CB /* RunLoopTechnology.m in Sources */,
 				5582A5F2256F3F46005DF600 /* NSValue(Wrappers).m in Sources */,
 				555B8BA02564F27400032179 /* PointerType.c in Sources */,
+				55B3B8BF25830E2A00FDED62 /* NSIndexSet_.m in Sources */,
 				555B8BB92564F28400032179 /* NIL.m in Sources */,
+				55B3B8C6258314FA00FDED62 /* NSSet_.m in Sources */,
 				5519451C2570A54800ACD0DD /* AppendingString.m in Sources */,
 				552EE5AC22EEC20400D7F0CB /* MemoryOtherDataType.m in Sources */,
 				555B8BC12564F2CE00032179 /* Category.m in Sources */,

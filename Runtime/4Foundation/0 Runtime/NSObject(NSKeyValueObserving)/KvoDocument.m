@@ -71,4 +71,23 @@ c.其它方法
 - (void)dealloc{
     [self.value removeObserver:self forKeyPath:@"age"];
 }
+
+- (void)arrayKvo{
+//https://www.jianshu.com/p/fb3c1563bd72
+//- addObserver:forKeyPath:options:context:
+//- removeObserver:forKeyPath:
+//- removeObserver:forKeyPath:context:
+//- removeObserver:fromObjectsAtIndexes:forKeyPath:context:
+//
+//- addObserver:toObjectsAtIndexes:forKeyPath:options:context:
+//
+//- removeObserver:fromObjectsAtIndexes:forKeyPath:
+
+}
+- (void)setKvo{
+//    - addObserver:forKeyPath:options:context:
+//    - removeObserver:forKeyPath:context:
+//    - removeObserver:forKeyPath:
+
+}
 @end
