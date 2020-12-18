@@ -115,9 +115,9 @@
     }
     
     {
-        [array replaceObjectAtIndex:0 withObject:@"1"];
-        [array replaceObjectsAtIndexes:set withObjects:@[@"2",@"3"]];
-        [array replaceObjectsInRange:NSMakeRange(3, 1) withObjectsFromArray:@[@"4"]];
+//        [array replaceObjectAtIndex:0 withObject:@"1"];
+//        [array replaceObjectsAtIndexes:set withObjects:@[@"2",@"3"]];
+//        [array replaceObjectsInRange:NSMakeRange(3, 1) withObjectsFromArray:@[@"4"]];
 
     }
     {

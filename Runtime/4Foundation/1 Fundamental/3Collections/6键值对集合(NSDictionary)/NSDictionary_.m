@@ -31,7 +31,7 @@
         [dict setObject:@"value" forKey:value];
         [dict setObject:@"str" forKey:str];
         [dict setObject:@"date" forKey:date];
-        [dict setObject:@"data" forKey:data];
+//        [dict setObject:@"data" forKey:data];
         [dict setObject:@"url" forKey:url];
         [dict setObject:@"" forKey:@""]; // 空字符串也是key
 

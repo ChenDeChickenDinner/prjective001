@@ -34,7 +34,7 @@
              [set addObject:value];
              [set addObject:str];
              [set addObject:date];
-             [set addObject:data];
+//             [set addObject:data];
              [set addObject:url];
              [set addObject:ob];
          }
@@ -42,7 +42,7 @@
          
          
          [set addObject:value2];
-         [set addObject:data2];
+//         [set addObject:data2];
          [set addObject:url2];
          NSLog(@"set = %@",set);// 虽然地址不同，但构造数据相同 仍然会添加无效 还是 7个，下面的三个好像都没添加进去
 
