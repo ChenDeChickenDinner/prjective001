@@ -9,14 +9,132 @@
 #import "IsEqual.h"
 
 @implementation IsEqual
-+ (void)load{
-    [self axax];
+
+#pragma warning -空数据
+#pragma warning -空数据真假判断
+#pragma warning -数据表现
+
+#pragma warning -地址比对
+
+#pragma warning -isEqual比对
++ (void)NSNumber{
+    Byte byteArray[] = {1,22,44};
     
-    /*数据类型
-     1.值类型
-     2.包装值的对象类型
-     3.不含值的纯粹对象类型
-     */
+    NSObject *ob = nil;
+    NSLog(@"p = %p,ob = %@",ob,ob); // p = 0x0,ob = (null)
+
+    NSNumber *num = [[NSNumber alloc]init];
+    NSLog(@"p = %p,num = %@",num,num); //  p = 0x0,num = (null)
+    
+    NSValue *val = [[NSValue alloc]init];
+    NSLog(@"p = %p,num = %@",val,val);// p = 0x0,num = (null)
+    
+    NSString *str = [[NSString alloc]init];
+    NSLog(@"p = %p,num = %@",str,str);// p = 0x7fff85eaa288,num = 空字符串
+    
+    NSDate *date = [[NSDate alloc]init];
+    NSLog(@"p = %p,num = %@",date,date);// p = 0x4d875790d0fff49,num = Mon Dec 21 16:52:54 2020
+    
+    NSData *data  = [[NSData alloc]init];
+    NSLog(@"p = %p,num = %@",data,data);// p = 0x100615cd0,num = {length = 0, bytes = 0x}
+    
+    NSURL *url = [[NSURL alloc]init];
+    NSLog(@"p = %p,num = %@",url,url);// p = 0x10060edc0,num = 空字符串
+    
+    NSIndexPath *indexPath = [[NSIndexPath alloc]init];
+    NSLog(@"p = %p,num = %@",indexPath,indexPath);//p = 0x29f4f1b63faaee3d,num = <NSIndexPath: 0x29f4f1b63faaee3d> {length = 0, path = }
+    
+    NSIndexSet *indexSet = [[NSIndexSet alloc]init];
+    NSLog(@"p = %p,num = %@",indexSet,indexSet);//p = 0x1020549a0,num = <_NSCachedIndexSet: 0x1020549a0>(no indexes)
+    
+    NSDictionary *dict = [[NSDictionary alloc]init];
+    NSLog(@"p = %p,num = %@",dict,dict);//p = 0x7fff858e48e0,num = {}
+    
+    NSArray *array = [[NSArray alloc]init];
+    NSLog(@"p = %p,num = %@",array,array);//p = 0x7fff858dd460,num = ()
+    
+    {
+        if ([[NSNumber alloc]init]) {
+            NSLog(@"不成立");
+        }
+        if ([[NSValue alloc]init]) {
+            NSLog(@"不成立");
+        }
+        if ([[NSString alloc]init]) {
+            NSLog(@"成立");
+        }
+        if ([[NSDate alloc]init]) {
+            NSLog(@"成立");
+        }
+        if ([[NSData alloc]init]) {
+            NSLog(@"成立");
+        }
+        if ([[NSURL alloc]init]) {
+            NSLog(@"成立");
+        }
+        if ([[NSIndexPath alloc]init]) {
+            NSLog(@"成立");
+        }
+        if ([[NSIndexSet alloc]init]) {
+            NSLog(@"成立");
+        }
+        if ([[NSDictionary alloc]init]) {
+            NSLog(@"成立");
+        }
+        if ([[NSArray alloc]init]) {
+            NSLog(@"成立");
+        }
+
+    }
+    
+    {
+        num  = [NSNumber numberWithInt:10];
+        NSLog(@"p = %p,num = %@",num,num);//   p = 0x29f4f1b63faae473,num = 10
+        
+
+        val = [NSValue valueWithPoint:NSMakePoint(0, 0)];
+        NSLog(@"p = %p,num = %@",val,val);// p = 0x1005749f0,num = NSPoint: {0, 0}
+        
+
+        str = [NSString stringWithFormat:@"123"];
+        NSLog(@"p = %p,num = %@",str,str);// p = 0x29f4f1b60c98df61,num = 123
+        
+
+        date = [NSDate dateWithTimeIntervalSince1970:0];
+        NSLog(@"p = %p,num = %@",date,date);// p = 0x698e1b553023599d,num = Thu Jan  1 08:00:00 1970
+        
+      
+        data = [NSData dataWithBytes:byteArray length:sizeof(byteArray)/sizeof(Byte)];
+        NSLog(@"p = %p,num = %@",data,data);// p = 0x1020468b0,num = {length = 3, bytes = 0x01162c}
+        
+
+        url = [NSURL URLWithString:@"https://www.baidu.com"];
+        NSLog(@"p = %p,num = %@",url,url);// p = 0x10204c020,num = https://www.baidu.com
+        
+
+        indexPath = [NSIndexPath indexPathWithIndex:0];
+        NSLog(@"p = %p,num = %@",indexPath,indexPath);//p = 0x29f4f1b63faaeebd,num = <NSIndexPath: 0x29f4f1b63faaeebd> {length = 1, path = 0}
+        
+     
+        indexSet = [NSIndexSet indexSetWithIndex:0];
+        NSLog(@"p = %p,num = %@",indexSet,indexSet);//p = 0x102054790,num = <_NSCachedIndexSet: 0x102054790>[number of indexes: 1 (in 1 ranges), indexes: (0)]
+        
+
+        dict = [NSDictionary dictionaryWithObject:@"value" forKey:@"key"];
+        NSLog(@"p = %p,num = %@",dict,dict);//p = 0x100575480,num = {key = value;}
+        
+      
+        array = [NSArray arrayWithObject:@1];
+        NSLog(@"p = %p,num = %@",array,array);//p = 0x10204a940,num = (1)
+    }
+
+    
+}
+
++ (void)load{
+  
+    
+   
     
     { // 数值类的变量比较 比对的完全是数值，以下都成立
         int intValue = 10;
@@ -69,37 +187,11 @@
             NSLog(@"");//成立
         }
         
-        
-        NSNumber *numDouble1 = [NSNumber numberWithDouble:10.0];
-        NSNumber *numDouble2 = [NSNumber numberWithDouble:10.0];
-        NSLog(@"%p,%p",numDouble1,numDouble2); // 地址相同 但与 numInt1 numInt2 不相同
-        NSLog(@"%lu,%lu",(unsigned long)numDouble1.hash,(unsigned long)numDouble2.hash); // hash相同
-
-        if (numDouble1 == numDouble2) {
-            NSLog(@"");//成立
-        }
-        
-        
         if (numInt1 == numfloat1) {
             NSLog(@"");//不成立(地址不相同)
         }
-        if (numfloat1 == numDouble1) {
-            NSLog(@"");//不成立(地址不相同)
-        }
         
-        if ([numInt1 isEqual:numInt2]) {
-            NSLog(@""); //成立 (hash相同)
-        }
-        if ([numInt1 isEqualTo:numInt2]) {
-            NSLog(@""); //成立 (hash相同)
-        }
-        if ([numInt1 isEqualToNumber:numInt2]) {
-            NSLog(@""); //成立 (hash相同)
-        }
         if ([numInt1 isEqual:numfloat1]) {
-            NSLog(@""); //成立 (hash相同)
-        }
-        if ([numInt1 isEqualTo:numfloat1]) {
             NSLog(@""); //成立 (hash相同)
         }
         if ([numInt1 isEqualToNumber:numfloat1]) {
@@ -134,7 +226,6 @@
 
         if (date1 == date2) {
             NSLog(@""); //成立
-
         }
         if ([date1 isEqual:date2]) {
             NSLog(@""); //成立
@@ -160,9 +251,6 @@
         }
  
         if ([value1 isEqual:value2]) {
-            NSLog(@""); //成立
-        }
-        if ([value1 isEqualTo:value2]) {
             NSLog(@""); //成立
         }
         if ([value1 isEqualToValue:value2]) {
@@ -319,49 +407,5 @@
     }
     
 }
-+ (void)axax{
-    NSNumber *num = [[NSNumber alloc]init];
-    NSValue *value = [[NSValue alloc]init];
-    
-    
-    NSString *str = [[NSString alloc]init];
-    NSDate *date = [[NSDate alloc]init];
-    NSData *data = [[NSData alloc]init];
-    NSURL *url = [[NSURL alloc]init];
-    
-    NSDictionary *dict = [[NSDictionary alloc]init];
-    NSArray *array = [[NSArray alloc]init];
-    NSIndexSet *indexSet = [[NSIndexSet alloc]init];
-    NSIndexPath *indexPath = [[NSIndexPath alloc]init];
 
-    if (num) {
-        NSLog(@"%@",num);
-    }
-    if (str) {
-        NSLog(@"%@",str);
-    }
-    if (value) {
-        NSLog(@"%@",value);
-    }
-    if (date) {
-        NSLog(@"%@",date);
-    }
-    if (data) {
-        NSLog(@"%@",data);
-    }
-    if (url) {
-        NSLog(@"%@",url);
-    }
-    if (array) {
-        NSLog(@"%@",array);
-    }
-    if (indexSet) {
-        NSLog(@"%@",indexSet);
-    }
-    if (indexPath) {
-        NSLog(@"%@",indexPath);
-    }
-
- 
-}
 @end

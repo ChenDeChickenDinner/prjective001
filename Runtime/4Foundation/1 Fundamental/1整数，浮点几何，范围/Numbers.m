@@ -10,14 +10,13 @@
 
 @implementation Numbers
 + (void)load{
-    [self test];
+
 }
-/* runtime里面定义的
+#pragma warning -整数
+/*
  1. typedef long NSInteger;
  2. typedef unsigned long NSUInteger;
- 
- static const NSInteger NSNotFound = NSIntegerMax;
-
+ 3. static const NSInteger NSNotFound = NSIntegerMax;
  */
 + (void)test{
  
@@ -36,17 +35,16 @@
     NSLog(@"----------");
 }
 
-/** CoreGraphics/CGBase.h
-3. CGFloat = float/double;也就是说在64位系统下,CGFLOAT是double类型,32位系统下是float类型.
- */
-+ (void)test1{
+
+#pragma warning -浮点几何
+
++ (void)test2{
+    
     CGFloat value_CGfloat = 10.0;
     CGFloat value_Min = CGFLOAT_MIN;
     CGFloat value_Max = CGFLOAT_MAX;
-}
-#pragma warning -CoreGraphics/CGGeometry.h( CGPoint  CGSize  CGRect CGRectEdge)
-
-+ (void)test2{
+    
+    
     CGPoint value_point = CGPointZero;
     value_point = CGPointMake(10, 20);
 
@@ -58,12 +56,13 @@
      空矩形 CGRectNull; 取两个不相交矩形的相交区域会返回CGRectNull,一个矩形与CGRectNull的并集为原矩形。
      使用CGRectIsNull判断一个矩形是否为CGRectNull。CGRectIsEmpty对CGRectZero和CGRectNull都返回true
      */
-    CGRect value_rect = CGRectNull;
-    value_rect = CGRectZero;
-    value_rect = CGRectMake(0, 0, 10, 20);
-
+    CGRect value_rect1 = CGRectNull;
     //无限矩形 CGRectInfinite 具有无限区域的矩形
-    CGRect value_rectInfinite = CGRectInfinite;
+    CGRect value_rect2 = CGRectInfinite;
+    value_rect1 = CGRectZero;
+    value_rect1 = CGRectMake(0, 0, 10, 20);
+
+  
 
 
 
@@ -116,18 +115,7 @@
     value_rectEdge = CGRectMinYEdge;
     value_rectEdge = CGRectMaxYEdge;
 }
-#pragma warning - Foundation/NSGeometry.h(NSPoint  NSSize  NSRect NSRectEdge NSEdgeInsets)
 
-+ (void)test3{
-    NSPoint point  = NSMakePoint(0, 0);
-    NSSize size = NSMakeSize(0, 0);
-    NSRect rect = NSMakeRect(0, 0, 0, 0);
-    
-    NSRectEdge edge = NSRectEdgeMinX;
-    
-    //边缘
-    NSEdgeInsets edgeInsets = NSEdgeInsetsMake(0, 0, 0, 0);
-}
 
 #pragma warning -Foundation/NSRange.h
 /*用来表示事物的一个范围

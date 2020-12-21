@@ -6,35 +6,46 @@
 //  Copyright © 2020 xax. All rights reserved.
 //
 
-#import "NSNumber(Wrappers).h"
+#import "NSNumber_.h"
 
 @implementation NSNumber_Wrappers_
 + (void)load{
-    [self test1];
-}
-#pragma warning -Creating an NSNumber Object
-+ (void)test1{
-    
+   
 
     {
-        NSNumber *num1 = @(10);
-        NSNumber *num2 = @(10.10);
-        NSNumber *num3 = @(YES);
+        /* 对象探究
+         1.只要是未包装数据的 其 值为 null
+         */
+        NSNumber *number1 = [[NSNumber alloc]init];
+        NSLog(@"number = %@",number1); // number = (null)
+        if (number1) {
+            NSLog(@"不成立");
+        }
+        
+        NSNumber *number2 = nil;
+        if (number1 == number2) {
+            NSLog(@"成立");
+        }
     }
     {
-        NSNumber *num1 = [NSNumber numberWithInt:10];
-        NSNumber *num2 = [NSNumber numberWithFloat:10.10f];
-        NSNumber *num3 = [NSNumber numberWithChar:'a'];
-        NSNumber *num4 = [NSNumber numberWithInteger:100];
-        NSNumber *num5 = [NSNumber numberWithBool:NO];
-    }
-}
-#pragma warning -Accessing Numeric Values
-+ (void)test2{
         /*
-         1.nil空值:其Value值,基本数据类型的 是 0 ，对象值是nil
-         2.alloc init无包装：其Value值,基本数据类型的 是 0 ，对象值是nil
-         3.有包装:其Value值,会进行类型转换输出
+         值探究
+         */
+        NSNumber *num1 = [NSNumber numberWithInt:10];
+        NSLog(@"number = %@",num1);// number = 10
+        NSNumber *num2 = [NSNumber numberWithFloat:10.10f];
+        NSLog(@"number = %@",num2);// number = 10.1
+        NSNumber *num3 = [NSNumber numberWithChar:'a'];
+        NSLog(@"number = %@",num3);// number = 97
+        NSNumber *num4 = [NSNumber numberWithInteger:100];
+        NSLog(@"number = %@",num4);// number = 100
+        NSNumber *num5 = [NSNumber numberWithBool:NO];
+        NSLog(@"number = %@",num5);// number = 0
+    }
+    {
+        /* Value值探究
+         1.一个为空的Number，其基本数据的Value值为0，对象行Value值为null
+         2.包装了数据的Number，其各种类型的Value会进行相应的转换
          */
         {
             NSNumber *num = nil;
@@ -67,43 +78,11 @@
             NSLog(@"%@",num);
 
         }
-        {
-            NSNumber *num = [[NSNumber alloc]init];
-            if (num) {
-                NSLog(@"%@",num);
-            }
-            
-            NSObject *ob = [[NSObject alloc]init];
-            if (ob) {
-                NSLog(@"%@",ob);
-            }
-            /*num = nil的思考
-             1.if()的真假判断 其根本判断的是 指针指向的内存是否有值
-             2.num = nil，这个是为什么
-             */
-            
-        }
- 
-        
-
-}
-#pragma warning -Comparing NSNumber Objects
-+ (void)test3{
-    {
-        NSNumber *num1 = [NSNumber numberWithInt:10];
-        NSNumber *num2 = [NSNumber numberWithInt:10];
-        
-        /*
-         1.2个Number做比较 大小还是一样，2个对象不能为空否则会崩溃
-         */
-        NSComparisonResult  result  = [num1 compare:num2];
-        
-        /*
-         1.比较2个对象是否相同，值相同，内部会调用上面的compare
-         */
-        BOOL  isEqual  = [num1 isEqualToNumber:num2];
     }
+
+    
 }
+
 
 #pragma warning - NSNumberFormatter
 /*

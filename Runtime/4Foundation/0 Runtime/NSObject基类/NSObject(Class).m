@@ -11,7 +11,7 @@
 @implementation NSObject_Class_
 
 
-#pragma warning - Initializing a Class
+#pragma warning - 类加载
 /*
  0.底层原理
  1.load 是走的是函数指针调用而非消息机制那一套，所以不存在分类覆盖原类load方法
@@ -41,18 +41,11 @@
 + (void)initialize
 {
     if (self == [self class]) {
-        // Identifying Class 类自检
-        [self class];
-        [self superclass];
-        [self isSubclassOfClass:[NSObject class]];
-        [self conformsToProtocol:@protocol(NSObject)];
-        [self instancesRespondToSelector:@selector(hash)];
-        [self instanceMethodForSelector:@selector(hash)];
     }
 }
 
 
-#pragma warning - Creating, Copying, and Deallocating Objects
+#pragma warning - 对象的生命周期(创建-销毁)
 
 /** 为新对象分配内存空间, 参数传nil */
 + (instancetype)allocWithZone:(struct _NSZone *)zone{
@@ -77,29 +70,57 @@
     return [super new];
 }
 
-
-/* copy
- 1.通过调用 对象的 copyWithZone: 方法返回一个实例对象
- 2.若对象内部没有实现 copyWithZone: 方法则就会 报方法找不到从而崩溃
- 2.So 基类以及继承自它的子类只要是没有遵守 NSCopying协议并且实现 copyWithZone: 都不能调用 copy
- */
-+ (void)copyTest{
-    NSObject *ob1 = [[NSObject alloc]init];
-    NSObject_Class_ *ob2 = [[NSObject_Class_ alloc]init];
-    [ob1 copy]; // 崩溃
-    [ob2 copy];
-
-}
-
 - (void)dealloc{
     NSLog(@"%s",__func__);
 }
 
 
+#pragma warning -类/对象自检
+- (void)test1{
 
-#pragma warning -Sending Messages
+    {
+        Class class1 = [NSObject class];
+        Class class2 = [NSObject superclass];
+
+        // 是否是某类的子类
+        BOOL ob1 =  [NSObject isSubclassOfClass:[NSObject class]];
+        // 是否遵守某协议
+        BOOL ob2 =  [NSObject conformsToProtocol:@protocol(NSObject)];
+        // 实例对象是否响应某方法
+        BOOL ob3 =  [NSObject instancesRespondToSelector:@selector(description)];
+
+        // 根据实例对象的选择器返回函数指针
+        IMP imp = [NSObject instanceMethodForSelector:@selector(description)];
+        
+        [NSObject hash];
+        [NSObject description];
+    }
+    
+    { // 识别 class
+        [self class];
+        [self superclass];
+
+        [self isKindOfClass:[NSObject class]]; // YES
+        [self isMemberOfClass:[NSObject class]]; // NO
+        
+        BOOL b1 =  [self conformsToProtocol:@protocol(NSObject)];
+        BOOL b2 =  [self respondsToSelector:@selector(test)];
+        
+
+        [self hash];
+        [self description];
+
+    }
+}
+
+#pragma warning -消息发送
 - (void)test2{
  
+    // @protocol NSObject
+    [self performSelector:@selector(hash)];
+    [self performSelector:@selector(hash) withObject:nil];
+    [self performSelector:@selector(hash) withObject:nil withObject:nil];
+    
     //NSObject (NSDelayedPerforming) runloop相关
     [self performSelector:@selector(hash) withObject:nil afterDelay:0.2];
     [self performSelector:@selector(hash) withObject:nil afterDelay:0.2 inModes:@[]];
@@ -113,17 +134,6 @@
     [self performSelectorOnMainThread:@selector(hash) withObject:nil waitUntilDone:YES];
     [self performSelectorOnMainThread:@selector(hash) withObject:nil waitUntilDone:YES modes:nil];
 }
-#pragma warning -消息转发 and 动态绑定 and 异常处理
-- (void)test3{
-    [self forwardInvocation:nil];
-    [self forwardingTargetForSelector:@selector(hash)];
-    [NSObject resolveClassMethod:@selector(hash)];
-    [NSObject resolveInstanceMethod:@selector(hash)];
-    [NSObject instanceMethodSignatureForSelector:@selector(hash)];
-    [self doesNotRecognizeSelector:@selector(hash)];
-    
-    [self methodSignatureForSelector:@selector(hash)];
-    
-}
+
 
 @end
