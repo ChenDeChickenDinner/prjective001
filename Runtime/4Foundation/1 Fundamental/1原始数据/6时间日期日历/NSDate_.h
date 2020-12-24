@@ -1,11 +1,13 @@
 //
-//  ff.h
-//  1212
+//  NSDate_.h
+//  Runtime
 //
-//  Created by xs on 2020/12/21.
+//  Created by xs on 2020/12/24.
+//  Copyright © 2020 xax. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
 
 
 /*
@@ -27,7 +29,8 @@
  亥（猪）时是二十一点到二十三点，以二十二点为正点。
 
  */
-@interface ff : NSObject
+@interface NSDate_ : NSObject
+
 @end
 
 

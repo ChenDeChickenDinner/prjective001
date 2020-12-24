@@ -1,21 +1,21 @@
 //
-//  ff.m
-//  1212
+//  NSDate_.m
+//  Runtime
 //
-//  Created by xs on 2020/12/21.
+//  Created by xs on 2020/12/24.
+//  Copyright © 2020 xax. All rights reserved.
 //
 
-#import "ff.h"
+#import "NSDate_.h"
 
-@implementation ff
+@implementation NSDate_
 
 /*
- 
- NSCalendar -- 日历类，它提供了大部分的日期计算接口，并且允许您在NSDate和NSDateComponents之间转换
+ NSDate -- 表示一个绝对的时间点
  NSTimeZone -- 时区信息
  NSLocale -- 本地化信息
- NSDate -- 表示一个绝对的时间点
  NSDateComponents -- 一个封装了具体年月日、时秒分、周、季度等的类
+ NSCalendar -- 日历类，它提供了大部分的日期计算接口，并且允许您在NSDate和NSDateComponents之间转换
  NSDateFormatter -- 用来在日期和字符串之间转换
 
  */
@@ -87,8 +87,8 @@ ISO 8601：
  纳秒:10亿分之一秒
  */
 + (void)load{
-    [self NSCalendar];
-    [self NSDateComponents];
+//    [self NSCalendar];
+    [self NSDateFormatter];
 
     
     return;
@@ -408,7 +408,51 @@ ISO 8601：
     }
 
 }
+/* 日期组件  Components:组件
+ */
++ (void)NSDateComponents{
+    NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+    NSLog(@"dateComponents = %@",dateComponents); // <NSDateComponents: 0x1006345e0> {
+    dateComponents.calendar = [NSCalendar currentCalendar];
+    dateComponents.timeZone = [NSTimeZone localTimeZone];
+    dateComponents.era = 1;
+    dateComponents.year = 2020;
+    dateComponents.month = 12;
+    dateComponents.day = 24;
 
+    dateComponents.hour = 1;
+    dateComponents.minute = 1;
+    dateComponents.second = 1;
+    dateComponents.nanosecond = 1;
+
+    dateComponents.weekday = 1;
+    dateComponents.weekdayOrdinal = 1;
+    dateComponents.quarter = 1;
+    dateComponents.weekOfMonth = 1;
+    dateComponents.weekOfYear = 1;
+    dateComponents.yearForWeekOfYear = 1;
+    NSLog(@"dateComponents = %@",dateComponents);
+    /*
+     dateComponents = <NSDateComponents: 0x10054b6b0> {
+         Calendar: <CFCalendar 0x100714ea0 [0x7fff8784fcc0]>{identifier = 'gregorian'}
+         TimeZone: Local Time Zone (Asia/Shanghai (GMT+8) offset 28800)
+         Era: 1
+         Calendar Year: 2020
+         Month: 12
+         Day: 24
+         Hour: 1
+         Minute: 1
+         Second: 1
+         Nanosecond: 1
+         Quarter: 1
+         Year for Week of Year: 1
+         Week of Year: 1
+         Week of Month: 1
+         Weekday: 1
+         Weekday Ordinal: 1
+     */
+
+}
 /* 日历  Calendar:日历
  1.NSCalendar可以很方便的用来表示日期，获取日期的各种信息，包括年、月、日，时分秒。
  2.可以很方便的计算两个日期之前的关系。也可以很方便的根据一个日期获取另一个日期
@@ -431,24 +475,31 @@ ISO 8601：
   NSCalendarUnitWeekOfYear          -- 年包含的周数。最多为53个周
   NSCalendarUnitYearForWeekOfYear   -- 没完全搞清楚
   NSCalendarUnitTimeZone            -- 没完全搞清楚
+ 
 6.NSCalendarOptions
  }
  
  */
 + (void)NSCalendar{
+    
+    
+    
+    
     NSCalendar *calendar = nil;
     NSDateComponents *comA = [[NSDateComponents alloc]init];;
     NSDateComponents *comB = [[NSDateComponents alloc]init];;
-    
-    // 使用用户手机设置的日期信息，有缓存，用户手机日历改变后不会变
-    calendar = [NSCalendar currentCalendar];
-    NSLog(@"calendar = %@",calendar); // calendar = <_NSCopyOnWriteCalendarWrapper: 0x100508540>
-
-    // 使用用户手机设置的日期信息，并且用户改变之后会跟着改变
-    calendar = [NSCalendar autoupdatingCurrentCalendar];
-    NSLog(@"calendar = %@",calendar); // calendar = <_NSCopyOnWriteCalendarWrapper: 0x100508540>
-    
     {
+        // 使用用户手机设置的日期信息，有缓存，用户手机日历改变后不会变
+        calendar = [NSCalendar currentCalendar];
+        NSLog(@"calendar = %@",calendar); // calendar = <_NSCopyOnWriteCalendarWrapper: 0x100508540>
+
+        // 使用用户手机设置的日期信息，并且用户改变之后会跟着改变
+        calendar = [NSCalendar autoupdatingCurrentCalendar];
+        NSLog(@"calendar = %@",calendar); // calendar = <_NSCopyOnWriteCalendarWrapper: 0x100508540>
+    }
+ 
+    
+    { // 创建日历
         calendar = [NSCalendar new];
         NSLog(@"calendar = %@",calendar); // calendar = (null)
      
@@ -458,7 +509,7 @@ ISO 8601：
     }
 
     {
-     
+        // 设置/获取日历信息
 
         NSArray<NSString *> *eraSymbols = [calendar eraSymbols];
         NSArray<NSString *> *longEraSymbols = [calendar longEraSymbols];
@@ -487,20 +538,7 @@ ISO 8601：
 
 
 
-    }
-    {
-        BOOL is1 = [calendar isDateInWeekend:[NSDate date]];
-        BOOL is2 = [calendar isDateInYesterday:[NSDate date]];
-        BOOL is3 = [calendar isDateInToday:[NSDate date]];
-        BOOL is4 = [calendar isDateInTomorrow:[NSDate date]];
-
-        BOOL is5 = [calendar  isDate:[NSDate date] inSameDayAsDate:[NSDate date]]; // 是否是同一天
-        NSComparisonResult reslut = [calendar compareDate:[NSDate date] toDate:[NSDate date] toUnitGranularity:NSCalendarUnitDay];
-        
-    }
-    { // 设置/获取日历信息
-
-        
+            
         // 获取标示符 readonly
         NSCalendarIdentifier calendarIdentifier = calendar.calendarIdentifier;
         NSLog(@"calendarIdentifier = %@",calendarIdentifier);
@@ -514,24 +552,7 @@ ISO 8601：
         // 设置/获取第一周必须包含的最少天数
         NSUInteger minimumDaysInFirstWeek = calendar.minimumDaysInFirstWeek;
         
-    }
-    {
-     
-        NSDate *date;
-        NSTimeInterval time;
-        
-        NSRange range1 =  [calendar maximumRangeOfUnit:NSCalendarUnitYear];
-        NSRange range2 =  [calendar minimumRangeOfUnit:NSCalendarUnitYear];
-  
-        NSRange range3 =  [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[NSDate date]];
-        NSUInteger num =  [calendar ordinalityOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[NSDate date]];
 
-        BOOL hav1 = [calendar rangeOfUnit:NSCalendarUnitYear startDate:&date interval:&time forDate:[NSDate date]];
-        
-        BOOL hav2 = [calendar rangeOfWeekendStartDate:&date interval:&time containingDate:[NSDate date]];
-        
-    }
-    {
         NSInteger eraValuePointer; //时代
         NSInteger year;//年份
         NSInteger month;//月
@@ -553,66 +574,76 @@ ISO 8601：
         [calendar getHour:&hourValuePointer minute:&minuteValuePointer second:&secondValuePointer nanosecond:&nanosecondValuePointer fromDate:[NSDate date]];
         
         
-    }
-    {
+  
+        
+        
     
-        /* 扫描 筛选出时间
+        NSDate *date;
+        NSTimeInterval time;
+        NSRange range1 =  [calendar maximumRangeOfUnit:NSCalendarUnitYear];
+        NSRange range2 =  [calendar minimumRangeOfUnit:NSCalendarUnitYear];
+        NSRange range3 =  [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[NSDate date]];
+        
+        NSInteger  num1 = [calendar component:NSCalendarUnitDay fromDate:[NSDate date]];
+        NSUInteger num2 = [calendar ordinalityOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:[NSDate date]];
+
+        BOOL is1 = [calendar isDateInWeekend:[NSDate date]];
+        BOOL is2 = [calendar isDateInYesterday:[NSDate date]];
+        BOOL is3 = [calendar isDateInToday:[NSDate date]];
+        BOOL is4 = [calendar isDateInTomorrow:[NSDate date]];
+        BOOL is5 = [calendar  isDate:[NSDate date] inSameDayAsDate:[NSDate date]]; // 是否是同一天
+        BOOL is6 = [calendar rangeOfUnit:NSCalendarUnitYear startDate:&date interval:&time forDate:[NSDate date]];
+        BOOL is7 = [calendar rangeOfWeekendStartDate:&date interval:&time containingDate:[NSDate date]];
+        BOOL is8 = [calendar date:[NSDate date] matchesComponents:comA];
+        
+        NSComparisonResult reslut = [calendar compareDate:[NSDate date] toDate:[NSDate date] toUnitGranularity:NSCalendarUnitDay];
+
+        
+        /* 筛选出时间 计算时间
          */
-        NSDate *data1 = [calendar startOfDayForDate:[NSDate date]];
+     
         
-        NSDate *data2 = [calendar nextDateAfterDate:[NSDate date] matchingComponents:comA options:NSCalendarWrapComponents];
+        NSDate *data61 = [calendar dateWithEra:1 year:2020 month:1 day:1 hour:1 minute:1 second:1 nanosecond:1];
+        NSDate *data71 = [calendar dateWithEra:1 yearForWeekOfYear:1 weekOfYear:1 weekday:1 hour:1 minute:1 second:1 nanosecond:1];
         
-        NSDate *data3 = [calendar nextDateAfterDate:[NSDate date] matchingHour:8 minute:8 second:8 options:NSCalendarWrapComponents];
+        NSDate *data12 = [calendar startOfDayForDate:[NSDate date]];
+        NSDate *data32 = [calendar nextDateAfterDate:[NSDate date] matchingHour:8 minute:8 second:8 options:NSCalendarWrapComponents];
+        NSDate *data42 = [calendar nextDateAfterDate:[NSDate date] matchingUnit:NSCalendarUnitDay value:1 options:NSCalendarWrapComponents];
         
-        NSDate *data4 = [calendar  nextDateAfterDate:[NSDate date] matchingUnit:NSCalendarUnitDay value:1 options:NSCalendarWrapComponents];
- 
+        
+        NSDate *data21 = [calendar dateBySettingUnit:NSCalendarUnitDay value:8 ofDate:[NSDate date] options:NSCalendarWrapComponents];
+        NSDate *data31 = [calendar dateBySettingHour:8 minute:8 second:8 ofDate:[NSDate date] options:NSCalendarWrapComponents];
+        NSDate *data51 = [calendar dateByAddingUnit:NSCalendarUnitDay value:8 toDate:[NSDate date] options:NSCalendarWrapComponents];
+        
+
+        NSDate *data11 = [calendar dateFromComponents:comA];
+        NSDate *data41 = [calendar dateByAddingComponents:comA toDate:[NSDate date] options:NSCalendarWrapComponents];
+        NSDate *data22 = [calendar nextDateAfterDate:[NSDate date] matchingComponents:comA options:NSCalendarWrapComponents];
         [calendar enumerateDatesStartingAfterDate:[NSDate date] matchingComponents:comA options:NSCalendarWrapComponents usingBlock:^(NSDate * _Nullable date, BOOL exactMatch, BOOL * _Nonnull stop) {
                     
         }];
+        
+
     }
-    
+
     {
-        /* 计算时间
-         */
-        NSDate *data = [calendar dateFromComponents:comA];
-        
-        data = [calendar dateBySettingUnit:NSCalendarUnitDay value:8 ofDate:[NSDate date] options:NSCalendarWrapComponents];
-        data = [calendar dateBySettingHour:8 minute:8 second:8 ofDate:[NSDate date] options:NSCalendarWrapComponents];
-        
-        data = [calendar dateByAddingComponents:comA toDate:[NSDate date] options:NSCalendarWrapComponents];
-        data = [calendar dateByAddingUnit:NSCalendarUnitDay value:8 toDate:[NSDate date] options:NSCalendarWrapComponents];
-        
-        data = [calendar dateWithEra:1 year:2020 month:1 day:1 hour:1 minute:1 second:1 nanosecond:1];
-        data = [calendar dateWithEra:1 yearForWeekOfYear:1 weekOfYear:1 weekday:1 hour:1 minute:1 second:1 nanosecond:1];
-    }
-    {
-  
-        
-        NSInteger xx = [calendar component:NSCalendarUnitDay fromDate:[NSDate date]];
-        
-        [calendar date:[NSDate date] matchesComponents:comA];
-        
+
         NSDateComponents *com1 = [calendar components:NSCalendarUnitDay fromDate:[NSDate date]];
         NSDateComponents *com2 = [calendar componentsInTimeZone:[NSTimeZone localTimeZone] fromDate:[NSDate date]];
-
-        
         NSDateComponents *com3 = [calendar components:NSCalendarUnitDay fromDate:[NSDate date] toDate:[NSDate date] options:NSCalendarWrapComponents];
         
-        NSDateComponents *com4 = [calendar components:NSCalendarUnitDay fromDateComponents:comA toDateComponents:comB options:NSCalendarWrapComponents];
         
+        NSDateComponents *com4 = [calendar components:NSCalendarUnitDay fromDateComponents:comA toDateComponents:comB options:NSCalendarWrapComponents];
+ 
+     
     }
-    {
-         
-   
-    }
+
+
 }
-/* 日期组件  Components:组件
- */
-+ (void)NSDateComponents{
-//    NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
-//    NSLog(@"dateComponents = %@",dateComponents); // <NSDateComponents: 0x1006345e0> {
-    
+
+
++ (void)NSDateFormatter{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    NSLog(@"formatter = %@",formatter); // formatter = <NSDateFormatter: 0x100662d70>
 }
 @end
-
-
