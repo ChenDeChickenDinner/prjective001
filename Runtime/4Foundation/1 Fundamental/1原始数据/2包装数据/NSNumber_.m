@@ -7,7 +7,9 @@
 //
 
 #import "NSNumber_.h"
-
+/*
+  1.只能包装 基本数据
+ */
 @implementation NSNumber_Wrappers_
 + (void)load{
    
@@ -84,52 +86,5 @@
 }
 
 
-#pragma warning - NSNumberFormatter
-/*
- NSNumberFormatterNoStyle = 98764
- NSNumberFormatterCurrencyStyle = US$98,764.12
- NSNumberFormatterDecimalStyle = 98,764.123
- NSNumberFormatterPercentStyle = 9,876,412%
- NSNumberFormatterScientificStyle = 9.876412345E4
- NSNumberFormatterSpellOutStyle = 九万八千七百六十四点一二三四五
- NSNumberFormatterOrdinalStyle = 第9,8764
- NSNumberFormatterCurrencyISOCodeStyle = USD98,764.12end
- NSNumberFormatterCurrencyPluralStyle = 98,764.12美元
- NSNumberFormatterCurrencyAccountingStyle = US$98,764.12
- */
-+ (void)test4{
-    //https://www.jianshu.com/p/29ef372c65d3 样式 前后缀 更改原始符号 分割尺寸 格式宽度 舍入
-    NSNumberFormatter *formatter =  [[NSNumberFormatter alloc]init];
-    formatter.numberStyle = NSNumberFormatterDecimalStyle;
-    NSString *numStr = [formatter stringFromNumber:@(98764.12345)];
-    NSNumber *num = [formatter numberFromString:numStr];
-}
 @end
 
-#pragma warning - NSNumber安全扩展
-@interface NSNumber (safe)
-
-- (BOOL)safeIsEqualToNumber:(NSNumber *)number;
-
-- (NSComparisonResult)safeCompare:(NSNumber *)otherNumber;
-
-@end
-@implementation NSNumber (safe)
-
-- (NSComparisonResult)safeCompare:(NSNumber *)otherNumber{
-    if (otherNumber == nil) {
-        return NSOrderedDescending;
-    } else {
-        return [self compare:otherNumber];
-    }
-}
-- (BOOL)safeIsEqualToNumber:(NSNumber *)number{
-    if (number == nil) {
-        return NO;
-    } else {
-        return [self isEqualToNumber:number];
-    }
-}
-
-
-@end

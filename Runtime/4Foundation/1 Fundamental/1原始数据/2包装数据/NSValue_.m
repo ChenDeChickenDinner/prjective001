@@ -23,8 +23,7 @@
      2.通过送进去一个保存数据的地址，获取数据
      */
     NSValue *value = [[NSValue alloc]initWithBytes:myCString objCType:@encode(char *)];
-    char *myNewCString = NULL;
-//    [value getValue:myNewCString size:sizeof(char *)];
+
 
     
 
@@ -59,22 +58,7 @@
         NSRect rect =  value3.rectValue;
 
     }
-    {
-        /* UIKit 框架下的包装
-         Working with CoreGraphics Geometry Values
-         + valueWithCGPoint:
 
-         Working with UIKit Geometry Values
-         + valueWithUIEdgeInsets:
-
-         Working with CoreAnimation Transform Values
-         + valueWithCATransform3D:
-
-         Working with Media Time Values
-         + valueWithCMTime:
-         */
-
-    }
     { // 用于将值从一种表示形式转换为另一种表示形式的抽象类。  CoreData
         NSValueTransformer *ob = [[NSValueTransformer alloc]init];
     }
