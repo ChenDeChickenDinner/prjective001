@@ -17,37 +17,47 @@
 #pragma warning -
 
 + (void)load{
-    char *myCString = "123456789";
-    /*
-     1.通过数据的地址以及数据的@encode类型来包装数据
-     2.通过送进去一个保存数据的地址，获取数据
-     */
-    NSValue *value = [[NSValue alloc]initWithBytes:myCString objCType:@encode(char *)];
-
-
-    
 
     {
-        //NSValue (NSValueCreation) 包装原始值
-        NSValue *value = [NSValue value:myCString withObjCType:@encode(char *)];
+        NSValue *value = [[NSValue alloc]init];
+        NSLog(@"value = %@",value); // value = (null)
+    }
+    {
+ 
+        /*NSValue (NSValueCreation) 包装原始值
+         1.指向要存储在新值对象中的数据的指针。
+         2.@encode（）编译器指令提供的Objective-C值类型。不要将此参数硬编码为C字符串。
+         */
+       int a  = 10;
+       NSValue *intValue1 =  [NSValue valueWithBytes:&a objCType:@encode(int)];
+       NSValue *intValue2 =  [NSValue value:&a withObjCType:@encode(int)];
+       NSLog(@"intValue1 = %@",intValue1); // {length = 4, bytes = 0x0a000000}
+       NSLog(@"intValue2 = %@",intValue2); // {length = 4, bytes = 0x0a000000}
+
+        
+        const char *objCType = intValue1.objCType;
+        NSLog(@"objCType = %s",objCType); // objCType = i
+        
+
+        int aValue;;
+        [intValue1 getValue:&aValue];
+        NSLog(@"%d",aValue);
+
+        [intValue1 getValue:&aValue size:sizeof(aValue)];
+        NSLog(@"%d",aValue);
     }
 
     
-    {
-        //NSValue (NSValueExtensionMethods)包装指针置
-        NSValue *value = [NSValue valueWithPointer:myCString];
-        void *pointerValue = value.pointerValue;
-        NSLog(@"value2 = %@,value2.pointerValue = %c",value,*((char *)pointerValue));
-    }
+  
 
     
     {
-        //NSValue (NSValueRangeExtensions)包装结构体
+        //NSValue (NSValueRangeExtensions)包装范围结构体
         NSValue *value = [NSValue valueWithRange:NSMakeRange(1, 5)];
         NSRange range2 = value.rangeValue;
     }
     {
-        //NSValue (NSValueGeometryExtensions)
+        //NSValue (NSValueGeometryExtensions)包装几何结构体
         NSValue *value1 = [NSValue valueWithPoint:NSZeroPoint];
         NSValue *value2 = [NSValue valueWithSize:NSZeroSize];
         NSValue *value3 = [NSValue valueWithRect:NSZeroRect];
@@ -57,8 +67,21 @@
         NSSize size =  value2.sizeValue;
         NSRect rect =  value3.rectValue;
 
+        
     }
 
+    {
+        //NSValue (NSValueExtensionMethods)包装指针置
+        SEL sel =  @selector(description);
+        IMP imp =  [self instanceMethodForSelector:@selector(description)];
+        
+        NSValue *value1 = [NSValue valueWithPointer:sel];
+        NSValue *value2 = [NSValue valueWithPointer:imp];
+        SEL sel2 = value1.pointerValue;
+        IMP imp2 = value2.pointerValue;
+
+    }
+    
     { // 用于将值从一种表示形式转换为另一种表示形式的抽象类。  CoreData
         NSValueTransformer *ob = [[NSValueTransformer alloc]init];
     }

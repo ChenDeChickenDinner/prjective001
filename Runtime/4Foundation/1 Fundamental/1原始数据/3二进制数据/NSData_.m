@@ -59,8 +59,6 @@ typedef NS_OPTIONS(NSUInteger, NSDataReadingOptions) {
     
     //1.来自其他NSData
     NSData *data3 = [NSData dataWithData:data2];
-
-    //1.来自文件
     NSData *data4 = [NSData dataWithContentsOfFile:@""];
     NSData *data5 = [NSData dataWithContentsOfURL:[NSURL URLWithString:@""]];
 
