@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 import 'package:flutter_app1/logkk.dart';
 import 'package:flutter_app1/item.dart';
-
+import 'package:flutter_app1/searchController.dart';
 main() {
 
   
@@ -18,7 +18,9 @@ main() {
   ));
 }
 class myhome extends StatelessWidget {
-  void _jumpSearch(){
+
+
+  void _jumpSearch(BuildContext context){
     print("_jumpSearch");
   }
 
@@ -31,7 +33,16 @@ class myhome extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(Icons.search,color: Colors.white,size: 25,),
-            onPressed: _jumpSearch,
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(
+                  settings: RouteSettings(),
+                  maintainState: true,
+                  // fullscreenDialog: true,
+                  builder: (context){
+                    return searchWidget();
+                  }
+              ));
+            },
           )
         ],
       ),
@@ -50,6 +61,8 @@ class mainDataWidget extends StatefulWidget {
 
 class _mainDataWidgetState extends State<mainDataWidget> {
   Map _dict;
+  Map _dictList;
+
   @override
   void initState() {
 
@@ -57,10 +70,21 @@ class _mainDataWidgetState extends State<mainDataWidget> {
         .get("https://m.touker.com/marketing/wealth/getFirstData.do")
         .then((http.Response response) {
       Map bodyMap = convert.jsonDecode(response.body);
-      LogUtil.v(bodyMap);
+      // LogUtil.v(bodyMap);
 
       setState(() {
         _dict = bodyMap;
+      });
+    });
+
+    http.Client()
+        .get("https://m.touker.com/marketing/wealth/getIndexData.do")
+        .then((http.Response response) {
+      Map bodyMap = convert.jsonDecode(response.body);
+      // LogUtil.v(bodyMap);
+
+      setState(() {
+        _dictList = bodyMap;
       });
     });
 
@@ -68,7 +92,7 @@ class _mainDataWidgetState extends State<mainDataWidget> {
   }
   @override
   Widget build(BuildContext context) {
-    return myBody(dict:_dict);
+    return myBody(dict:_dict,dictList: _dictList,);
   }
 }
 
@@ -76,15 +100,21 @@ class _mainDataWidgetState extends State<mainDataWidget> {
 class myBody extends StatelessWidget {
 
   final Map dict;
-  myBody({this.dict});
+  final Map dictList;
+
+  myBody({this.dict,this.dictList});
 
   @override
   Widget build(BuildContext context) {
     final size =MediaQuery.of(context).size;
     final width =size.width;
+
     Map resulr = dict["result"];
     List topMenuList = resulr["topMenuList"];
     List bannerList = resulr["bannerList"];
+
+    Map resulr2 = dictList["result"];
+    List bonusList = resulr2["bonusList"];
 
     return Container(
       color: Colors.white,
@@ -137,10 +167,10 @@ class myBody extends StatelessWidget {
                       return Container(
                         color: Colors.white,
                         height: 80,
-                        child: cellWidget(index: index,),
+                        child: cellWidget(index: index,dict: bonusList[index],),
                       );
                     },
-                    childCount: 10,
+                    childCount: bonusList.length,
                 )
             ),
           ],

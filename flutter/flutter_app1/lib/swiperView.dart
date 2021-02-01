@@ -17,7 +17,7 @@ class _SwiperViewState extends State<SwiperView> {
   @override
   void didUpdateWidget(SwiperView oldWidget) {
     // imageList.removeRange(0, imageList.length-1);
-    
+
     for (Map ob in widget.bannerList) {
       imageList.add(Image.network(
         ob["imgUrl"],

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class cellWidget extends StatelessWidget {
   final int index;
-  cellWidget({this.index});
+  final Map dict;
+  cellWidget({this.index,this.dict});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -10,8 +11,8 @@ class cellWidget extends StatelessWidget {
         Expanded(
           child: Row(
           children: [
-            Expanded(child: cellA(income: "3.80%",title: "111",)),
-            Expanded(child: cellB(titlea: "定期宝60号",titleb: "117天",titlec: "5万",)),
+            Expanded(child: cellA(income: "3.80%",title: dict["yieldDesc"],)),
+            Expanded(child: cellB(titlea: dict["title"],titleb: "*天",titlec: "*万",)),
             Expanded(child: cellC(time: "02-02 09:00",buy: false,)),
           ],
         ),),
