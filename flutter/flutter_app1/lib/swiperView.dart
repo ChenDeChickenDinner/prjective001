@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class SwiperView extends StatefulWidget {
+  final List bannerList;
+  SwiperView({this.bannerList});
   @override
   _SwiperViewState createState() => _SwiperViewState();
 }
@@ -10,27 +12,23 @@ class _SwiperViewState extends State<SwiperView> {
   // 声明一个list，存放image Widget
   List<Widget> imageList = List();
 
+
+
   @override
-  void initState() {
-    imageList
-      ..add(Image.network(
-        'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2726034926,4129010873&fm=26&gp=0.jpg',
-        fit: BoxFit.fill,
-      ))
-      ..add(Image.network(
-        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3485348007,2192172119&fm=26&gp=0.jpg',
-        fit: BoxFit.fill,
-      ))
-      ..add(Image.network(
-        'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2594792439,969125047&fm=26&gp=0.jpg',
-        fit: BoxFit.fill,
-      ))
-      ..add(Image.network(
-        'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=190488632,3936347730&fm=26&gp=0.jpg',
+  void didUpdateWidget(SwiperView oldWidget) {
+    // imageList.removeRange(0, imageList.length-1);
+    
+    for (Map ob in widget.bannerList) {
+      imageList.add(Image.network(
+        ob["imgUrl"],
         fit: BoxFit.fill,
       ));
-    super.initState();
+    }
+
+    super.didUpdateWidget(oldWidget);
+
   }
+
 
   @override
   Widget build(BuildContext context) {

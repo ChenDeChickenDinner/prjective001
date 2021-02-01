@@ -82,6 +82,9 @@ class myBody extends StatelessWidget {
   Widget build(BuildContext context) {
     final size =MediaQuery.of(context).size;
     final width =size.width;
+    Map resulr = dict["result"];
+    List topMenuList = resulr["topMenuList"];
+    List bannerList = resulr["bannerList"];
 
     return Container(
       color: Colors.white,
@@ -92,9 +95,10 @@ class myBody extends StatelessWidget {
             SliverGrid(
                 delegate: SliverChildBuilderDelegate(
                     (BuildContext context,int index){
-                      return MyItem(dict: dict,);
+
+                      return MyItem(dict: topMenuList[index],);
                     },
-                  childCount: 11
+                  childCount: topMenuList.length
                   ),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 4,
@@ -109,7 +113,7 @@ class myBody extends StatelessWidget {
                       return Container(
                         color: Colors.white,
                         height: 105,
-                        child: SwiperView(),
+                        child: SwiperView(bannerList: bannerList,),
                       );
                     },
                     childCount: 1

@@ -21,15 +21,15 @@ class MyItem extends StatelessWidget {
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage("asset/image/qingwa.jpg"),
+                  image: NetworkImage(dict["imgUrl"]),
                   fit: BoxFit.cover,
                 )
             ),
-            width: 60,
-            height: 60,
+            width: 45,
+            height: 45,
           ),
           Align(
-            child: Text("123"),
+            child: Text(dict["title"]),
           )
         ],
       ),
