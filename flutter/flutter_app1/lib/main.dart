@@ -3,8 +3,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app1/swiperView.dart';
 import 'package:flutter_app1/cellWidget.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert' as convert;
+import 'package:flutter_app1/logkk.dart';
+import 'package:flutter_app1/item.dart';
 
 main() {
+
+  
+  
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: myhome(),
@@ -28,45 +35,53 @@ class myhome extends StatelessWidget {
           )
         ],
       ),
-      body: myBody(),
+      body: mainDataWidget(),
     );
   }
 }
-class MyItem extends StatelessWidget {
+
+
+class mainDataWidget extends StatefulWidget {
+
+
+  @override
+  _mainDataWidgetState createState() => _mainDataWidgetState();
+}
+
+class _mainDataWidgetState extends State<mainDataWidget> {
+  Map _dict;
+  @override
+  void initState() {
+
+    http.Client()
+        .get("https://m.touker.com/marketing/wealth/getFirstData.do")
+        .then((http.Response response) {
+      Map bodyMap = convert.jsonDecode(response.body);
+      LogUtil.v(bodyMap);
+
+      setState(() {
+        _dict = bodyMap;
+      });
+    });
+
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 245,
-      color: Colors.white,
-      child: Column(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: AssetImage("asset/image/qingwa.jpg"),
-                  fit: BoxFit.cover,
-                )
-            ),
-            width: 60,
-            height: 60,
-          ),
-          Align(
-            child: Text("123"),
-          )
-        ],
-      ),
-    );
+    return myBody(dict:_dict);
   }
 }
 
 
 class myBody extends StatelessWidget {
+
+  final Map dict;
+  myBody({this.dict});
+
   @override
   Widget build(BuildContext context) {
     final size =MediaQuery.of(context).size;
     final width =size.width;
-    final height =size.height;
 
     return Container(
       color: Colors.white,
@@ -77,7 +92,7 @@ class myBody extends StatelessWidget {
             SliverGrid(
                 delegate: SliverChildBuilderDelegate(
                     (BuildContext context,int index){
-                      return MyItem();
+                      return MyItem(dict: dict,);
                     },
                   childCount: 11
                   ),
