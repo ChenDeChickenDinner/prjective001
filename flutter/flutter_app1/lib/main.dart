@@ -1,261 +1,183 @@
 
+import 'dart:math';
 
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app1/swiperView.dart';
-import 'package:flutter_app1/cellWidget.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert' as convert;
-import 'package:flutter_app1/logkk.dart';
-import 'package:flutter_app1/item.dart';
-import 'package:flutter_app1/searchController.dart';
-main() {
 
-  
-  
+
+void main(){
+
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: myhome(),
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("appBar"),
+      ),
+      body: myListViewSeparated(),
+      backgroundColor: Colors.limeAccent,
+    ),
   ));
 }
-class myhome extends StatelessWidget {
+class myListView extends StatelessWidget {
 
-
-  void _jumpSearch(BuildContext context){
-    print("_jumpSearch");
-  }
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar: AppBar(
-        title: Text("理财"),
-        backgroundColor: Color.fromRGBO(206, 53, 51,1.0),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.search,color: Colors.white,size: 25,),
-            onPressed: (){
-              Navigator.push(context, MaterialPageRoute(
-                  settings: RouteSettings(),
-                  maintainState: true,
-                  // fullscreenDialog: true,
-                  builder: (context){
-                    return searchWidget();
-                  }
-              ));
-            },
-          )
-        ],
-      ),
-      body: mainDataWidget(),
+
+    return ListView(
+
+      /*设置滚动方向，默认垂直
+      * 1.垂直方向时候：整体高度依据子控件总和，宽度则扩展到最大
+      * 2.水平方向时候：整体宽度依据子控件总和，高度则扩展到最大
+      * */
+      scrollDirection: Axis.vertical,
+      reverse: false,//是否反转ListView上面的children组件倒序进行排列
+
+      /*非null则强制设置子控件宽/高，子控件自己设置的无效(全部一样就在这里设置)
+      1.垂直方向---设置的是高度
+      2.水平方向---设置的是宽度
+      * */
+      itemExtent: null,//默认 null
+
+      /*是否收缩包装(是否根据子widget的总长度来设置ListView的长度)
+      *false:滑动的时候可以超出 ListView的滚动方向，有回弹效果
+      *true:滑动的时候不可以超出 ListView的滚动方向
+      *   垂直方向:不能下拉
+      *   水平方向:不能右滑
+      * */
+      shrinkWrap: false,//默认 false
+
+      /* 滑动效果
+      1.AlwaysScrollableScrollPhysics:总是可以滑动，且有回弹效果
+      2.NeverScrollableScrollPhysics:完全禁止滚动
+      3.BouncingScrollPhysics: 内容超过一屏 就是1的效果，不超过父控件则就是2的效果
+      4.ClampingScrollPhysics：内容超过一屏 可以滑动，无回弹效果，不超过则不能滑动
+      * */
+      physics: BouncingScrollPhysics(),
+
+
+
+      /* 是否可以监听滑动
+       If the [primary] argument is true, the [controller] must be null.
+      * */
+      primary: true, // 默认true
+      controller: null, // 滑动监听
+
+
+      padding: EdgeInsets.all(0.0),
+
+      // 设置预加载的区域 cacheExtent 强制设置为了 0.0，从而关闭了“预加载”
+      cacheExtent: 5.0,
+
+
+      /* 该属性表示是否将列表项（子组件）包裹在AutomaticKeepAlive 组件中；
+      典型地，在一个懒加载列表中，如果将列表项包裹在AutomaticKeepAlive中，在该列表项滑出视口时它也不会被GC（垃圾回收），
+      它会使用KeepAliveNotification来保存其状态。如果列表项自己维护其KeepAlive状态，那么此参数必须置为false
+      */
+      addAutomaticKeepAlives:true,
+      /*该属性表示是否将列表项（子组件）包裹在RepaintBoundary组件中。
+      当可滚动组件滚动时，将列表项包裹在RepaintBoundary中可以避免列表项重绘，
+      但是当列表项重绘的开销非常小（如一个颜色块，或者一个较短的文本）时，不添加RepaintBoundary反而会更高效。
+      和addAutomaticKeepAlive一样，如果列表项自己维护其KeepAlive状态，那么此参数必须置为false
+      */
+      addRepaintBoundaries: true,
+      addSemanticIndexes: true,
+
+
+      semanticChildCount: 1,
+      dragStartBehavior: DragStartBehavior.start,
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.manual,
+      clipBehavior: Clip.hardEdge,
+      restorationId: "restorationId",
+
+      // children参数，是一个列表，但这种方式只适合少量子组件的情况。子控件直接默认没有空隙
+      children: __createChildren(),
+      // children: [
+      //   Container(width: 30,height: 45,color: ColorUtils.getRandomColor()),
+      //   Container(width: 30,height: 30,color: ColorUtils.getRandomColor()),
+      //   Container(width: 30,height: 50,color: ColorUtils.getRandomColor()),
+      //   Container(width: 30,height: 70,color: ColorUtils.getRandomColor()),
+      //   Container(width: 30,height: 90,color: ColorUtils.getRandomColor()),
+      // ],
+    );
+  }
+
+  List<Widget> __createChildren() {
+    List<Widget> children = new List();
+    for(int index = 0; index < 25; index ++) {
+      // children.add(Text('dateListView$index', style: TextStyle(color: Colors.black, backgroundColor: Colors.orange)));
+      children.add(Container(width: 50,height: 45,color: ColorUtils.getRandomColor()));
+    }
+    return children;
+  }
+
+}
+
+
+
+class myListViewBulider extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+        itemBuilder:(BuildContext context, int index){
+          return Container(width: 30,height: 45,color: ColorUtils.getRandomColor());
+        },
+        // 列表项的数量，如果为null，则为无限列表
+        itemCount: null,
     );
   }
 }
 
 
-class mainDataWidget extends StatefulWidget {
 
-
-  @override
-  _mainDataWidgetState createState() => _mainDataWidgetState();
-}
-
-class _mainDataWidgetState extends State<mainDataWidget> {
-  Map _dict;
-  Map _dictList;
-
-  @override
-  void initState() {
-
-    http.Client()
-        .get("https://m.touker.com/marketing/wealth/getFirstData.do")
-        .then((http.Response response) {
-      Map bodyMap = convert.jsonDecode(response.body);
-      // LogUtil.v(bodyMap);
-
-      setState(() {
-        _dict = bodyMap;
-      });
-    });
-
-    http.Client()
-        .get("https://m.touker.com/marketing/wealth/getIndexData.do")
-        .then((http.Response response) {
-      Map bodyMap = convert.jsonDecode(response.body);
-      // LogUtil.v(bodyMap);
-
-      setState(() {
-        _dictList = bodyMap;
-      });
-    });
-
-    super.initState();
-  }
+class myListViewSeparated extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return myBody(dict:_dict,dictList: _dictList,);
-  }
-}
-
-
-class myBody extends StatelessWidget {
-
-  final Map dict;
-  final Map dictList;
-
-  myBody({this.dict,this.dictList});
-
-  @override
-  Widget build(BuildContext context) {
-    final size =MediaQuery.of(context).size;
-    final width =size.width;
-
-    Map resulr = dict["result"];
-    List topMenuList = resulr["topMenuList"];
-    List bannerList = resulr["bannerList"];
-
-    Map resulr2 = dictList["result"];
-    List bonusList = resulr2["bonusList"];
-
-    return Container(
-      color: Colors.white,
-      child: Padding(
-        padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-        child: CustomScrollView(
-          slivers: [
-            SliverGrid(
-                delegate: SliverChildBuilderDelegate(
-                    (BuildContext context,int index){
-
-                      return MyItem(dict: topMenuList[index],);
-                    },
-                  childCount: topMenuList.length
-                  ),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 4,
-                  crossAxisSpacing: 0,
-                  mainAxisSpacing: 0,
-                  childAspectRatio: 1
-                ),
-            ),
-            SliverList(
-                delegate: SliverChildBuilderDelegate(
-                        (BuildContext context, int index) {
-                      return Container(
-                        color: Colors.white,
-                        height: 105,
-                        child: SwiperView(bannerList: bannerList,),
-                      );
-                    },
-                    childCount: 1
-                )
-            ),
-            SliverList(
-                delegate: SliverChildBuilderDelegate(
-                        (BuildContext context, int index) {
-                      return Container(
-                        color: Colors.white,
-                        height: 170,
-                        child: recommendWidget(),
-                      );
-                    },
-                    childCount: 1
-                )
-            ),
-            SliverList(
-                delegate: SliverChildBuilderDelegate(
-                        (BuildContext context, int index) {
-                      return Container(
-                        color: Colors.white,
-                        height: 80,
-                        child: cellWidget(index: index,dict: bonusList[index],),
-                      );
-                    },
-                    childCount: bonusList.length,
-                )
-            ),
-          ],
-        ),
-      ),
+    return ListView.separated(
+        itemBuilder: (BuildContext context, int index){
+          return Container(width: 30,height: 45,color: ColorUtils.getRandomColor());
+        },
+        separatorBuilder: (BuildContext context, int index){
+          return Container(width: 30,height: 1,color: Colors.white);
+        },
+        // 列表项的数量，不能为null
+        itemCount: 20
     );
   }
 }
 
 
-class recommendWidget  extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Container(
-            height: 50,
-            child: Text("精品推荐",style: TextStyle(
-              fontSize: 16,
-              color: Colors.black
-            ),),
-            alignment: Alignment.centerLeft,
-          ),
-          Container(
-            height: 120,
-            color: Color.fromRGBO(246, 246, 246, 0.5),
-            child: Container(
-              alignment: Alignment.center,
-              child: Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: Column(
-                  children: [
-                    Text("华宝现金宝A",style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black
-                    ),),
-                    Row(
-                      children: [
-                        Expanded(child: incomeWidget(income: "2.428%",title: "七日年化收益",),),
-                        Expanded(child: incomeWidget(income: "0.7091%",title: "万份收益(01-29)",),),
-                      ],
-                    ),
-                    MaterialButton(
-                      onPressed:()=>print("onPressed"),
-                      onHighlightChanged: (bool highlingt)=>print("onHighlightChanged-$highlingt"),
-                      onLongPress: ()=>print("onLongPress"),
-                      height: 25.0,
-                      minWidth: 150.0,
-                      color: Colors.red,
-                      textColor: Colors.white,
-                      child: Text("立即购买"),
 
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          )
-        ],
-      ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ColorUtils {
+  ///获取随机颜色
+  static Color getRandomColor() {
+    return Color.fromARGB(
+      255,
+      Random.secure().nextInt(200),
+      Random.secure().nextInt(200),
+      Random.secure().nextInt(200),
+
     );
   }
-}
-
-class incomeWidget extends StatelessWidget {
-  final String income;
-  final String title;
-  incomeWidget({this.income,this.title});
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      child: Column(
-        children: [
-          Text(income,style: TextStyle(
-              fontSize: 20,
-              color: Colors.red
-          ),),
-          Text(title,style: TextStyle(
-              fontSize: 12,
-              color: Colors.black
-          ),),
-        ],
-      ),
-    );
+  static Color getRandonWhightColor(Random random) {
+    //0~255 0为完全透明 255 为不透明
+    //这里生成的透明度取值范围为 10~200
+    int a = random.nextInt(190) + 10;
+    return Color.fromARGB(a, 255, 255, 255);
   }
 }
