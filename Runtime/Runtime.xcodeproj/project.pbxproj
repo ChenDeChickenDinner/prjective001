@@ -70,10 +70,7 @@
 		555B8BA12564F27400032179 /* Define.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B862564F27400032179 /* Define.c */; };
 		555B8BA22564F27400032179 /* Pretreatment.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B892564F27400032179 /* Pretreatment.c */; };
 		555B8BA32564F27400032179 /* Macro.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B8C2564F27400032179 /* Macro.c */; };
-		555B8BA42564F27400032179 /* Static.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B8F2564F27400032179 /* Static.c */; };
 		555B8BA52564F27400032179 /* Scope.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B922564F27400032179 /* Scope.c */; };
-		555B8BA62564F27400032179 /* Const.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B952564F27400032179 /* Const.c */; };
-		555B8BA72564F27400032179 /* Typedef.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B982564F27400032179 /* Typedef.c */; };
 		555B8BA82564F27400032179 /* Operator.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B9C2564F27400032179 /* Operator.c */; };
 		555B8BB62564F28400032179 /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8BAA2564F28400032179 /* Protocol.m */; };
 		555B8BB72564F28400032179 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8BAB2564F28400032179 /* Block.m */; };
@@ -91,6 +88,7 @@
 		5589FFF4258C756B0057CBDF /* NSData_.m in Sources */ = {isa = PBXBuildFile; fileRef = 5589FFF3258C756B0057CBDF /* NSData_.m */; };
 		558FDFA2257E10A900DDCD35 /* ObjectType.m in Sources */ = {isa = PBXBuildFile; fileRef = 558FDFA1257E10A900DDCD35 /* ObjectType.m */; };
 		558FDFA8257E155C00DDCD35 /* IsEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 558FDFA7257E155C00DDCD35 /* IsEqual.m */; };
+		55A6DB2225F0CB0A00984988 /* Aruntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A6DB2125F0CB0A00984988 /* Aruntime.m */; };
 		55B3B87F2581EF2B00FDED62 /* NSPredicatec.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B87E2581EF2B00FDED62 /* NSPredicatec.m */; };
 		55B3B8BA25830C0400FDED62 /* NSIndexPath_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8B925830C0400FDED62 /* NSIndexPath_.m */; };
 		55B3B8BF25830E2A00FDED62 /* NSIndexSet_.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B3B8BE25830E2A00FDED62 /* NSIndexSet_.m */; };
@@ -252,14 +250,8 @@
 		555B8B892564F27400032179 /* Pretreatment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Pretreatment.c; sourceTree = "<group>"; };
 		555B8B8B2564F27400032179 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		555B8B8C2564F27400032179 /* Macro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Macro.c; sourceTree = "<group>"; };
-		555B8B8F2564F27400032179 /* Static.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Static.c; sourceTree = "<group>"; };
-		555B8B902564F27400032179 /* Static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Static.h; sourceTree = "<group>"; };
 		555B8B922564F27400032179 /* Scope.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Scope.c; sourceTree = "<group>"; };
 		555B8B932564F27400032179 /* Scope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scope.h; sourceTree = "<group>"; };
-		555B8B952564F27400032179 /* Const.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Const.c; sourceTree = "<group>"; };
-		555B8B962564F27400032179 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
-		555B8B982564F27400032179 /* Typedef.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Typedef.c; sourceTree = "<group>"; };
-		555B8B992564F27400032179 /* Typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Typedef.h; sourceTree = "<group>"; };
 		555B8B9B2564F27400032179 /* Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
 		555B8B9C2564F27400032179 /* Operator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Operator.c; sourceTree = "<group>"; };
 		555B8BAA2564F28400032179 /* Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
@@ -298,6 +290,8 @@
 		558FDFA1257E10A900DDCD35 /* ObjectType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectType.m; sourceTree = "<group>"; };
 		558FDFA6257E155C00DDCD35 /* IsEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsEqual.h; sourceTree = "<group>"; };
 		558FDFA7257E155C00DDCD35 /* IsEqual.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IsEqual.m; sourceTree = "<group>"; };
+		55A6DB2025F0CB0A00984988 /* Aruntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aruntime.h; sourceTree = "<group>"; };
+		55A6DB2125F0CB0A00984988 /* Aruntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aruntime.m; sourceTree = "<group>"; };
 		55B3B87D2581EF2B00FDED62 /* NSPredicatec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSPredicatec.h; sourceTree = "<group>"; };
 		55B3B87E2581EF2B00FDED62 /* NSPredicatec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPredicatec.m; sourceTree = "<group>"; };
 		55B3B8B825830C0400FDED62 /* NSIndexPath_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSIndexPath_.h; sourceTree = "<group>"; };
@@ -747,6 +741,8 @@
 		552EE4DB22E97CB600D7F0CB /* 3Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				55A6DB2025F0CB0A00984988 /* Aruntime.h */,
+				55A6DB2125F0CB0A00984988 /* Aruntime.m */,
 				5543FA042590736E005AFD18 /* @encode */,
 				552EE4F922E9918800D7F0CB /* 1数据结构 */,
 				552EE50C22E9AB7100D7F0CB /* 2配置类信息 */,
@@ -1250,32 +1246,31 @@
 			isa = PBXGroup;
 			children = (
 				555B8B7C2564F27400032179 /* 1数据类型 */,
-				555B8B8D2564F27400032179 /* 2数据修饰关键字 */,
-				555B8B9A2564F27400032179 /* 3运算符表达式语句 */,
-				555B8B792564F27400032179 /* 4流程控制 */,
+				555B8B9A2564F27400032179 /* 2运算符表达式语句 */,
+				555B8B792564F27400032179 /* 3流程控制 */,
+				55A6DB1925F0B84D00984988 /* 4函数 */,
+				555B8B8D2564F27400032179 /* 5数据修饰关键字 */,
 				555B8B832564F27400032179 /* 5预处理 */,
 			);
 			path = 0C;
 			sourceTree = "<group>";
 		};
-		555B8B792564F27400032179 /* 4流程控制 */ = {
+		555B8B792564F27400032179 /* 3流程控制 */ = {
 			isa = PBXGroup;
 			children = (
-				555B8B7A2564F27400032179 /* Process.c */,
 				555B8B7B2564F27400032179 /* Process.h */,
+				555B8B7A2564F27400032179 /* Process.c */,
 			);
-			path = "4流程控制";
+			path = "3流程控制";
 			sourceTree = "<group>";
 		};
 		555B8B7C2564F27400032179 /* 1数据类型 */ = {
 			isa = PBXGroup;
 			children = (
-				555B8B812564F27400032179 /* DataType.c */,
 				555B8B7F2564F27400032179 /* DataType.h */,
-				555B8B7D2564F27400032179 /* functionType.c */,
-				555B8B802564F27400032179 /* functionType.h */,
-				555B8B822564F27400032179 /* PointerType.c */,
+				555B8B812564F27400032179 /* DataType.c */,
 				555B8B7E2564F27400032179 /* PointerType.h */,
+				555B8B822564F27400032179 /* PointerType.c */,
 			);
 			path = "1数据类型";
 			sourceTree = "<group>";
@@ -1317,60 +1312,22 @@
 			path = "1宏定义";
 			sourceTree = "<group>";
 		};
-		555B8B8D2564F27400032179 /* 2数据修饰关键字 */ = {
+		555B8B8D2564F27400032179 /* 5数据修饰关键字 */ = {
 			isa = PBXGroup;
 			children = (
-				555B8B8E2564F27400032179 /* 3静态 */,
-				555B8B912564F27400032179 /* 2作用域 */,
-				555B8B942564F27400032179 /* 4常量限制 */,
-				555B8B972564F27400032179 /* 1别名 */,
-			);
-			path = "2数据修饰关键字";
-			sourceTree = "<group>";
-		};
-		555B8B8E2564F27400032179 /* 3静态 */ = {
-			isa = PBXGroup;
-			children = (
-				555B8B8F2564F27400032179 /* Static.c */,
-				555B8B902564F27400032179 /* Static.h */,
-			);
-			path = "3静态";
-			sourceTree = "<group>";
-		};
-		555B8B912564F27400032179 /* 2作用域 */ = {
-			isa = PBXGroup;
-			children = (
-				555B8B922564F27400032179 /* Scope.c */,
 				555B8B932564F27400032179 /* Scope.h */,
+				555B8B922564F27400032179 /* Scope.c */,
 			);
-			path = "2作用域";
+			path = "5数据修饰关键字";
 			sourceTree = "<group>";
 		};
-		555B8B942564F27400032179 /* 4常量限制 */ = {
-			isa = PBXGroup;
-			children = (
-				555B8B952564F27400032179 /* Const.c */,
-				555B8B962564F27400032179 /* Const.h */,
-			);
-			path = "4常量限制";
-			sourceTree = "<group>";
-		};
-		555B8B972564F27400032179 /* 1别名 */ = {
-			isa = PBXGroup;
-			children = (
-				555B8B982564F27400032179 /* Typedef.c */,
-				555B8B992564F27400032179 /* Typedef.h */,
-			);
-			path = "1别名";
-			sourceTree = "<group>";
-		};
-		555B8B9A2564F27400032179 /* 3运算符表达式语句 */ = {
+		555B8B9A2564F27400032179 /* 2运算符表达式语句 */ = {
 			isa = PBXGroup;
 			children = (
 				555B8B9B2564F27400032179 /* Operator.h */,
 				555B8B9C2564F27400032179 /* Operator.c */,
 			);
-			path = "3运算符表达式语句";
+			path = "2运算符表达式语句";
 			sourceTree = "<group>";
 		};
 		555B8CF125665D9E00032179 /* 4Foundation */ = {
@@ -1394,6 +1351,15 @@
 				557C9411256E4F07003DE7C3 /* Numbers.m */,
 			);
 			path = "1整数，浮点几何，范围";
+			sourceTree = "<group>";
+		};
+		55A6DB1925F0B84D00984988 /* 4函数 */ = {
+			isa = PBXGroup;
+			children = (
+				555B8B802564F27400032179 /* functionType.h */,
+				555B8B7D2564F27400032179 /* functionType.c */,
+			);
+			path = "4函数";
 			sourceTree = "<group>";
 		};
 		55B3B8B225830BB200FDED62 /* 3索引路径 */ = {
@@ -1557,19 +1523,16 @@
 				555B8BC22564F2CE00032179 /* @property.m in Sources */,
 				5519453A2570E06000ACD0DD /* ConvertingString.m in Sources */,
 				552EE4F522E990D800D7F0CB /* property_t.m in Sources */,
-				555B8BA42564F27400032179 /* Static.c in Sources */,
 				552EE5AB22EEC20400D7F0CB /* Autoreleasepool.m in Sources */,
 				55B3B87F2581EF2B00FDED62 /* NSPredicatec.m in Sources */,
 				55B3B8D52583430C00FDED62 /* NSArray_.m in Sources */,
 				552EE4DD22E97CB600D7F0CB /* main.m in Sources */,
 				555B8B9F2564F27400032179 /* DataType.c in Sources */,
-				555B8BA62564F27400032179 /* Const.c in Sources */,
 				558FDFA2257E10A900DDCD35 /* ObjectType.m in Sources */,
 				557C9412256E4F07003DE7C3 /* Numbers.m in Sources */,
 				552EE5AF22EEC20400D7F0CB /* MemoryMangeARC.m in Sources */,
 				552EE5A222EEC20400D7F0CB /* GDCThread.m in Sources */,
 				552EE4EB22E9898E00D7F0CB /* method_t.m in Sources */,
-				555B8BA72564F27400032179 /* Typedef.c in Sources */,
 				555B8BB72564F28400032179 /* Block.m in Sources */,
 				557C9420256F3283003DE7C3 /* BinaryData.m in Sources */,
 				552EE4EF22E98F3100D7F0CB /* objc_class.m in Sources */,
@@ -1610,6 +1573,7 @@
 				55BEA63F2595AF8C00F35F32 /* Translater.m in Sources */,
 				5582A5F2256F3F46005DF600 /* NSValue_.m in Sources */,
 				555B8BA02564F27400032179 /* PointerType.c in Sources */,
+				55A6DB2225F0CB0A00984988 /* Aruntime.m in Sources */,
 				55B3B8BF25830E2A00FDED62 /* NSIndexSet_.m in Sources */,
 				555B8BB92564F28400032179 /* NIL.m in Sources */,
 				55BEA6C52595D4C200F35F32 /* Explanation.m in Sources */,
