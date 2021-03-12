@@ -9,25 +9,19 @@
 /* Begin PBXBuildFile section */
 		55D1EF7625FB03E70080A369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF7525FB03E70080A369 /* main.m */; };
 		55D1F00025FB03FF0080A369 /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF8125FB03FE0080A369 /* Interface.m */; };
-		55D1F00125FB03FF0080A369 /* @property.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF8225FB03FE0080A369 /* @property.m */; };
 		55D1F00225FB03FF0080A369 /* Nullable.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF8A25FB03FE0080A369 /* Nullable.m */; };
 		55D1F00325FB03FF0080A369 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF8C25FB03FF0080A369 /* Block.m */; };
 		55D1F00425FB03FF0080A369 /* MemoryDistribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF9125FB03FF0080A369 /* MemoryDistribution.m */; };
 		55D1F00525FB03FF0080A369 /* Autoreleasepool.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF9725FB03FF0080A369 /* Autoreleasepool.m */; };
 		55D1F00625FB03FF0080A369 /* MemoryOtherDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF9A25FB03FF0080A369 /* MemoryOtherDataType.m */; };
-		55D1F00725FB03FF0080A369 /* MemoryCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF9B25FB03FF0080A369 /* MemoryCopy.m */; };
-		55D1F00825FB03FF0080A369 /* MemoryMangeMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA025FB03FF0080A369 /* MemoryMangeMRC.m */; };
 		55D1F00925FB03FF0080A369 /* MemoryMangeARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA125FB03FF0080A369 /* MemoryMangeARC.m */; };
-		55D1F00A25FB03FF0080A369 /* MemoryMangeNature.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA325FB03FF0080A369 /* MemoryMangeNature.m */; };
 		55D1F00B25FB03FF0080A369 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA725FB03FF0080A369 /* Person.m */; };
 		55D1F00C25FB03FF0080A369 /* car.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA825FB03FF0080A369 /* car.m */; };
 		55D1F00D25FB03FF0080A369 /* KvoTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFAB25FB03FF0080A369 /* KvoTechnology.m */; };
-		55D1F00E25FB03FF0080A369 /* KvoDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFAE25FB03FF0080A369 /* KvoDocument.m */; };
 		55D1F00F25FB03FF0080A369 /* KvcTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFB025FB03FF0080A369 /* KvcTechnology.m */; };
 		55D1F01025FB03FF0080A369 /* NSObject_protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFB425FB03FF0080A369 /* NSObject_protocol.m */; };
 		55D1F01125FB03FF0080A369 /* NSObject_inst.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFB525FB03FF0080A369 /* NSObject_inst.m */; };
 		55D1F01225FB03FF0080A369 /* NSObject_class.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFB625FB03FF0080A369 /* NSObject_class.m */; };
-		55D1F01325FB03FF0080A369 /* category.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFBD25FB03FF0080A369 /* category.m */; };
 		55D1F01425FB03FF0080A369 /* object_Inst.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFC225FB03FF0080A369 /* object_Inst.m */; };
 		55D1F01525FB03FF0080A369 /* classData.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFC625FB03FF0080A369 /* classData.m */; };
 		55D1F01625FB03FF0080A369 /* mutation.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFC925FB03FF0080A369 /* mutation.m */; };
@@ -39,7 +33,6 @@
 		55D1F01C25FB03FF0080A369 /* property_t.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFDC25FB03FF0080A369 /* property_t.m */; };
 		55D1F01D25FB03FF0080A369 /* class_Inst.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFDD25FB03FF0080A369 /* class_Inst.m */; };
 		55D1F01E25FB03FF0080A369 /* protocol_Inst.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFE025FB03FF0080A369 /* protocol_Inst.m */; };
-		55D1F01F25FB03FF0080A369 /* objc_object_class.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFE225FB03FF0080A369 /* objc_object_class.m */; };
 		55D1F02025FB03FF0080A369 /* Scope.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFE625FB03FF0080A369 /* Scope.c */; };
 		55D1F02125FB03FF0080A369 /* Define.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFEB25FB03FF0080A369 /* Define.c */; };
 		55D1F02225FB03FF0080A369 /* Pretreatment.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFEE25FB03FF0080A369 /* Pretreatment.c */; };
@@ -49,6 +42,8 @@
 		55D1F02625FB03FF0080A369 /* PointerType.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFF925FB03FF0080A369 /* PointerType.c */; };
 		55D1F02725FB03FF0080A369 /* functionType.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFFB25FB03FF0080A369 /* functionType.c */; };
 		55D1F02825FB03FF0080A369 /* Operator.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFFF25FB03FF0080A369 /* Operator.c */; };
+		55D1F03725FB61690080A369 /* ProtocolX.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F03625FB61690080A369 /* ProtocolX.m */; };
+		55D1F03C25FB620A0080A369 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F03B25FB620A0080A369 /* NSObject+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,9 +62,7 @@
 		55D1EF7225FB03E70080A369 /* STProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D1EF7525FB03E70080A369 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55D1EF8125FB03FE0080A369 /* Interface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interface.m; sourceTree = "<group>"; };
-		55D1EF8225FB03FE0080A369 /* @property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "@property.m"; sourceTree = "<group>"; };
 		55D1EF8525FB03FE0080A369 /* Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
-		55D1EF8725FB03FE0080A369 /* @property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "@property.h"; sourceTree = "<group>"; };
 		55D1EF8925FB03FE0080A369 /* Nullable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nullable.h; sourceTree = "<group>"; };
 		55D1EF8A25FB03FE0080A369 /* Nullable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nullable.m; sourceTree = "<group>"; };
 		55D1EF8C25FB03FF0080A369 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
@@ -148,6 +141,10 @@
 		55D1EFFC25FB03FF0080A369 /* functionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functionType.h; sourceTree = "<group>"; };
 		55D1EFFE25FB03FF0080A369 /* Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
 		55D1EFFF25FB03FF0080A369 /* Operator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Operator.c; sourceTree = "<group>"; };
+		55D1F03525FB61690080A369 /* ProtocolX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolX.h; sourceTree = "<group>"; };
+		55D1F03625FB61690080A369 /* ProtocolX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolX.m; sourceTree = "<group>"; };
+		55D1F03A25FB620A0080A369 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		55D1F03B25FB620A0080A369 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +211,6 @@
 				55D1EF8625FB03FE0080A369 /* 1类的声明实现 */,
 				55D1EF8425FB03FE0080A369 /* 2分类 */,
 				55D1EF8025FB03FE0080A369 /* 3协议 */,
-				55D1EF8325FB03FE0080A369 /* 4Property */,
 			);
 			path = "语法";
 			sourceTree = "<group>";
@@ -222,22 +218,17 @@
 		55D1EF8025FB03FE0080A369 /* 3协议 */ = {
 			isa = PBXGroup;
 			children = (
+				55D1F03525FB61690080A369 /* ProtocolX.h */,
+				55D1F03625FB61690080A369 /* ProtocolX.m */,
 			);
 			path = "3协议";
-			sourceTree = "<group>";
-		};
-		55D1EF8325FB03FE0080A369 /* 4Property */ = {
-			isa = PBXGroup;
-			children = (
-				55D1EF8725FB03FE0080A369 /* @property.h */,
-				55D1EF8225FB03FE0080A369 /* @property.m */,
-			);
-			path = 4Property;
 			sourceTree = "<group>";
 		};
 		55D1EF8425FB03FE0080A369 /* 2分类 */ = {
 			isa = PBXGroup;
 			children = (
+				55D1F03A25FB620A0080A369 /* NSObject+Category.h */,
+				55D1F03B25FB620A0080A369 /* NSObject+Category.m */,
 			);
 			path = "2分类";
 			sourceTree = "<group>";
@@ -714,7 +705,6 @@
 				55D1F00D25FB03FF0080A369 /* KvoTechnology.m in Sources */,
 				55D1F01925FB03FF0080A369 /* TypeEncodings.m in Sources */,
 				55D1F01D25FB03FF0080A369 /* class_Inst.m in Sources */,
-				55D1F01325FB03FF0080A369 /* category.m in Sources */,
 				55D1F01025FB03FF0080A369 /* NSObject_protocol.m in Sources */,
 				55D1F02525FB03FF0080A369 /* DataType.c in Sources */,
 				55D1F01725FB03FF0080A369 /* NSObject+Associated.m in Sources */,
@@ -727,24 +717,20 @@
 				55D1F01C25FB03FF0080A369 /* property_t.m in Sources */,
 				55D1F02125FB03FF0080A369 /* Define.c in Sources */,
 				55D1F00025FB03FF0080A369 /* Interface.m in Sources */,
-				55D1F00E25FB03FF0080A369 /* KvoDocument.m in Sources */,
 				55D1F02325FB03FF0080A369 /* Macro.c in Sources */,
 				55D1F00325FB03FF0080A369 /* Block.m in Sources */,
 				55D1F01425FB03FF0080A369 /* object_Inst.m in Sources */,
 				55D1F02425FB03FF0080A369 /* Process.c in Sources */,
-				55D1F00A25FB03FF0080A369 /* MemoryMangeNature.m in Sources */,
 				55D1F01225FB03FF0080A369 /* NSObject_class.m in Sources */,
+				55D1F03725FB61690080A369 /* ProtocolX.m in Sources */,
 				55D1F02625FB03FF0080A369 /* PointerType.c in Sources */,
 				55D1F00425FB03FF0080A369 /* MemoryDistribution.m in Sources */,
-				55D1F00825FB03FF0080A369 /* MemoryMangeMRC.m in Sources */,
 				55D1F01A25FB03FF0080A369 /* Ivar.m in Sources */,
 				55D1F00F25FB03FF0080A369 /* KvcTechnology.m in Sources */,
+				55D1F03C25FB620A0080A369 /* NSObject+Category.m in Sources */,
 				55D1F00B25FB03FF0080A369 /* Person.m in Sources */,
-				55D1F00725FB03FF0080A369 /* MemoryCopy.m in Sources */,
 				55D1F01E25FB03FF0080A369 /* protocol_Inst.m in Sources */,
 				55D1F01825FB03FF0080A369 /* protocolData.m in Sources */,
-				55D1F00125FB03FF0080A369 /* @property.m in Sources */,
-				55D1F01F25FB03FF0080A369 /* objc_object_class.m in Sources */,
 				55D1F00625FB03FF0080A369 /* MemoryOtherDataType.m in Sources */,
 				55D1F01625FB03FF0080A369 /* mutation.m in Sources */,
 				55D1F01B25FB03FF0080A369 /* Method.m in Sources */,
