@@ -72,7 +72,6 @@
 		555B8BA32564F27400032179 /* Macro.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B8C2564F27400032179 /* Macro.c */; };
 		555B8BA52564F27400032179 /* Scope.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B922564F27400032179 /* Scope.c */; };
 		555B8BA82564F27400032179 /* Operator.c in Sources */ = {isa = PBXBuildFile; fileRef = 555B8B9C2564F27400032179 /* Operator.c */; };
-		555B8BB62564F28400032179 /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8BAA2564F28400032179 /* Protocol.m */; };
 		555B8BB72564F28400032179 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8BAB2564F28400032179 /* Block.m */; };
 		555B8BB92564F28400032179 /* NIL.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8BB22564F28400032179 /* NIL.m */; };
 		555B8BBB2564F28400032179 /* Nullable.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B8BB52564F28400032179 /* Nullable.m */; };
@@ -1506,7 +1505,6 @@
 				552EE5CC22EEC23F00D7F0CB /* XSProxy.m in Sources */,
 				5582A5F8256F5299005DF600 /* Exceptions.m in Sources */,
 				552EE5B522EEC20400D7F0CB /* RunLoopState.m in Sources */,
-				555B8BB62564F28400032179 /* Protocol.m in Sources */,
 				552EE4F822E990FD00D7F0CB /* category_t.m in Sources */,
 				551945102570A38F00ACD0DD /* GettingLength.m in Sources */,
 				552EE5B122EEC20400D7F0CB /* Person.m in Sources */,
