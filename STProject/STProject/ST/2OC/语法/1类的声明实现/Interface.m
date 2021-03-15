@@ -5,7 +5,7 @@
 //  Created by xs on 2021/3/9.
 //
 
-#import "@property.h"
+#import "Interface.h"
 
 
 @implementation Interface
@@ -49,6 +49,9 @@
 }
 #pragma warning-@dynamic
 /*
+ @dynamic是告诉编译器不用自动生成getter和setter的实现，等到运行时再添加方法实现
+
+ 
 就是要来告诉编译器，代码中用@dynamic修饰的属性，
 其getter和setter方法会在程序运行的时候或者用其他方式动态绑定，以便让编译器通过编译。
 其主要的作用就是用在NSManageObject对象的属性声明上，

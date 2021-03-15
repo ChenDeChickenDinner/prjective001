@@ -11,9 +11,6 @@
  关联
  1.关联是指把两个对象相互关联起来，使得其中的一个对象作为另外一个对象的一部分。
  在类的定义之外为类增加额外的存储空间
- 1. 使用关联，我们可以不用修改类的定义而为其对象增加存储空间。
- 2..关联是基于关键字的，因此，我们可以为任何对象增加任意多的关联，每个都使用不同的关键字即可。
- 3.关联是可以保证被关联的对象在关联对象的整个生命周期都是可用的（在垃圾自动回收环境下也不会导致资源不可回收）。
  */
 @implementation NSObject (Associated)
 - (void)setName:(NSString *)name{
@@ -48,33 +45,33 @@
  1.关联对象并不是存储在被关联对象本身内存中
  2.关联对象存储在全局的统一的一个AssociationsManager中
  
- AssociationsManager可重复创建，
- 但是AssociationsHashMap是AssociationsManager内的静态变量，全局只有一个，负责管理所有对象的关联表。
- 通过对象地址的反码取出该对象的属性关联表ObjectAssociationMap。
- 然后再通过关联key从对象关联表中获取对应的ObjectAssociation，
- ObjectAssociation内存储的就是真正需要的存储的value值和内存关联策略policy了
  
- 关联对象的释放
- 在对象释放的时候，会判断对象是否关联过属性，如果关联过属性，则会调用_object_remove_assocations删除其在AssociationsHashMap中对应的值ObjectAssociationMap和ObjectAssociationMap中的每个ObjectAssociation
- 
- AssociationsManager
- AssociationsManager称之为管理对象，其内部有一个AssociationsHashMap类型的静态指针变量_map，这个变量在程序运行期间只有一份
  class AssociationsManager {
  static AssociationsHashMap *_map;
  }
+ 
  AssociationsHashMap
+ disguised_ptr_t(对象):ObjectAssociationMap
  disguised_ptr_t:ObjectAssociationMap
- disguised_ptr_t:ObjectAssociationMap
- disguised_ptr_t:表示对象
+ 通过对象地址的反码取出该对象的属性关联表ObjectAssociationMap。
  
  ObjectAssociationMap
+ void * (key): ObjectAssociation
  void * : ObjectAssociation
- void * : ObjectAssociation
- void *:表示对象的key
+ 然后再通过关联key从对象关联表中获取对应的ObjectAssociation，
  
  ObjectAssociation
- uintptr_t _policy;
  id _value:存储的值
+ uintptr_t _policy;内存管理策略
+ ObjectAssociation内存储的就是真正需要的存储的value值和内存关联策略policy了
+ 
+ 
+
+ 关联对象的释放
+ 在对象释放的时候，会判断对象是否关联过属性，如果关联过属性，则会调用_object_remove_assocations删除其在AssociationsHashMap中对应的值ObjectAssociationMap和ObjectAssociationMap中的每个ObjectAssociation
+ objc_removeAssociatedObjects
+
+
  */
 - (void)test1{
     

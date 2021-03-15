@@ -44,6 +44,9 @@
 		55D1F02825FB03FF0080A369 /* Operator.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFFF25FB03FF0080A369 /* Operator.c */; };
 		55D1F03725FB61690080A369 /* ProtocolX.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F03625FB61690080A369 /* ProtocolX.m */; };
 		55D1F03C25FB620A0080A369 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F03B25FB620A0080A369 /* NSObject+Category.m */; };
+		55D1F05E25FF05C60080A369 /* load_func.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F05D25FF05C60080A369 /* load_func.m */; };
+		55D1F07B25FF52180080A369 /* objc_msgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F07A25FF52180080A369 /* objc_msgSend.m */; };
+		55D1F08825FF5D250080A369 /* method_exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F08725FF5D250080A369 /* method_exchange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,8 +100,6 @@
 		55D1EFB625FB03FF0080A369 /* NSObject_class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_class.m; sourceTree = "<group>"; };
 		55D1EFB725FB03FF0080A369 /* NSObject_inst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_inst.h; sourceTree = "<group>"; };
 		55D1EFB825FB03FF0080A369 /* NSObject_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_protocol.h; sourceTree = "<group>"; };
-		55D1EFBD25FB03FF0080A369 /* category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = category.m; sourceTree = "<group>"; };
-		55D1EFBE25FB03FF0080A369 /* category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = category.h; sourceTree = "<group>"; };
 		55D1EFC225FB03FF0080A369 /* object_Inst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = object_Inst.m; sourceTree = "<group>"; };
 		55D1EFC325FB03FF0080A369 /* object_Inst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object_Inst.h; sourceTree = "<group>"; };
 		55D1EFC625FB03FF0080A369 /* classData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classData.m; sourceTree = "<group>"; };
@@ -145,6 +146,12 @@
 		55D1F03625FB61690080A369 /* ProtocolX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolX.m; sourceTree = "<group>"; };
 		55D1F03A25FB620A0080A369 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		55D1F03B25FB620A0080A369 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		55D1F05C25FF05C60080A369 /* load_func.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = load_func.h; sourceTree = "<group>"; };
+		55D1F05D25FF05C60080A369 /* load_func.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = load_func.m; sourceTree = "<group>"; };
+		55D1F07925FF52180080A369 /* objc_msgSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_msgSend.h; sourceTree = "<group>"; };
+		55D1F07A25FF52180080A369 /* objc_msgSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_msgSend.m; sourceTree = "<group>"; };
+		55D1F08625FF5D250080A369 /* method_exchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = method_exchange.h; sourceTree = "<group>"; };
+		55D1F08725FF5D250080A369 /* method_exchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = method_exchange.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +207,6 @@
 			children = (
 				55D1EF7F25FB03FE0080A369 /* 语法 */,
 				55D1EF8825FB03FE0080A369 /* Nullable */,
-				55D1EF8B25FB03FE0080A369 /* Block */,
 			);
 			path = 2OC;
 			sourceTree = "<group>";
@@ -254,8 +260,8 @@
 		55D1EF8B25FB03FE0080A369 /* Block */ = {
 			isa = PBXGroup;
 			children = (
-				55D1EF8C25FB03FF0080A369 /* Block.m */,
 				55D1EF8D25FB03FF0080A369 /* Block.h */,
+				55D1EF8C25FB03FF0080A369 /* Block.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 		55D1EF8E25FB03FF0080A369 /* 4内存管理 */ = {
 			isa = PBXGroup;
 			children = (
+				55D1EF8B25FB03FE0080A369 /* Block */,
 				55D1EF8F25FB03FF0080A369 /* 01内存分布存储 */,
 				55D1EF9225FB03FF0080A369 /* 03内存管理 */,
 			);
@@ -405,33 +412,20 @@
 		55D1EFBA25FB03FF0080A369 /* 2 加载过程 */ = {
 			isa = PBXGroup;
 			children = (
-				55D1EFBB25FB03FF0080A369 /* 1类加载 */,
-				55D1EFBF25FB03FF0080A369 /* 3对象实例化 */,
+				55D1F05C25FF05C60080A369 /* load_func.h */,
+				55D1F05D25FF05C60080A369 /* load_func.m */,
 			);
 			path = "2 加载过程";
-			sourceTree = "<group>";
-		};
-		55D1EFBB25FB03FF0080A369 /* 1类加载 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "1类加载";
-			sourceTree = "<group>";
-		};
-		55D1EFBF25FB03FF0080A369 /* 3对象实例化 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "3对象实例化";
 			sourceTree = "<group>";
 		};
 		55D1EFC025FB03FF0080A369 /* 3Api */ = {
 			isa = PBXGroup;
 			children = (
+				55D1EFC425FB03FF0080A369 /* 0objc */,
 				55D1EFD225FB03FF0080A369 /* 1class对象 */,
 				55D1EFDE25FB03FF0080A369 /* 2protocol对象 */,
 				55D1EFC125FB03FF0080A369 /* 3object对象 */,
-				55D1EFC425FB03FF0080A369 /* 4objc */,
+				55D1EFD425FB03FF0080A369 /* 4属性_Ivar_方法 */,
 			);
 			path = 3Api;
 			sourceTree = "<group>";
@@ -445,16 +439,17 @@
 			path = "3object对象";
 			sourceTree = "<group>";
 		};
-		55D1EFC425FB03FF0080A369 /* 4objc */ = {
+		55D1EFC425FB03FF0080A369 /* 0objc */ = {
 			isa = PBXGroup;
 			children = (
+				55D1F08525FF5D070080A369 /* 方法交换 */,
 				55D1EFC525FB03FF0080A369 /* 1类管理 */,
 				55D1EFCF25FB03FF0080A369 /* 2协议管理 */,
-				55D1EFCB25FB03FF0080A369 /* 3分类关联对象 */,
-				55D1EFC825FB03FF0080A369 /* 4异常处理 */,
-				55D1EFCE25FB03FF0080A369 /* 5message */,
+				55D1EFCE25FB03FF0080A369 /* 3message */,
+				55D1F06D25FF2B880080A369 /* 4关联对象 */,
+				55D1EFC825FB03FF0080A369 /* 5异常处理 */,
 			);
-			path = 4objc;
+			path = 0objc;
 			sourceTree = "<group>";
 		};
 		55D1EFC525FB03FF0080A369 /* 1类管理 */ = {
@@ -466,29 +461,22 @@
 			path = "1类管理";
 			sourceTree = "<group>";
 		};
-		55D1EFC825FB03FF0080A369 /* 4异常处理 */ = {
+		55D1EFC825FB03FF0080A369 /* 5异常处理 */ = {
 			isa = PBXGroup;
 			children = (
 				55D1EFCA25FB03FF0080A369 /* mutation.h */,
 				55D1EFC925FB03FF0080A369 /* mutation.m */,
 			);
-			path = "4异常处理";
+			path = "5异常处理";
 			sourceTree = "<group>";
 		};
-		55D1EFCB25FB03FF0080A369 /* 3分类关联对象 */ = {
+		55D1EFCE25FB03FF0080A369 /* 3message */ = {
 			isa = PBXGroup;
 			children = (
-				55D1EFCD25FB03FF0080A369 /* NSObject+Associated.h */,
-				55D1EFCC25FB03FF0080A369 /* NSObject+Associated.m */,
+				55D1F07925FF52180080A369 /* objc_msgSend.h */,
+				55D1F07A25FF52180080A369 /* objc_msgSend.m */,
 			);
-			path = "3分类关联对象";
-			sourceTree = "<group>";
-		};
-		55D1EFCE25FB03FF0080A369 /* 5message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = 5message;
+			path = 3message;
 			sourceTree = "<group>";
 		};
 		55D1EFCF25FB03FF0080A369 /* 2协议管理 */ = {
@@ -505,12 +493,11 @@
 			children = (
 				55D1EFD325FB03FF0080A369 /* class_Inst.h */,
 				55D1EFDD25FB03FF0080A369 /* class_Inst.m */,
-				55D1EFD425FB03FF0080A369 /* someth */,
 			);
 			path = "1class对象";
 			sourceTree = "<group>";
 		};
-		55D1EFD425FB03FF0080A369 /* someth */ = {
+		55D1EFD425FB03FF0080A369 /* 4属性_Ivar_方法 */ = {
 			isa = PBXGroup;
 			children = (
 				55D1EFD525FB03FF0080A369 /* Ivar.h */,
@@ -522,7 +509,7 @@
 				55D1EFD925FB03FF0080A369 /* TypeEncodings.h */,
 				55D1EFD625FB03FF0080A369 /* TypeEncodings.m */,
 			);
-			path = someth;
+			path = "4属性_Ivar_方法";
 			sourceTree = "<group>";
 		};
 		55D1EFDE25FB03FF0080A369 /* 2protocol对象 */ = {
@@ -537,10 +524,8 @@
 		55D1EFE125FB03FF0080A369 /* 1􏱺􏱻􏱼􏱽􏰔􏱾􏱜􏱆􏱇对象的数据结构与关系 */ = {
 			isa = PBXGroup;
 			children = (
-				55D1EFE225FB03FF0080A369 /* objc_object_class.m */,
 				55D1EFE325FB03FF0080A369 /* objc_object_class.h */,
-				55D1EFBE25FB03FF0080A369 /* category.h */,
-				55D1EFBD25FB03FF0080A369 /* category.m */,
+				55D1EFE225FB03FF0080A369 /* objc_object_class.m */,
 			);
 			path = "1􏱺􏱻􏱼􏱽􏰔􏱾􏱜􏱆􏱇对象的数据结构与关系";
 			sourceTree = "<group>";
@@ -642,6 +627,24 @@
 			path = "2运算符表达式语句";
 			sourceTree = "<group>";
 		};
+		55D1F06D25FF2B880080A369 /* 4关联对象 */ = {
+			isa = PBXGroup;
+			children = (
+				55D1EFCD25FB03FF0080A369 /* NSObject+Associated.h */,
+				55D1EFCC25FB03FF0080A369 /* NSObject+Associated.m */,
+			);
+			path = "4关联对象";
+			sourceTree = "<group>";
+		};
+		55D1F08525FF5D070080A369 /* 方法交换 */ = {
+			isa = PBXGroup;
+			children = (
+				55D1F08625FF5D250080A369 /* method_exchange.h */,
+				55D1F08725FF5D250080A369 /* method_exchange.m */,
+			);
+			path = "方法交换";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -705,10 +708,13 @@
 				55D1F00D25FB03FF0080A369 /* KvoTechnology.m in Sources */,
 				55D1F01925FB03FF0080A369 /* TypeEncodings.m in Sources */,
 				55D1F01D25FB03FF0080A369 /* class_Inst.m in Sources */,
+				55D1F08825FF5D250080A369 /* method_exchange.m in Sources */,
+				55D1F07B25FF52180080A369 /* objc_msgSend.m in Sources */,
 				55D1F01025FB03FF0080A369 /* NSObject_protocol.m in Sources */,
 				55D1F02525FB03FF0080A369 /* DataType.c in Sources */,
 				55D1F01725FB03FF0080A369 /* NSObject+Associated.m in Sources */,
 				55D1F02825FB03FF0080A369 /* Operator.c in Sources */,
+				55D1F05E25FF05C60080A369 /* load_func.m in Sources */,
 				55D1F01125FB03FF0080A369 /* NSObject_inst.m in Sources */,
 				55D1F00C25FB03FF0080A369 /* car.m in Sources */,
 				55D1EF7625FB03E70080A369 /* main.m in Sources */,
@@ -855,9 +861,13 @@
 		55D1EF7A25FB03E70080A369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QG479838Q3;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -865,9 +875,13 @@
 		55D1EF7B25FB03E70080A369 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_OBJC_UNUSED_IVARS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QG479838Q3;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

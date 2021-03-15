@@ -40,7 +40,7 @@
     }
     {
         
-        //注册一个方法，将方法名映射到一个选择器，并返回这个选择器
+        //将一个C字符串转换成SEL
         SEL sel1 = sel_registerName("test1");
         SEL sel2 = sel_registerName("test1");
 
@@ -54,20 +54,15 @@
 }
 + (void)load2{
     
-    {
-        // 根据实例对象的选择器返回函数指针
-        IMP imp = [NSObject instanceMethodForSelector:@selector(description)];
+   //创建一个指针函数的指针，该函数调用时会调用特定的block
+    IMP imp = imp_implementationWithBlock(^(){
         
-    }
-    {   //创建一个指针函数的指针，该函数调用时会调用特定的block
-        IMP imp = imp_implementationWithBlock(^(){
-            
-        });
-        //返回与IMP(使用imp_implementationWithBlock创建的)相关的block
-        id block = imp_getBlock(imp);
-        //解除block与IMP(使用imp_implementationWithBlock创建的)的关联关系，并释放block的拷贝
-        BOOL remove = imp_removeBlock(imp);
-    }
+    });
+    //返回与IMP(使用imp_implementationWithBlock创建的)相关的block
+    id block = imp_getBlock(imp);
+    //解除block与IMP(使用imp_implementationWithBlock创建的)的关联关系，并释放block的拷贝
+    BOOL remove = imp_removeBlock(imp);
+    
 }
 
 + (void)load{

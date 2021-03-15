@@ -32,8 +32,10 @@
     
     
    
-    //通过C字符串类名获取类、元类、
+    //通过C字符串类名获取类
     Class instClass = objc_getClass("classData"); // 类对象
+    
+    //通过C字符串类名获元类
     Class metaClass = objc_getMetaClass("classData"); // 元类对象
 }
 @end

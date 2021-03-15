@@ -22,37 +22,30 @@
 - (void)dealloc{
     NSLog(@"%s",__func__);
 }
-
-
-#pragma warning -对象信息获取
-- (void)test1{
-
-    [self class];
-    [self superclass];
-
-    [self hash];
-    [self description];
-
-
-}
-#pragma warning -对象自检
-- (void)test2{
-    
-    
-    [self isKindOfClass:[NSObject class]]; // YES
-    [self isMemberOfClass:[NSObject class]]; // NO
-    
-    BOOL b1 =  [self conformsToProtocol:@protocol(NSObject)];
-    BOOL b2 =  [self respondsToSelector:@selector(test)];
-
-}
-#pragma warning -消息机制
-- (void)test3{
-    
+#pragma warning -类信息获取
+- (void)test{
     IMP imp = [self methodForSelector:@selector(description)];
-
-//    - (id)forwardingTargetForSelector:(SEL)aSelector OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0);
-//    - (void)forwardInvocation:(NSInvocation *)anInvocation OBJC_SWIFT_UNAVAILABLE("");
-//    - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector OBJC_SWIFT_UNAVAILABLE("")
+    NSMethodSignature *sig = [self methodSignatureForSelector:@selector(description)];
 }
+
+
+
+#pragma warning -消息机制-消息转发
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    return [super forwardingTargetForSelector:aSelector];
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+    return [super methodSignatureForSelector:aSelector];
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation{
+
+ 
+}
+#pragma warning -消息机制-方法找不到
+- (void)doesNotRecognizeSelector:(SEL)aSelector{
+    
+}
+
 @end

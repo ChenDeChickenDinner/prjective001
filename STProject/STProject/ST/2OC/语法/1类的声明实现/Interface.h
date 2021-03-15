@@ -43,15 +43,15 @@
 /*set/get接口命名与限制
  
  */
-@property (setter=writeNme:,getter=isName) NSString *name3;
-@property (readonly)  NSString *name4;
-@property (readwrite) NSString *name5;
+@property (setter=writeNme:,getter=isName) NSString *de1;
+@property (readonly)  NSString *de2;
+@property (readwrite) NSString *de3;
 
 /*编程规范提示
  
  */
-@property (nonnull) NSString *name11;
-@property (nullable) NSString *name21;
+@property (nonnull) NSString *de4;
+@property (nullable) NSString *de5;
 
 /*线程安全
  atomic和nonatomic区别用来决定编译器生成的setter和getter是否为原子操作，这只是针对 set/get 方法的;
@@ -77,6 +77,13 @@
 @property (weak) NSString *name24;
 @property (strong) NSString *name14;
 @property (copy) NSString *name25;
+
+/*类方法
+ 1.增加一个 set  get 类方法 ，不会生成成员变量
+ */
+@property (class,copy) NSString *classname;
++ (NSString *)classname;
++ (void)setClassname:(NSString *)classname;
 @end
 
 

@@ -14,6 +14,7 @@
     BOOL isClass = object_isClass(obj);
     
     Class objClass1 = object_setClass(obj, [NSObject class]);
+    
     Class objClass2 = object_getClass(obj);
 
     Ivar ivar = class_getClassVariable([NSObject class], "_str");

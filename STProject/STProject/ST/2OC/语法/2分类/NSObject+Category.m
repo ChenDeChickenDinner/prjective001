@@ -17,6 +17,20 @@
 +(void)test{
     
 }
+- (void)setName:(NSString *)name{
+    
+}
+- (NSString *)name{
+    return nil;
+}
+
++ (void)setValueNum:(double)valueNum{
+    
+}
+
++ (double)valueNum{
+    return 0;
+}
 @end
 @implementation NSObject(Category2)
 + (void)load{
