@@ -138,4 +138,7 @@ void _class_resolveMethod(Class cls, SEL sel, id inst)
  当 methodSignatureForSelector 返回空的时候
  就会调用doesNotRecognizeSelector:方法 报方法找不到
  */
+- (void)doesNotRecognizeSelector:(SEL)aSelector{
+    
+}
 @end

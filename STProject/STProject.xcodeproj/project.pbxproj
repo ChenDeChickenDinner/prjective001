@@ -17,7 +17,6 @@
 		55D1F00925FB03FF0080A369 /* MemoryMangeARC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA125FB03FF0080A369 /* MemoryMangeARC.m */; };
 		55D1F00B25FB03FF0080A369 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA725FB03FF0080A369 /* Person.m */; };
 		55D1F00C25FB03FF0080A369 /* car.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFA825FB03FF0080A369 /* car.m */; };
-		55D1F00D25FB03FF0080A369 /* KvoTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFAB25FB03FF0080A369 /* KvoTechnology.m */; };
 		55D1F00F25FB03FF0080A369 /* KvcTechnology.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFB025FB03FF0080A369 /* KvcTechnology.m */; };
 		55D1F01025FB03FF0080A369 /* NSObject_protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFB425FB03FF0080A369 /* NSObject_protocol.m */; };
 		55D1F01125FB03FF0080A369 /* NSObject_inst.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EFB525FB03FF0080A369 /* NSObject_inst.m */; };
@@ -46,7 +45,7 @@
 		55D1F03C25FB620A0080A369 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F03B25FB620A0080A369 /* NSObject+Category.m */; };
 		55D1F05E25FF05C60080A369 /* load_func.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F05D25FF05C60080A369 /* load_func.m */; };
 		55D1F07B25FF52180080A369 /* objc_msgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F07A25FF52180080A369 /* objc_msgSend.m */; };
-		55D1F08825FF5D250080A369 /* method_exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F08725FF5D250080A369 /* method_exchange.m */; };
+		55D1F127260050C90080A369 /* NSMutableArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1F125260050C90080A369 /* NSMutableArray+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,9 +87,7 @@
 		55D1EFA625FB03FF0080A369 /* car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = car.h; sourceTree = "<group>"; };
 		55D1EFA725FB03FF0080A369 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		55D1EFA825FB03FF0080A369 /* car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = car.m; sourceTree = "<group>"; };
-		55D1EFAB25FB03FF0080A369 /* KvoTechnology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KvoTechnology.m; sourceTree = "<group>"; };
 		55D1EFAC25FB03FF0080A369 /* KvoDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvoDocument.h; sourceTree = "<group>"; };
-		55D1EFAD25FB03FF0080A369 /* KvoTechnology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvoTechnology.h; sourceTree = "<group>"; };
 		55D1EFAE25FB03FF0080A369 /* KvoDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KvoDocument.m; sourceTree = "<group>"; };
 		55D1EFB025FB03FF0080A369 /* KvcTechnology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KvcTechnology.m; sourceTree = "<group>"; };
 		55D1EFB125FB03FF0080A369 /* KvcTechnology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvcTechnology.h; sourceTree = "<group>"; };
@@ -150,8 +147,8 @@
 		55D1F05D25FF05C60080A369 /* load_func.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = load_func.m; sourceTree = "<group>"; };
 		55D1F07925FF52180080A369 /* objc_msgSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objc_msgSend.h; sourceTree = "<group>"; };
 		55D1F07A25FF52180080A369 /* objc_msgSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_msgSend.m; sourceTree = "<group>"; };
-		55D1F08625FF5D250080A369 /* method_exchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = method_exchange.h; sourceTree = "<group>"; };
-		55D1F08725FF5D250080A369 /* method_exchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = method_exchange.m; sourceTree = "<group>"; };
+		55D1F125260050C90080A369 /* NSMutableArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extension.m"; sourceTree = "<group>"; };
+		55D1F126260050C90080A369 /* NSMutableArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Extension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +205,6 @@
 				55D1EF8625FB03FE0080A369 /* 1类的声明实现 */,
 				55D1EF8425FB03FE0080A369 /* 2分类 */,
 				55D1EF8025FB03FE0080A369 /* 3协议 */,
-				55D1EF8B25FB03FE0080A369 /* 4Block */,
 				55D1EF8825FB03FE0080A369 /* 5Nullable */,
 				55D1EFB225FB03FF0080A369 /* NSObject基类 */,
 			);
@@ -281,12 +277,15 @@
 		55D1EF9225FB03FF0080A369 /* 03内存管理 */ = {
 			isa = PBXGroup;
 			children = (
+				55D1F095260043FD0080A369 /* 拷贝 */,
 				55D1EFA425FB03FF0080A369 /* 1素材 */,
 				55D1EF9D25FB03FF0080A369 /* 2底层原理 */,
 				55D1EF9525FB03FF0080A369 /* 3自动释放池 */,
 				55D1EF9825FB03FF0080A369 /* 4框架底层相关数据类型 */,
+				55D1EF8B25FB03FE0080A369 /* 4Block */,
 				55D1EF9325FB03FF0080A369 /* 5运用场景 */,
 				55D1EF9425FB03FF0080A369 /* 6桥接非OC对象 */,
+				55D1F094260043EE0080A369 /* 修饰词 */,
 			);
 			path = "03内存管理";
 			sourceTree = "<group>";
@@ -318,9 +317,9 @@
 			isa = PBXGroup;
 			children = (
 				55D1EF9925FB03FF0080A369 /* MemoryCopy.h */,
-				55D1EF9A25FB03FF0080A369 /* MemoryOtherDataType.m */,
 				55D1EF9B25FB03FF0080A369 /* MemoryCopy.m */,
 				55D1EF9C25FB03FF0080A369 /* MemoryOtherDataType.h */,
+				55D1EF9A25FB03FF0080A369 /* MemoryOtherDataType.m */,
 			);
 			path = "4框架底层相关数据类型";
 			sourceTree = "<group>";
@@ -329,10 +328,10 @@
 			isa = PBXGroup;
 			children = (
 				55D1EF9E25FB03FF0080A369 /* MemoryMangeARC.h */,
-				55D1EF9F25FB03FF0080A369 /* MemoryMangeNature.h */,
-				55D1EFA025FB03FF0080A369 /* MemoryMangeMRC.m */,
 				55D1EFA125FB03FF0080A369 /* MemoryMangeARC.m */,
 				55D1EFA225FB03FF0080A369 /* MemoryMangeMRC.h */,
+				55D1EFA025FB03FF0080A369 /* MemoryMangeMRC.m */,
+				55D1EF9F25FB03FF0080A369 /* MemoryMangeNature.h */,
 				55D1EFA325FB03FF0080A369 /* MemoryMangeNature.m */,
 			);
 			path = "2底层原理";
@@ -361,8 +360,6 @@
 			children = (
 				55D1EFAC25FB03FF0080A369 /* KvoDocument.h */,
 				55D1EFAE25FB03FF0080A369 /* KvoDocument.m */,
-				55D1EFAD25FB03FF0080A369 /* KvoTechnology.h */,
-				55D1EFAB25FB03FF0080A369 /* KvoTechnology.m */,
 			);
 			path = "NSObject(KVO)";
 			sourceTree = "<group>";
@@ -434,12 +431,12 @@
 		55D1EFC425FB03FF0080A369 /* 0objc */ = {
 			isa = PBXGroup;
 			children = (
-				55D1F08525FF5D070080A369 /* 方法交换 */,
 				55D1EFC525FB03FF0080A369 /* 1类管理 */,
 				55D1EFCF25FB03FF0080A369 /* 2协议管理 */,
 				55D1EFCE25FB03FF0080A369 /* 3message */,
 				55D1F06D25FF2B880080A369 /* 4关联对象 */,
 				55D1EFC825FB03FF0080A369 /* 5异常处理 */,
+				55D1F08525FF5D070080A369 /* 方法交换 */,
 			);
 			path = 0objc;
 			sourceTree = "<group>";
@@ -631,10 +628,24 @@
 		55D1F08525FF5D070080A369 /* 方法交换 */ = {
 			isa = PBXGroup;
 			children = (
-				55D1F08625FF5D250080A369 /* method_exchange.h */,
-				55D1F08725FF5D250080A369 /* method_exchange.m */,
+				55D1F126260050C90080A369 /* NSMutableArray+Extension.h */,
+				55D1F125260050C90080A369 /* NSMutableArray+Extension.m */,
 			);
 			path = "方法交换";
+			sourceTree = "<group>";
+		};
+		55D1F094260043EE0080A369 /* 修饰词 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "修饰词";
+			sourceTree = "<group>";
+		};
+		55D1F095260043FD0080A369 /* 拷贝 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "拷贝";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -697,10 +708,9 @@
 				55D1F00225FB03FF0080A369 /* Nullable.m in Sources */,
 				55D1F02225FB03FF0080A369 /* Pretreatment.c in Sources */,
 				55D1F02025FB03FF0080A369 /* Scope.c in Sources */,
-				55D1F00D25FB03FF0080A369 /* KvoTechnology.m in Sources */,
 				55D1F01925FB03FF0080A369 /* TypeEncodings.m in Sources */,
 				55D1F01D25FB03FF0080A369 /* class_Inst.m in Sources */,
-				55D1F08825FF5D250080A369 /* method_exchange.m in Sources */,
+				55D1F127260050C90080A369 /* NSMutableArray+Extension.m in Sources */,
 				55D1F07B25FF52180080A369 /* objc_msgSend.m in Sources */,
 				55D1F01025FB03FF0080A369 /* NSObject_protocol.m in Sources */,
 				55D1F02525FB03FF0080A369 /* DataType.c in Sources */,

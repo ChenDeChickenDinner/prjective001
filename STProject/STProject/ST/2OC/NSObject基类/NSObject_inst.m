@@ -29,23 +29,20 @@
 }
 
 
-
-#pragma warning -消息机制-消息转发
-- (id)forwardingTargetForSelector:(SEL)aSelector{
-    return [super forwardingTargetForSelector:aSelector];
-}
-
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
-    return [super methodSignatureForSelector:aSelector];
-}
-
-- (void)forwardInvocation:(NSInvocation *)anInvocation{
-
- 
-}
-#pragma warning -消息机制-方法找不到
-- (void)doesNotRecognizeSelector:(SEL)aSelector{
+- (void)test2{
+    //NSObject (NSDelayedPerforming) runloop相关
+    [self performSelector:@selector(hash) withObject:nil afterDelay:0.2];
+    [self performSelector:@selector(hash) withObject:nil afterDelay:0.2 inModes:@[]];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self]; //取消已设置的延迟执行
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hash) object:nil];
     
+    //NSObject (NSThreadPerformAdditions)线程
+    [self performSelectorInBackground:@selector(hash) withObject:nil];
+    [self performSelector:@selector(hash) onThread:[NSThread mainThread] withObject:nil waitUntilDone:YES];
+    [self performSelector:@selector(hash) onThread:[NSThread mainThread] withObject:nil waitUntilDone:YES modes:nil];
+    [self performSelectorOnMainThread:@selector(hash) withObject:nil waitUntilDone:YES];
+    [self performSelectorOnMainThread:@selector(hash) withObject:nil waitUntilDone:YES modes:nil];
 }
+
 
 @end

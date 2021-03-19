@@ -3,50 +3,43 @@
 
 @implementation NSObject_protocol
 
++ (void)load{
+    Class class = [NSObject class];
+    NSObject *instances = [NSObject new];
+    BOOL boolvalue = YES;
+    id object = boolvalue?class:instances;
+    
+    { // 对象信息获取
+        /* isa是不是链条内 本类-子类-父类基类
+         1.对象：对象的类型 是不是 XXClass 的子类，
+         2.类对象:类对象的元类  是不是 XXClass 的子类，
+         */
+        BOOL b1 =  [object isKindOfClass:[NSObject class]];
+        /* isa是否相等
+          1.对象：对象的类型 是不是 XXClass类型，
+          2.类对象:类对象的元类 是不是 XXClass类型，
+         */
+        BOOL b2 =  [object isMemberOfClass:[NSObject class]];
+        
+        BOOL b3 =  [object conformsToProtocol:@protocol(NSObject)];
+        
+        BOOL b4 =  [object respondsToSelector:@selector(test)];
+    }
+    { // 对象自检
+        [object class];
+        [object superclass];
 
-#pragma warning -对象信息获取
-- (void)test1{
+        [object hash];
+        [object description];
 
-    [self class];
-    [self superclass];
-
-    [self hash];
-    [self description];
-
-    IMP imp = [self methodForSelector:@selector(description)];
-
+        IMP imp = [object methodForSelector:@selector(description)];
+    }
+    { // 对象执行方法
+        [object performSelector:@selector(hash)];
+        [object performSelector:@selector(hash) withObject:nil];
+        [object performSelector:@selector(hash) withObject:nil withObject:nil];
+    }
 }
-#pragma warning -对象自检
-- (void)test2{
-    
-    
-    [self isKindOfClass:[NSObject class]]; // YES
-    [self isMemberOfClass:[NSObject class]]; // NO
-    
-    BOOL b1 =  [self conformsToProtocol:@protocol(NSObject)];
-    
-    BOOL b2 =  [self respondsToSelector:@selector(test)];
 
-}
 
-#pragma warning -执行方法
-- (void)test3{
-    // @protocol NSObject
-    [self performSelector:@selector(hash)];
-    [self performSelector:@selector(hash) withObject:nil];
-    [self performSelector:@selector(hash) withObject:nil withObject:nil];
-    
-    //NSObject (NSDelayedPerforming) runloop相关
-    [self performSelector:@selector(hash) withObject:nil afterDelay:0.2];
-    [self performSelector:@selector(hash) withObject:nil afterDelay:0.2 inModes:@[]];
-    [NSObject cancelPreviousPerformRequestsWithTarget:self]; //取消已设置的延迟执行
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hash) object:nil];
-    
-    //NSObject (NSThreadPerformAdditions)线程
-    [self performSelectorInBackground:@selector(hash) withObject:nil];
-    [self performSelector:@selector(hash) onThread:[NSThread mainThread] withObject:nil waitUntilDone:YES];
-    [self performSelector:@selector(hash) onThread:[NSThread mainThread] withObject:nil waitUntilDone:YES modes:nil];
-    [self performSelectorOnMainThread:@selector(hash) withObject:nil waitUntilDone:YES];
-    [self performSelectorOnMainThread:@selector(hash) withObject:nil waitUntilDone:YES modes:nil];
-}
 @end

@@ -65,11 +65,4 @@
 }
 
 
-#pragma warning - 消息机制-动态解析
-+ (BOOL)resolveClassMethod:(SEL)sel{
-    return  [super resolveClassMethod:sel];
-}
-+ (BOOL)resolveInstanceMethod:(SEL)sel{
-    return  [super resolveInstanceMethod:sel];
-}
 @end
