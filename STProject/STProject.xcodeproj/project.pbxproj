@@ -190,7 +190,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55144A022608863D00E0159D /* 4内存管理 */ = {
+		55144A022608863D00E0159D /* 5内存管理 */ = {
 			isa = PBXGroup;
 			children = (
 				55144A2B2608863D00E0159D /* 1内存布局 */,
@@ -200,7 +200,7 @@
 				55144A1C2608863D00E0159D /* 5 自动释放池 */,
 				55144A2A2608863D00E0159D /* 6内存泄露监控 */,
 			);
-			path = "4内存管理";
+			path = "5内存管理";
 			sourceTree = "<group>";
 		};
 		55144A032608863D00E0159D /* 4ARC */ = {
@@ -434,7 +434,7 @@
 			path = "2消息执行";
 			sourceTree = "<group>";
 		};
-		555F56F4260AC44A0028624E /* 线程 */ = {
+		555F56F4260AC44A0028624E /* 7线程 */ = {
 			isa = PBXGroup;
 			children = (
 				555F5711260AC44A0028624E /* 1线程属性本质 */,
@@ -442,8 +442,7 @@
 				555F5701260AC44A0028624E /* 3系统API运用的多线程 */,
 				555F5702260AC44A0028624E /* 4多线程面临问题 */,
 			);
-			name = "线程";
-			path = "../../../../Runtime/线程";
+			path = "7线程";
 			sourceTree = "<group>";
 		};
 		555F56F5260AC44A0028624E /* 2多线程技术方案 */ = {
@@ -579,6 +578,45 @@
 			path = "1线程属性本质";
 			sourceTree = "<group>";
 		};
+		55974782260AE5A400A94601 /* 6Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				55974785260B1A0D00A94601 /* 1对象结构 */,
+				55974786260B1A1600A94601 /* 2对象操作 */,
+				55974787260B1A2400A94601 /* 3运行流程 */,
+				55974788260B1A3700A94601 /* 4实际运用 */,
+			);
+			path = 6Runloop;
+			sourceTree = "<group>";
+		};
+		55974785260B1A0D00A94601 /* 1对象结构 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "1对象结构";
+			sourceTree = "<group>";
+		};
+		55974786260B1A1600A94601 /* 2对象操作 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2对象操作";
+			sourceTree = "<group>";
+		};
+		55974787260B1A2400A94601 /* 3运行流程 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3运行流程";
+			sourceTree = "<group>";
+		};
+		55974788260B1A3700A94601 /* 4实际运用 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4实际运用";
+			sourceTree = "<group>";
+		};
 		55D1EF6925FB03E70080A369 = {
 			isa = PBXGroup;
 			children = (
@@ -611,7 +649,9 @@
 				55D1EF7E25FB03FE0080A369 /* 2OC */,
 				55D1EFB925FB03FF0080A369 /* 3Runtime */,
 				555F56D52609831D0028624E /* 4关键技术 */,
-				55144A022608863D00E0159D /* 4内存管理 */,
+				55144A022608863D00E0159D /* 5内存管理 */,
+				55974782260AE5A400A94601 /* 6Runloop */,
+				555F56F4260AC44A0028624E /* 7线程 */,
 			);
 			path = ST;
 			sourceTree = "<group>";
@@ -619,7 +659,6 @@
 		55D1EF7E25FB03FE0080A369 /* 2OC */ = {
 			isa = PBXGroup;
 			children = (
-				555F56F4260AC44A0028624E /* 线程 */,
 				55D1EF8625FB03FE0080A369 /* 1类的声明实现 */,
 				55D1EF8425FB03FE0080A369 /* 2分类 */,
 				55D1EF8025FB03FE0080A369 /* 3协议 */,

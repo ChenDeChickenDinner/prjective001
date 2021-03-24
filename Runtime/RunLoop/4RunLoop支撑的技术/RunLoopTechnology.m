@@ -33,9 +33,7 @@
 
     /*
      1.创建一个定时器添加到当前线程中的Runloop 的默认模式中  (scheduled:计划)
-     Creates a timer and schedules it on the current run loop in the default mode.
      2.当Runloop每循环一次检查达到时间间隔后，执行一次代码（受RunLoop处理其它事件的影响）
-     After interval seconds have elapsed, the timer fires, executing block.
      3.SO:在主线程中可以正常执行，在子线程中需要创建运行起Runloop才能执行
      */
     [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {

@@ -1092,11 +1092,11 @@
 		552EE59022EEC20300D7F0CB /* RunLoop */ = {
 			isa = PBXGroup;
 			children = (
-				552EE59122EEC20300D7F0CB /* 3RunLoop操作执行流程 */,
-				552EE59422EEC20300D7F0CB /* 3RunLoop操作 */,
-				552EE59522EEC20300D7F0CB /* 4RunLoop支撑的技术 */,
-				552EE59822EEC20300D7F0CB /* 2RunLoop状态 */,
 				552EE59B22EEC20300D7F0CB /* 1RunLoop组成元素 */,
+				552EE59822EEC20300D7F0CB /* 2RunLoop状态 */,
+				552EE59422EEC20300D7F0CB /* 3RunLoop操作 */,
+				552EE59122EEC20300D7F0CB /* 3RunLoop操作执行流程 */,
+				552EE59522EEC20300D7F0CB /* 4RunLoop支撑的技术 */,
 			);
 			path = RunLoop;
 			sourceTree = "<group>";
@@ -1104,8 +1104,8 @@
 		552EE59122EEC20300D7F0CB /* 3RunLoop操作执行流程 */ = {
 			isa = PBXGroup;
 			children = (
-				552EE59222EEC20300D7F0CB /* RunLoopProcess.m */,
 				552EE59322EEC20300D7F0CB /* RunLoopProcess.h */,
+				552EE59222EEC20300D7F0CB /* RunLoopProcess.m */,
 			);
 			path = "3RunLoop操作执行流程";
 			sourceTree = "<group>";
@@ -1138,8 +1138,8 @@
 		552EE59B22EEC20300D7F0CB /* 1RunLoop组成元素 */ = {
 			isa = PBXGroup;
 			children = (
-				552EE59C22EEC20300D7F0CB /* RunLoopComposition.m */,
 				552EE59D22EEC20300D7F0CB /* RunLoopComposition.h */,
+				552EE59C22EEC20300D7F0CB /* RunLoopComposition.m */,
 			);
 			path = "1RunLoop组成元素";
 			sourceTree = "<group>";

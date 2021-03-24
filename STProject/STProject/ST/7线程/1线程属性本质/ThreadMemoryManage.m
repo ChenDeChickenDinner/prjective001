@@ -80,6 +80,23 @@
     [thread1 start];
 }
 
+
+/**
+ 线程的操作
+ */
+- (void)test4{
+    // 启动线程
+    [self.thread start];
+
+    //给线程添加 cancel 标志
+    [self.thread cancel];
+
+    //主动结束当前线程的任务,后面的代码不再执行 线程的 isFinished = YES;无法重新开启
+    [NSThread exit];
+}
+
+
+
 /**
  线程的状态
  */
@@ -100,19 +117,6 @@
     }
 
 
-}
-/**
- 线程的操作
- */
-- (void)test4{
-    // 启动线程
-    [self.thread start];
-
-    //给线程添加 cancel 标志
-    [self.thread cancel];
-
-    //主动结束当前线程的任务,后面的代码不再执行 线程的 isFinished = YES;无法重新开启
-    [NSThread exit];
 }
 
 /**
