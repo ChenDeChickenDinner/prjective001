@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5514498526033F7400E0159D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5514498426033F7400E0159D /* Person.m */; };
-		5514499026034E0D00E0159D /* MRCProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5514498F26034E0D00E0159D /* MRCProperty.m */; };
+		551449AD26082C8300E0159D /* CopyFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449AC26082C8300E0159D /* CopyFunc.m */; };
+		551449CE2608372C00E0159D /* memoryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449CD2608372B00E0159D /* memoryLayout.m */; };
+		551449D3260837B300E0159D /* ISA.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449D2260837B300E0159D /* ISA.m */; };
+		551449D72608392100E0159D /* SideTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449D62608392100E0159D /* SideTable.m */; };
+		551449DB26083A5700E0159D /* Rules_.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449DA26083A5700E0159D /* Rules_.m */; };
+		551449E426083ADF00E0159D /* BasicUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449E326083ADF00E0159D /* BasicUse.m */; };
+		551449E826083BA300E0159D /* Property_.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449E726083BA300E0159D /* Property_.m */; };
+		551449EF260864D600E0159D /* ARC_.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449EE260864D600E0159D /* ARC_.m */; };
+		551449F526086AF200E0159D /* Array_.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449F426086AF200E0159D /* Array_.m */; };
+		551449FA26086B5900E0159D /* Autoreleasepool.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449F826086B5900E0159D /* Autoreleasepool.m */; };
+		551449FE26086CCA00E0159D /* weak_.m in Sources */ = {isa = PBXBuildFile; fileRef = 551449FD26086CCA00E0159D /* weak_.m */; };
 		55C89E0C2602F5B6009AF84E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C89E0B2602F5B6009AF84E /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -25,12 +34,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5514498326033F7400E0159D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		5514498426033F7400E0159D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		5514498E26034E0D00E0159D /* MRCProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCProperty.h; sourceTree = "<group>"; };
-		5514498F26034E0D00E0159D /* MRCProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCProperty.m; sourceTree = "<group>"; };
-		5514499A26044D1F00E0159D /* MemoryManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManagement.h; sourceTree = "<group>"; };
-		5514499B26044D1F00E0159D /* MemoryManagement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManagement.m; sourceTree = "<group>"; };
+		551449AB26082C8300E0159D /* CopyFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyFunc.h; sourceTree = "<group>"; };
+		551449AC26082C8300E0159D /* CopyFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyFunc.m; sourceTree = "<group>"; };
+		551449CC2608372B00E0159D /* memoryLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memoryLayout.h; sourceTree = "<group>"; };
+		551449CD2608372B00E0159D /* memoryLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = memoryLayout.m; sourceTree = "<group>"; };
+		551449D1260837B300E0159D /* ISA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISA.h; sourceTree = "<group>"; };
+		551449D2260837B300E0159D /* ISA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISA.m; sourceTree = "<group>"; };
+		551449D52608392100E0159D /* SideTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideTable.h; sourceTree = "<group>"; };
+		551449D62608392100E0159D /* SideTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideTable.m; sourceTree = "<group>"; };
+		551449D926083A5700E0159D /* Rules_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rules_.h; sourceTree = "<group>"; };
+		551449DA26083A5700E0159D /* Rules_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rules_.m; sourceTree = "<group>"; };
+		551449E226083ADF00E0159D /* BasicUse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicUse.h; sourceTree = "<group>"; };
+		551449E326083ADF00E0159D /* BasicUse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicUse.m; sourceTree = "<group>"; };
+		551449E626083BA300E0159D /* Property_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Property_.h; sourceTree = "<group>"; };
+		551449E726083BA300E0159D /* Property_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Property_.m; sourceTree = "<group>"; };
+		551449ED260864D600E0159D /* ARC_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARC_.h; sourceTree = "<group>"; };
+		551449EE260864D600E0159D /* ARC_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARC_.m; sourceTree = "<group>"; };
+		551449F326086AF200E0159D /* Array_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Array_.h; sourceTree = "<group>"; };
+		551449F426086AF200E0159D /* Array_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Array_.m; sourceTree = "<group>"; };
+		551449F826086B5900E0159D /* Autoreleasepool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Autoreleasepool.m; path = "../../../../STProject/STProject/ST/4内存管理/03内存管理/3自动释放池/Autoreleasepool.m"; sourceTree = "<group>"; };
+		551449F926086B5900E0159D /* Autoreleasepool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Autoreleasepool.h; path = "../../../../STProject/STProject/ST/4内存管理/03内存管理/3自动释放池/Autoreleasepool.h"; sourceTree = "<group>"; };
+		551449FC26086CCA00E0159D /* weak_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weak_.h; sourceTree = "<group>"; };
+		551449FD26086CCA00E0159D /* weak_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weak_.m; sourceTree = "<group>"; };
 		55C89E082602F5B6009AF84E /* MRC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MRC; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C89E0B2602F5B6009AF84E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55C89E1E26033525009AF84E /* TaggedPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaggedPointer.h; sourceTree = "<group>"; };
@@ -48,19 +73,196 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		551449A12604961E00E0159D /* MRC */ = {
+		551449B6260833B200E0159D /* 内存管理 */ = {
 			isa = PBXGroup;
 			children = (
-				551449A22604963E00E0159D /* 1管理规则 */,
+				551449CA260833B200E0159D /* 1内存布局 */,
+				551449C3260833B200E0159D /* 2 内存管理方案 */,
+				551449BB260833B200E0159D /* 3MRC */,
+				551449B7260833B200E0159D /* 4ARC */,
+				551449C2260833B200E0159D /* 5 自动释放池 */,
+				55C89E2B26033784009AF84E /* 6内存泄露监控 */,
 			);
-			path = MRC;
+			path = "内存管理";
 			sourceTree = "<group>";
 		};
-		551449A22604963E00E0159D /* 1管理规则 */ = {
+		551449B7260833B200E0159D /* 4ARC */ = {
+			isa = PBXGroup;
+			children = (
+				551449BA260833B200E0159D /* 1ARC做了什么 */,
+				551449B8260833B200E0159D /* 2weak的实现原理 */,
+				551449B9260833B200E0159D /* 3实际运用 */,
+			);
+			path = 4ARC;
+			sourceTree = "<group>";
+		};
+		551449B8260833B200E0159D /* 2weak的实现原理 */ = {
+			isa = PBXGroup;
+			children = (
+				551449FC26086CCA00E0159D /* weak_.h */,
+				551449FD26086CCA00E0159D /* weak_.m */,
+			);
+			path = "2weak的实现原理";
+			sourceTree = "<group>";
+		};
+		551449B9260833B200E0159D /* 3实际运用 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "1管理规则";
+			path = "3实际运用";
+			sourceTree = "<group>";
+		};
+		551449BA260833B200E0159D /* 1ARC做了什么 */ = {
+			isa = PBXGroup;
+			children = (
+				551449ED260864D600E0159D /* ARC_.h */,
+				551449EE260864D600E0159D /* ARC_.m */,
+			);
+			path = "1ARC做了什么";
+			sourceTree = "<group>";
+		};
+		551449BB260833B200E0159D /* 3MRC */ = {
+			isa = PBXGroup;
+			children = (
+				551449C0260833B200E0159D /* 1规则API */,
+				551449BC260833B200E0159D /* 3正确管理 */,
+			);
+			path = 3MRC;
+			sourceTree = "<group>";
+		};
+		551449BC260833B200E0159D /* 3正确管理 */ = {
+			isa = PBXGroup;
+			children = (
+				551449BD260833B200E0159D /* 1基本使用 */,
+				551449BF260833B200E0159D /* 2copy方法 */,
+				551449BE260833B200E0159D /* 3@property */,
+				551449F226086AC700E0159D /* 4集合与元素 */,
+			);
+			path = "3正确管理";
+			sourceTree = "<group>";
+		};
+		551449BD260833B200E0159D /* 1基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				551449E226083ADF00E0159D /* BasicUse.h */,
+				551449E326083ADF00E0159D /* BasicUse.m */,
+			);
+			path = "1基本使用";
+			sourceTree = "<group>";
+		};
+		551449BE260833B200E0159D /* 3@property */ = {
+			isa = PBXGroup;
+			children = (
+				551449E626083BA300E0159D /* Property_.h */,
+				551449E726083BA300E0159D /* Property_.m */,
+			);
+			path = "3@property";
+			sourceTree = "<group>";
+		};
+		551449BF260833B200E0159D /* 2copy方法 */ = {
+			isa = PBXGroup;
+			children = (
+				551449AB26082C8300E0159D /* CopyFunc.h */,
+				551449AC26082C8300E0159D /* CopyFunc.m */,
+			);
+			path = "2copy方法";
+			sourceTree = "<group>";
+		};
+		551449C0260833B200E0159D /* 1规则API */ = {
+			isa = PBXGroup;
+			children = (
+				551449D926083A5700E0159D /* Rules_.h */,
+				551449DA26083A5700E0159D /* Rules_.m */,
+			);
+			path = "1规则API";
+			sourceTree = "<group>";
+		};
+		551449C2260833B200E0159D /* 5 自动释放池 */ = {
+			isa = PBXGroup;
+			children = (
+				551449F926086B5900E0159D /* Autoreleasepool.h */,
+				551449F826086B5900E0159D /* Autoreleasepool.m */,
+			);
+			path = "5 自动释放池";
+			sourceTree = "<group>";
+		};
+		551449C3260833B200E0159D /* 2 内存管理方案 */ = {
+			isa = PBXGroup;
+			children = (
+				551449C9260833B200E0159D /* 1Tagged Pointer */,
+				551449C4260833B200E0159D /* 2引用计数 */,
+			);
+			path = "2 内存管理方案";
+			sourceTree = "<group>";
+		};
+		551449C4260833B200E0159D /* 2引用计数 */ = {
+			isa = PBXGroup;
+			children = (
+				551449C8260833B200E0159D /* NONPOINTER_ISA */,
+				551449C5260833B200E0159D /* SiddeTables */,
+			);
+			path = "2引用计数";
+			sourceTree = "<group>";
+		};
+		551449C5260833B200E0159D /* SiddeTables */ = {
+			isa = PBXGroup;
+			children = (
+				551449D52608392100E0159D /* SideTable.h */,
+				551449D62608392100E0159D /* SideTable.m */,
+				551449C7260833B200E0159D /* 1引用计数表(refcnts) */,
+				551449C6260833B200E0159D /* 2弱引用表(weak_table) */,
+			);
+			path = SiddeTables;
+			sourceTree = "<group>";
+		};
+		551449C6260833B200E0159D /* 2弱引用表(weak_table) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2弱引用表(weak_table)";
+			sourceTree = "<group>";
+		};
+		551449C7260833B200E0159D /* 1引用计数表(refcnts) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "1引用计数表(refcnts)";
+			sourceTree = "<group>";
+		};
+		551449C8260833B200E0159D /* NONPOINTER_ISA */ = {
+			isa = PBXGroup;
+			children = (
+				551449D1260837B300E0159D /* ISA.h */,
+				551449D2260837B300E0159D /* ISA.m */,
+			);
+			path = NONPOINTER_ISA;
+			sourceTree = "<group>";
+		};
+		551449C9260833B200E0159D /* 1Tagged Pointer */ = {
+			isa = PBXGroup;
+			children = (
+				55C89E1E26033525009AF84E /* TaggedPointer.h */,
+				55C89E1F26033525009AF84E /* TaggedPointer.m */,
+			);
+			path = "1Tagged Pointer";
+			sourceTree = "<group>";
+		};
+		551449CA260833B200E0159D /* 1内存布局 */ = {
+			isa = PBXGroup;
+			children = (
+				551449CC2608372B00E0159D /* memoryLayout.h */,
+				551449CD2608372B00E0159D /* memoryLayout.m */,
+			);
+			path = "1内存布局";
+			sourceTree = "<group>";
+		};
+		551449F226086AC700E0159D /* 4集合与元素 */ = {
+			isa = PBXGroup;
+			children = (
+				551449F326086AF200E0159D /* Array_.h */,
+				551449F426086AF200E0159D /* Array_.m */,
+			);
+			path = "4集合与元素";
 			sourceTree = "<group>";
 		};
 		55C89DFF2602F5B6009AF84E = {
@@ -82,66 +284,17 @@
 		55C89E0A2602F5B6009AF84E /* MRC */ = {
 			isa = PBXGroup;
 			children = (
-				55C89E2826033702009AF84E /* 1内存理论 */,
-				55C89E292603372A009AF84E /* 2内存管理技术 */,
-				55C89E2B26033784009AF84E /* 3内存泄露监控 */,
+				551449B6260833B200E0159D /* 内存管理 */,
+				55C89E0B2602F5B6009AF84E /* main.m */,
 			);
 			path = MRC;
 			sourceTree = "<group>";
 		};
-		55C89E182603344E009AF84E /* 1Tagged Pointer */ = {
-			isa = PBXGroup;
-			children = (
-				55C89E1E26033525009AF84E /* TaggedPointer.h */,
-				55C89E1F26033525009AF84E /* TaggedPointer.m */,
-			);
-			path = "1Tagged Pointer";
-			sourceTree = "<group>";
-		};
-		55C89E192603345B009AF84E /* 2引用计数 */ = {
-			isa = PBXGroup;
-			children = (
-				551449A12604961E00E0159D /* MRC */,
-				55C89E0B2602F5B6009AF84E /* main.m */,
-				5514498326033F7400E0159D /* Person.h */,
-				5514498426033F7400E0159D /* Person.m */,
-				5514498E26034E0D00E0159D /* MRCProperty.h */,
-				5514498F26034E0D00E0159D /* MRCProperty.m */,
-			);
-			path = "2引用计数";
-			sourceTree = "<group>";
-		};
-		55C89E1A2603346E009AF84E /* 3自动释放池 */ = {
+		55C89E2B26033784009AF84E /* 6内存泄露监控 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "3自动释放池";
-			sourceTree = "<group>";
-		};
-		55C89E2826033702009AF84E /* 1内存理论 */ = {
-			isa = PBXGroup;
-			children = (
-				5514499A26044D1F00E0159D /* MemoryManagement.h */,
-				5514499B26044D1F00E0159D /* MemoryManagement.m */,
-			);
-			path = "1内存理论";
-			sourceTree = "<group>";
-		};
-		55C89E292603372A009AF84E /* 2内存管理技术 */ = {
-			isa = PBXGroup;
-			children = (
-				55C89E182603344E009AF84E /* 1Tagged Pointer */,
-				55C89E192603345B009AF84E /* 2引用计数 */,
-				55C89E1A2603346E009AF84E /* 3自动释放池 */,
-			);
-			path = "2内存管理技术";
-			sourceTree = "<group>";
-		};
-		55C89E2B26033784009AF84E /* 3内存泄露监控 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "3内存泄露监控";
+			path = "6内存泄露监控";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +353,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5514498526033F7400E0159D /* Person.m in Sources */,
+				551449EF260864D600E0159D /* ARC_.m in Sources */,
+				551449CE2608372C00E0159D /* memoryLayout.m in Sources */,
+				551449DB26083A5700E0159D /* Rules_.m in Sources */,
+				551449D3260837B300E0159D /* ISA.m in Sources */,
+				551449AD26082C8300E0159D /* CopyFunc.m in Sources */,
+				551449FA26086B5900E0159D /* Autoreleasepool.m in Sources */,
+				551449E426083ADF00E0159D /* BasicUse.m in Sources */,
+				551449D72608392100E0159D /* SideTable.m in Sources */,
+				551449F526086AF200E0159D /* Array_.m in Sources */,
+				551449FE26086CCA00E0159D /* weak_.m in Sources */,
+				551449E826083BA300E0159D /* Property_.m in Sources */,
 				55C89E0C2602F5B6009AF84E /* main.m in Sources */,
-				5514499026034E0D00E0159D /* MRCProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

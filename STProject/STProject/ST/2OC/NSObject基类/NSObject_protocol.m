@@ -9,7 +9,7 @@
     BOOL boolvalue = YES;
     id object = boolvalue?class:instances;
     
-    { // 对象信息获取
+    {  // 对象自检
         /* isa是不是链条内 本类-子类-父类基类
          1.对象：对象的类型 是不是 XXClass 的子类，
          2.类对象:类对象的元类  是不是 XXClass 的子类，
@@ -25,14 +25,13 @@
         
         BOOL b4 =  [object respondsToSelector:@selector(test)];
     }
-    { // 对象自检
+    { // 对象信息获取
         [object class];
         [object superclass];
 
         [object hash];
         [object description];
 
-        IMP imp = [object methodForSelector:@selector(description)];
     }
     { // 对象执行方法
         [object performSelector:@selector(hash)];

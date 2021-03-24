@@ -850,10 +850,10 @@
 		552EE55222EEC20300D7F0CB /* 网络多线程 */ = {
 			isa = PBXGroup;
 			children = (
+				552EE56F22EEC20300D7F0CB /* 1线程属性本质 */,
 				552EE55322EEC20300D7F0CB /* 2多线程技术方案 */,
 				552EE55F22EEC20300D7F0CB /* 3系统API运用的多线程 */,
 				552EE56022EEC20300D7F0CB /* 4多线程面临问题 */,
-				552EE56F22EEC20300D7F0CB /* 1线程属性本质 */,
 			);
 			path = "网络多线程";
 			sourceTree = "<group>";
@@ -992,10 +992,10 @@
 		552EE57022EEC20300D7F0CB /* 0进程线程 */ = {
 			isa = PBXGroup;
 			children = (
-				552EE57122EEC20300D7F0CB /* ThreadMemoryManage.m */,
 				552EE57222EEC20300D7F0CB /* ProcessAndThread.h */,
 				552EE57322EEC20300D7F0CB /* ProcessAndThread.m */,
 				552EE57422EEC20300D7F0CB /* ThreadMemoryManage.h */,
+				552EE57122EEC20300D7F0CB /* ThreadMemoryManage.m */,
 			);
 			path = "0进程线程";
 			sourceTree = "<group>";
