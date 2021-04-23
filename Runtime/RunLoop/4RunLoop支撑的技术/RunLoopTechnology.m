@@ -57,13 +57,7 @@
  */
 - (void)test4{
 
-    /*
-     1.libDispatch 会向主线程的 RunLoop 发送消息，RunLoop会被唤醒，并从消息中取得这个 block
-     2.并在回调 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__() 里执行这个 block
-     */
-    dispatch_async(dispatch_get_main_queue(), ^{
-
-    });
+   
 }
 
 /**

@@ -24,6 +24,16 @@
 		555F571C260AC44A0028624E /* XSPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F570A260AC44A0028624E /* XSPermenantThread.m */; };
 		555F571E260AC44A0028624E /* ThreadMemoryManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5713260AC44A0028624E /* ThreadMemoryManage.m */; };
 		555F571F260AC44A0028624E /* ProcessAndThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5715260AC44A0028624E /* ProcessAndThread.m */; };
+		556A50CF260DD27500A422DB /* runloopUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50CA260DD27500A422DB /* runloopUse.m */; };
+		556A50D0260DD27500A422DB /* runloopApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50CD260DD27500A422DB /* runloopApi.m */; };
+		556A50ED260DD2DA00A422DB /* XSThread_.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50D5260DD2DA00A422DB /* XSThread_.m */; };
+		556A50EE260DD2DA00A422DB /* XSThreadPermanent.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50D8260DD2DA00A422DB /* XSThreadPermanent.m */; };
+		556A50EF260DD2DA00A422DB /* Thread_.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50DB260DD2DA00A422DB /* Thread_.m */; };
+		556A50F0260DD2DA00A422DB /* gcd_func.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50E0260DD2DA00A422DB /* gcd_func.m */; };
+		556A50F1260DD2DA00A422DB /* barrier_.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50E2260DD2DA00A422DB /* barrier_.m */; };
+		556A50F2260DD2DA00A422DB /* deadlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50E6260DD2DA00A422DB /* deadlock.m */; };
+		556A50F3260DD2DA00A422DB /* group_async.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50E8260DD2DA00A422DB /* group_async.m */; };
+		556A50F4260DD2DA00A422DB /* dispatch1.m in Sources */ = {isa = PBXBuildFile; fileRef = 556A50EC260DD2DA00A422DB /* dispatch1.m */; };
 		55D1EF7625FB03E70080A369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF7525FB03E70080A369 /* main.m */; };
 		55D1F00025FB03FF0080A369 /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF8125FB03FE0080A369 /* Interface.m */; };
 		55D1F00225FB03FF0080A369 /* Nullable.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D1EF8A25FB03FE0080A369 /* Nullable.m */; };
@@ -111,6 +121,26 @@
 		555F5714260AC44A0028624E /* ProcessAndThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessAndThread.h; sourceTree = "<group>"; };
 		555F5715260AC44A0028624E /* ProcessAndThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessAndThread.m; sourceTree = "<group>"; };
 		555F5716260AC44A0028624E /* ThreadMemoryManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadMemoryManage.h; sourceTree = "<group>"; };
+		556A50CA260DD27500A422DB /* runloopUse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runloopUse.m; sourceTree = "<group>"; };
+		556A50CB260DD27500A422DB /* runloopUse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runloopUse.h; sourceTree = "<group>"; };
+		556A50CD260DD27500A422DB /* runloopApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runloopApi.m; sourceTree = "<group>"; };
+		556A50CE260DD27500A422DB /* runloopApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runloopApi.h; sourceTree = "<group>"; };
+		556A50D5260DD2DA00A422DB /* XSThread_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSThread_.m; sourceTree = "<group>"; };
+		556A50D6260DD2DA00A422DB /* XSThread_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSThread_.h; sourceTree = "<group>"; };
+		556A50D8260DD2DA00A422DB /* XSThreadPermanent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSThreadPermanent.m; sourceTree = "<group>"; };
+		556A50D9260DD2DA00A422DB /* XSThreadPermanent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSThreadPermanent.h; sourceTree = "<group>"; };
+		556A50DB260DD2DA00A422DB /* Thread_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thread_.m; sourceTree = "<group>"; };
+		556A50DC260DD2DA00A422DB /* Thread_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread_.h; sourceTree = "<group>"; };
+		556A50DF260DD2DA00A422DB /* gcd_func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcd_func.h; sourceTree = "<group>"; };
+		556A50E0260DD2DA00A422DB /* gcd_func.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gcd_func.m; sourceTree = "<group>"; };
+		556A50E2260DD2DA00A422DB /* barrier_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = barrier_.m; sourceTree = "<group>"; };
+		556A50E3260DD2DA00A422DB /* barrier_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = barrier_.h; sourceTree = "<group>"; };
+		556A50E5260DD2DA00A422DB /* deadlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deadlock.h; sourceTree = "<group>"; };
+		556A50E6260DD2DA00A422DB /* deadlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deadlock.m; sourceTree = "<group>"; };
+		556A50E8260DD2DA00A422DB /* group_async.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = group_async.m; sourceTree = "<group>"; };
+		556A50E9260DD2DA00A422DB /* group_async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_async.h; sourceTree = "<group>"; };
+		556A50EB260DD2DA00A422DB /* dispatch1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch1.h; sourceTree = "<group>"; };
+		556A50EC260DD2DA00A422DB /* dispatch1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch1.m; sourceTree = "<group>"; };
 		55D1EF7225FB03E70080A369 /* STProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D1EF7525FB03E70080A369 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55D1EF8125FB03FE0080A369 /* Interface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interface.m; sourceTree = "<group>"; };
@@ -313,8 +343,8 @@
 		55144A1D2608863D00E0159D /* 2 内存管理方案 */ = {
 			isa = PBXGroup;
 			children = (
-				55144A1E2608863D00E0159D /* 2引用计数 */,
 				55144A272608863D00E0159D /* 1Tagged Pointer */,
+				55144A1E2608863D00E0159D /* 2引用计数 */,
 			);
 			path = "2 内存管理方案";
 			sourceTree = "<group>";
@@ -381,8 +411,8 @@
 		55144A2B2608863D00E0159D /* 1内存布局 */ = {
 			isa = PBXGroup;
 			children = (
-				55144A2C2608863D00E0159D /* memoryLayout.m */,
 				55144A2D2608863D00E0159D /* memoryLayout.h */,
+				55144A2C2608863D00E0159D /* memoryLayout.m */,
 			);
 			path = "1内存布局";
 			sourceTree = "<group>";
@@ -437,6 +467,7 @@
 		555F56F4260AC44A0028624E /* 7线程 */ = {
 			isa = PBXGroup;
 			children = (
+				556A50D2260DD2DA00A422DB /* 多线程 */,
 				555F5711260AC44A0028624E /* 1线程属性本质 */,
 				555F56F5260AC44A0028624E /* 2多线程技术方案 */,
 				555F5701260AC44A0028624E /* 3系统API运用的多线程 */,
@@ -578,43 +609,135 @@
 			path = "1线程属性本质";
 			sourceTree = "<group>";
 		};
+		556A50C9260DD27500A422DB /* RunLoop运用 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50CB260DD27500A422DB /* runloopUse.h */,
+				556A50CA260DD27500A422DB /* runloopUse.m */,
+			);
+			path = "RunLoop运用";
+			sourceTree = "<group>";
+		};
+		556A50CC260DD27500A422DB /* RunLoop原理 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50CE260DD27500A422DB /* runloopApi.h */,
+				556A50CD260DD27500A422DB /* runloopApi.m */,
+			);
+			path = "RunLoop原理";
+			sourceTree = "<group>";
+		};
+		556A50D2260DD2DA00A422DB /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50D3260DD2DA00A422DB /* 1线程理论与操作 */,
+				556A50DD260DD2DA00A422DB /* 2GCD技术 */,
+			);
+			name = "多线程";
+			path = "../../../../多线程";
+			sourceTree = "<group>";
+		};
+		556A50D3260DD2DA00A422DB /* 1线程理论与操作 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50DA260DD2DA00A422DB /* 1线程理论 */,
+				556A50D4260DD2DA00A422DB /* 2操作一条线程 */,
+				556A50D7260DD2DA00A422DB /* 3线程常驻 */,
+			);
+			path = "1线程理论与操作";
+			sourceTree = "<group>";
+		};
+		556A50D4260DD2DA00A422DB /* 2操作一条线程 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50D6260DD2DA00A422DB /* XSThread_.h */,
+				556A50D5260DD2DA00A422DB /* XSThread_.m */,
+			);
+			path = "2操作一条线程";
+			sourceTree = "<group>";
+		};
+		556A50D7260DD2DA00A422DB /* 3线程常驻 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50D9260DD2DA00A422DB /* XSThreadPermanent.h */,
+				556A50D8260DD2DA00A422DB /* XSThreadPermanent.m */,
+			);
+			path = "3线程常驻";
+			sourceTree = "<group>";
+		};
+		556A50DA260DD2DA00A422DB /* 1线程理论 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50DC260DD2DA00A422DB /* Thread_.h */,
+				556A50DB260DD2DA00A422DB /* Thread_.m */,
+			);
+			path = "1线程理论";
+			sourceTree = "<group>";
+		};
+		556A50DD260DD2DA00A422DB /* 2GCD技术 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50EA260DD2DA00A422DB /* 1任务与队列 */,
+				556A50E4260DD2DA00A422DB /* 2死锁 */,
+				556A50E1260DD2DA00A422DB /* 3栅栏函数 */,
+				556A50E7260DD2DA00A422DB /* 4队列组 */,
+				556A50DE260DD2DA00A422DB /* 5GCD常用函数 */,
+			);
+			path = "2GCD技术";
+			sourceTree = "<group>";
+		};
+		556A50DE260DD2DA00A422DB /* 5GCD常用函数 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50DF260DD2DA00A422DB /* gcd_func.h */,
+				556A50E0260DD2DA00A422DB /* gcd_func.m */,
+			);
+			path = "5GCD常用函数";
+			sourceTree = "<group>";
+		};
+		556A50E1260DD2DA00A422DB /* 3栅栏函数 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50E3260DD2DA00A422DB /* barrier_.h */,
+				556A50E2260DD2DA00A422DB /* barrier_.m */,
+			);
+			path = "3栅栏函数";
+			sourceTree = "<group>";
+		};
+		556A50E4260DD2DA00A422DB /* 2死锁 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50E5260DD2DA00A422DB /* deadlock.h */,
+				556A50E6260DD2DA00A422DB /* deadlock.m */,
+			);
+			path = "2死锁";
+			sourceTree = "<group>";
+		};
+		556A50E7260DD2DA00A422DB /* 4队列组 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50E9260DD2DA00A422DB /* group_async.h */,
+				556A50E8260DD2DA00A422DB /* group_async.m */,
+			);
+			path = "4队列组";
+			sourceTree = "<group>";
+		};
+		556A50EA260DD2DA00A422DB /* 1任务与队列 */ = {
+			isa = PBXGroup;
+			children = (
+				556A50EB260DD2DA00A422DB /* dispatch1.h */,
+				556A50EC260DD2DA00A422DB /* dispatch1.m */,
+			);
+			path = "1任务与队列";
+			sourceTree = "<group>";
+		};
 		55974782260AE5A400A94601 /* 6Runloop */ = {
 			isa = PBXGroup;
 			children = (
-				55974785260B1A0D00A94601 /* 1对象结构 */,
-				55974786260B1A1600A94601 /* 2对象操作 */,
-				55974787260B1A2400A94601 /* 3运行流程 */,
-				55974788260B1A3700A94601 /* 4实际运用 */,
+				556A50CC260DD27500A422DB /* RunLoop原理 */,
+				556A50C9260DD27500A422DB /* RunLoop运用 */,
 			);
 			path = 6Runloop;
-			sourceTree = "<group>";
-		};
-		55974785260B1A0D00A94601 /* 1对象结构 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "1对象结构";
-			sourceTree = "<group>";
-		};
-		55974786260B1A1600A94601 /* 2对象操作 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "2对象操作";
-			sourceTree = "<group>";
-		};
-		55974787260B1A2400A94601 /* 3运行流程 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "3运行流程";
-			sourceTree = "<group>";
-		};
-		55974788260B1A3700A94601 /* 4实际运用 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "4实际运用";
 			sourceTree = "<group>";
 		};
 		55D1EF6925FB03E70080A369 = {
@@ -1040,10 +1163,14 @@
 				55D1F05E25FF05C60080A369 /* load_func.m in Sources */,
 				55144A362608863D00E0159D /* ISA.m in Sources */,
 				555F571A260AC44A0028624E /* CXOperation.m in Sources */,
+				556A50CF260DD27500A422DB /* runloopUse.m in Sources */,
+				556A50D0260DD27500A422DB /* runloopApi.m in Sources */,
 				55144A352608863D00E0159D /* SideTable.m in Sources */,
 				55D1F01125FB03FF0080A369 /* NSObject_inst.m in Sources */,
 				55D1EF7625FB03E70080A369 /* main.m in Sources */,
+				556A50ED260DD2DA00A422DB /* XSThread_.m in Sources */,
 				555F571F260AC44A0028624E /* ProcessAndThread.m in Sources */,
+				556A50F0260DD2DA00A422DB /* gcd_func.m in Sources */,
 				55144A2F2608863D00E0159D /* ARC_.m in Sources */,
 				55144A372608863D00E0159D /* TaggedPointer.m in Sources */,
 				55D1F02725FB03FF0080A369 /* functionType.c in Sources */,
@@ -1052,15 +1179,20 @@
 				555F571E260AC44A0028624E /* ThreadMemoryManage.m in Sources */,
 				555F571B260AC44A0028624E /* XSThreadSecurity.m in Sources */,
 				555F5719260AC44A0028624E /* CXQueue.m in Sources */,
+				556A50F1260DD2DA00A422DB /* barrier_.m in Sources */,
 				55D1F02125FB03FF0080A369 /* Define.c in Sources */,
+				556A50F4260DD2DA00A422DB /* dispatch1.m in Sources */,
 				55D1F00025FB03FF0080A369 /* Interface.m in Sources */,
 				55D1F02325FB03FF0080A369 /* Macro.c in Sources */,
 				55D1F00325FB03FF0080A369 /* Block.m in Sources */,
 				555F571C260AC44A0028624E /* XSPermenantThread.m in Sources */,
+				556A50F3260DD2DA00A422DB /* group_async.m in Sources */,
 				555F5717260AC44A0028624E /* XCNSThread.m in Sources */,
 				55D1F01425FB03FF0080A369 /* object_Inst.m in Sources */,
+				556A50EE260DD2DA00A422DB /* XSThreadPermanent.m in Sources */,
 				555F5718260AC44A0028624E /* GDCThread.m in Sources */,
 				55D1F02425FB03FF0080A369 /* Process.c in Sources */,
+				556A50F2260DD2DA00A422DB /* deadlock.m in Sources */,
 				55D1F01225FB03FF0080A369 /* NSObject_class.m in Sources */,
 				55D1F03725FB61690080A369 /* ProtocolX.m in Sources */,
 				55D1F02625FB03FF0080A369 /* PointerType.c in Sources */,
@@ -1069,6 +1201,7 @@
 				55D1F01E25FB03FF0080A369 /* protocol_Inst.m in Sources */,
 				55D1F01825FB03FF0080A369 /* protocolData.m in Sources */,
 				55D1F01625FB03FF0080A369 /* mutation.m in Sources */,
+				556A50EF260DD2DA00A422DB /* Thread_.m in Sources */,
 				55D1F01B25FB03FF0080A369 /* Method.m in Sources */,
 				55D1F01525FB03FF0080A369 /* classData.m in Sources */,
 			);
